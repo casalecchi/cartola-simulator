@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+exclude = '''
+/(
+    \.venv|
+    \.mypy_cache|
+    \.pytest_cache|
+    __pycache__|
+    build|
+    dist
+)/
+'''
