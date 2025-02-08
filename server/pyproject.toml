@@ -1,6 +1,6 @@
 [tool.black]
-line-length = 88
-target-version = ["py39"]
+line-length = 100
+target-version = ["py312"]
 exclude = '''
 /(
     \.venv|
@@ -11,3 +11,6 @@ exclude = '''
     dist
 )/
 '''
+[tool.mypy]
+ignore_missing_imports = true
+
