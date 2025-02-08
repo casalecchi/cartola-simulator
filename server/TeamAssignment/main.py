@@ -1,5 +1,4 @@
 import os
-
 import instance
 import ls_solver
 import simulation
@@ -14,7 +13,9 @@ listOfStrat = [
     [1, 1, 3, 2, 4, 1],
 ]
 
-file_list = os.listdir("./data/")
+data_dir = os.path.join(os.path.dirname(__file__), "data/")
+print(data_dir)
+file_list = os.listdir(data_dir)
 file_list.sort()
 
 """
@@ -24,7 +25,7 @@ print(file_list)
 
 data_list = []
 for i in range(len(file_list)):
-    dados = instance.Data("./data/" + file_list[i])
+    dados = instance.Data(data_dir + file_list[i])
     data_list.append(dados)
 
 print("Número de rodadas: " + str(len(data_list) - 1))

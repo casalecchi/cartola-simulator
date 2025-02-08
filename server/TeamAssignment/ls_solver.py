@@ -1,7 +1,7 @@
 from tokenize import Double
 from typing import List
 from statistics import mean
-import hexaly
+import hexaly.optimizer
 import instance
 import base_solver
 
