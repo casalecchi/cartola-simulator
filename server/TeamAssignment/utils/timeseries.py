@@ -14,4 +14,4 @@ def create_timeseries(id: int, data_dir) -> pd.DataFrame:
         points = player_row["atletas.pontos_num"].item()
         timeseries.loc[len(timeseries)] = [round, points]
     timeseries.set_index("rodada", inplace=True)
-    return timeseries, rodada[rodada["atletas.atleta_id"] == id]["atletas.nome"].item()
+    return timeseries
