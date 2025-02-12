@@ -14,7 +14,6 @@ listOfStrat = [
 ]
 
 data_dir = os.path.join(os.path.dirname(__file__), "data/")
-print(data_dir)
 file_list = os.listdir(data_dir)
 file_list.sort()
 
