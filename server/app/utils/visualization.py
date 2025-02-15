@@ -41,5 +41,5 @@ def plot_by_id(id: int, year: int, year_dir: str, predictions: List[float] = [])
 if __name__ == "__main__":
     ROOT_DIR = Path(__file__).resolve().parent.parent
     YEAR = 2020
-    YEAR_DIR = os.path.join(ROOT_DIR, f"data/{YEAR}/")
+    YEAR_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{YEAR}/")
     plot_by_id(38913, YEAR, YEAR_DIR)
