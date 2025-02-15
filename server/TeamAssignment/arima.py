@@ -3,8 +3,8 @@ import pandas as pd
 from statsmodels.tsa.arima.model import ARIMA
 from tqdm import tqdm
 from typing import List
-from TeamAssignment.utils.dir import get_file_list
-from TeamAssignment.utils.visualization import plot_by_id
+from utils.dir import get_file_list
+from utils.visualization import plot_by_id
 
 
 def get_points(row: pd.DataFrame) -> float:

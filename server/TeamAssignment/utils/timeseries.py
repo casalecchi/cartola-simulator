@@ -1,6 +1,6 @@
 import pandas as pd
 from typing import Tuple
-from TeamAssignment.utils.dir import get_file_list
+from utils.dir import get_file_list
 
 
 def create_timeseries_from_year(id: int, year_dir: str) -> Tuple[pd.DataFrame, str]:
