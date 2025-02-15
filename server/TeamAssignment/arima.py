@@ -3,8 +3,8 @@ import pandas as pd
 from statsmodels.tsa.arima.model import ARIMA
 from tqdm import tqdm
 from typing import List
-from utils.dir import get_file_list
-from utils.visualization import plot_by_id
+from TeamAssignment.utils.dir import get_file_list
+from TeamAssignment.utils.visualization import plot_by_id
 
 
 def get_points(row: pd.DataFrame) -> float:
@@ -59,4 +59,4 @@ if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
     path_2019 = os.path.join(data_dir, "2019")
     path_2020 = os.path.join(data_dir, "2020")
-    player_arima(38913, path_2019, path_2020)
+    player_arima(38509, path_2019, path_2020, True)
