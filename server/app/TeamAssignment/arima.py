@@ -52,6 +52,8 @@ def player_arima(player_id: int, previous_path: str, next_path: str, plot=False,
     if plot:
         plot_by_id(player_id, 2020, next_path, predictions)
 
+    return predictions
+
 
 if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
