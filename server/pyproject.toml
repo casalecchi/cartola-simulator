@@ -1,3 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cartola_simulator"
+version = "0.1.0"
+description = "Simulador para o Cartola FC"
+authors = [{ name = "Seu Nome", email = "seu@email.com" }]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pandas",
+    "numpy",
+    "pydantic",
+]
+
+[tool.setuptools]
+packages = { find = { where = ["app"] } }
+
+[project.scripts]
+start-api = "server.app.main:app"
+
+
 [tool.black]
 line-length = 100
 target-version = ["py312"]
