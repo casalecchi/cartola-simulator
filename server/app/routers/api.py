@@ -1,4 +1,6 @@
 from fastapi import APIRouter
+from models.model import ArimaRequest
+from models.player import PlayerRequest
 from pathlib import Path
 import os
 from utils.timeseries import create_timeseries_from_year
@@ -13,19 +15,21 @@ def get_data_years():
     return [2020]
 
 
-@router.get("/player-timeseries")
-def get_timeseries_from_player(id: int, year: int):
-    DATA_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{year}")
-    df, player_name = create_timeseries_from_year(id, DATA_DIR)
+@router.post("/player-timeseries")
+def get_timeseries_from_player(request: PlayerRequest):
+    DATA_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
+    df, player_name = create_timeseries_from_year(request.id, DATA_DIR)
     converted_df = df.reset_index().to_dict(orient="records")
     return {"name": player_name, "data": converted_df}
 
 
-@router.get("/player-arima")
-def get_player_arima(id: int, year: int, p=2, d=0, q=3):
-    previous_year = year - 1
+@router.post("/player-arima")
+def get_player_arima(request: ArimaRequest):
+    previous_year = request.year - 1
     PREV_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{previous_year}")
-    NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{year}")
-    predictions = player_arima(id, PREV_DIR, NEXT_DIR, False, p, d, q)
+    NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
+    predictions = player_arima(
+        request.id, PREV_DIR, NEXT_DIR, False, request.p, request.d, request.q
+    )
     formattedPred = [{"rodada": i + 1, "pontos": pred} for i, pred in enumerate(predictions)]
     return {"predictions": formattedPred}
