@@ -1,3 +1,5 @@
 {
-    "test": "Test"
+    "model": {
+        "year": "Year"
+    }
 }

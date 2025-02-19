@@ -1,9 +1,16 @@
-import { Button, Stack } from '@mui/material'
+import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, Stack } from '@mui/material'
 import { FC } from 'react'
-import { useGetDataYears } from '../hooks/useGetYears'
+import { useTranslation } from 'react-i18next'
+import { useDataContext } from '../contexts/DataContext'
 
 export const Api: FC = () => {
-    const { getDataYears, years } = useGetDataYears()
+    const { t } = useTranslation()
+    const { apiStateManager } = useDataContext()
+    const { selectedYear, setSelectedYear, years } = apiStateManager
+
+    const handleYearChange = (event: SelectChangeEvent) => {
+        setSelectedYear(event.target.value as string)
+    }
 
     return (
         <Stack alignItems={'center'} height={'100dvh'} justifyContent={'center'} width={'100%'}>
@@ -13,11 +20,23 @@ export const Api: FC = () => {
                     border={'1px solid lightgray'}
                     borderRadius={'1rem'}
                     p={2}
+                    width={'12rem'}
                 >
-                    <Button onClick={getDataYears} variant={'outlined'}>
-                        YEARS
-                    </Button>
-                    {years.length != 0 && years}
+                    <FormControl fullWidth>
+                        <InputLabel id="year-select-label">{t('model.year')}</InputLabel>
+                        <Select
+                            label="Year"
+                            labelId="year-select-label"
+                            onChange={handleYearChange}
+                            value={selectedYear}
+                        >
+                            {years.map((y) => (
+                                <MenuItem key={y} value={y}>
+                                    {y}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
                 </Stack>
             </Stack>
         </Stack>
