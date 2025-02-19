@@ -1,4 +1,6 @@
 from fastapi import APIRouter
+from fastapi.responses import FileResponse
+from models.common import YearRequest
 from models.model import ArimaRequest
 from models.player import PlayerRequest
 from pathlib import Path
@@ -15,12 +17,10 @@ def get_data_years():
     return [2020]
 
 
-@router.post("/player-timeseries")
-def get_timeseries_from_player(request: PlayerRequest):
-    DATA_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
-    df, player_name = create_timeseries_from_year(request.id, DATA_DIR)
-    converted_df = df.reset_index().to_dict(orient="records")
-    return {"name": player_name, "data": converted_df}
+@router.post("/players")
+def available_players(request: YearRequest):
+    json_path = os.path.join(ROOT_DIR, f"static/players/{request.year}.json")
+    return FileResponse(json_path, media_type="application/json")
 
 
 @router.post("/player-arima")
@@ -33,3 +33,11 @@ def get_player_arima(request: ArimaRequest):
     )
     formattedPred = [{"rodada": i + 1, "pontos": pred} for i, pred in enumerate(predictions)]
     return {"predictions": formattedPred}
+
+
+@router.post("/player-timeseries")
+def get_timeseries_from_player(request: PlayerRequest):
+    DATA_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
+    df, player_name = create_timeseries_from_year(request.id, DATA_DIR)
+    converted_df = df.reset_index().to_dict(orient="records")
+    return {"name": player_name, "data": converted_df}
