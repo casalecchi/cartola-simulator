@@ -21,6 +21,7 @@ export default tseslint.config(
             'react-refresh': reactRefresh,
         },
         rules: {
+            ...react.configs.recommended.rules,
             ...reactHooks.configs.recommended.rules,
             'react/react-in-jsx-scope': 0,
             'react/jsx-sort-props': [
