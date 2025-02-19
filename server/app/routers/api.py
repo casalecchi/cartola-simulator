@@ -31,13 +31,13 @@ def get_player_arima(request: ArimaRequest):
     predictions = player_arima(
         request.id, PREV_DIR, NEXT_DIR, False, request.p, request.d, request.q
     )
-    formattedPred = [{"rodada": i + 1, "pontos": pred} for i, pred in enumerate(predictions)]
-    return {"predictions": formattedPred}
+    formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
+    return formattedPred
 
 
 @router.post("/player-timeseries")
 def get_timeseries_from_player(request: PlayerRequest):
     DATA_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
-    df, player_name = create_timeseries_from_year(request.id, DATA_DIR)
+    df, _ = create_timeseries_from_year(request.id, DATA_DIR)
     converted_df = df.reset_index().to_dict(orient="records")
-    return {"name": player_name, "data": converted_df}
+    return converted_df

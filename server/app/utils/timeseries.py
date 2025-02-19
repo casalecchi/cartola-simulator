@@ -5,7 +5,7 @@ from utils.dir import get_file_list
 
 def create_timeseries_from_year(id: int, year_dir: str) -> Tuple[pd.DataFrame, str]:
     FILE_LIST = get_file_list(year_dir)
-    timeseries = pd.DataFrame(columns=["rodada", "pontos"])
+    timeseries = pd.DataFrame(columns=["round", "points"])
     apelido = ""
     for round, file in enumerate(FILE_LIST):
         rodada = pd.read_csv(f"{year_dir}/" + file)
@@ -16,5 +16,5 @@ def create_timeseries_from_year(id: int, year_dir: str) -> Tuple[pd.DataFrame, s
         if apelido == "":
             apelido = player_row["atletas.apelido"].item()
         timeseries.loc[len(timeseries)] = [round + 1, points]
-    timeseries.set_index("rodada", inplace=True)
+    timeseries.set_index("round", inplace=True)
     return timeseries, apelido

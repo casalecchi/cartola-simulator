@@ -13,7 +13,7 @@ def plot_by_id(id: int, year: int, year_dir: str, predictions: List[float] = [])
     fig.set_facecolor("beige")
     ax.set_facecolor("beige")
     ax.plot(
-        timeseries.index, timeseries.pontos, marker="o", color="midnightblue", label="Valor Real"
+        timeseries.index, timeseries.points, marker="o", color="midnightblue", label="Valor Real"
     )
     if len(predictions) > 0:
         ax.plot(
