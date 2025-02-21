@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { PlayerInfo } from '../models/playerInfo'
+import { PlayerInfo } from '../models/player'
 
 export const useGetPlayersFromYear = () => {
     const [playersInfo, setPlayersInfo] = useState<PlayerInfo[]>([])

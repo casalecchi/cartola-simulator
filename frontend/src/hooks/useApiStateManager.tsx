@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PlayerInfo } from '../models/playerInfo'
+import { PlayerInfo } from '../models/player'
 import { useGetPlayersFromYear } from './useGetPlayersFromYear'
 import { useGetDataYears } from './useGetYears'
 

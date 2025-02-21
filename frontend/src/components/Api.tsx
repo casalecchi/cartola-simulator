@@ -9,19 +9,36 @@ import {
     Stack,
     TextField,
 } from '@mui/material'
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
 import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDataContext } from '../contexts/DataContext'
-import { PlayerInfo } from '../models/playerInfo'
+import { useGetTimeseries } from '../hooks/useGetTimeseries'
+import { PlayerInfo } from '../models/player'
 
 export const Api: FC = () => {
     const { t } = useTranslation()
     const { apiStateManager } = useDataContext()
     const { playersInfo, selectedYear, setSelectedYear, years } = apiStateManager
+
     const [selectedPlayer, setSelectedPlayer] = useState<PlayerInfo | null>(null)
+
+    const { fetchTimeseriesFromPlayer, timeseries } = useGetTimeseries()
 
     const handleYearChange = (event: SelectChangeEvent) => {
         setSelectedYear(event.target.value as string)
+    }
+
+    const options: Highcharts.Options = {
+        series: [
+            {
+                name: selectedPlayer?.name,
+                type: 'line',
+                data: timeseries.data.map((p) => ({ x: p.round, y: p.points })),
+            },
+        ],
+        chart: { height: 14 * 16, animation: true },
     }
 
     return (
@@ -60,9 +77,18 @@ export const Api: FC = () => {
                         value={selectedPlayer}
                     />
                 </Stack>
-                <Button sx={{ width: '5rem' }} variant={'outlined'}>
+                <Button
+                    sx={{ width: '5rem' }}
+                    variant={'outlined'}
+                    onClick={() =>
+                        fetchTimeseriesFromPlayer(selectedPlayer?.id ?? 1, Number(selectedYear))
+                    }
+                >
                     RUN
                 </Button>
+                {timeseries.data.length > 0 && (
+                    <HighchartsReact highcharts={Highcharts} options={options} />
+                )}
             </Stack>
         </Stack>
     )
