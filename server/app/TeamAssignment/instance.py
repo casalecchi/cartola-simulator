@@ -2,6 +2,7 @@ import pandas as pd
 
 
 class Data:
+    id = []
     name = []
     position = []
     cost = []
@@ -63,6 +64,7 @@ class Data:
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Provável")==True]
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Lesionado")==False]
 
+        self.id = self.df["atletas.atleta_id"].tolist()
         self.name = self.df["atletas.nome"].tolist()
         self.position = self.df["atletas.posicao_id"].tolist()
         self.cost = self.df["atletas.preco_num"].tolist()

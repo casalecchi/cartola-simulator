@@ -31,7 +31,7 @@ class Simulation:
             used += cur.cost[j]
             # achar a posição do jogador na nova rodada
             try:
-                index = fol.name.index(cur.name[j])
+                index = fol.id.index(cur.id[j])
                 sell += fol.cost[index]
             except:
                 sell += cur.cost[j]

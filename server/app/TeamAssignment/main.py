@@ -13,7 +13,7 @@ listOfStrat = [
     [1, 1, 3, 2, 4, 1],
 ]
 
-data_dir = os.path.join(os.path.dirname(__file__), "data/")
+data_dir = os.path.join(os.path.dirname(__file__), "data/2020/")
 file_list = os.listdir(data_dir)
 file_list.sort()
 

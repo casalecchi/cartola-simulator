@@ -25,13 +25,13 @@ class LSM(base_solver.Solver):
             model = ls.model
 
             y = [
-                [model.bool() for j in range(len(data_inst.name))]
+                [model.bool() for j in range(len(data_inst.id))]
                 for i in range(len(data_inst.posUnique))
             ]
             x = [model.bool() for e in range(len(strat_list))]
 
             knapsack_weight = model.sum(
-                model.sum(data_inst.cost[j] * y[i][j] for j in range(len(data_inst.name)))
+                model.sum(data_inst.cost[j] * y[i][j] for j in range(len(data_inst.id)))
                 for i in range(len(data_inst.posUnique))
             )
             model.constraint(knapsack_weight <= money)
@@ -41,7 +41,7 @@ class LSM(base_solver.Solver):
                 rhs = model.sum(strat_list[e][i] * x[e] for e in range(len(strat_list)))
                 model.constraint(lhs == rhs)
 
-            for j in range(len(data_inst.name)):
+            for j in range(len(data_inst.id)):
                 just_one_position = model.sum(y[i][j] for i in range(len(data_inst.posUnique)))
                 model.constraint(just_one_position <= 1)
 
@@ -52,13 +52,12 @@ class LSM(base_solver.Solver):
             obj2 = 0
             teamsize = 0
             for i in range(len(data_inst.posUnique)):
-                teamsize += model.sum(y[i][j] for j in range(len(data_inst.name)))
+                teamsize += model.sum(y[i][j] for j in range(len(data_inst.id)))
                 obj1 += model.sum(
-                    mean(proficiency[data_inst.name[j]]) * y[i][j]
-                    for j in range(len(data_inst.name))
+                    mean(proficiency[data_inst.id[j]]) * y[i][j] for j in range(len(data_inst.id))
                 )
                 # obj1 +=  model.sum( data_inst.score[j] * y[i][j] for j in range(len(data_inst.name)) )
-                obj2 += model.sum(data_inst.cost[j] * y[i][j] for j in range(len(data_inst.name)))
+                obj2 += model.sum(data_inst.cost[j] * y[i][j] for j in range(len(data_inst.id)))
 
             model.constraint(
                 teamsize == model.sum(sum(strat_list[e]) * x[e] for e in range(len(strat_list)))
@@ -88,19 +87,19 @@ class LSM(base_solver.Solver):
             """
 
             for i in range(len(data_inst.posUnique)):
-                for j in range(len(data_inst.name)):
+                for j in range(len(data_inst.id)):
                     if y[i][j].value == 1:
 
                         squad.append(j)
             cap = -1
             cap_score = -1
             for j in squad:
-                if mean(proficiency[data_inst.name[j]]) > cap_score:
+                if mean(proficiency[data_inst.id[j]]) > cap_score:
                     if data_inst.position[j] == "tec":
                         continue
 
                     cap = j
-                    cap_score = mean(proficiency[data_inst.name[cap]])
+                    cap_score = mean(proficiency[data_inst.id[cap]])
 
             for j in squad:
                 if cap == j:
