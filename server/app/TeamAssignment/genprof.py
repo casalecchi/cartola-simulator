@@ -8,7 +8,9 @@ from typing import Dict, List
 class GenProf:
     proficiency: Dict[str, List[float]] = {}
 
-    def __init__(self, data_list: List[instance.Data], round: int):
+    def __init__(
+        self, data_list: List[instance.Data], round: int, predictions: Dict[str, List[int]]
+    ):
 
         for j in range(len(data_list[round].id)):
             self.proficiency[data_list[round].id[j]] = []
@@ -24,13 +26,9 @@ class GenProf:
                         # self.proficiency[data_list[r].name[j]].append(data_list[r].score[j])
                         # agora usamos só o último valor da previsão do ARIMA
                         # TODO - ler o json uma única vez - demora na simulação
-                        ROOT_DIR = Path(__file__).resolve().parent.parent
-                        path = os.path.join(ROOT_DIR, "static/arima/2020-2:0:3.json")
-                        with open(path, "r") as file:
-                            arima = json.load(file)
-                            self.proficiency[data_list[r].id[j]] = [
-                                arima[f"{data_list[r].id[j]}"][r]
-                            ]
+                        self.proficiency[data_list[r].id[j]] = [
+                            predictions[f"{data_list[r].id[j]}"][r]
+                        ]
 
                     # if len(self.proficiency[data_list[r].name[j]]) > 5:
                     #     self.proficiency[data_list[r].name[j]].pop(0)

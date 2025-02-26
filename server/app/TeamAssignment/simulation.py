@@ -1,7 +1,10 @@
-from typing import List
-import instance
 import base_solver
 import genprof
+import instance
+import json
+import os
+from pathlib import Path
+from typing import List
 
 
 class Simulation:
@@ -41,12 +44,17 @@ class Simulation:
         return balance
 
     def solve(self):
-        for r in range(1, len(self.instance)):
+        ROOT_DIR = Path(__file__).resolve().parent.parent
+        path = os.path.join(ROOT_DIR, "static/arima/2020-autoarima.json")
+        file = open(path, "r")
+        arima = json.load(file)
+        file.close()
+        for r in range(len(self.instance)):
             # if r == 29:
             #    print(self.instance[r].dataDir)
             #    continue
-            print("Rodada: " + str(r))
-            self.proficiency = genprof.GenProf(self.instance, r).getProf()
+            print("Rodada: " + str(r + 1))
+            self.proficiency = genprof.GenProf(self.instance, r, arima).getProf()
             squad, cap = self.chosen_solver.solve(
                 self.instance[r], self.strat_list, self.money, self.proficiency
             )

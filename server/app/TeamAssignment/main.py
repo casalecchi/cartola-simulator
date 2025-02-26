@@ -27,7 +27,7 @@ for i in range(len(file_list)):
     dados = instance.Data(data_dir + file_list[i])
     data_list.append(dados)
 
-print("Número de rodadas: " + str(len(data_list) - 1))
+print("Número de rodadas: " + str(len(data_list)))
 """
 for i in range(len(dados.posUnique)):
     print(dados.posUnique[i])
