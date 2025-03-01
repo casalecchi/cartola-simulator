@@ -8,21 +8,12 @@ from pmdarima import auto_arima
 from statsmodels.tsa.arima.model import ARIMA
 from tqdm import tqdm
 from typing import Dict, List, Tuple
-from utils.dir import get_file_list
+from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
 
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
-
-
-def load_all_csvs(csv_dir: str) -> Dict[str, pd.DataFrame]:
-    csv_dict = {}
-    file_list = get_file_list(csv_dir)
-    for file in file_list:
-        path = os.path.join(csv_dir, file)
-        csv_dict[file] = pd.read_csv(path)
-    return csv_dict
 
 
 def get_points(row: pd.DataFrame) -> float:
