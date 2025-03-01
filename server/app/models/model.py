@@ -6,3 +6,4 @@ class ArimaRequest(PlayerRequest):
     p: Optional[int]
     d: Optional[int]
     q: Optional[int]
+    autoarima: Optional[bool]

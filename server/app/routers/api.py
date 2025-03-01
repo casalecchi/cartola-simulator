@@ -1,10 +1,11 @@
+import os
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 from models.common import YearRequest
 from models.model import ArimaRequest
 from models.player import PlayerRequest
 from pathlib import Path
-import os
+from utils.dir import load_all_csvs
 from utils.timeseries import create_timeseries_from_year
 from TeamAssignment.arima import player_arima
 
@@ -28,8 +29,10 @@ def get_player_arima(request: ArimaRequest):
     previous_year = request.year - 1
     PREV_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{previous_year}")
     NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
+    prev_csv = load_all_csvs(PREV_DIR)
+    next_csv = load_all_csvs(NEXT_DIR)
     predictions = player_arima(
-        request.id, PREV_DIR, NEXT_DIR, False, request.p, request.d, request.q
+        request.id, prev_csv, next_csv, request.p, request.d, request.q, request.autoarima
     )
     formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
     return formattedPred
