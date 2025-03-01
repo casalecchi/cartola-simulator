@@ -43,18 +43,16 @@ class Simulation:
 
         return balance
 
-    def solve(self):
-        ROOT_DIR = Path(__file__).resolve().parent.parent
-        path = os.path.join(ROOT_DIR, "static/arima/2020-autoarima.json")
-        file = open(path, "r")
-        arima = json.load(file)
+    def solve(self, predictions_path: str):
+        file = open(predictions_path, "r")
+        predictions = json.load(file)
         file.close()
         for r in range(len(self.instance)):
             # if r == 29:
             #    print(self.instance[r].dataDir)
             #    continue
             print("Rodada: " + str(r + 1))
-            self.proficiency = genprof.GenProf(self.instance, r, arima).getProf()
+            self.proficiency = genprof.GenProf(self.instance, r, predictions).getProf()
             squad, cap = self.chosen_solver.solve(
                 self.instance[r], self.strat_list, self.money, self.proficiency
             )
