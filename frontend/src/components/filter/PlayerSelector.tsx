@@ -24,7 +24,7 @@ export const PlayerSelector: FC<PlayerSelectorProps> = ({ filterStateManager }) 
             options={playersInfo}
             selectedOption={selectedPlayer}
             setSelectedOption={setSelectedPlayer}
-            textFieldLabel={'filter.teamTitle'}
+            textFieldLabel={'filter.playerField'}
         />
     )
 }

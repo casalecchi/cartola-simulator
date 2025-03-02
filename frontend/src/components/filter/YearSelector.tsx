@@ -1,7 +1,7 @@
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { t } from 'i18next'
 import { FC, useEffect } from 'react'
-import { FilterState } from '../../hooks/useFilterStatemanager'
+import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetDataYears } from '../../hooks/useGetYears'
 
 interface YearSelectorProps {
