@@ -3,11 +3,11 @@ import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetTeams } from '../../hooks/useGetTeams'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'
 
-interface TeamSelectorProps {
+interface TeamFieldProps {
     filterStateManager: FilterState
 }
 
-export const TeamSelector: FC<TeamSelectorProps> = ({ filterStateManager }) => {
+export const TeamField: FC<TeamFieldProps> = ({ filterStateManager }) => {
     const { selectedTeam, selectedYear, setSelectedTeam } = filterStateManager
     const { getTeamsInfo, teamsInfo } = useGetTeams()
 

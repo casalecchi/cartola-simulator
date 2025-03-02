@@ -1,18 +1,18 @@
 import { Stack } from '@mui/material'
 import { FC } from 'react'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
-import { PlayerSelector } from './PlayerSelector'
-import { TeamSelector } from './TeamSelector'
-import { YearSelector } from './YearSelector'
+import { PlayerField } from './PlayerField'
+import { TeamField } from './TeamField'
+import { YearField } from './YearField'
 
 export const Filter: FC = () => {
     const manager = useFilterStateManager()
 
     return (
         <Stack alignItems={'center'} direction={'row'} spacing={2}>
-            <YearSelector filterStateManager={manager} />
-            <PlayerSelector filterStateManager={manager} />
-            <TeamSelector filterStateManager={manager} />
+            <YearField filterStateManager={manager} />
+            <PlayerField filterStateManager={manager} />
+            <TeamField filterStateManager={manager} />
         </Stack>
     )
 }

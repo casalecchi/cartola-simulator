@@ -3,11 +3,11 @@ import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetPlayersFromYear } from '../../hooks/useGetPlayersFromYear'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'
 
-interface PlayerSelectorProps {
+interface PlayerFieldProps {
     filterStateManager: FilterState
 }
 
-export const PlayerSelector: FC<PlayerSelectorProps> = ({ filterStateManager }) => {
+export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
     const { selectedPlayer, selectedYear, setSelectedPlayer } = filterStateManager
     const { fetchPlayersInfo, playersInfo } = useGetPlayersFromYear()
 

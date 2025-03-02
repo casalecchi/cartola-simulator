@@ -4,11 +4,11 @@ import { FC, useEffect } from 'react'
 import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetDataYears } from '../../hooks/useGetYears'
 
-interface YearSelectorProps {
+interface YearFieldProps {
     filterStateManager: FilterState
 }
 
-export const YearSelector: FC<YearSelectorProps> = ({ filterStateManager }) => {
+export const YearField: FC<YearFieldProps> = ({ filterStateManager }) => {
     const { selectedYear, setSelectedYear } = filterStateManager
     const { getDataYears, years } = useGetDataYears()
 
