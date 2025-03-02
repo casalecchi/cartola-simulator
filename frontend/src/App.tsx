@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { FC } from 'react'
-import { Api } from './components/Api'
+import { TimeseriesView } from './components/TimeseriesView'
 import { darkTheme } from './configurations/theme'
 import { DataProvider } from './contexts/DataContext'
 
@@ -9,7 +9,7 @@ const App: FC = () => {
         <ThemeProvider theme={darkTheme}>
             <CssBaseline>
                 <DataProvider>
-                    <Api />
+                    <TimeseriesView />
                 </DataProvider>
             </CssBaseline>
         </ThemeProvider>
