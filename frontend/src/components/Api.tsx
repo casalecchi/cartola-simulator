@@ -1,13 +1,16 @@
 import {
     Autocomplete,
+    Avatar,
     Button,
     FormControl,
+    InputAdornment,
     InputLabel,
     MenuItem,
     Select,
     SelectChangeEvent,
     Stack,
     TextField,
+    Typography,
 } from '@mui/material'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
@@ -42,7 +45,7 @@ export const Api: FC = () => {
     }
 
     return (
-        <Stack alignItems={'center'} height={'100dvh'} justifyContent={'center'} width={'100%'}>
+        <Stack alignItems={'center'} height={'100dvh'} maxHeight={'1280px'} width={'100%'}>
             <Stack
                 alignItems={'center'}
                 border={'1px solid lightgray'}
@@ -71,10 +74,41 @@ export const Api: FC = () => {
                         getOptionLabel={(option) => option.name}
                         isOptionEqualToValue={(option, value) => option.id == value?.id}
                         onChange={(_, newValue) => setSelectedPlayer(newValue)}
-                        options={playersInfo}
-                        renderInput={(params) => <TextField {...params} label="Choose a player" />}
-                        sx={{ width: '12rem' }}
+                        options={playersInfo.toSorted((a, b) => (a.name > b.name ? 1 : -1))}
+                        sx={{ width: '20rem' }}
                         value={selectedPlayer}
+                        renderInput={(params) => (
+                            <TextField
+                                {...params}
+                                label={'Choose a player'}
+                                slotProps={{
+                                    input: {
+                                        ...params.InputProps,
+                                        startAdornment: selectedPlayer ? (
+                                            <InputAdornment position="start">
+                                                <Avatar
+                                                    alt={selectedPlayer.name}
+                                                    src={selectedPlayer.photoUrl}
+                                                    sx={{ width: 24, height: 24 }}
+                                                />
+                                            </InputAdornment>
+                                        ) : null,
+                                    },
+                                }}
+                            />
+                        )}
+                        renderOption={(props, option) => (
+                            <Stack
+                                component="li"
+                                {...props}
+                                direction={'row'}
+                                key={option.id}
+                                spacing={2}
+                            >
+                                <Avatar alt={option.name} src={option.photoUrl} />
+                                <Typography>{option.name}</Typography>
+                            </Stack>
+                        )}
                     />
                 </Stack>
                 <Button

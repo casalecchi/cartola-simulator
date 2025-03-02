@@ -1,7 +1,7 @@
 export interface PlayerInfo {
     id: number
     name: string
-    photUrl: string
+    photoUrl: string
     teamId: number
 }
 
