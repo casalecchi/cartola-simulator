@@ -1,4 +1,12 @@
 {
+    "arima": {
+        "d": "Parameter D",
+        "p": "Parameter P",
+        "q": "Parameter Q"
+    },
+    "common": {
+        "run": "Run"
+    },
     "model": {
         "year": "Year"
     },
