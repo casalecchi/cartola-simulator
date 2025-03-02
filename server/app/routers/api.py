@@ -1,3 +1,4 @@
+import json
 import os
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
@@ -11,12 +12,6 @@ from TeamAssignment.arima import player_arima
 
 router = APIRouter()
 ROOT_DIR = Path(__file__).resolve().parent.parent
-
-
-@router.get("/teams")
-def get_teams():
-    json_path = os.path.join(ROOT_DIR, "static/teams.json")
-    return FileResponse(json_path, media_type="application/json")
 
 
 @router.get("/years")
@@ -50,3 +45,14 @@ def get_timeseries_from_player(request: PlayerRequest):
     df, _ = create_timeseries_from_year(request.id, DATA_DIR)
     converted_df = df.reset_index().to_dict(orient="records")
     return converted_df
+
+
+@router.post("/teams")
+def get_teams(request: YearRequest):
+    json_path = os.path.join(ROOT_DIR, f"static/teams/{request.year}.json")
+    teamsInfo = []
+    with open(json_path, "r") as file:
+        teams = json.load(file)
+    for key, value in teams.items():
+        teamsInfo.append({"id": int(key), **value})
+    return teamsInfo

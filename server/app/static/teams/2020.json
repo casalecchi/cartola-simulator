@@ -1,0 +1,122 @@
+{
+  "262": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2018/04/09/Flamengo-65.png",
+    "name": "Flamengo",
+    "code": "FLA",
+    "surname": "Mengão"
+  },
+  "263": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-65.png",
+    "name": "Botafogo",
+    "code": "BOT",
+    "surname": "Glorioso"
+  },
+  "264": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians-2024-65_IYhgZ1u.png",
+    "name": "Corinthians",
+    "code": "COR",
+    "surname": "Timão"
+  },
+  "265": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/bahia_60x60.png",
+    "name": "Bahia",
+    "code": "BAH",
+    "surname": "Tricolor de Aço"
+  },
+  "266": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/fluminense_60x60.png",
+    "name": "Fluminense",
+    "code": "FLU",
+    "surname": "Tricolor"
+  },
+  "267": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/09/04/ESCUDO-VASCO-RGB_65px.png",
+    "name": "Vasco",
+    "code": "VAS",
+    "surname": "Gigante da Colina"
+  },
+  "275": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/palmeiras_60x60.png",
+    "name": "Palmeiras",
+    "code": "PAL",
+    "surname": "Verdão"
+  },
+  "276": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/sao_paulo_60x60.png",
+    "name": "São Paulo",
+    "code": "SAO",
+    "surname": "Tricolor"
+  },
+  "277": {
+    "photoUrl": "https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png",
+    "name": "Santos",
+    "code": "SAN",
+    "surname": ""
+  },
+  "280": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2020/01/01/65.png",
+    "name": "Bragantino",
+    "code": "BGT",
+    "surname": "Massa Bruta"
+  },
+  "282": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2017/11/23/Atletico-Mineiro-escudo65px.png",
+    "name": "Atlético-MG",
+    "code": "CAM",
+    "surname": "Galo"
+  },
+  "284": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/gremio_60x60.png",
+    "name": "Grêmio",
+    "code": "GRE",
+    "surname": "Imortal"
+  },
+  "285": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2016/05/03/inter65.png",
+    "name": "Internacional",
+    "code": "INT",
+    "surname": "Colorado"
+  },
+  "290": {
+    "photoUrl": "https://ssl.gstatic.com/onebox/media/sports/logos/gb8bo2x00XsbvsVp9nGniA_48x48.png",
+    "name": "Goiás",
+    "code": "GOI",
+    "surname": ""
+  },
+  "292": {
+    "photoUrl": "https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png",
+    "name": "Sport",
+    "code": "SPT",
+    "surname": ""
+  },
+  "293": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR-65x65.png",
+    "name": "Athlético-PR",
+    "code": "CAP",
+    "surname": "Furacão"
+  },
+  "294": {
+    "photoUrl": "https://ssl.gstatic.com/onebox/media/sports/logos/LaFlBADLmsjHfGTehCYtuA_48x48.png",
+    "name": "Coritiba",
+    "code": "CFC",
+    "surname": ""
+  },
+  "354": {
+    "photoUrl": "https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png",
+    "name": "Ceará",
+    "code": "CEA",
+    "surname": "Vozão"
+  },
+  "356": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/09/19/65_0000_Fortaleza-2021.png",
+    "name": "Fortaleza",
+    "code": "FOR",
+    "surname": "Leão do Pici"
+  },
+  "373": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2020/07/02/atletico-go-2020-65.png",
+    "name": "Atlético-GO",
+    "code": "ACG",
+    "surname": "Dragão"
+  }
+}
