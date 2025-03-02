@@ -13,6 +13,12 @@ router = APIRouter()
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
 
+@router.get("/teams")
+def get_teams():
+    json_path = os.path.join(ROOT_DIR, "static/teams.json")
+    return FileResponse(json_path, media_type="application/json")
+
+
 @router.get("/years")
 def get_data_years():
     return [2020]

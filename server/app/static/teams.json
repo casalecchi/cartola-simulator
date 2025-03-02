@@ -1,0 +1,404 @@
+{
+  "1": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Outros",
+    "code": "OUT",
+    "surname": ""
+  },
+  "262": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2018/04/09/Flamengo-65.png",
+    "name": "Flamengo",
+    "code": "FLA",
+    "surname": "Mengão"
+  },
+  "263": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-65.png",
+    "name": "Botafogo",
+    "code": "BOT",
+    "surname": "Glorioso"
+  },
+  "264": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians-2024-65_IYhgZ1u.png",
+    "name": "Corinthians",
+    "code": "COR",
+    "surname": "Timão"
+  },
+  "265": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/bahia_60x60.png",
+    "name": "Bahia",
+    "code": "BAH",
+    "surname": "Tricolor de Aço"
+  },
+  "266": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/fluminense_60x60.png",
+    "name": "Fluminense",
+    "code": "FLU",
+    "surname": "Tricolor"
+  },
+  "267": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/09/04/ESCUDO-VASCO-RGB_65px.png",
+    "name": "Vasco",
+    "code": "VAS",
+    "surname": "Gigante da Colina"
+  },
+  "275": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/palmeiras_60x60.png",
+    "name": "Palmeiras",
+    "code": "PAL",
+    "surname": "Verdão"
+  },
+  "276": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/sao_paulo_60x60.png",
+    "name": "São Paulo",
+    "code": "SAO",
+    "surname": "Tricolor"
+  },
+  "277": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Santos",
+    "code": "SAN",
+    "surname": ""
+  },
+  "278": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Portuguesa",
+    "code": "POR",
+    "surname": ""
+  },
+  "279": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Guarani",
+    "code": "GUA",
+    "surname": ""
+  },
+  "280": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2020/01/01/65.png",
+    "name": "Bragantino",
+    "code": "BGT",
+    "surname": "Massa Bruta"
+  },
+  "282": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2017/11/23/Atletico-Mineiro-escudo65px.png",
+    "name": "Atlético-MG",
+    "code": "CAM",
+    "surname": "Galo"
+  },
+  "283": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/02/13/65_cruzeiro-2021.png",
+    "name": "Cruzeiro",
+    "code": "CRU",
+    "surname": "Raposa"
+  },
+  "284": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/14/gremio_60x60.png",
+    "name": "Grêmio",
+    "code": "GRE",
+    "surname": "Imortal"
+  },
+  "285": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2016/05/03/inter65.png",
+    "name": "Internacional",
+    "code": "INT",
+    "surname": "Colorado"
+  },
+  "286": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/04/29/juventude65.png",
+    "name": "Juventude",
+    "code": "JUV",
+    "surname": "Papo"
+  },
+  "287": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2024/04/09/escudo-vitoria-65x65-69284.png",
+    "name": "Vitória",
+    "code": "VIT",
+    "surname": "Vitória"
+  },
+  "288": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2024/03/28/criciuma-65.png",
+    "name": "Criciúma",
+    "code": "CRI",
+    "surname": "Tigre"
+  },
+  "289": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Paraná",
+    "code": "PAR",
+    "surname": ""
+  },
+  "290": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Goiás",
+    "code": "GOI",
+    "surname": ""
+  },
+  "291": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Paysandu",
+    "code": "PAY",
+    "surname": ""
+  },
+  "292": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Sport",
+    "code": "SPT",
+    "surname": ""
+  },
+  "293": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR-65x65.png",
+    "name": "Athlético-PR",
+    "code": "CAP",
+    "surname": "Furacão"
+  },
+  "294": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Coritiba",
+    "code": "CFC",
+    "surname": ""
+  },
+  "296": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Botafogo-SP",
+    "code": "BOT",
+    "surname": ""
+  },
+  "303": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Ponte Preta",
+    "code": "PON",
+    "surname": ""
+  },
+  "306": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Santo André",
+    "code": "SAN",
+    "surname": ""
+  },
+  "307": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "São Bento",
+    "code": "SBE",
+    "surname": ""
+  },
+  "309": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Brasil de Pelotas",
+    "code": "BRA",
+    "surname": ""
+  },
+  "314": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Avaí",
+    "code": "AVA",
+    "surname": ""
+  },
+  "315": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Chapecoense",
+    "code": "CHA",
+    "surname": ""
+  },
+  "316": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Figueirense",
+    "code": "FIG",
+    "surname": ""
+  },
+  "317": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Joinville",
+    "code": "JEC",
+    "surname": ""
+  },
+  "319": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Londrina",
+    "code": "LON",
+    "surname": ""
+  },
+  "321": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Operário-PR",
+    "code": "OPE",
+    "surname": ""
+  },
+  "327": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "América-MG",
+    "code": "AME",
+    "surname": ""
+  },
+  "337": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Confiança",
+    "code": "CON",
+    "surname": ""
+  },
+  "340": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "CRB",
+    "code": "CRB",
+    "surname": ""
+  },
+  "341": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "CSA",
+    "code": "CSA",
+    "surname": ""
+  },
+  "342": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "ASA Arapiraca",
+    "code": "ASA",
+    "surname": ""
+  },
+  "343": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Náutico",
+    "code": "NAU",
+    "surname": ""
+  },
+  "344": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Santa Cruz",
+    "code": "STC",
+    "surname": ""
+  },
+  "346": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Treze",
+    "code": "TRZ",
+    "surname": ""
+  },
+  "347": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Botafogo-PB",
+    "code": "BOT",
+    "surname": ""
+  },
+  "349": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Campinense",
+    "code": "CAM",
+    "surname": ""
+  },
+  "350": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "ABC",
+    "code": "ABC",
+    "surname": ""
+  },
+  "351": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "América-RN",
+    "code": "AME",
+    "surname": ""
+  },
+  "354": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Ceará",
+    "code": "CEA",
+    "surname": ""
+  },
+  "356": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2021/09/19/65_0000_Fortaleza-2021.png",
+    "name": "Fortaleza",
+    "code": "FOR",
+    "surname": "Leão do Pici"
+  },
+  "362": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Moto Club",
+    "code": "MOT",
+    "surname": ""
+  },
+  "363": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Sampaio Corrêa",
+    "code": "SAM",
+    "surname": ""
+  },
+  "364": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Remo",
+    "code": "REM",
+    "surname": ""
+  },
+  "373": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2020/07/02/atletico-go-2020-65.png",
+    "name": "Atlético-GO",
+    "code": "ACG",
+    "surname": "Dragão"
+  },
+  "375": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Vila Nova",
+    "code": "VIL",
+    "surname": ""
+  },
+  "386": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "São Caetano",
+    "code": "SAO",
+    "surname": ""
+  },
+  "388": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Brasiliense",
+    "code": "BRA",
+    "surname": ""
+  },
+  "1349": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Ipatinga",
+    "code": "IPA",
+    "surname": ""
+  },
+  "1371": {
+    "photoUrl": "https://s.sde.globo.com/media/organizations/2014/04/16/cuiaba65.png",
+    "name": "Cuiabá",
+    "code": "CUI",
+    "surname": "Dourado"
+  },
+  "1390": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Icasa",
+    "code": "ICA",
+    "surname": ""
+  },
+  "2190": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Oeste",
+    "code": "OES",
+    "surname": ""
+  },
+  "2193": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Duque de Caxias",
+    "code": "DUQ",
+    "surname": ""
+  },
+  "2197": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Americana",
+    "code": "AME",
+    "surname": ""
+  },
+  "2554": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Grêmio Prudente",
+    "code": "PRU",
+    "surname": ""
+  },
+  "2565": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Luverdense",
+    "code": "LUV",
+    "surname": ""
+  },
+  "3057": {
+    "photoUrl": "https://s.glbimg.com/es/sde/f/organizacoes/escudo_default_65x65.png",
+    "name": "Boa Esporte",
+    "code": "BEC",
+    "surname": ""
+  }
+}
