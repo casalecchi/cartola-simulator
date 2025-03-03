@@ -1,5 +1,6 @@
 {
     "arima": {
+        "autoarima": "Autoarima",
         "d": "Parameter D",
         "p": "Parameter P",
         "q": "Parameter Q"

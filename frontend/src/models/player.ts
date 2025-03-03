@@ -1,3 +1,8 @@
+export interface PlayerDataset {
+    x: number
+    [key: string]: number | null
+}
+
 export interface PlayerInfo {
     id: number
     name: string

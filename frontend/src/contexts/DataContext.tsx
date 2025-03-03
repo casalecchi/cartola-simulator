@@ -1,16 +1,13 @@
 import { FC, PropsWithChildren, createContext, useContext, useMemo } from 'react'
-import { ApiStateManager, useApiStateManager } from '../hooks/useApiStateManager'
 
 interface DataStateContext {
-    apiStateManager: ApiStateManager
+    placeholder: number
 }
 
 export const DataContext = createContext<DataStateContext>({} as DataStateContext)
 
 export const DataProvider: FC<PropsWithChildren> = (props) => {
-    const apiStateManager = useApiStateManager()
-
-    const dataContextValue = useMemo(() => ({ apiStateManager }), [apiStateManager])
+    const dataContextValue = useMemo(() => ({ placeholder: 0 }), [])
 
     return <DataContext.Provider value={dataContextValue}>{props.children}</DataContext.Provider>
 }
