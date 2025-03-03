@@ -22,7 +22,7 @@ export const YearField: FC<YearFieldProps> = ({ filterStateManager }) => {
     }, [])
 
     return (
-        <FormControl fullWidth sx={{ width: '12rem' }}>
+        <FormControl fullWidth sx={{ width: '6rem' }}>
             <InputLabel id="year-select-label">{t('model.year')}</InputLabel>
             <Select
                 label="Year"

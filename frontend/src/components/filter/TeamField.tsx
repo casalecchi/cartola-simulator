@@ -26,7 +26,7 @@ export const TeamField: FC<TeamFieldProps> = ({ filterStateManager }) => {
             selectedOption={selectedTeam}
             setSelectedOption={setSelectedTeam}
             textFieldLabel={'filter.teamTitle'}
-            width={'14rem'}
+            width={'12rem'}
         />
     )
 }

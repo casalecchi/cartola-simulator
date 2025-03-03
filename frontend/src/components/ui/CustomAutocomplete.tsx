@@ -30,7 +30,7 @@ export const CustomAutocomplete = <T,>({
     optionLabel,
     selectedOption,
     textFieldLabel,
-    width = '20rem',
+    width = '18rem',
     setSelectedOption,
 }: CustomAutocompleteProps<T>) => {
     const { t } = useTranslation()

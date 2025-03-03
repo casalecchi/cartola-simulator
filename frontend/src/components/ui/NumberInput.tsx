@@ -17,7 +17,7 @@ export const NumberInput: FC<NumberInputProps> = ({ max = 5, min = 1, title, val
     return (
         <TextField
             label={t(title)}
-            sx={{ width: '12rem' }}
+            sx={{ width: '6rem' }}
             type={'number'}
             value={value}
             onChange={(e) => {
