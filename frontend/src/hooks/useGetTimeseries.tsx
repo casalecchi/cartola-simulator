@@ -2,7 +2,22 @@ import axios from 'axios'
 import { useState } from 'react'
 import { PlayerTimeseries, PlayerTimeseriesPoint } from '../models'
 
-export const useGetTimeseries = () => {
+export interface TimeseriesStateManager {
+    arimaTimeseries: PlayerTimeseries
+    timeseries: PlayerTimeseries
+    fetchArimaTimeseriesFromPlayer: (
+        id: number,
+        year: number,
+        p?: number,
+        d?: number,
+        q?: number,
+        autoarima?: boolean
+    ) => Promise<void>
+    fetchTimeseriesFromPlayer: (id: number, year: number) => Promise<void>
+    resetAllTimeseries: () => void
+}
+
+export const useGetTimeseries = (): TimeseriesStateManager => {
     // TODO - colocar label aqui na função
     const [timeseries, setTimeseries] = useState<PlayerTimeseries>({ data: [] })
     const [arimaTimeseries, setArimaTimeseries] = useState<PlayerTimeseries>({ data: [] })
@@ -46,10 +61,16 @@ export const useGetTimeseries = () => {
         }
     }
 
+    const resetAllTimeseries = () => {
+        setArimaTimeseries({ data: [] })
+        setTimeseries({ data: [] })
+    }
+
     return {
         arimaTimeseries,
         timeseries,
         fetchArimaTimeseriesFromPlayer,
         fetchTimeseriesFromPlayer,
+        resetAllTimeseries,
     }
 }

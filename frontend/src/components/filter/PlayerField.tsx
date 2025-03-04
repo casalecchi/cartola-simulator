@@ -1,4 +1,5 @@
 import { FC, useEffect } from 'react'
+import { useDataContext } from '../../contexts/DataContext'
 import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetPlayersFromYear } from '../../hooks/useGetPlayersFromYear'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'
@@ -8,6 +9,8 @@ interface PlayerFieldProps {
 }
 
 export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
+    const { timeseriesManager } = useDataContext()
+    const { resetAllTimeseries } = timeseriesManager
     const { selectedPlayer, selectedTeam, selectedYear, setSelectedPlayer } = filterStateManager
     const { fetchPlayersInfo, playersInfo } = useGetPlayersFromYear()
 
@@ -15,6 +18,11 @@ export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
         if (selectedYear != '') fetchPlayersInfo(Number(selectedYear))
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedYear])
+
+    useEffect(() => {
+        if (!selectedPlayer) resetAllTimeseries()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedPlayer])
 
     return (
         <CustomAutocomplete

@@ -1,26 +1,20 @@
 import { Button, Stack } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useDataContext } from '../../contexts/DataContext'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
 import { ArimaParameters } from './ArimaParameters'
 import { PlayerField } from './PlayerField'
 import { TeamField } from './TeamField'
 import { YearField } from './YearField'
 
-interface FilterProps {
-    fetchArima: (
-        id: number,
-        year: number,
-        p?: number,
-        d?: number,
-        q?: number,
-        autoarima?: boolean
-    ) => void
-    fetchTimeseries: (id: number, year: number) => void
-}
-
-export const Filter: FC<FilterProps> = ({ fetchArima, fetchTimeseries }) => {
+export const Filter: FC = () => {
     const { t } = useTranslation()
+    const { timeseriesManager } = useDataContext()
+    const {
+        fetchArimaTimeseriesFromPlayer: fetchArima,
+        fetchTimeseriesFromPlayer: fetchTimeseries,
+    } = timeseriesManager
     const manager = useFilterStateManager()
     const { selectedPlayer, selectedYear } = manager
 
