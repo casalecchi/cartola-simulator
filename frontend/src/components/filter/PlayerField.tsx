@@ -8,7 +8,7 @@ interface PlayerFieldProps {
 }
 
 export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
-    const { selectedPlayer, selectedYear, setSelectedPlayer } = filterStateManager
+    const { selectedPlayer, selectedTeam, selectedYear, setSelectedPlayer } = filterStateManager
     const { fetchPlayersInfo, playersInfo } = useGetPlayersFromYear()
 
     useEffect(() => {
@@ -21,10 +21,12 @@ export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
             optionImgUrl={'photoUrl'}
             optionKey={'id'}
             optionLabel={'name'}
-            options={playersInfo}
             selectedOption={selectedPlayer}
             setSelectedOption={setSelectedPlayer}
             textFieldLabel={'filter.playerField'}
+            options={
+                selectedTeam ? playersInfo.filter((p) => p.teamId === selectedTeam.id) : playersInfo
+            }
         />
     )
 }
