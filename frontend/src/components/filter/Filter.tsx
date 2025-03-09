@@ -1,4 +1,4 @@
-import { Button, Stack } from '@mui/material'
+import { Button, CircularProgress, Stack, Typography } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDataContext } from '../../contexts/DataContext'
@@ -12,6 +12,7 @@ export const Filter: FC = () => {
     const { t } = useTranslation()
     const { timeseriesManager } = useDataContext()
     const {
+        loading,
         fetchArimaTimeseriesFromPlayer: fetchArima,
         fetchTimeseriesFromPlayer: fetchTimeseries,
     } = timeseriesManager
@@ -47,7 +48,11 @@ export const Filter: FC = () => {
                     sx={{ width: '7rem' }}
                     variant={'outlined'}
                 >
-                    {t('common.run')}
+                    {loading ? (
+                        <CircularProgress size={'2rem'} />
+                    ) : (
+                        <Typography>{t('common.run')}</Typography>
+                    )}
                 </Button>
             </Stack>
         </Stack>

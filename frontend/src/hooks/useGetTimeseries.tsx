@@ -4,6 +4,7 @@ import { PlayerTimeseries, PlayerTimeseriesPoint } from '../models'
 
 export interface TimeseriesStateManager {
     arimaTimeseries: PlayerTimeseries
+    loading: boolean
     timeseries: PlayerTimeseries
     fetchArimaTimeseriesFromPlayer: (
         id: number,
@@ -19,8 +20,9 @@ export interface TimeseriesStateManager {
 
 export const useGetTimeseries = (): TimeseriesStateManager => {
     // TODO - colocar label aqui na função
-    const [timeseries, setTimeseries] = useState<PlayerTimeseries>({ data: [] })
     const [arimaTimeseries, setArimaTimeseries] = useState<PlayerTimeseries>({ data: [] })
+    const [arimaLoading, setArimaLoading] = useState(false)
+    const [timeseries, setTimeseries] = useState<PlayerTimeseries>({ data: [] })
 
     const fetchTimeseriesFromPlayer = async (id: number, year: number) => {
         try {
@@ -45,6 +47,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
         autoarima?: boolean
     ) => {
         try {
+            setArimaLoading(true)
             const response = await axios.post('http://localhost:8000/api/player-arima', {
                 id,
                 year,
@@ -54,6 +57,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
                 autoarima,
             })
             setArimaTimeseries({ data: response.data as PlayerTimeseriesPoint[] })
+            setArimaLoading(false)
         } catch (error) {
             console.error(
                 `Error fetching arima timeseries from player with id=${id} for year=${year}. ${error}`
@@ -68,6 +72,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
 
     return {
         arimaTimeseries,
+        loading: arimaLoading,
         timeseries,
         fetchArimaTimeseriesFromPlayer,
         fetchTimeseriesFromPlayer,
