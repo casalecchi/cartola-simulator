@@ -1,9 +1,10 @@
 import pandas as pd
 import numpy as np
 import os
+from keras.callbacks import EarlyStopping
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from tqdm import tqdm
 from typing import Dict
 from utils.dir import load_all_csvs
@@ -40,44 +41,47 @@ def player_lstm(
 
     prev_timeseries = get_timeseries(player_id, previous_csvs)
     next_timeseries = get_timeseries(player_id, next_csvs)
+    next_timeseries = np.nan_to_num(next_timeseries)
 
-    for r in tqdm(range(1, 39)):
-        context = np.concatenate([prev_timeseries, next_timeseries[:r]])
-        if np.count_nonzero(~np.isnan(context)) < n_steps:
-            print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
-            return  # Pular jogadores que não têm dados suficientes
+    if np.count_nonzero(~np.isnan(prev_timeseries)) < n_steps:
+        print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
+        return  # Pular jogadores que não têm dados suficientes
 
-        context = np.nan_to_num(context)
-        # Escalar os dados
-        scaler = MinMaxScaler(feature_range=(0, 1))
-        valid_context = context.reshape(-1, 1)
-        scaler.fit(valid_context)
-        scaled_context = scaler.transform(valid_context)
+    context = np.nan_to_num(prev_timeseries)
+    scaler = StandardScaler()
+    scaled_prev = scaler.fit_transform(context.reshape(-1, 1))
 
-        # Criar sequências de treino com os dados de 2019
-        X_train, y_train = create_sequences(scaled_context, n_steps)
+    X_train, y_train = create_sequences(scaled_prev, n_steps)
 
-        # Reshape para o formato que o LSTM espera (amostras, passos temporais, número de features)
-        try:
-            X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
-        except IndexError as e:
-            print(f"Erro ao reshaping os dados do jogador {player_id}: {e}")
-            return
+    # Reshape para o formato que o LSTM espera (amostras, passos temporais, número de features)
+    try:
+        X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
+    except IndexError as e:
+        print(f"Erro ao reshaping os dados do jogador {player_id}: {e}")
+        return
 
-        # --- DEFINIÇÃO DO MODELO ---
-        model = Sequential()
-        model.add(LSTM(32, return_sequences=True, input_shape=(n_steps, 1)))
-        model.add(LSTM(16, return_sequences=False))
-        model.add(Dense(1))
-        model.compile(optimizer="adam", loss="mean_squared_error")
-        model.fit(X_train, y_train, epochs=10, batch_size=4, verbose=0)
+    # --- DEFINIÇÃO DO MODELO ---
+    model = Sequential()
+    model.add(LSTM(32, input_shape=(n_steps, 1)))
+    model.add(Dense(1))
+    model.compile(optimizer="adam", loss="mean_squared_error")
+    early_stop = EarlyStopping(monitor="loss", patience=5, restore_best_weights=True)
+    model.fit(X_train, y_train, epochs=30, batch_size=4, callbacks=[early_stop], verbose=0)
 
-        # Usar as últimas n_steps de 2019 do jogador como ponto de partida
-        input_seq = scaled_context[-n_steps:].reshape(1, n_steps, 1)
-        pred = model.predict(input_seq, verbose=0)
+    # Começa com as últimas n_steps da temporada passada
+    current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
+
+    for r in tqdm(range(38)):
+        pred = model.predict(current_sequence, verbose=0)
         prediction = scaler.inverse_transform(pred)[0, 0]
-
         predictions.append(prediction)
+
+        # Adicionar valor real da rodada R
+        real_value = next_timeseries[r]
+        scaled_real = scaler.transform(np.array([[real_value]]))
+        current_sequence = np.append(
+            current_sequence[:, 1:, :], scaled_real.reshape(1, 1, 1), axis=1
+        )
 
     print(predictions)
     return predictions
