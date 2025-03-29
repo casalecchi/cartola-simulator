@@ -13,6 +13,7 @@ from tqdm import tqdm
 from typing import Dict, List, Tuple
 from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
+from utils.timeseries import get_timeseries
 
 
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -28,21 +29,11 @@ def create_sequences(data, n_steps):
     return np.array(X), np.array(y)
 
 
-def get_timeseries(id: int, csvs: Dict[str, pd.DataFrame]):
-    timeseries = np.array([])
-    for i in range(1, 39):
-        df = csvs[f"rodada-{i:02}.csv"]
-        row = df[df["atletas.atleta_id"] == id]
-        points = np.nan if row.empty else row.iloc[0]["atletas.pontos_num"].item()
-        timeseries = np.append(timeseries, points)
-    return timeseries
-
-
 def player_lstm(
     player_id: int,
     previous_csvs: Dict[str, pd.DataFrame],
     next_csvs: Dict[str, pd.DataFrame],
-    n_steps: int = 5,
+    n_steps=5,
 ):
     predictions = []
 

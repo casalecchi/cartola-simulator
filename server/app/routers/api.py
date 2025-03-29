@@ -3,12 +3,13 @@ import os
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 from models.common import YearRequest
-from models.model import ArimaRequest
+from models.model import ArimaRequest, LSTMRequest
 from models.player import PlayerRequest
 from pathlib import Path
 from utils.dir import load_all_csvs
 from utils.timeseries import create_timeseries_from_year
 from TeamAssignment.arima import player_arima
+from TeamAssignment.lstm import player_lstm
 
 router = APIRouter()
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -35,6 +36,18 @@ def get_player_arima(request: ArimaRequest):
     predictions = player_arima(
         request.id, prev_csv, next_csv, request.p, request.d, request.q, request.autoarima
     )
+    formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
+    return formattedPred
+
+
+@router.post("/player-lstm")
+def get_player_lstm(request: LSTMRequest):
+    previous_year = request.year - 1
+    PREV_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{previous_year}")
+    NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
+    prev_csv = load_all_csvs(PREV_DIR)
+    next_csv = load_all_csvs(NEXT_DIR)
+    predictions = player_lstm(request.id, prev_csv, next_csv, request.n_steps)
     formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
     return formattedPred
 

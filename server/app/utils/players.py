@@ -1,8 +1,11 @@
+import json
+import numpy as np
 import os
 import pandas as pd
 from pathlib import Path
 from typing import Dict, Optional, Tuple
-from utils.dir import get_file_list
+from utils.dir import get_file_list, load_all_csvs
+from utils.timeseries import get_timeseries
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,7 +36,19 @@ def get_players_from_season(
     return players
 
 
+def generate_json_players(year: int):
+    data_dir = os.path.join(ROOT_DIR, f"TeamAssignment/data/{year}")
+    file_dir = os.path.join(ROOT_DIR, f"static/players/{year}.json")
+    get_players_from_season(data_dir, file_dir)
+    with open(file_dir, "r") as f:
+        players = json.load(f)
+    prev_csvs = load_all_csvs(os.path.join(ROOT_DIR, f"TeamAssignment/data/{year-1}"))
+    for player in players:
+        prev_timeseries = get_timeseries(player["id"], prev_csvs)
+        player["validLSTMValues"] = np.count_nonzero(~np.isnan(prev_timeseries))
+    with open(file_dir, "w") as f:
+        json.dump(players, f, indent=4, ensure_ascii=False)
+
+
 if __name__ == "__main__":
-    t = get_players_from_season(
-        os.path.join(ROOT_DIR, "TeamAssignment/data/2020"), "static/players/2020.json"
-    )
+    generate_json_players(2020)
