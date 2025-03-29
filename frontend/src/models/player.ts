@@ -8,6 +8,7 @@ export interface PlayerInfo {
     name: string
     photoUrl: string
     teamId: number
+    validLSTMValues: number
 }
 
 export interface PlayerTimeseries {

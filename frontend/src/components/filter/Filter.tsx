@@ -24,10 +24,10 @@ export const Filter: FC = () => {
             fetchArima(
                 selectedPlayer.id,
                 Number(selectedYear),
-                manager.p,
-                manager.d,
-                manager.q,
-                manager.autoarima
+                manager.arimaOptions.p,
+                manager.arimaOptions.d,
+                manager.arimaOptions.q,
+                manager.arimaOptions.autoarima
             )
             fetchTimeseries(selectedPlayer.id, Number(selectedYear))
         }

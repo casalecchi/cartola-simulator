@@ -10,27 +10,38 @@ interface ArimaParametersProps {
 
 export const ArimaParameters: FC<ArimaParametersProps> = ({ filterStateManager }) => {
     const { t } = useTranslation()
-    const { autoarima, d, p, q, setAutoarima, setD, setP, setQ } = filterStateManager
+    const { arimaOptions, setArimaOptions } = filterStateManager
+    const { autoarima, d, p, q } = arimaOptions
 
     return (
         <Stack direction={'row'} spacing={2}>
             <Button
-                onClick={() => setAutoarima((prev) => !prev)}
+                onClick={() => setArimaOptions((prev) => ({ ...prev, autoarima: !prev.autoarima }))}
                 sx={{ width: '9rem' }}
                 variant={autoarima ? 'contained' : 'outlined'}
             >
                 {t('arima.autoarima').toUpperCase()}
             </Button>
-            <NumberInput disabled={autoarima} setValue={setP} title={'arima.p'} value={p} />
+            <NumberInput
+                disabled={autoarima}
+                setValue={(value) => setArimaOptions((prev) => ({ ...prev, p: value }))}
+                title={'arima.p'}
+                value={p}
+            />
             <NumberInput
                 disabled={autoarima}
                 max={2}
                 min={0}
-                setValue={setD}
+                setValue={(value) => setArimaOptions((prev) => ({ ...prev, d: value }))}
                 title={'arima.d'}
                 value={d}
             />
-            <NumberInput disabled={autoarima} setValue={setQ} title={'arima.q'} value={q} />
+            <NumberInput
+                disabled={autoarima}
+                setValue={(value) => setArimaOptions((prev) => ({ ...prev, q: value }))}
+                title={'arima.q'}
+                value={q}
+            />
         </Stack>
     )
 }
