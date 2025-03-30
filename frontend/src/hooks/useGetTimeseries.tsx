@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { PlayerTimeseries, PlayerTimeseriesPoint } from '../models'
 
 export interface TimeseriesStateManager {
-    arimaTimeseries: PlayerTimeseries
     loading: boolean
+    modelTimeseries: PlayerTimeseries
     timeseries: PlayerTimeseries
     fetchArimaTimeseriesFromPlayer: (
         id: number,
@@ -14,13 +14,13 @@ export interface TimeseriesStateManager {
         q?: number,
         autoarima?: boolean
     ) => Promise<void>
+    fetchLSTMTimeseriesFromPlayer: (id: number, year: number, nSteps: number) => Promise<void>
     fetchTimeseriesFromPlayer: (id: number, year: number) => Promise<void>
     resetAllTimeseries: () => void
 }
 
 export const useGetTimeseries = (): TimeseriesStateManager => {
-    // TODO - colocar label aqui na função
-    const [arimaTimeseries, setArimaTimeseries] = useState<PlayerTimeseries>({ data: [] })
+    const [modelTimeseries, setModelTimeseries] = useState<PlayerTimeseries>({ data: [] })
     const [arimaLoading, setArimaLoading] = useState(false)
     const [timeseries, setTimeseries] = useState<PlayerTimeseries>({ data: [] })
 
@@ -56,7 +56,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
                 q,
                 autoarima,
             })
-            setArimaTimeseries({ data: response.data as PlayerTimeseriesPoint[] })
+            setModelTimeseries({ data: response.data as PlayerTimeseriesPoint[] })
             setArimaLoading(false)
         } catch (error) {
             console.error(
@@ -65,16 +65,34 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
         }
     }
 
+    const fetchLSTMTimeseriesFromPlayer = async (id: number, year: number, nSteps: number) => {
+        try {
+            setArimaLoading(true)
+            const response = await axios.post('http://localhost:8000/api/player-lstm', {
+                id,
+                year,
+                n_steps: nSteps,
+            })
+            setModelTimeseries({ data: response.data as PlayerTimeseriesPoint[] })
+        } catch (error) {
+            console.error(
+                `Error fetching arima timeseries from player with id=${id} for year=${year}. ${error}`
+            )
+        }
+        setArimaLoading(false)
+    }
+
     const resetAllTimeseries = () => {
-        setArimaTimeseries({ data: [] })
+        setModelTimeseries({ data: [] })
         setTimeseries({ data: [] })
     }
 
     return {
-        arimaTimeseries,
         loading: arimaLoading,
+        modelTimeseries,
         timeseries,
         fetchArimaTimeseriesFromPlayer,
+        fetchLSTMTimeseriesFromPlayer,
         fetchTimeseriesFromPlayer,
         resetAllTimeseries,
     }

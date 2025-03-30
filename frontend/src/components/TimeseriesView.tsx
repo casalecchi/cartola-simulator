@@ -6,22 +6,26 @@ import { PlayerDataset } from '../models'
 import { generateTickPositions, mergeTimeseries } from '../utils'
 import { Filter } from './filter/Filter'
 
-export const TimeseriesView: FC = () => {
+interface TimeseriesViewProps {
+    model: 'arima' | 'lstm'
+}
+
+export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
     const [dataset, setDataset] = useState<PlayerDataset[]>([])
     const { timeseriesManager } = useDataContext()
-    const { arimaTimeseries, timeseries } = timeseriesManager
+    const { modelTimeseries, timeseries } = timeseriesManager
 
     useEffect(() => {
-        if (timeseries.data.length > 0 || arimaTimeseries.data.length > 0) {
-            setDataset(mergeTimeseries(timeseries, 'yReal', arimaTimeseries, 'yPred'))
+        if (timeseries.data.length > 0 || modelTimeseries.data.length > 0) {
+            setDataset(mergeTimeseries(timeseries, 'yReal', modelTimeseries, 'yPred'))
         } else {
             setDataset([])
         }
-    }, [timeseries, arimaTimeseries])
+    }, [timeseries, modelTimeseries])
 
     return (
         <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
-            <Filter />
+            <Filter model={model} />
             <LineChart
                 dataset={dataset}
                 grid={{ vertical: true, horizontal: true }}

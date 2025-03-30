@@ -8,27 +8,37 @@ import { PlayerField } from './PlayerField'
 import { TeamField } from './TeamField'
 import { YearField } from './YearField'
 
-export const Filter: FC = () => {
+interface FilterProps {
+    model: 'arima' | 'lstm'
+}
+
+export const Filter: FC<FilterProps> = ({ model }) => {
     const { t } = useTranslation()
     const { timeseriesManager } = useDataContext()
     const {
         loading,
         fetchArimaTimeseriesFromPlayer: fetchArima,
+        fetchLSTMTimeseriesFromPlayer: fetchLSTM,
         fetchTimeseriesFromPlayer: fetchTimeseries,
     } = timeseriesManager
     const manager = useFilterStateManager()
     const { selectedPlayer, selectedYear } = manager
+    const isArima = model == 'arima'
 
     const handleClick = () => {
         if (selectedPlayer && selectedYear != '') {
-            fetchArima(
-                selectedPlayer.id,
-                Number(selectedYear),
-                manager.arimaOptions.p,
-                manager.arimaOptions.d,
-                manager.arimaOptions.q,
-                manager.arimaOptions.autoarima
-            )
+            if (isArima) {
+                fetchArima(
+                    selectedPlayer.id,
+                    Number(selectedYear),
+                    manager.arimaOptions.p,
+                    manager.arimaOptions.d,
+                    manager.arimaOptions.q,
+                    manager.arimaOptions.autoarima
+                )
+            } else {
+                fetchLSTM(selectedPlayer.id, Number(selectedYear), manager.lstmOptions.nSteps)
+            }
             fetchTimeseries(selectedPlayer.id, Number(selectedYear))
         }
     }
@@ -41,7 +51,7 @@ export const Filter: FC = () => {
                 <TeamField filterStateManager={manager} />
             </Stack>
             <Stack direction={'row'} spacing={2}>
-                <ArimaParameters filterStateManager={manager} />
+                {isArima ? <ArimaParameters filterStateManager={manager} /> : <>N STEPS</>}
                 <Button
                     disabled={!selectedPlayer}
                     onClick={handleClick}
