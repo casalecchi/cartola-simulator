@@ -68,7 +68,8 @@ def get_timeseries_from_player(request: PlayerRequest):
 
 @router.post("/otm")
 def get_otm(request: OtmRequest):
-    json_path = os.path.join(ROOT_DIR, f"static/otm/{request.year}-{request.code}.json")
+    code = constants.MODEL_MAP[request.code]
+    json_path = os.path.join(ROOT_DIR, f"static/otm/{request.year}-{code}.json")
     otm = []
     with open(json_path, "r") as file:
         teams = json.load(file)

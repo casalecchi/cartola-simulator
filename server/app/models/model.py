@@ -1,3 +1,4 @@
+from pydantic import BaseModel
 from typing import Optional
 from models.player import PlayerRequest
 
@@ -13,6 +14,6 @@ class LSTMRequest(PlayerRequest):
     n_steps: Optional[int]
 
 
-class OtmRequest:
+class OtmRequest(BaseModel):
     year: int
     code: str
