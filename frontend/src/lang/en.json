@@ -8,11 +8,14 @@
     "common": {
         "run": "Run"
     },
-    "model": {
-        "year": "Year"
-    },
     "filter": {
         "playerField": "Choose a player",
         "teamTitle": "Filter by Team"
+    },
+    "lstm": {
+        "nSteps": "N Steps"
+    },
+    "model": {
+        "year": "Year"
     }
 }

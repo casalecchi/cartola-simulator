@@ -2,12 +2,12 @@ import { Stack } from '@mui/material'
 import { LineChart } from '@mui/x-charts'
 import { FC, useEffect, useState } from 'react'
 import { useDataContext } from '../contexts/DataContext'
-import { PlayerDataset } from '../models'
+import { Model, PlayerDataset } from '../models'
 import { generateTickPositions, mergeTimeseries } from '../utils'
 import { Filter } from './filter/Filter'
 
 interface TimeseriesViewProps {
-    model: 'arima' | 'lstm'
+    model: Model
 }
 
 export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {

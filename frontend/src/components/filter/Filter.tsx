@@ -3,13 +3,15 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDataContext } from '../../contexts/DataContext'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
+import { Model } from '../../models'
 import { ArimaParameters } from './ArimaParameters'
+import { LSTMParameters } from './LSTMParameters'
 import { PlayerField } from './PlayerField'
 import { TeamField } from './TeamField'
 import { YearField } from './YearField'
 
 interface FilterProps {
-    model: 'arima' | 'lstm'
+    model: Model
 }
 
 export const Filter: FC<FilterProps> = ({ model }) => {
@@ -47,11 +49,15 @@ export const Filter: FC<FilterProps> = ({ model }) => {
         <Stack spacing={2}>
             <Stack alignItems={'center'} direction={'row'} spacing={2}>
                 <YearField filterStateManager={manager} />
-                <PlayerField filterStateManager={manager} />
+                <PlayerField filterStateManager={manager} model={model} />
                 <TeamField filterStateManager={manager} />
             </Stack>
             <Stack direction={'row'} spacing={2}>
-                {isArima ? <ArimaParameters filterStateManager={manager} /> : <>N STEPS</>}
+                {isArima ? (
+                    <ArimaParameters filterStateManager={manager} />
+                ) : (
+                    <LSTMParameters filterStateManager={manager} />
+                )}
                 <Button
                     disabled={!selectedPlayer}
                     onClick={handleClick}

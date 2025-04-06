@@ -1,3 +1,5 @@
+export type Model = 'arima' | 'lstm'
+
 export interface ArimaOptions {
     autoarima: boolean
     d: number

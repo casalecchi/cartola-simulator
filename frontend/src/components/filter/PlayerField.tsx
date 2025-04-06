@@ -1,18 +1,29 @@
-import { FC, useEffect } from 'react'
+import { FC, useEffect, useMemo } from 'react'
 import { useDataContext } from '../../contexts/DataContext'
 import { FilterState } from '../../hooks/useFilterStateManager'
 import { useGetPlayersFromYear } from '../../hooks/useGetPlayersFromYear'
+import { Model } from '../../models'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'
 
 interface PlayerFieldProps {
     filterStateManager: FilterState
+    model: Model
 }
 
-export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
+export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager, model }) => {
     const { timeseriesManager } = useDataContext()
     const { resetAllTimeseries } = timeseriesManager
     const { selectedPlayer, selectedTeam, selectedYear, setSelectedPlayer } = filterStateManager
     const { fetchPlayersInfo, playersInfo } = useGetPlayersFromYear()
+
+    const players = useMemo(() => {
+        if (model == 'lstm') {
+            return playersInfo.filter(
+                (p) => p.validLSTMValues > filterStateManager.lstmOptions.nSteps
+            )
+        }
+        return playersInfo
+    }, [model, playersInfo, filterStateManager.lstmOptions.nSteps])
 
     useEffect(() => {
         if (selectedYear != '') fetchPlayersInfo(Number(selectedYear))
@@ -29,12 +40,10 @@ export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager }) => {
             optionImgUrl={'photoUrl'}
             optionKey={'id'}
             optionLabel={'name'}
+            options={selectedTeam ? players.filter((p) => p.teamId === selectedTeam.id) : players}
             selectedOption={selectedPlayer}
             setSelectedOption={setSelectedPlayer}
             textFieldLabel={'filter.playerField'}
-            options={
-                selectedTeam ? playersInfo.filter((p) => p.teamId === selectedTeam.id) : playersInfo
-            }
         />
     )
 }
