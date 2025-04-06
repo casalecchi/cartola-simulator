@@ -1,7 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { FC } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { TimeseriesView } from './components/TimeseriesView'
+import { TimeseriesView } from './components/pages/TimeseriesView'
 import { darkTheme } from './configurations/theme'
 import { DataProvider } from './contexts/DataContext'
 
