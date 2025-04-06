@@ -3,9 +3,10 @@ import os
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 from models.common import YearRequest
-from models.model import ArimaRequest, LSTMRequest
+from models.model import ArimaRequest, LSTMRequest, OtmRequest
 from models.player import PlayerRequest
 from pathlib import Path
+from utils import constants
 from utils.dir import load_all_csvs
 from utils.timeseries import create_timeseries_from_year
 from TeamAssignment.arima import player_arima
@@ -13,6 +14,11 @@ from TeamAssignment.lstm import player_lstm
 
 router = APIRouter()
 ROOT_DIR = Path(__file__).resolve().parent.parent
+
+
+@router.get("/otm-options")
+def get_otm_options():
+    return constants.AVAILABLE_MODELS
 
 
 @router.get("/years")
@@ -58,6 +64,17 @@ def get_timeseries_from_player(request: PlayerRequest):
     df, _ = create_timeseries_from_year(request.id, DATA_DIR)
     converted_df = df.reset_index().to_dict(orient="records")
     return converted_df
+
+
+@router.post("/otm")
+def get_otm(request: OtmRequest):
+    json_path = os.path.join(ROOT_DIR, f"static/otm/{request.year}-{request.code}.json")
+    otm = []
+    with open(json_path, "r") as file:
+        teams = json.load(file)
+    for key, value in teams.items():
+        otm.append({"round": int(key), **value})
+    return otm
 
 
 @router.post("/teams")

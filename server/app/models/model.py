@@ -11,3 +11,8 @@ class ArimaRequest(PlayerRequest):
 
 class LSTMRequest(PlayerRequest):
     n_steps: Optional[int]
+
+
+class OtmRequest:
+    year: int
+    code: str

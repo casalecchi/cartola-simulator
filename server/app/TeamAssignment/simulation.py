@@ -43,14 +43,17 @@ class Simulation:
 
         return balance
 
-    def solve(self, predictions_path: str):
+    def solve(self, predictions_path: str, teams_path: str):
         file = open(predictions_path, "r")
         predictions = json.load(file)
         file.close()
+
+        optimal_teams = {}
         for r in range(len(self.instance)):
             # if r == 29:
             #    print(self.instance[r].dataDir)
             #    continue
+            points = 0
             print("Rodada: " + str(r + 1))
             self.proficiency = genprof.GenProf(self.instance, r, predictions).getProf()
             squad, cap = self.chosen_solver.solve(
@@ -61,8 +64,10 @@ class Simulation:
 
             for j in squad:
                 self.point += self.instance[r].score[j]
+                points += self.instance[r].score[j]
 
             self.point += self.instance[r].score[cap]
+            points += self.instance[r].score[cap]
 
             aux_money = self.money
 
@@ -78,5 +83,17 @@ class Simulation:
                 + str(round(self.money - aux_money, 2))
             )
             print("")
+
+            team = []
+            for p in squad:
+                id = self.instance[r].id[p]
+                team.append(
+                    {"id": id, "points": self.instance[r].score[p], "pred": predictions[str(id)][r]}
+                )
+
+            optimal_teams[r + 1] = {"team": team, "cap": self.instance[r].id[cap]}
+
+        with open(teams_path, "w") as f:
+            json.dump(optimal_teams, f, indent=4, ensure_ascii=False)
 
         return self.point

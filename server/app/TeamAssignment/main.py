@@ -5,7 +5,7 @@ import simulation
 from pathlib import Path
 
 
-def main(year: int, predictions_path: str):
+def main(year: int, predictions_path: str, teams_path: str):
     listOfStrat = [
         [1, 1, 2, 2, 3, 3],
         [1, 1, 2, 2, 4, 2],
@@ -47,13 +47,14 @@ def main(year: int, predictions_path: str):
     # print(res.sec_objval)
 
     Teste = simulation.Simulation(data_list, listOfStrat, def_solver)
-    point = Teste.solve(predictions_path)
+    point = Teste.solve(predictions_path, teams_path)
     print("Pontuação Final: " + str(round(point, 2)))
 
 
 if __name__ == "__main__":
     YEAR = 2020
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    MODEL_PATH = os.path.join(ROOT_DIR, "static/arima/2020-autoarima.json")
+    MODEL_PATH = os.path.join(ROOT_DIR, "static/lstm/2020-5.json")
+    TEAMS_PATH = os.path.join(ROOT_DIR, "static/otm/tetse.json")
 
-    main(YEAR, MODEL_PATH)
+    main(YEAR, MODEL_PATH, TEAMS_PATH)
