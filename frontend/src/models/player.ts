@@ -8,6 +8,7 @@ export interface PlayerInfo {
     name: string
     photoUrl: string
     teamId: number
+    positionId: PlayerPosition
     validLSTMValues: number
 }
 
@@ -25,3 +26,5 @@ export interface PlayerOptimal {
     points: number
     pred: number
 }
+
+export type PlayerPosition = 'gk' | 'wb' | 'cb' | 'mid' | 'st' | 'man'

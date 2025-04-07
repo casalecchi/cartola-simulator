@@ -36,7 +36,7 @@ export const TeamsView: FC = () => {
                 </Button>
             </Stack>
             {optimals.length > 0 && (
-                <Stack direction={'row'} width={'100%'}>
+                <Stack direction={'row'} spacing={5} width={'100%'}>
                     <Stack width={'30%'}>
                         <TeamTable team={teamStateManager.team} year={Number(selectedYear)} />
                     </Stack>

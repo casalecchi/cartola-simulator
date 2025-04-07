@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { OptimalTeam } from '../models'
-import { roundNumber } from '../utils'
+import { getPoints, roundNumber } from '../utils'
 
 export interface TeamState {
     barSeries: number[]
@@ -13,12 +13,7 @@ export const useTeamStateManager = ({ optimals }: { optimals: OptimalTeam[] }): 
     const [round, setRound] = useState<number>(1)
     const [team, setTeam] = useState<OptimalTeam>()
 
-    const barSeries = optimals.map((team) =>
-        roundNumber(
-            team.team.reduce((acc, player) => acc + player.points, 0),
-            2
-        )
-    )
+    const barSeries = optimals.map((team) => roundNumber(getPoints(team), 2))
 
     useEffect(() => {
         if (optimals.length > 0) setTeam(optimals[round - 1])

@@ -18,7 +18,7 @@
     "model": {
         "model": "Model",
         "round": "Round",
-        "totalPoints": "Total Points",
+        "totalPoints": "Acc. Total Points",
         "year": "Year"
     }
 }

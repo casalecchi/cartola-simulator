@@ -23,7 +23,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
     const data = useMemo(() => barSeries.slice(0, round), [barSeries, round])
 
     return (
-        <Stack alignItems={'center'} px={3} spacing={2}>
+        <Stack alignItems={'center'} spacing={2}>
             <Stack alignItems={'center'} direction={'row'} spacing={1}>
                 <CustomIconButton
                     disabled={round == 1}

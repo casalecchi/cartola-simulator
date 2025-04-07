@@ -13,7 +13,7 @@ import {
 import { FC, useEffect } from 'react'
 import { useGetPlayersFromYear } from '../hooks/useGetPlayersFromYear'
 import { OptimalTeam } from '../models'
-import { roundNumber } from '../utils'
+import { getPoints, roundNumber } from '../utils'
 
 const numberCellStyles: SxProps = {
     px: 1,
@@ -40,15 +40,25 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                     <TableHead>
                         <TableRow>
                             <TableCell></TableCell>
-                            <TableCell sx={{ ...numberCellStyles }}>Real</TableCell>
-                            <TableCell sx={{ ...numberCellStyles }}>Prediction</TableCell>
+                            <TableCell></TableCell>
+                            <TableCell align={'right'} sx={{ ...numberCellStyles }}>
+                                Real
+                            </TableCell>
+                            <TableCell align={'right'} sx={{ ...numberCellStyles }}>
+                                Prediction
+                            </TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {team.team.map((player) => {
                             const pInfo = findPlayer(player.id)
+                            const isCap = team.cap === pInfo?.id
+
                             return (
                                 <TableRow key={`${team.round}-${player.id}`}>
+                                    <TableCell>
+                                        <Typography>{pInfo?.positionId.toUpperCase()}</Typography>
+                                    </TableCell>
                                     <TableCell>
                                         <Stack
                                             alignItems={'center'}
@@ -56,7 +66,6 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                             p={1}
                                             spacing={2}
                                         >
-                                            <Typography>POS</Typography>
                                             <Avatar
                                                 alt={pInfo?.name}
                                                 src={pInfo?.photoUrl}
@@ -64,33 +73,42 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                                 variant={'circular'}
                                             />
                                             <Typography>{pInfo?.name}</Typography>
+                                            {isCap && (
+                                                <Typography
+                                                    sx={{
+                                                        backgroundColor: 'orange',
+                                                        height: '1.5rem',
+                                                        width: '1.5rem',
+                                                        borderRadius: '50%',
+                                                        border: '2px solid white',
+
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                    }}
+                                                >
+                                                    C
+                                                </Typography>
+                                            )}
                                         </Stack>
                                     </TableCell>
-                                    <TableCell sx={{ ...numberCellStyles }}>
+                                    <TableCell align={'right'} sx={{ ...numberCellStyles }}>
                                         {player.points}
                                     </TableCell>
-                                    <TableCell sx={{ ...numberCellStyles }}>
+                                    <TableCell align={'right'} sx={{ ...numberCellStyles }}>
                                         {roundNumber(player.pred, 2)}
                                     </TableCell>
                                 </TableRow>
                             )
                         })}
                         <TableRow>
-                            <TableCell sx={{ py: 1 }}></TableCell>
-                            <TableCell sx={{ py: 1, ...numberCellStyles }}>
-                                {roundNumber(
-                                    team.team.reduce((acc, player) => acc + player.points, 0),
-                                    2
-                                )}
+                            <TableCell></TableCell>
+                            <TableCell></TableCell>
+                            <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
+                                {roundNumber(getPoints(team), 2)}
                             </TableCell>
-                            <TableCell sx={{ py: 1, ...numberCellStyles }}>
-                                {roundNumber(
-                                    team.team.reduce(
-                                        (acc, player) => acc + roundNumber(player.pred, 2),
-                                        0
-                                    ),
-                                    2
-                                )}
+                            <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
+                                {roundNumber(getPoints(team, 'pred'), 2)}
                             </TableCell>
                         </TableRow>
                     </TableBody>
