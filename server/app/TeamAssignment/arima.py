@@ -75,7 +75,7 @@ def all_players_arima(
     year: int,
     previous_csvs: Dict[str, pd.DataFrame],
     next_csvs: Dict[str, pd.DataFrame],
-    players: Dict[int, Tuple[str, str, int]],
+    players: Dict[int, Tuple[str, str, int, str]],
     p=2,
     d=0,
     q=3,

@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from pathlib import Path
 from typing import Dict, Optional, Tuple
+from utils import constants
 from utils.dir import get_file_list, load_all_csvs
 from utils.timeseries import get_timeseries
 
@@ -12,9 +13,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 
 def get_players_from_season(
     data_dir: str, static_dir: Optional[str] = None
-) -> Dict[int, Tuple[str, str, int]]:
+) -> Dict[int, Tuple[str, str, int, str]]:
     file_list = get_file_list(data_dir)
-    players: Dict[int, Tuple[str, str, int]] = {}
+    players: Dict[int, Tuple[str, str, int, str]] = {}
     for file in file_list:
         df = pd.read_csv(f"{data_dir}/" + file)
         for _, row in df.iterrows():
@@ -25,9 +26,12 @@ def get_players_from_season(
             photo = row["atletas.foto"]
             photo_url = photo.replace("FORMATO", "220x220") if isinstance(photo, str) else ""
             teamId = row["atletas.clube_id"]
-            players[id] = (name, photo_url, teamId)
+            positionId = constants.POSITION_MAP[row["atletas.posicao_id"]]
+            players[id] = (name, photo_url, teamId, positionId)
 
-    df = pd.DataFrame.from_dict(players, columns=["name", "photoUrl", "teamId"], orient="index")
+    df = pd.DataFrame.from_dict(
+        players, columns=["name", "photoUrl", "teamId", "positionId"], orient="index"
+    )
     df.index.name = "id"
     if static_dir is not None:
         path = os.path.join(ROOT_DIR, static_dir)

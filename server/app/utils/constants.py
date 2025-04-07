@@ -11,3 +11,5 @@ MODEL_MAP = {
     "ARIMA (P=2, D=0, Q=3)": "2:0:3",
     "LSTM (N STEPS=5)": "l5",
 }
+
+POSITION_MAP = {"gol": "gk", "lat": "wb", "zag": "cb", "mei": "mid", "ata": "st", "tec": "man"}

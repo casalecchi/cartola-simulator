@@ -90,7 +90,7 @@ def all_players_lstm(
     year: int,
     previous_csvs: Dict[str, pd.DataFrame],
     next_csvs: Dict[str, pd.DataFrame],
-    players: Dict[int, Tuple[str, str, int]],
+    players: Dict[int, Tuple[str, str, int, str]],
     n_steps=5,
     num_workers=0,
 ):
