@@ -5,6 +5,7 @@ import { useDataContext } from '../../contexts/DataContext'
 import { Model, PlayerDataset } from '../../models'
 import { generateTickPositions, mergeTimeseries } from '../../utils'
 import { Filter } from '../filter/Filter'
+import { BackButton } from '../ui/BackButton'
 
 interface TimeseriesViewProps {
     model: Model
@@ -24,24 +25,27 @@ export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
     }, [timeseries, modelTimeseries])
 
     return (
-        <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
-            <Filter model={model} />
-            <LineChart
-                dataset={dataset}
-                grid={{ vertical: true, horizontal: true }}
-                sx={{ border: '1px solid lightgray', borderRadius: '1rem' }}
-                xAxis={[{ data: generateTickPositions(1, 38) }]}
-                series={[
-                    {
-                        dataKey: 'yReal',
-                        label: 'Real',
-                    },
-                    {
-                        dataKey: 'yPred',
-                        label: 'Prediction',
-                    },
-                ]}
-            />
+        <Stack position={'relative'}>
+            <BackButton />
+            <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
+                <Filter model={model} />
+                <LineChart
+                    dataset={dataset}
+                    grid={{ vertical: true, horizontal: true }}
+                    sx={{ border: '1px solid lightgray', borderRadius: '1rem' }}
+                    xAxis={[{ data: generateTickPositions(1, 38) }]}
+                    series={[
+                        {
+                            dataKey: 'yReal',
+                            label: 'Real',
+                        },
+                        {
+                            dataKey: 'yPred',
+                            label: 'Prediction',
+                        },
+                    ]}
+                />
+            </Stack>
         </Stack>
     )
 }

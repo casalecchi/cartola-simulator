@@ -8,6 +8,7 @@ import { ModelField } from '../filter/ModelField'
 import { YearField } from '../filter/YearField'
 import { TeamController } from '../TeamController'
 import { TeamTable } from '../TeamTable'
+import { BackButton } from '../ui/BackButton'
 
 export const TeamsView: FC = () => {
     const { t } = useTranslation()
@@ -22,29 +23,32 @@ export const TeamsView: FC = () => {
     }
 
     return (
-        <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
-            <Stack direction={'row'} spacing={2}>
-                <YearField filterStateManager={filterStateManager} />
-                <ModelField filterStateManager={filterStateManager} />
-                <Button
-                    disabled={!filterStateManager.selectedModel}
-                    onClick={handleRun}
-                    sx={{ width: '7rem' }}
-                    variant={'outlined'}
-                >
-                    <Typography>{t('common.run')}</Typography>
-                </Button>
-            </Stack>
-            {optimals.length > 0 && (
-                <Stack direction={'row'} spacing={5} width={'100%'}>
-                    <Stack width={'30%'}>
-                        <TeamTable team={teamStateManager.team} year={Number(selectedYear)} />
-                    </Stack>
-                    <Stack width={'70%'}>
-                        <TeamController manager={teamStateManager} />
-                    </Stack>
+        <Stack position={'relative'}>
+            <BackButton />
+            <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
+                <Stack direction={'row'} spacing={2}>
+                    <YearField filterStateManager={filterStateManager} />
+                    <ModelField filterStateManager={filterStateManager} />
+                    <Button
+                        disabled={!filterStateManager.selectedModel}
+                        onClick={handleRun}
+                        sx={{ width: '7rem' }}
+                        variant={'outlined'}
+                    >
+                        <Typography>{t('common.run')}</Typography>
+                    </Button>
                 </Stack>
-            )}
+                {optimals.length > 0 && (
+                    <Stack direction={'row'} spacing={5} width={'100%'}>
+                        <Stack width={'30%'}>
+                            <TeamTable team={teamStateManager.team} year={Number(selectedYear)} />
+                        </Stack>
+                        <Stack width={'70%'}>
+                            <TeamController manager={teamStateManager} />
+                        </Stack>
+                    </Stack>
+                )}
+            </Stack>
         </Stack>
     )
 }
