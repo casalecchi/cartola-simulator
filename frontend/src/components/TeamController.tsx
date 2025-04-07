@@ -23,7 +23,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
     const data = useMemo(() => barSeries.slice(0, round), [barSeries, round])
 
     return (
-        <Stack alignItems={'center'} spacing={2}>
+        <Stack alignItems={'center'} height={'100%'} justifyContent={'center'} spacing={2}>
             <Stack alignItems={'center'} direction={'row'} spacing={1}>
                 <CustomIconButton
                     disabled={round == 1}
@@ -49,7 +49,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
             </Stack>
             <BarChart
                 grid={{ vertical: true, horizontal: true }}
-                height={290}
+                height={400}
                 onAxisClick={(_, d) => setRound((d?.axisValue as number) ?? round)}
                 series={[{ data }]}
                 sx={{ border: '1px solid lightgray', borderRadius: '1rem' }}
@@ -62,7 +62,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
                 spacing={1}
                 sx={{ border: '1px solid lightgrey', borderRadius: '1rem' }}
             >
-                <Typography sx={{ fontSize: '2rem' }}>
+                <Typography sx={{ fontSize: '2rem', fontWeight: 700 }}>
                     {roundNumber(
                         data.reduce((acc, d) => acc + d, 0),
                         2
