@@ -6,11 +6,13 @@ export interface FilterState {
     arimaOptions: ArimaOptions
     lstmOptions: LSTMOptions
     selectedPlayer?: PlayerInfo
+    selectedModel?: string
     selectedTeam?: TeamInfo
     selectedYear: string
     setArimaOptions: Dispatch<SetStateAction<ArimaOptions>>
     setLstmOptions: Dispatch<SetStateAction<LSTMOptions>>
     setSelectedPlayer: (value?: PlayerInfo) => void
+    setSelectedModel: (value?: string) => void
     setSelectedTeam: (value?: TeamInfo) => void
     setSelectedYear: (value: string) => void
 }
@@ -23,6 +25,7 @@ export const useFilterStateManager = (): FilterState => {
         autoarima: false,
     })
     const [lstmOptions, setLstmOptions] = useState<LSTMOptions>({ nSteps: 5 })
+    const [selectedModel, setSelectedModel] = useState<string>()
     const [selectedPlayer, setSelectedPlayer] = useState<PlayerInfo>()
     const [selectedTeam, setSelectedTeam] = useState<TeamInfo>()
     const [selectedYear, setSelectedYear] = useState<string>('')
@@ -31,11 +34,13 @@ export const useFilterStateManager = (): FilterState => {
         arimaOptions,
         lstmOptions,
         selectedPlayer,
+        selectedModel,
         selectedTeam,
         selectedYear,
         setArimaOptions,
         setLstmOptions,
         setSelectedPlayer,
+        setSelectedModel,
         setSelectedTeam,
         setSelectedYear,
     }

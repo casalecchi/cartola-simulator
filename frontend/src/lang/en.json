@@ -16,6 +16,9 @@
         "nSteps": "N Steps"
     },
     "model": {
+        "model": "Model",
+        "round": "Round",
+        "totalPoints": "Total Points",
         "year": "Year"
     }
 }

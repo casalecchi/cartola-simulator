@@ -19,3 +19,9 @@ export interface PlayerTimeseriesPoint {
     round: number
     points: number
 }
+
+export interface PlayerOptimal {
+    id: number
+    points: number
+    pred: number
+}

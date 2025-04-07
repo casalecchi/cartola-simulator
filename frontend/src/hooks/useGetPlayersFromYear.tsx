@@ -14,5 +14,7 @@ export const useGetPlayersFromYear = () => {
         }
     }
 
-    return { fetchPlayersInfo, playersInfo }
+    const findPlayer = (id: number) => playersInfo.find((player) => player.id === id)
+
+    return { fetchPlayersInfo, findPlayer, playersInfo }
 }
