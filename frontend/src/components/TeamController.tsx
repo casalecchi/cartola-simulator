@@ -9,8 +9,9 @@ import { BarChart } from '@mui/x-charts'
 import { FC, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TeamState } from '../hooks/useTeamStateManager'
-import { generateTickPositions, roundNumber } from '../utils'
+import { generateTickPositions } from '../utils'
 import { CustomIconButton } from './ui/CustomIconButton'
+import { ValueCard } from './ui/ValueCard'
 
 interface TeamControllerProps {
     manager: TeamState
@@ -21,6 +22,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
     const { barSeries, round, setRound } = manager
 
     const data = useMemo(() => barSeries.slice(0, round), [barSeries, round])
+    const accumulated = useMemo(() => data.reduce((acc, d) => acc + d, 0), [data])
 
     return (
         <Stack alignItems={'center'} height={'100%'} justifyContent={'center'} spacing={2}>
@@ -55,20 +57,9 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
                 sx={{ border: '1px solid lightgray', borderRadius: '1rem' }}
                 xAxis={[{ data: generateTickPositions(1, round), scaleType: 'band' }]}
             />
-            <Stack
-                alignItems={'center'}
-                justifyContent={'center'}
-                p={3}
-                spacing={1}
-                sx={{ border: '1px solid lightgrey', borderRadius: '1rem' }}
-            >
-                <Typography sx={{ fontSize: '2rem', fontWeight: 700 }}>
-                    {roundNumber(
-                        data.reduce((acc, d) => acc + d, 0),
-                        2
-                    )}
-                </Typography>
-                <Typography>{t('model.totalPoints').toUpperCase()}</Typography>
+            <Stack direction={'row'} spacing={2}>
+                <ValueCard label={'model.totalPoints'} value={accumulated} />
+                <ValueCard label={'model.average'} value={accumulated / round} />
             </Stack>
         </Stack>
     )

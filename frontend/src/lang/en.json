@@ -16,6 +16,7 @@
         "nSteps": "N Steps"
     },
     "model": {
+        "average": "Average Points",
         "model": "Model",
         "round": "Round",
         "totalPoints": "Acc. Total Points",
