@@ -10,6 +10,7 @@ from tqdm import tqdm
 from typing import Dict, List, Tuple
 from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
+from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error
 
 
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -83,6 +84,10 @@ def all_players_arima(
     autoarima=False,
 ) -> pd.DataFrame:
     all_predictions: Dict[int, List[float]] = {}
+    total_mae = 0
+    total_mse = 0
+    total_rmse = 0
+    jogadores_validos = 0
 
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
@@ -97,12 +102,38 @@ def all_players_arima(
                 try:
                     key = futures[future]
                     all_predictions[key] = future.result()
+                    pred = future.result()
+                    if pred != [0 for _ in range(38)] and len(pred) == 38:
+                        real = []
+                        for r in range(1, len(next_csvs) + 1):
+                            df = next_csvs[f"rodada-{r:02}.csv"]
+                            row = df[df["atletas.atleta_id"] == key]
+                            points = get_points(row)
+                            real.append(points)
+
+                        if len(real) == 38:
+                            mae = mean_absolute_error(real, pred)
+                            mse = mean_squared_error(real, pred)
+                            rmse = root_mean_squared_error(real, pred)
+                            total_mae += mae
+                            total_mse += mse
+                            total_rmse += rmse
+                            jogadores_validos += 1
+
                 except Exception as e:
                     print(f"Erro no future loop. {e}")
     else:
         for id in tqdm(players.keys()):
             pred = player_arima(id, previous_csvs, next_csvs, p, d, q, autoarima)
             all_predictions[id] = pred
+
+    print(f"Validos: {jogadores_validos}")
+    avg_mae = total_mae / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (MAE) entre todos os jogadores com ARIMA: {avg_mae:.2f}")
+    avg_mse = total_mse / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (MSE) entre todos os jogadores com ARIMA: {avg_mse:.2f}")
+    avg_rmse = total_rmse / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (RMSE) entre todos os jogadores com ARIMA: {avg_rmse:.2f}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
     path = os.path.join(ROOT_DIR, f"static/arima/{year}-1:1:1.json")
