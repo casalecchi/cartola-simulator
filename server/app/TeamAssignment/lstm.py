@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import warnings
+from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from keras.callbacks import EarlyStopping
 from keras.models import Sequential
@@ -95,6 +96,10 @@ def all_players_lstm(
     num_workers=0,
 ):
     all_predictions: Dict[int, List[float]] = {}
+    total_mae = 0
+    total_mse = 0
+    total_rmse = 0
+    jogadores_validos = 0
 
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
@@ -108,13 +113,35 @@ def all_players_lstm(
             ):
                 try:
                     key = futures[future]
+                    pred = future.result()
                     all_predictions[key] = future.result()
+                    # Calcular MAE se for válido
+                    if pred != [0.0 for _ in range(38)] and len(pred) == 38:
+                        real = get_timeseries(key, next_csvs)
+                        real = np.nan_to_num(real)
+
+                        if len(real) == 38:
+                            mae = mean_absolute_error(real, pred)
+                            mse = mean_squared_error(real, pred)
+                            rmse = root_mean_squared_error(real, pred)
+                            total_mae += mae
+                            total_mse += mse
+                            total_rmse += rmse
+                            jogadores_validos += 1
                 except Exception as e:
                     print(f"Erro no future loop. {e}")
     else:
         for id in tqdm(players.keys()):
             pred = player_lstm(id, previous_csvs, next_csvs, n_steps)
             all_predictions[id] = pred
+
+    print(f"Validos {jogadores_validos}")
+    avg_mae = total_mae / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (MAE) entre todos os jogadores: {avg_mae:.2f}")
+    avg_mse = total_mse / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (MSE) entre todos os jogadores com ARIMA: {avg_mse:.2f}")
+    avg_rmse = total_rmse / jogadores_validos if jogadores_validos > 0 else None
+    print(f"\nErro absoluto médio (RMSE) entre todos os jogadores com ARIMA: {avg_rmse:.2f}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
     path = os.path.join(ROOT_DIR, f"static/lstm/{year}-{n_steps}.json")
