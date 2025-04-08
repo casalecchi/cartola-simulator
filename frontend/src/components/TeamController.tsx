@@ -1,16 +1,9 @@
-import {
-    KeyboardArrowLeft,
-    KeyboardArrowRight,
-    KeyboardDoubleArrowLeft,
-    KeyboardDoubleArrowRight,
-} from '@mui/icons-material'
-import { Stack, Typography } from '@mui/material'
+import { Stack } from '@mui/material'
 import { BarChart } from '@mui/x-charts'
 import { FC, useMemo } from 'react'
-import { useTranslation } from 'react-i18next'
 import { TeamState } from '../hooks/useTeamStateManager'
 import { generateTickPositions } from '../utils'
-import { CustomIconButton } from './ui/CustomIconButton'
+import { Stepper } from './ui/Stepper'
 import { ValueCard } from './ui/ValueCard'
 
 interface TeamControllerProps {
@@ -18,7 +11,6 @@ interface TeamControllerProps {
 }
 
 export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
-    const { t } = useTranslation()
     const { barSeries, round, setRound } = manager
 
     const data = useMemo(() => barSeries.slice(0, round), [barSeries, round])
@@ -26,29 +18,7 @@ export const TeamController: FC<TeamControllerProps> = ({ manager }) => {
 
     return (
         <Stack alignItems={'center'} height={'100%'} justifyContent={'center'} spacing={2}>
-            <Stack alignItems={'center'} direction={'row'} spacing={1}>
-                <CustomIconButton
-                    disabled={round == 1}
-                    Icon={KeyboardDoubleArrowLeft}
-                    onClick={() => setRound((prev) => (prev - 10 > 0 ? prev - 10 : 1))}
-                />
-                <CustomIconButton
-                    disabled={round == 1}
-                    Icon={KeyboardArrowLeft}
-                    onClick={() => setRound((prev) => prev - 1)}
-                />
-                <Typography>{`${t('model.round')} ${round}`}</Typography>
-                <CustomIconButton
-                    disabled={round == 38}
-                    Icon={KeyboardArrowRight}
-                    onClick={() => setRound((prev) => prev + 1)}
-                />
-                <CustomIconButton
-                    disabled={round == 38}
-                    Icon={KeyboardDoubleArrowRight}
-                    onClick={() => setRound((prev) => (prev + 10 <= 38 ? prev + 10 : 38))}
-                />
-            </Stack>
+            <Stepper label={'model.round'} max={38} min={1} setValue={setRound} value={round} />
             <BarChart
                 grid={{ vertical: true, horizontal: true }}
                 height={400}
