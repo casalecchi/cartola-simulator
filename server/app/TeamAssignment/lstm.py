@@ -5,9 +5,12 @@ import os
 import warnings
 from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from keras import optimizers
 from keras.callbacks import EarlyStopping
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
+from keras_tuner import HyperModel
+from keras_tuner.tuners import RandomSearch
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
@@ -19,6 +22,32 @@ from utils.timeseries import get_timeseries
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
+
+
+class LSTMHyperModel(HyperModel):
+    def __init__(self, input_shape):
+        self.input_shape = input_shape
+
+    def build(self, hp):
+        model = Sequential()
+        model.add(
+            LSTM(
+                units=hp.Int("units_1", 64, 416, step=32),
+                return_sequences=True,
+                input_shape=self.input_shape,
+            )
+        )
+        model.add(
+            LSTM(
+                units=hp.Int("units_2", 32, 160, step=16),
+            )
+        )
+        model.add(Dense(1))
+
+        learning_rate = hp.Float("learning_rate", 1e-4, 1e-2, sampling="log")
+        optimizer = optimizers.Adam(learning_rate=learning_rate)
+        model.compile(optimizer=optimizer, loss="mae")
+        return model
 
 
 # Função para criar sequências de entrada e saída
@@ -50,27 +79,75 @@ def player_lstm(
     scaler = StandardScaler()
     scaled_prev = scaler.fit_transform(context.reshape(-1, 1))
 
-    X_train, y_train = create_sequences(scaled_prev, n_steps)
+    def build_data(n_steps):
+        X, y = create_sequences(scaled_prev, n_steps)
+        X = X.reshape((X.shape[0], X.shape[1], 1))
+        return X, y
 
-    # Reshape para o formato que o LSTM espera (amostras, passos temporais, número de features)
-    try:
-        X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
-    except IndexError as e:
-        print(f"Erro ao reshaping os dados do jogador {player_id}: {e}")
-        return
+    # Hiperparâmetro tunável fora do modelo: n_steps
+    def model_builder(hp):
+        n_steps = hp.Int("n_steps", min_value=2, max_value=10, step=1)
+        epochs = hp.Int("epochs", min_value=100, max_value=1200, step=50)
+        X_train, y_train = build_data(n_steps)
 
-    # --- DEFINIÇÃO DO MODELO ---
-    model = Sequential()
-    model.add(LSTM(64, return_sequences=True, input_shape=(n_steps, 1), dropout=0.2))
-    model.add(LSTM(32))
-    model.add(Dense(1))
+        model = LSTMHyperModel(input_shape=(n_steps, 1)).build(hp)
 
-    model.compile(optimizer="adam", loss="mae")
-    early_stop = EarlyStopping(monitor="loss", patience=20, restore_best_weights=True)
-    model.fit(X_train, y_train, epochs=500, batch_size=1, callbacks=[early_stop], verbose=0)
+        model.fit(
+            X_train,
+            y_train,
+            validation_split=0.2,
+            epochs=epochs,
+            batch_size=4,
+            callbacks=[EarlyStopping(patience=5)],
+            verbose=0,
+        )
+
+        return model
+
+    tuner = RandomSearch(
+        model_builder,
+        objective="val_loss",
+        max_trials=30,
+        executions_per_trial=1,
+        directory="lstm_tuning",
+        project_name=f"player_{player_id}",
+        overwrite=True,
+    )
+
+    # Dummy data just to allow initial build (Keras Tuner requer isso no começo)
+    dummy_X, dummy_y = build_data(5)
+    tuner.search_space_summary()
+    tuner.search(
+        dummy_X, dummy_y, epochs=1, batch_size=1, validation_split=0.2, verbose=0
+    )  # inicia espaço
+    tuner.oracle.max_trials = 30  # definir max_trials depois de ajustar n_steps dinamicamente
+
+    tuner.search(dummy_X, dummy_y, verbose=0)  # real tuning
+
+    best_hp = tuner.get_best_hyperparameters(1)[0]
+    best_n_steps = best_hp.get("n_steps")
+    best_epochs = best_hp.get("epochs")
+
+    X_train, y_train = build_data(best_n_steps)
+    print(f"Y: {y_train}")
+    print(f"prev: {prev_timeseries}")
+    print(f"scaled_prev: {scaled_prev}")
+    print("Best hyperparameters:", best_hp.values)
+    print("Exemplo de y_train:", y_train[:10])
+    print("Variância de y_train:", np.var(y_train))
+
+    model = LSTMHyperModel(input_shape=(best_n_steps, 1)).build(best_hp)
+    model.fit(
+        X_train,
+        y_train,
+        epochs=best_epochs,
+        batch_size=4,
+        callbacks=[EarlyStopping(patience=10)],
+        verbose=0,
+    )
 
     # Começa com as últimas n_steps da temporada passada
-    current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
+    current_sequence = scaled_prev[-best_n_steps:].reshape(1, best_n_steps, 1)
 
     for r in range(38):
         pred = model.predict(current_sequence, verbose=0)
@@ -161,19 +238,19 @@ if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
     path_2019 = os.path.join(data_dir, "2019")
     path_2020 = os.path.join(data_dir, "2020")
-    run_lstm(2020, path_2019, path_2020, num_workers=10)
+    # run_lstm(2020, path_2019, path_2020, num_workers=10)
 
-    # Código para teste rápido do modelo
-    # prev_csv = load_all_csvs(path_2019)
-    # next_csv = load_all_csvs(path_2020)
-    # preds = player_lstm(83257, prev_csv, next_csv)
-    # reais = get_timeseries(83257, next_csv)
+    # Código para teste rápido do modelo 87863 83257 38162 38750
+    prev_csv = load_all_csvs(path_2019)
+    next_csv = load_all_csvs(path_2020)
+    preds = player_lstm(38162, prev_csv, next_csv)
+    reais = get_timeseries(38162, next_csv)
 
-    # import matplotlib.pyplot as plt
+    import matplotlib.pyplot as plt
 
-    # plt.plot(reais, label="Real")
-    # plt.plot(preds, label="Previsto")
-    # plt.title("Previsão rodada a rodada")
-    # plt.legend()
-    # plt.grid(True)
-    # plt.show()
+    plt.plot(reais, label="Real")
+    plt.plot(preds, label="Previsto")
+    plt.title("Previsão rodada a rodada")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
