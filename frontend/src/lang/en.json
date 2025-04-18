@@ -7,7 +7,9 @@
     },
     "common": {
         "play": "Play",
-        "run": "Run"
+        "prediction": "Prediction",
+        "run": "Run",
+        "total": "Total"
     },
     "filter": {
         "playerField": "Choose a player",

@@ -2,6 +2,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import { FC } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HomeView } from './components/pages/HomeView'
+import { SimulatorView } from './components/pages/SimulatorView'
 import { TeamsView } from './components/pages/TeamsView'
 import { TimeseriesView } from './components/pages/TimeseriesView'
 import { darkTheme } from './configurations/theme'
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     {
         path: '/lstm',
         element: <TimeseriesView model={'lstm'} />,
+    },
+    {
+        path: '/simulator',
+        element: <SimulatorView />,
     },
     { path: '/teams', element: <TeamsView /> },
 ])

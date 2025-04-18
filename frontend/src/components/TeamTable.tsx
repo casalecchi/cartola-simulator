@@ -42,9 +42,6 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                             <TableCell></TableCell>
                             <TableCell></TableCell>
                             <TableCell align={'right'} sx={{ ...numberCellStyles }}>
-                                Real
-                            </TableCell>
-                            <TableCell align={'right'} sx={{ ...numberCellStyles }}>
                                 Prediction
                             </TableCell>
                         </TableRow>
@@ -81,7 +78,6 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                                         width: '1.5rem',
                                                         borderRadius: '50%',
                                                         border: '2px solid white',
-
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
@@ -93,9 +89,6 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                         </Stack>
                                     </TableCell>
                                     <TableCell align={'right'} sx={{ ...numberCellStyles }}>
-                                        {player.points}
-                                    </TableCell>
-                                    <TableCell align={'right'} sx={{ ...numberCellStyles }}>
                                         {roundNumber(player.pred, 2)}
                                     </TableCell>
                                 </TableRow>
@@ -104,9 +97,6 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                         <TableRow>
                             <TableCell></TableCell>
                             <TableCell></TableCell>
-                            <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
-                                {roundNumber(getPoints(team), 2)}
-                            </TableCell>
                             <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
                                 {roundNumber(getPoints(team, 'pred'), 2)}
                             </TableCell>

@@ -1,14 +1,16 @@
+import { Position } from './builder'
+
 export interface PlayerDataset {
     x: number
     [key: string]: number | null
 }
 
-export interface PlayerInfo {
+export interface Player {
     id: number
     name: string
     photoUrl: string
     teamId: number
-    positionId: PlayerPosition
+    positionId: Position
     validLSTMValues: number
 }
 
@@ -26,5 +28,3 @@ export interface PlayerOptimal {
     points: number
     pred: number
 }
-
-export type PlayerPosition = 'gk' | 'wb' | 'cb' | 'mid' | 'st' | 'man'

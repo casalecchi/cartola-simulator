@@ -1,50 +1,42 @@
-import { Button, Stack, Typography } from '@mui/material'
-import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Stack } from '@mui/material'
+import { FC, useState } from 'react'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
 import { useGetOptimal } from '../../hooks/useGetOptimal'
 import { useTeamStateManager } from '../../hooks/useTeamStateManager'
-import { ModelField } from '../filter/ModelField'
-import { YearField } from '../filter/YearField'
-import { TeamController } from '../TeamController'
+import { PlayDialog } from '../PlayDialog'
+import { TeamBuilder } from '../TeamBuilder'
 import { TeamTable } from '../TeamTable'
-import { BackButton } from '../ui/BackButton'
 
 export const TeamsView: FC = () => {
-    const { t } = useTranslation()
+    const [openDialog, setOpenDialog] = useState(true)
+
     const filterStateManager = useFilterStateManager()
     const { selectedYear, selectedModel } = filterStateManager
     const { getOptimals, optimals } = useGetOptimal()
     const teamStateManager = useTeamStateManager({ optimals })
 
-    const handleRun = () => {
+    const runModel = () => {
         if (!selectedModel) return
         getOptimals(Number(selectedYear), selectedModel.toUpperCase())
     }
 
     return (
         <Stack position={'relative'}>
-            <BackButton />
+            <PlayDialog
+                filterStateManager={filterStateManager}
+                open={openDialog}
+                runModel={runModel}
+                setOpen={setOpenDialog}
+            />
             <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
-                <Stack direction={'row'} spacing={2}>
-                    <YearField filterStateManager={filterStateManager} />
-                    <ModelField filterStateManager={filterStateManager} />
-                    <Button
-                        disabled={!filterStateManager.selectedModel}
-                        onClick={handleRun}
-                        sx={{ width: '7rem' }}
-                        variant={'outlined'}
-                    >
-                        <Typography>{t('common.run')}</Typography>
-                    </Button>
-                </Stack>
                 {optimals.length > 0 && (
                     <Stack direction={'row'} spacing={5} width={'100%'}>
-                        <Stack width={'30%'}>
+                        <Stack width={'50%'}>
                             <TeamTable team={teamStateManager.team} year={Number(selectedYear)} />
                         </Stack>
-                        <Stack width={'70%'}>
-                            <TeamController manager={teamStateManager} />
+                        <Stack width={'50%'}>
+                            {/* <TeamController manager={teamStateManager} /> */}
+                            <TeamBuilder year={Number(selectedYear)} />
                         </Stack>
                     </Stack>
                 )}

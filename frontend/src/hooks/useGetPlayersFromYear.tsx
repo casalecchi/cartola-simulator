@@ -1,14 +1,14 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { PlayerInfo } from '../models/player'
+import { Player } from '../models/player'
 
 export const useGetPlayersFromYear = () => {
-    const [playersInfo, setPlayersInfo] = useState<PlayerInfo[]>([])
+    const [playersInfo, setPlayersInfo] = useState<Player[]>([])
 
     const fetchPlayersInfo = async (year: number) => {
         try {
             const response = await axios.post('http://localhost:8000/api/players', { year })
-            setPlayersInfo(response.data as PlayerInfo[])
+            setPlayersInfo(response.data as Player[])
         } catch (error) {
             console.error(`Error fetching players from ${year}. ${error}`)
         }
