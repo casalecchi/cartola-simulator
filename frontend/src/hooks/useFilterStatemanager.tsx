@@ -28,7 +28,7 @@ export const useFilterStateManager = (): FilterState => {
     const [selectedModel, setSelectedModel] = useState<string>()
     const [selectedPlayer, setSelectedPlayer] = useState<PlayerInfo>()
     const [selectedTeam, setSelectedTeam] = useState<TeamInfo>()
-    const [selectedYear, setSelectedYear] = useState<string>('')
+    const [selectedYear, setSelectedYear] = useState<string>('2020')
 
     return {
         arimaOptions,

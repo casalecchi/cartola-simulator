@@ -5,7 +5,7 @@ import { useDataContext } from '../../contexts/DataContext'
 import { Model, PlayerDataset } from '../../models'
 import { generateTickPositions, mergeTimeseries } from '../../utils'
 import { Filter } from '../filter/Filter'
-import { BackButton } from '../ui/BackButton'
+import { HomeButton } from '../ui/HomeButton'
 
 interface TimeseriesViewProps {
     model: Model
@@ -26,7 +26,7 @@ export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
 
     return (
         <Stack position={'relative'}>
-            <BackButton />
+            <HomeButton topLeft />
             <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
                 <Filter model={model} />
                 <LineChart

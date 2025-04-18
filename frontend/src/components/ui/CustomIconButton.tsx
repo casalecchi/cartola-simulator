@@ -4,13 +4,19 @@ import colors from '../../styles/colors.module.scss'
 
 interface CustomIconButtonProps extends IconButtonProps {
     Icon: FC<SvgIconProps>
+    iconColor?: string
     disabled?: boolean
 }
 
-export const CustomIconButton: FC<CustomIconButtonProps> = ({ Icon, disabled, ...props }) => {
+export const CustomIconButton: FC<CustomIconButtonProps> = ({
+    Icon,
+    iconColor,
+    disabled,
+    ...props
+}) => {
     return (
         <IconButton {...props} disabled={disabled}>
-            <Icon sx={{ color: colors.info, opacity: disabled ? 0.3 : 1 }} />
+            <Icon sx={{ color: iconColor ?? colors.info, opacity: disabled ? 0.3 : 1 }} />
         </IconButton>
     )
 }
