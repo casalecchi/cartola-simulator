@@ -2,7 +2,17 @@ import { useState } from 'react'
 import { BuilderTeam, Player } from '../models'
 import { EMPTY_TEAM } from '../utils'
 
+export interface BuilderState {
+    captain?: Player
+    team: BuilderTeam
+    addPlayer: (player: Player) => void
+    removePlayer: (player: Player) => void
+    resetTeam: () => void
+    setCaptain: (value: Player) => void
+}
+
 export const useBuilderStateManager = () => {
+    const [balance, setBalance] = useState(100.0)
     const [captain, setCaptain] = useState<Player>()
     const [team, setTeam] = useState<BuilderTeam>(EMPTY_TEAM)
 
@@ -20,5 +30,5 @@ export const useBuilderStateManager = () => {
         setTeam(EMPTY_TEAM)
     }
 
-    return { captain, team, addPlayer, removePlayer, resetTeam, setCaptain }
+    return { balance, captain, team, addPlayer, removePlayer, resetTeam, setCaptain }
 }

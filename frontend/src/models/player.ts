@@ -8,6 +8,16 @@ export interface PlayerDataset {
 export interface Player {
     id: number
     name: string
+    lastScore: number
+    photoUrl: string
+    positionId: Position
+    price: number
+    teamId: number
+}
+
+export interface PlayerInfo {
+    id: number
+    name: string
     photoUrl: string
     teamId: number
     positionId: Position

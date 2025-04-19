@@ -6,6 +6,7 @@
         "q": "Parameter Q"
     },
     "common": {
+        "cartoleta": "C$",
         "play": "Play",
         "prediction": "Prediction",
         "run": "Run",
@@ -29,5 +30,12 @@
         "title": "Cartola Simulator",
         "description": "This application aims to simulate a season of the fantasy game Cartola. In it, you can assemble your team with predictions generated through time series forecasting models.",
         "instructions": "To begin you must select a season and a model to get predictions from."
+    },
+    "simulator": {
+        "addPlayer": "Add new player",
+        "buy": "buy",
+        "formation": "Formation",
+        "lastScore": "Last score",
+        "price": "Price"
     }
 }

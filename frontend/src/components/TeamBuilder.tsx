@@ -1,23 +1,13 @@
-import {
-    Stack,
-    SxProps,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow,
-} from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useBuilderStateManager } from '../hooks/useBuilderStateManager'
 import { useGetPlayersFromYear } from '../hooks/useGetPlayersFromYear'
 import { Formation } from '../models'
-import { formationSlots } from '../utils'
+import { createArray, formationSlots, roundNumber } from '../utils'
 import { FormationSelector } from './FormationSelector'
-
-const numberCellStyles: SxProps = {
-    px: 1,
-}
+import { BuilderTable } from './builder/BuilderTable'
+import { PlayerSlot } from './builder/PlayerSlot'
 
 interface TeamBuilderProps {
     year?: number
@@ -26,7 +16,33 @@ interface TeamBuilderProps {
 export const TeamBuilder: FC<TeamBuilderProps> = ({ year }) => {
     const { t } = useTranslation()
     const [formation, setFormation] = useState<Formation>('433')
+    const [rows, setRows] = useState<JSX.Element[]>([])
     const { fetchPlayersInfo } = useGetPlayersFromYear()
+    const builderStateManager = useBuilderStateManager()
+
+    useEffect(() => {
+        setRows([
+            ...createArray(formationSlots[formation].man).map((_, i) => (
+                <PlayerSlot key={`man${i}`} manager={builderStateManager} posId={'man'} />
+            )),
+            ...createArray(formationSlots[formation].gk).map((_, i) => (
+                <PlayerSlot key={`gk${i}`} manager={builderStateManager} posId={'gk'} />
+            )),
+            ...createArray(formationSlots[formation].cb).map((_, i) => (
+                <PlayerSlot key={`cb${i}`} manager={builderStateManager} posId={'cb'} />
+            )),
+            ...createArray(formationSlots[formation].wb).map((_, i) => (
+                <PlayerSlot key={`wb${i}`} manager={builderStateManager} posId={'wb'} />
+            )),
+            ...createArray(formationSlots[formation].mid).map((_, i) => (
+                <PlayerSlot key={`mid${i}`} manager={builderStateManager} posId={'mid'} />
+            )),
+            ...createArray(formationSlots[formation].st).map((_, i) => (
+                <PlayerSlot key={`st${i}`} manager={builderStateManager} posId={'st'} />
+            )),
+        ])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [formation, builderStateManager.team, builderStateManager.captain])
 
     useEffect(() => {
         if (!year) return
@@ -35,72 +51,19 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ year }) => {
     }, [year])
 
     return (
-        <Stack border={'1px solid red'} flex={1}>
-            <FormationSelector setValue={setFormation} value={formation} />
-            <TableContainer sx={{ display: 'inline-block' }}>
-                <Table padding={'none'}>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell></TableCell>
-                            <TableCell></TableCell>
-                            <TableCell align={'right'} sx={{ ...numberCellStyles }}>
-                                {t('common.prediction')}
-                            </TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {Array.from({ length: formationSlots[formation].man }).map((i) => (
-                            <TableRow key={`${'man'}${i}`}>
-                                <TableCell>{'man'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        {Array.from({ length: formationSlots[formation].gk }).map((i) => (
-                            <TableRow key={`${'gk'}${i}`}>
-                                <TableCell>{'gk'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        {Array.from({ length: formationSlots[formation].cb }).map((i) => (
-                            <TableRow key={`${'cb'}${i}`}>
-                                <TableCell>{'cb'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        {Array.from({ length: formationSlots[formation].wb }).map((i) => (
-                            <TableRow key={`${'wb'}${i}`}>
-                                <TableCell>{'wb'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        {Array.from({ length: formationSlots[formation].mid }).map((i) => (
-                            <TableRow key={`${'mid'}${i}`}>
-                                <TableCell>{'mid'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        {Array.from({ length: formationSlots[formation].st }).map((i) => (
-                            <TableRow key={`${'st'}${i}`}>
-                                <TableCell>{'st'.toUpperCase()}</TableCell>
-                                <TableCell></TableCell>
-                                <TableCell></TableCell>
-                            </TableRow>
-                        ))}
-                        <TableRow>
-                            <TableCell>{t('common.total')}</TableCell>
-                            <TableCell></TableCell>
-                            <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
-                                {0}
-                            </TableCell>
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </TableContainer>
+        <Stack alignItems={'center'} border={'1px solid red'} flex={1} spacing={2}>
+            <Stack alignItems={'center'} direction={'row'} spacing={5}>
+                <FormationSelector setValue={setFormation} value={formation} />
+                <Typography
+                    sx={{ border: '1px solid lightgray', borderRadius: '0.5rem', p: 2 }}
+                >{`${t('common.cartoleta')}${roundNumber(builderStateManager.balance, 2).toFixed(
+                    2
+                )}`}</Typography>
+            </Stack>
+            <Stack direction={'row'} spacing={2}>
+                <BuilderTable>{rows.slice(0, 6)}</BuilderTable>
+                <BuilderTable>{rows.slice(6)}</BuilderTable>
+            </Stack>
         </Stack>
     )
 }

@@ -1,5 +1,6 @@
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Formation } from '../models'
 
 interface FormationSelectorProps {
@@ -8,20 +9,16 @@ interface FormationSelectorProps {
 }
 
 export const FormationSelector: FC<FormationSelectorProps> = ({ value, setValue }) => {
+    const { t } = useTranslation()
+
     const handleChange = (event: SelectChangeEvent) => {
         setValue(event.target.value as Formation)
     }
 
     return (
-        <FormControl sx={{ m: 1, minWidth: 120 }} variant="standard">
-            <InputLabel id="demo-simple-select-standard-label">Age</InputLabel>
-            <Select
-                id="demo-simple-select-standard"
-                label="Age"
-                labelId="demo-simple-select-standard-label"
-                onChange={handleChange}
-                value={value}
-            >
+        <FormControl variant="standard">
+            <InputLabel>{t('simulator.formation')}</InputLabel>
+            <Select label={t('simulator.formation')} onChange={handleChange} value={value}>
                 <MenuItem value={'343'}>3-4-3</MenuItem>
                 <MenuItem value={'352'}>3-5-2</MenuItem>
                 <MenuItem value={'433'}>4-3-3</MenuItem>

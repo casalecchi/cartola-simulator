@@ -1,5 +1,7 @@
 import { OptimalTeam } from '../models'
 
+export const createArray = (length: number) => Array.from({ length })
+
 export const generateTickPositions = (min: number, max: number) => {
     const ticks = []
     for (let i = min; i <= max; i++) {
