@@ -30,21 +30,22 @@ class LSTMHyperModel(HyperModel):
         self.build_data = build_data_fn
 
     def build(self, hp):
-        n_steps = hp.Choice("n_steps", [2, 5, 10, 15])
+        n_steps = hp.Choice("n_steps", [2, 5, 10])
         input_shape = (n_steps, 1)
 
         model = Sequential()
         model.add(
             LSTM(
-                units=hp.Choice("units_1", [2, 4, 8, 16, 32]),
+                units=hp.Choice("units_1", [64, 128, 256]),
                 input_shape=input_shape,
+                return_sequences=True,
             )
         )
-        # model.add(
-        #     LSTM(
-        #         units=hp.Choice("units_2", [32, 64]),
-        #     )
-        # )
+        model.add(
+            LSTM(
+                units=hp.Choice("units_2", [32, 64]),
+            )
+        )
         model.add(Dense(1))
 
         optimizer = optimizers.Adam(learning_rate=0.005)
@@ -77,6 +78,18 @@ def create_sequences(data, n_steps):
     return np.array(X), np.array(y)
 
 
+def filter_players(
+    players: Dict[int, Tuple[str, str, int, str]], previous_csvs: Dict[str, pd.DataFrame]
+):
+    filtered = []
+    for id in players.keys():
+        prev_timeseries = get_timeseries(id, previous_csvs)
+        if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 15:
+            continue
+        filtered.append(id)
+    return filtered
+
+
 def lstm_tuner(
     player_id: int,
     previous_csvs: Dict[str, pd.DataFrame],
@@ -104,7 +117,7 @@ def lstm_tuner(
     tuner = RandomSearch(
         hypermodel,
         objective="val_loss",
-        max_trials=20,
+        max_trials=18,
         executions_per_trial=1,
         directory=f"lstm_tuning/player_{player_id}",
         project_name="run",
@@ -126,11 +139,12 @@ def all_lstm_tuner(
 ):
     hyperparameters: Dict[int, List[float]] = {}
     jogadores_validos = 0
+    filtered_keys = filter_players(players, previous_csvs)
 
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
             func_with_data = partial(lstm_tuner, previous_csvs=previous_csvs, next_csvs=next_csvs)
-            futures = {executor.submit(func_with_data, id): id for id in players.keys()}
+            futures = {executor.submit(func_with_data, id): id for id in filtered_keys}
 
             for future in tqdm(
                 as_completed(futures), total=len(futures), desc="Processando jogadores"
