@@ -1,4 +1,6 @@
 .DS_Store
+lstm_tuning/
+keras_cache/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
