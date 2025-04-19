@@ -55,12 +55,7 @@ class Data:
 
         self.df = self.df.sort_values("atletas.posicao_id")
 
-        self.df = self.df[
-            self.df["atletas.status_id"].str.contains(
-                "Provável" or "Suspenso" or "Dúvida" or "Nulo"
-            )
-            == True
-        ]
+        self.df = self.df[self.df["atletas.status_id"].str.contains("Provável|Dúvida|Nulo") == True]
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Provável")==True]
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Lesionado")==False]
 
