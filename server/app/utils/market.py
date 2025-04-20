@@ -25,12 +25,26 @@ def generate_market_for_season(year: int):
             statusId = constants.STATUS_MAP[row["atletas.status_id"]]
             price = row["atletas.preco_num"] - row["atletas.variacao_num"]
             lastScore = 0.0
+            average = 0.0
+            gamesPlayed = 0
             if r > 1:
                 prev = csvs[prev_key]
                 df = prev[prev["atletas.atleta_id"] == id]
                 for _, row in df.iterrows():
                     lastScore = row["atletas.pontos_num"]
-            market[id] = (name, photo_url, teamId, positionId, statusId, price, lastScore)
+                    average = row["atletas.media_num"]
+                    gamesPlayed = row["atletas.jogos_num"]
+            market[id] = (
+                name,
+                photo_url,
+                teamId,
+                positionId,
+                statusId,
+                price,
+                lastScore,
+                average,
+                gamesPlayed,
+            )
         df = pd.DataFrame.from_dict(
             market,
             columns=[
@@ -41,6 +55,8 @@ def generate_market_for_season(year: int):
                 "statusId",
                 "price",
                 "lastScore",
+                "average",
+                "gamesPlayed",
             ],
             orient="index",
         )

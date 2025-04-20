@@ -7,7 +7,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.65,
+        "gamesPlayed":22
     },
     {
         "id":90933,
@@ -17,7 +19,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":10.24,
-        "lastScore":5.3
+        "lastScore":5.3,
+        "average":4.59,
+        "gamesPlayed":27
     },
     {
         "id":91203,
@@ -27,7 +31,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.79,
-        "lastScore":2.2
+        "lastScore":2.2,
+        "average":1.11,
+        "gamesPlayed":24
     },
     {
         "id":92696,
@@ -37,7 +43,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":8.85,
-        "lastScore":9.6
+        "lastScore":9.6,
+        "average":4.92,
+        "gamesPlayed":23
     },
     {
         "id":90917,
@@ -47,7 +55,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":7.0,
-        "lastScore":6.5
+        "lastScore":6.5,
+        "average":4.01,
+        "gamesPlayed":22
     },
     {
         "id":91866,
@@ -57,7 +67,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.9,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.1,
+        "gamesPlayed":7
     },
     {
         "id":94583,
@@ -67,7 +79,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.76,
-        "lastScore":7.5
+        "lastScore":7.5,
+        "average":4.16,
+        "gamesPlayed":23
     },
     {
         "id":101960,
@@ -77,7 +91,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":13.05,
-        "lastScore":1.4
+        "lastScore":1.4,
+        "average":5.15,
+        "gamesPlayed":6
     },
     {
         "id":100762,
@@ -87,7 +103,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.48,
+        "gamesPlayed":9
     },
     {
         "id":105809,
@@ -97,7 +115,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108714,
@@ -107,7 +127,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.17,
-        "lastScore":0.9
+        "lastScore":0.9,
+        "average":1.3,
+        "gamesPlayed":2
     },
     {
         "id":102958,
@@ -117,7 +139,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.71,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.61,
+        "gamesPlayed":21
     },
     {
         "id":81585,
@@ -127,7 +151,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":0.99,
-        "lastScore":-0.3
+        "lastScore":-0.3,
+        "average":-0.29,
+        "gamesPlayed":10
     },
     {
         "id":98022,
@@ -137,7 +163,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":4.18,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.03,
+        "gamesPlayed":17
     },
     {
         "id":95494,
@@ -147,7 +175,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.89,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.13,
+        "gamesPlayed":9
     },
     {
         "id":102253,
@@ -157,7 +187,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.18,
+        "gamesPlayed":8
     },
     {
         "id":89637,
@@ -167,7 +199,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":6.99,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.72,
+        "gamesPlayed":12
     },
     {
         "id":61188,
@@ -177,7 +211,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.72,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.77,
+        "gamesPlayed":21
     },
     {
         "id":61033,
@@ -187,7 +223,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":13.69,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.14,
+        "gamesPlayed":16
     },
     {
         "id":92182,
@@ -197,7 +235,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.13,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.88,
+        "gamesPlayed":21
     },
     {
         "id":86797,
@@ -207,7 +247,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":5.16,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.95,
+        "gamesPlayed":4
     },
     {
         "id":108745,
@@ -217,7 +259,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":80189,
@@ -227,7 +271,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.57,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.82,
+        "gamesPlayed":8
     },
     {
         "id":104513,
@@ -237,7 +283,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":8.86,
-        "lastScore":-1.3
+        "lastScore":-1.3,
+        "average":3.18,
+        "gamesPlayed":25
     },
     {
         "id":42491,
@@ -247,7 +295,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":2.88,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.18,
+        "gamesPlayed":6
     },
     {
         "id":84382,
@@ -257,7 +307,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.67,
-        "lastScore":5.7
+        "lastScore":5.7,
+        "average":0.74,
+        "gamesPlayed":17
     },
     {
         "id":98333,
@@ -267,7 +319,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.56,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.9,
+        "gamesPlayed":3
     },
     {
         "id":86508,
@@ -277,7 +331,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":9.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.35,
+        "gamesPlayed":4
     },
     {
         "id":101727,
@@ -287,7 +343,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.96,
+        "gamesPlayed":9
     },
     {
         "id":74061,
@@ -297,7 +355,9 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":14.9,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.6,
+        "gamesPlayed":8
     },
     {
         "id":71479,
@@ -307,7 +367,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.19,
+        "gamesPlayed":11
     },
     {
         "id":101594,
@@ -317,7 +379,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.03,
-        "lastScore":7.8
+        "lastScore":7.8,
+        "average":1.58,
+        "gamesPlayed":20
     },
     {
         "id":73896,
@@ -327,7 +391,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.57,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.37,
+        "gamesPlayed":11
     },
     {
         "id":38913,
@@ -337,7 +403,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":12.44,
-        "lastScore":1.2
+        "lastScore":1.2,
+        "average":4.85,
+        "gamesPlayed":21
     },
     {
         "id":94444,
@@ -347,7 +415,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":7.27,
-        "lastScore":-2.0
+        "lastScore":-2.0,
+        "average":3.1,
+        "gamesPlayed":25
     },
     {
         "id":62128,
@@ -357,7 +427,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.99,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":0.27,
+        "gamesPlayed":14
     },
     {
         "id":97341,
@@ -367,7 +439,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.01,
-        "lastScore":8.35
+        "lastScore":8.35,
+        "average":3.64,
+        "gamesPlayed":27
     },
     {
         "id":80393,
@@ -377,7 +451,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.56,
-        "lastScore":3.4
+        "lastScore":3.4,
+        "average":2.17,
+        "gamesPlayed":24
     },
     {
         "id":106323,
@@ -387,7 +463,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.97,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.6,
+        "gamesPlayed":25
     },
     {
         "id":100125,
@@ -397,7 +475,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.2,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.28,
+        "gamesPlayed":4
     },
     {
         "id":72372,
@@ -407,7 +487,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":2.91,
-        "lastScore":-4.5
+        "lastScore":-4.5,
+        "average":1.69,
+        "gamesPlayed":25
     },
     {
         "id":38279,
@@ -417,7 +499,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":8.67,
-        "lastScore":8.5
+        "lastScore":8.5,
+        "average":2.75,
+        "gamesPlayed":24
     },
     {
         "id":99392,
@@ -427,7 +511,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.89,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":0.9,
+        "gamesPlayed":16
     },
     {
         "id":104650,
@@ -437,7 +523,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":80853,
@@ -447,7 +535,9 @@
         "positionId":"cb",
         "statusId":"doubt",
         "price":9.63,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.07,
+        "gamesPlayed":11
     },
     {
         "id":104257,
@@ -457,7 +547,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.1,
+        "gamesPlayed":3
     },
     {
         "id":102276,
@@ -467,7 +559,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.12,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":0.76,
+        "gamesPlayed":7
     },
     {
         "id":104646,
@@ -477,7 +571,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.53,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.18,
+        "gamesPlayed":9
     },
     {
         "id":71162,
@@ -487,7 +583,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":10.26,
-        "lastScore":-0.3
+        "lastScore":-0.3,
+        "average":6.2,
+        "gamesPlayed":22
     },
     {
         "id":50645,
@@ -497,7 +595,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.95,
+        "gamesPlayed":10
     },
     {
         "id":70925,
@@ -507,7 +607,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.66,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":1.21,
+        "gamesPlayed":15
     },
     {
         "id":78577,
@@ -517,7 +619,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.38,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.5,
+        "gamesPlayed":10
     },
     {
         "id":68696,
@@ -527,7 +631,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.37,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.04,
+        "gamesPlayed":13
     },
     {
         "id":90444,
@@ -537,7 +643,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":10.87,
-        "lastScore":4.9
+        "lastScore":4.9,
+        "average":4.01,
+        "gamesPlayed":19
     },
     {
         "id":83433,
@@ -547,7 +655,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":13.18,
-        "lastScore":8.0
+        "lastScore":8.0,
+        "average":5.23,
+        "gamesPlayed":26
     },
     {
         "id":78654,
@@ -557,7 +667,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.07,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.85,
+        "gamesPlayed":6
     },
     {
         "id":71113,
@@ -567,7 +679,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.18,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.33,
+        "gamesPlayed":7
     },
     {
         "id":41929,
@@ -577,7 +691,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":12.48,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.94,
+        "gamesPlayed":27
     },
     {
         "id":72772,
@@ -587,7 +703,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":11.44,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.46,
+        "gamesPlayed":17
     },
     {
         "id":103446,
@@ -597,7 +715,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.68,
-        "lastScore":1.8
+        "lastScore":1.8,
+        "average":1.82,
+        "gamesPlayed":23
     },
     {
         "id":62121,
@@ -607,7 +727,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":6.55,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.86,
+        "gamesPlayed":20
     },
     {
         "id":87258,
@@ -617,7 +739,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":8.79,
-        "lastScore":13.7
+        "lastScore":13.7,
+        "average":3.31,
+        "gamesPlayed":19
     },
     {
         "id":70046,
@@ -627,7 +751,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.2,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.34,
+        "gamesPlayed":9
     },
     {
         "id":38545,
@@ -637,7 +763,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.73,
+        "gamesPlayed":8
     },
     {
         "id":37655,
@@ -647,7 +775,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":5.19,
-        "lastScore":-1.8
+        "lastScore":-1.8,
+        "average":1.57,
+        "gamesPlayed":20
     },
     {
         "id":72359,
@@ -657,7 +787,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":4.81,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":2.59,
+        "gamesPlayed":22
     },
     {
         "id":68952,
@@ -667,7 +799,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":25.71,
-        "lastScore":12.2
+        "lastScore":12.2,
+        "average":10.42,
+        "gamesPlayed":23
     },
     {
         "id":42116,
@@ -677,7 +811,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":11.04,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.52,
+        "gamesPlayed":24
     },
     {
         "id":72142,
@@ -687,7 +823,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":6.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.83,
+        "gamesPlayed":10
     },
     {
         "id":75295,
@@ -697,7 +835,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":20.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":11.2,
+        "gamesPlayed":3
     },
     {
         "id":73384,
@@ -707,7 +847,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.3,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":3.32,
+        "gamesPlayed":22
     },
     {
         "id":79042,
@@ -717,7 +859,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.08,
-        "lastScore":5.5
+        "lastScore":5.5,
+        "average":3.21,
+        "gamesPlayed":21
     },
     {
         "id":68911,
@@ -727,7 +871,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":11.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.26,
+        "gamesPlayed":17
     },
     {
         "id":71882,
@@ -737,7 +883,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":84847,
@@ -747,7 +895,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":7.14,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.51,
+        "gamesPlayed":23
     },
     {
         "id":78851,
@@ -757,7 +907,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":3.96,
-        "lastScore":3.3
+        "lastScore":3.3,
+        "average":2.5,
+        "gamesPlayed":7
     },
     {
         "id":78077,
@@ -767,7 +919,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.84,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":3.5,
+        "gamesPlayed":21
     },
     {
         "id":78548,
@@ -777,7 +931,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.48,
-        "lastScore":4.0
+        "lastScore":4.0,
+        "average":1.78,
+        "gamesPlayed":20
     },
     {
         "id":78715,
@@ -787,7 +943,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":6.2,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.34,
+        "gamesPlayed":17
     },
     {
         "id":96382,
@@ -797,7 +955,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.67,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.38,
+        "gamesPlayed":9
     },
     {
         "id":78605,
@@ -807,7 +967,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.41,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.55,
+        "gamesPlayed":18
     },
     {
         "id":79035,
@@ -817,7 +979,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.46,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.35,
+        "gamesPlayed":8
     },
     {
         "id":85425,
@@ -827,7 +991,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":8.16,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.35,
+        "gamesPlayed":20
     },
     {
         "id":93108,
@@ -837,7 +1003,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":6.64,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.82,
+        "gamesPlayed":11
     },
     {
         "id":85315,
@@ -847,7 +1015,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.65,
+        "gamesPlayed":13
     },
     {
         "id":87225,
@@ -857,7 +1027,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.29,
-        "lastScore":0.6
+        "lastScore":0.6,
+        "average":3.23,
+        "gamesPlayed":20
     },
     {
         "id":86711,
@@ -867,7 +1039,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.39,
-        "lastScore":4.8
+        "lastScore":4.8,
+        "average":1.95,
+        "gamesPlayed":21
     },
     {
         "id":97245,
@@ -877,7 +1051,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.46,
-        "lastScore":7.3
+        "lastScore":7.3,
+        "average":2.81,
+        "gamesPlayed":24
     },
     {
         "id":103700,
@@ -887,7 +1063,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.05,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.57,
+        "gamesPlayed":7
     },
     {
         "id":73974,
@@ -897,7 +1075,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.36,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.99,
+        "gamesPlayed":15
     },
     {
         "id":77959,
@@ -907,7 +1087,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":102607,
@@ -917,7 +1099,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.71,
-        "lastScore":2.2
+        "lastScore":2.2,
+        "average":1.0,
+        "gamesPlayed":2
     },
     {
         "id":80664,
@@ -927,7 +1111,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.7,
+        "gamesPlayed":4
     },
     {
         "id":77774,
@@ -937,7 +1123,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":4.03,
-        "lastScore":1.13
+        "lastScore":1.13,
+        "average":1.87,
+        "gamesPlayed":11
     },
     {
         "id":91151,
@@ -947,7 +1135,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.2,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.08,
+        "gamesPlayed":5
     },
     {
         "id":105584,
@@ -957,7 +1147,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":5.07,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.19,
+        "gamesPlayed":14
     },
     {
         "id":104075,
@@ -967,7 +1159,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":8.73,
-        "lastScore":4.1
+        "lastScore":4.1,
+        "average":3.96,
+        "gamesPlayed":28
     },
     {
         "id":84817,
@@ -977,7 +1171,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":9.16,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.09,
+        "gamesPlayed":27
     },
     {
         "id":105533,
@@ -987,7 +1183,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.96,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.7,
+        "gamesPlayed":4
     },
     {
         "id":95820,
@@ -997,7 +1195,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108539,
@@ -1007,7 +1207,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103099,
@@ -1017,7 +1219,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.18,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.26,
+        "gamesPlayed":13
     },
     {
         "id":107555,
@@ -1027,7 +1231,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":1.31,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":0.78,
+        "gamesPlayed":4
     },
     {
         "id":38632,
@@ -1037,7 +1243,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.97,
-        "lastScore":6.5
+        "lastScore":6.5,
+        "average":3.18,
+        "gamesPlayed":8
     },
     {
         "id":38162,
@@ -1047,7 +1255,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":2.95,
-        "lastScore":-2.5
+        "lastScore":-2.5,
+        "average":2.04,
+        "gamesPlayed":16
     },
     {
         "id":42501,
@@ -1057,7 +1267,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.05,
+        "gamesPlayed":12
     },
     {
         "id":38421,
@@ -1067,7 +1279,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.88,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.16,
+        "gamesPlayed":5
     },
     {
         "id":42145,
@@ -1077,7 +1291,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.6,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.19,
+        "gamesPlayed":13
     },
     {
         "id":87747,
@@ -1087,7 +1303,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.79,
-        "lastScore":4.2
+        "lastScore":4.2,
+        "average":2.6,
+        "gamesPlayed":20
     },
     {
         "id":85004,
@@ -1097,7 +1315,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":1.97,
-        "lastScore":4.5
+        "lastScore":4.5,
+        "average":1.7,
+        "gamesPlayed":9
     },
     {
         "id":68895,
@@ -1107,7 +1327,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.3,
+        "gamesPlayed":19
     },
     {
         "id":71937,
@@ -1117,7 +1339,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.58,
-        "lastScore":3.3
+        "lastScore":3.3,
+        "average":2.71,
+        "gamesPlayed":22
     },
     {
         "id":89285,
@@ -1127,7 +1351,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.84,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.46,
+        "gamesPlayed":20
     },
     {
         "id":84523,
@@ -1137,7 +1363,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":9.37,
-        "lastScore":7.5
+        "lastScore":7.5,
+        "average":3.01,
+        "gamesPlayed":25
     },
     {
         "id":90569,
@@ -1147,7 +1375,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.97,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.76,
+        "gamesPlayed":13
     },
     {
         "id":96349,
@@ -1157,7 +1387,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":88368,
@@ -1167,7 +1399,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.98,
-        "lastScore":1.4
+        "lastScore":1.4,
+        "average":2.76,
+        "gamesPlayed":23
     },
     {
         "id":70934,
@@ -1177,7 +1411,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":4.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.69,
+        "gamesPlayed":15
     },
     {
         "id":91708,
@@ -1187,7 +1423,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.14,
+        "gamesPlayed":20
     },
     {
         "id":62977,
@@ -1197,7 +1435,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":3.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.65,
+        "gamesPlayed":17
     },
     {
         "id":84339,
@@ -1207,7 +1447,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.94,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.38,
+        "gamesPlayed":16
     },
     {
         "id":50324,
@@ -1217,7 +1459,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.17,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.74,
+        "gamesPlayed":18
     },
     {
         "id":73465,
@@ -1227,7 +1471,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.49,
-        "lastScore":2.7
+        "lastScore":2.7,
+        "average":2.96,
+        "gamesPlayed":21
     },
     {
         "id":84338,
@@ -1237,7 +1483,9 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":3.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":11.4,
+        "gamesPlayed":1
     },
     {
         "id":82628,
@@ -1247,7 +1495,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":5.68,
-        "lastScore":-2.8
+        "lastScore":-2.8,
+        "average":3.18,
+        "gamesPlayed":16
     },
     {
         "id":81951,
@@ -1257,7 +1507,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.11,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.94,
+        "gamesPlayed":17
     },
     {
         "id":90309,
@@ -1267,7 +1519,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":5.01,
-        "lastScore":2.9
+        "lastScore":2.9,
+        "average":2.55,
+        "gamesPlayed":23
     },
     {
         "id":93368,
@@ -1277,7 +1531,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.4,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.2,
+        "gamesPlayed":15
     },
     {
         "id":70360,
@@ -1287,7 +1543,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.68,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.32,
+        "gamesPlayed":22
     },
     {
         "id":62086,
@@ -1297,7 +1555,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.01,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":2.1,
+        "gamesPlayed":21
     },
     {
         "id":69041,
@@ -1307,7 +1567,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.62,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.36,
+        "gamesPlayed":19
     },
     {
         "id":69040,
@@ -1317,7 +1579,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.53,
-        "lastScore":1.8
+        "lastScore":1.8,
+        "average":2.65,
+        "gamesPlayed":4
     },
     {
         "id":101708,
@@ -1327,7 +1591,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":12.05,
-        "lastScore":4.1
+        "lastScore":4.1,
+        "average":4.27,
+        "gamesPlayed":26
     },
     {
         "id":73446,
@@ -1337,7 +1603,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.24,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":4
     },
     {
         "id":72294,
@@ -1347,7 +1615,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":8.09,
-        "lastScore":-2.8
+        "lastScore":-2.8,
+        "average":2.74,
+        "gamesPlayed":17
     },
     {
         "id":107173,
@@ -1357,7 +1627,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.21,
-        "lastScore":4.5
+        "lastScore":4.5,
+        "average":3.38,
+        "gamesPlayed":21
     },
     {
         "id":105339,
@@ -1367,7 +1639,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":1.35,
-        "lastScore":3.3
+        "lastScore":3.3,
+        "average":0.53,
+        "gamesPlayed":16
     },
     {
         "id":95220,
@@ -1377,7 +1651,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.93,
-        "lastScore":-2.3
+        "lastScore":-2.3,
+        "average":2.74,
+        "gamesPlayed":17
     },
     {
         "id":71604,
@@ -1387,7 +1663,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.89,
-        "lastScore":4.6
+        "lastScore":4.6,
+        "average":3.44,
+        "gamesPlayed":20
     },
     {
         "id":42222,
@@ -1397,7 +1675,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.03,
-        "lastScore":1.5
+        "lastScore":1.5,
+        "average":2.3,
+        "gamesPlayed":25
     },
     {
         "id":102565,
@@ -1407,7 +1687,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":2.0,
-        "lastScore":1.5
+        "lastScore":1.5,
+        "average":1.59,
+        "gamesPlayed":13
     },
     {
         "id":92290,
@@ -1417,7 +1699,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":91733,
@@ -1427,7 +1711,9 @@
         "positionId":"mid",
         "statusId":"suspended",
         "price":5.54,
-        "lastScore":2.8
+        "lastScore":2.8,
+        "average":2.42,
+        "gamesPlayed":24
     },
     {
         "id":97528,
@@ -1437,7 +1723,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103645,
@@ -1447,7 +1735,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":6.61,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.74,
+        "gamesPlayed":22
     },
     {
         "id":91772,
@@ -1457,7 +1747,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":4.95,
-        "lastScore":3.2
+        "lastScore":3.2,
+        "average":3.4,
+        "gamesPlayed":19
     },
     {
         "id":98740,
@@ -1467,7 +1759,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.6,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.6,
+        "gamesPlayed":11
     },
     {
         "id":98760,
@@ -1477,7 +1771,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":1.22,
-        "lastScore":0.9
+        "lastScore":0.9,
+        "average":0.14,
+        "gamesPlayed":12
     },
     {
         "id":102318,
@@ -1487,7 +1783,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":3.62,
-        "lastScore":-0.6
+        "lastScore":-0.6,
+        "average":1.96,
+        "gamesPlayed":18
     },
     {
         "id":82730,
@@ -1497,7 +1795,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-3.45,
+        "gamesPlayed":2
     },
     {
         "id":91712,
@@ -1507,7 +1807,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":63172,
@@ -1517,7 +1819,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.92,
-        "lastScore":-0.9
+        "lastScore":-0.9,
+        "average":1.85,
+        "gamesPlayed":23
     },
     {
         "id":37788,
@@ -1527,7 +1831,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":100963,
@@ -1537,7 +1843,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":1.92,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":0.36,
+        "gamesPlayed":18
     },
     {
         "id":50284,
@@ -1547,7 +1855,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":10.2,
-        "lastScore":12.5
+        "lastScore":12.5,
+        "average":2.83,
+        "gamesPlayed":29
     },
     {
         "id":38196,
@@ -1557,7 +1867,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.39,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.7,
+        "gamesPlayed":10
     },
     {
         "id":63194,
@@ -1567,7 +1879,9 @@
         "positionId":"wb",
         "statusId":"suspended",
         "price":5.08,
-        "lastScore":-5.3
+        "lastScore":-5.3,
+        "average":2.26,
+        "gamesPlayed":19
     },
     {
         "id":101595,
@@ -1577,7 +1891,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.66,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.5,
+        "gamesPlayed":1
     },
     {
         "id":68873,
@@ -1587,7 +1903,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":6.84,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.91,
+        "gamesPlayed":7
     },
     {
         "id":51415,
@@ -1597,7 +1915,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.1,
+        "gamesPlayed":5
     },
     {
         "id":50317,
@@ -1607,7 +1927,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":9.51,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.96,
+        "gamesPlayed":17
     },
     {
         "id":102563,
@@ -1617,7 +1939,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":42234,
@@ -1627,7 +1951,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.08,
+        "gamesPlayed":19
     },
     {
         "id":80287,
@@ -1637,7 +1963,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":9.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":6.17,
+        "gamesPlayed":20
     },
     {
         "id":106083,
@@ -1647,7 +1975,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.77,
-        "lastScore":-1.3
+        "lastScore":-1.3,
+        "average":1.69,
+        "gamesPlayed":21
     },
     {
         "id":60791,
@@ -1657,7 +1987,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.14,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.44,
+        "gamesPlayed":5
     },
     {
         "id":68923,
@@ -1667,7 +1999,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.93,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.27,
+        "gamesPlayed":20
     },
     {
         "id":81845,
@@ -1677,7 +2011,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":10.34,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.04,
+        "gamesPlayed":16
     },
     {
         "id":86759,
@@ -1687,7 +2023,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.85,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.22,
+        "gamesPlayed":14
     },
     {
         "id":87470,
@@ -1697,7 +2035,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.11,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.81,
+        "gamesPlayed":17
     },
     {
         "id":72079,
@@ -1707,7 +2047,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":10.04,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.05,
+        "gamesPlayed":20
     },
     {
         "id":91201,
@@ -1717,7 +2059,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":13.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":6.31,
+        "gamesPlayed":23
     },
     {
         "id":69051,
@@ -1727,7 +2071,9 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":4.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.4,
+        "gamesPlayed":1
     },
     {
         "id":49673,
@@ -1737,7 +2083,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":91251,
@@ -1747,7 +2095,9 @@
         "positionId":"cb",
         "statusId":"doubt",
         "price":3.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.07,
+        "gamesPlayed":14
     },
     {
         "id":63354,
@@ -1757,7 +2107,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":7.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.04,
+        "gamesPlayed":18
     },
     {
         "id":105278,
@@ -1767,7 +2119,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.5,
+        "gamesPlayed":3
     },
     {
         "id":72362,
@@ -1777,7 +2131,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.69,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":0.66,
+        "gamesPlayed":25
     },
     {
         "id":71844,
@@ -1787,7 +2143,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":17.57,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":7.22,
+        "gamesPlayed":26
     },
     {
         "id":73992,
@@ -1797,7 +2155,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.8,
-        "lastScore":1.9
+        "lastScore":1.9,
+        "average":2.31,
+        "gamesPlayed":16
     },
     {
         "id":63289,
@@ -1807,7 +2167,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.34,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":3.08,
+        "gamesPlayed":25
     },
     {
         "id":68817,
@@ -1817,7 +2179,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.81,
+        "gamesPlayed":10
     },
     {
         "id":100742,
@@ -1827,7 +2191,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.57,
+        "gamesPlayed":22
     },
     {
         "id":86973,
@@ -1837,7 +2203,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":41327,
@@ -1847,7 +2215,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.77,
-        "lastScore":0.53
+        "lastScore":0.53,
+        "average":3.54,
+        "gamesPlayed":17
     },
     {
         "id":78865,
@@ -1857,7 +2227,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.01,
-        "lastScore":13.2
+        "lastScore":13.2,
+        "average":2.78,
+        "gamesPlayed":12
     },
     {
         "id":101315,
@@ -1867,7 +2239,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.33,
-        "lastScore":5.4
+        "lastScore":5.4,
+        "average":1.8,
+        "gamesPlayed":10
     },
     {
         "id":63013,
@@ -1877,7 +2251,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.11,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.9,
+        "gamesPlayed":16
     },
     {
         "id":96725,
@@ -1887,7 +2263,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":18.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":7.96,
+        "gamesPlayed":8
     },
     {
         "id":60852,
@@ -1897,7 +2275,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.46,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.81,
+        "gamesPlayed":12
     },
     {
         "id":99918,
@@ -1907,7 +2287,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.15,
+        "gamesPlayed":2
     },
     {
         "id":107092,
@@ -1917,7 +2299,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.95,
+        "gamesPlayed":4
     },
     {
         "id":93834,
@@ -1927,7 +2311,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":96468,
@@ -1937,7 +2323,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.4,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.8,
+        "gamesPlayed":1
     },
     {
         "id":105811,
@@ -1947,7 +2335,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":6.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.59,
+        "gamesPlayed":13
     },
     {
         "id":107172,
@@ -1957,7 +2347,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.94,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.85,
+        "gamesPlayed":19
     },
     {
         "id":104649,
@@ -1967,7 +2359,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.04,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.85,
+        "gamesPlayed":10
     },
     {
         "id":103445,
@@ -1977,7 +2371,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.23,
-        "lastScore":0.7
+        "lastScore":0.7,
+        "average":1.57,
+        "gamesPlayed":24
     },
     {
         "id":86485,
@@ -1987,7 +2383,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":14.06,
-        "lastScore":4.4
+        "lastScore":4.4,
+        "average":6.76,
+        "gamesPlayed":25
     },
     {
         "id":103764,
@@ -1997,7 +2395,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.55,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.11,
+        "gamesPlayed":16
     },
     {
         "id":38277,
@@ -2007,7 +2407,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.44,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.51,
+        "gamesPlayed":21
     },
     {
         "id":103767,
@@ -2017,7 +2419,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.4,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.01,
+        "gamesPlayed":21
     },
     {
         "id":100987,
@@ -2027,7 +2431,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.58,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.21,
+        "gamesPlayed":8
     },
     {
         "id":106821,
@@ -2037,7 +2443,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":3.02,
-        "lastScore":7.8
+        "lastScore":7.8,
+        "average":1.85,
+        "gamesPlayed":9
     },
     {
         "id":104593,
@@ -2047,7 +2455,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":4.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.89,
+        "gamesPlayed":18
     },
     {
         "id":86264,
@@ -2057,7 +2467,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":3.65,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":2.5,
+        "gamesPlayed":12
     },
     {
         "id":83266,
@@ -2067,7 +2479,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":2.75,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.42,
+        "gamesPlayed":24
     },
     {
         "id":70916,
@@ -2077,7 +2491,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.71,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.78,
+        "gamesPlayed":18
     },
     {
         "id":86841,
@@ -2087,7 +2503,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":8.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.81,
+        "gamesPlayed":13
     },
     {
         "id":78850,
@@ -2097,7 +2515,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":14.08,
-        "lastScore":4.5
+        "lastScore":4.5,
+        "average":4.82,
+        "gamesPlayed":23
     },
     {
         "id":91607,
@@ -2107,7 +2527,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.63,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.41,
+        "gamesPlayed":17
     },
     {
         "id":79701,
@@ -2117,7 +2539,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":5.16,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.79,
+        "gamesPlayed":24
     },
     {
         "id":105837,
@@ -2127,7 +2551,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.74,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.4,
+        "gamesPlayed":7
     },
     {
         "id":72290,
@@ -2137,7 +2563,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.4,
+        "gamesPlayed":4
     },
     {
         "id":106002,
@@ -2147,7 +2575,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.15,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.93,
+        "gamesPlayed":8
     },
     {
         "id":81150,
@@ -2157,7 +2587,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.61,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.08,
+        "gamesPlayed":13
     },
     {
         "id":80583,
@@ -2167,7 +2599,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.99,
+        "gamesPlayed":21
     },
     {
         "id":82455,
@@ -2177,7 +2611,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":9.91,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.92,
+        "gamesPlayed":20
     },
     {
         "id":86972,
@@ -2187,7 +2623,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.3,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.22,
+        "gamesPlayed":8
     },
     {
         "id":100763,
@@ -2197,7 +2635,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.06,
-        "lastScore":-1.7
+        "lastScore":-1.7,
+        "average":2.76,
+        "gamesPlayed":24
     },
     {
         "id":102295,
@@ -2207,7 +2647,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38939,
@@ -2217,7 +2659,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":9.99,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":1.49,
+        "gamesPlayed":19
     },
     {
         "id":87999,
@@ -2227,7 +2671,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":5.58,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.89,
+        "gamesPlayed":15
     },
     {
         "id":81677,
@@ -2237,7 +2683,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":5.65,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.66,
+        "gamesPlayed":12
     },
     {
         "id":94976,
@@ -2247,7 +2695,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.75,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.07,
+        "gamesPlayed":3
     },
     {
         "id":100846,
@@ -2257,7 +2707,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.34,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.0,
+        "gamesPlayed":4
     },
     {
         "id":70784,
@@ -2267,7 +2719,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":93798,
@@ -2277,7 +2731,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":85083,
@@ -2287,7 +2743,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":82453,
@@ -2297,7 +2755,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.93,
-        "lastScore":-5.7
+        "lastScore":-5.7,
+        "average":4.02,
+        "gamesPlayed":23
     },
     {
         "id":101885,
@@ -2307,7 +2767,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.15,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.43,
+        "gamesPlayed":6
     },
     {
         "id":80692,
@@ -2317,7 +2779,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.96,
+        "gamesPlayed":21
     },
     {
         "id":94509,
@@ -2327,7 +2791,9 @@
         "positionId":"mid",
         "statusId":"suspended",
         "price":9.11,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.23,
+        "gamesPlayed":18
     },
     {
         "id":106822,
@@ -2337,7 +2803,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.52,
+        "gamesPlayed":5
     },
     {
         "id":87228,
@@ -2347,7 +2815,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":16.79,
-        "lastScore":3.6
+        "lastScore":3.6,
+        "average":5.28,
+        "gamesPlayed":26
     },
     {
         "id":38505,
@@ -2357,7 +2827,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":11.82,
-        "lastScore":-0.4
+        "lastScore":-0.4,
+        "average":2.84,
+        "gamesPlayed":20
     },
     {
         "id":68872,
@@ -2367,7 +2839,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.57,
-        "lastScore":-5.2
+        "lastScore":-5.2,
+        "average":1.02,
+        "gamesPlayed":29
     },
     {
         "id":71684,
@@ -2377,7 +2851,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":11.15,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.29,
+        "gamesPlayed":16
     },
     {
         "id":105341,
@@ -2387,7 +2863,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":98974,
@@ -2397,7 +2875,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.16,
+        "gamesPlayed":17
     },
     {
         "id":105553,
@@ -2407,7 +2887,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101647,
@@ -2417,7 +2899,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101720,
@@ -2427,7 +2911,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.34,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.56,
+        "gamesPlayed":17
     },
     {
         "id":71631,
@@ -2437,7 +2923,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":9.53,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.6,
+        "gamesPlayed":22
     },
     {
         "id":79113,
@@ -2447,7 +2935,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":10.65,
-        "lastScore":3.8
+        "lastScore":3.8,
+        "average":2.57,
+        "gamesPlayed":28
     },
     {
         "id":95540,
@@ -2457,7 +2947,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.7,
+        "gamesPlayed":1
     },
     {
         "id":69705,
@@ -2467,7 +2959,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":8.88,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":1.87,
+        "gamesPlayed":18
     },
     {
         "id":105840,
@@ -2477,7 +2971,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.0,
+        "gamesPlayed":1
     },
     {
         "id":87863,
@@ -2487,7 +2983,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":18.88,
-        "lastScore":12.2
+        "lastScore":12.2,
+        "average":6.55,
+        "gamesPlayed":18
     },
     {
         "id":105902,
@@ -2497,7 +2995,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.67,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.52,
+        "gamesPlayed":19
     },
     {
         "id":83257,
@@ -2507,7 +3007,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":12.96,
-        "lastScore":8.6
+        "lastScore":8.6,
+        "average":5.42,
+        "gamesPlayed":16
     },
     {
         "id":93882,
@@ -2517,7 +3019,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":0.86,
-        "lastScore":1.7
+        "lastScore":1.7,
+        "average":-0.36,
+        "gamesPlayed":23
     },
     {
         "id":84855,
@@ -2527,7 +3031,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.68,
-        "lastScore":0.9
+        "lastScore":0.9,
+        "average":3.12,
+        "gamesPlayed":8
     },
     {
         "id":71640,
@@ -2537,7 +3043,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-2.2,
+        "gamesPlayed":3
     },
     {
         "id":106200,
@@ -2547,7 +3055,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105909,
@@ -2557,7 +3067,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.3,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.1,
+        "gamesPlayed":5
     },
     {
         "id":78856,
@@ -2567,7 +3079,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.82,
-        "lastScore":4.2
+        "lastScore":4.2,
+        "average":1.7,
+        "gamesPlayed":18
     },
     {
         "id":106202,
@@ -2577,7 +3091,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.32,
-        "lastScore":-2.0
+        "lastScore":-2.0,
+        "average":0.81,
+        "gamesPlayed":14
     },
     {
         "id":94156,
@@ -2587,7 +3103,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.97,
-        "lastScore":8.6
+        "lastScore":8.6,
+        "average":2.84,
+        "gamesPlayed":26
     },
     {
         "id":107677,
@@ -2597,7 +3115,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.34,
-        "lastScore":2.9
+        "lastScore":2.9,
+        "average":2.19,
+        "gamesPlayed":11
     },
     {
         "id":93637,
@@ -2607,7 +3127,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.45,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":2.26,
+        "gamesPlayed":22
     },
     {
         "id":94044,
@@ -2617,7 +3139,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.45,
+        "gamesPlayed":6
     },
     {
         "id":90285,
@@ -2627,7 +3151,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":13.37,
-        "lastScore":6.1
+        "lastScore":6.1,
+        "average":5.2,
+        "gamesPlayed":22
     },
     {
         "id":60969,
@@ -2637,7 +3163,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.18,
-        "lastScore":-5.7
+        "lastScore":-5.7,
+        "average":2.64,
+        "gamesPlayed":28
     },
     {
         "id":101574,
@@ -2647,7 +3175,9 @@
         "positionId":"gk",
         "statusId":"doubt",
         "price":3.22,
-        "lastScore":7.7
+        "lastScore":7.7,
+        "average":1.91,
+        "gamesPlayed":12
     },
     {
         "id":96966,
@@ -2657,7 +3187,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.46,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.31,
+        "gamesPlayed":17
     },
     {
         "id":85149,
@@ -2667,7 +3199,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.46,
-        "lastScore":-1.0
+        "lastScore":-1.0,
+        "average":0.4,
+        "gamesPlayed":16
     },
     {
         "id":92630,
@@ -2677,7 +3211,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":16.83,
-        "lastScore":17.0
+        "lastScore":17.0,
+        "average":6.04,
+        "gamesPlayed":26
     },
     {
         "id":82876,
@@ -2687,7 +3223,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.5,
-        "lastScore":2.6
+        "lastScore":2.6,
+        "average":1.39,
+        "gamesPlayed":17
     },
     {
         "id":100290,
@@ -2697,7 +3235,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.89,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.89,
+        "gamesPlayed":7
     },
     {
         "id":106299,
@@ -2707,7 +3247,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.74,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.97,
+        "gamesPlayed":6
     },
     {
         "id":98909,
@@ -2717,7 +3259,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.97,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.41,
+        "gamesPlayed":12
     },
     {
         "id":101484,
@@ -2727,7 +3271,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.03,
+        "gamesPlayed":8
     },
     {
         "id":100848,
@@ -2737,7 +3283,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.42,
+        "gamesPlayed":6
     },
     {
         "id":102292,
@@ -2747,7 +3295,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.54,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":2.97,
+        "gamesPlayed":26
     },
     {
         "id":104625,
@@ -2757,7 +3307,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.16,
+        "gamesPlayed":7
     },
     {
         "id":107991,
@@ -2767,7 +3319,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.46,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.47,
+        "gamesPlayed":10
     },
     {
         "id":82407,
@@ -2777,7 +3331,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.97,
-        "lastScore":3.1
+        "lastScore":3.1,
+        "average":2.48,
+        "gamesPlayed":26
     },
     {
         "id":83048,
@@ -2787,7 +3343,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.2,
+        "gamesPlayed":5
     },
     {
         "id":104578,
@@ -2797,7 +3355,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.18,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.56,
+        "gamesPlayed":10
     },
     {
         "id":87342,
@@ -2807,7 +3367,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":9.72,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.58,
+        "gamesPlayed":10
     },
     {
         "id":69012,
@@ -2817,7 +3379,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":6.27,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":2.72,
+        "gamesPlayed":23
     },
     {
         "id":95794,
@@ -2827,7 +3391,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.98,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":0.92,
+        "gamesPlayed":12
     },
     {
         "id":42500,
@@ -2837,7 +3403,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":11.82,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.79,
+        "gamesPlayed":18
     },
     {
         "id":39656,
@@ -2847,7 +3415,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.59,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":1.97,
+        "gamesPlayed":20
     },
     {
         "id":98832,
@@ -2857,7 +3427,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":10.5,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.87,
+        "gamesPlayed":10
     },
     {
         "id":95352,
@@ -2867,7 +3439,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":10.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.19,
+        "gamesPlayed":17
     },
     {
         "id":88916,
@@ -2877,7 +3451,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":4.11,
-        "lastScore":-2.6
+        "lastScore":-2.6,
+        "average":1.5,
+        "gamesPlayed":22
     },
     {
         "id":70986,
@@ -2887,7 +3463,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":11.7,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.79,
+        "gamesPlayed":24
     },
     {
         "id":39850,
@@ -2897,7 +3475,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.21,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.74,
+        "gamesPlayed":23
     },
     {
         "id":104504,
@@ -2907,7 +3487,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.52,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.55,
+        "gamesPlayed":4
     },
     {
         "id":91242,
@@ -2917,7 +3499,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":7.56,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.94,
+        "gamesPlayed":16
     },
     {
         "id":105770,
@@ -2927,7 +3511,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108176,
@@ -2937,7 +3523,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.01,
+        "gamesPlayed":8
     },
     {
         "id":107554,
@@ -2947,7 +3535,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":3.84,
-        "lastScore":10.1
+        "lastScore":10.1,
+        "average":2.91,
+        "gamesPlayed":14
     },
     {
         "id":91664,
@@ -2957,7 +3547,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.44,
-        "lastScore":0.1
+        "lastScore":0.1,
+        "average":1.28,
+        "gamesPlayed":27
     },
     {
         "id":77544,
@@ -2967,7 +3559,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.05,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.86,
+        "gamesPlayed":9
     },
     {
         "id":86391,
@@ -2977,7 +3571,9 @@
         "positionId":"wb",
         "statusId":"doubt",
         "price":7.86,
-        "lastScore":-0.4
+        "lastScore":-0.4,
+        "average":2.48,
+        "gamesPlayed":18
     },
     {
         "id":105612,
@@ -2987,7 +3583,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.75,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.43,
+        "gamesPlayed":4
     },
     {
         "id":72018,
@@ -2997,7 +3595,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":12.63,
-        "lastScore":1.7
+        "lastScore":1.7,
+        "average":3.48,
+        "gamesPlayed":25
     },
     {
         "id":72595,
@@ -3007,7 +3607,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.56,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-7.8,
+        "gamesPlayed":1
     },
     {
         "id":101832,
@@ -3017,7 +3619,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.1,
-        "lastScore":-0.3
+        "lastScore":-0.3,
+        "average":1.22,
+        "gamesPlayed":20
     },
     {
         "id":89226,
@@ -3027,7 +3631,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.33,
-        "lastScore":1.8
+        "lastScore":1.8,
+        "average":2.26,
+        "gamesPlayed":26
     },
     {
         "id":91702,
@@ -3037,7 +3643,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.04,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.76,
+        "gamesPlayed":7
     },
     {
         "id":107744,
@@ -3047,7 +3655,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.04,
-        "lastScore":0.7
+        "lastScore":0.7,
+        "average":0.92,
+        "gamesPlayed":14
     },
     {
         "id":107093,
@@ -3057,7 +3667,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.38,
+        "gamesPlayed":15
     },
     {
         "id":98034,
@@ -3067,7 +3679,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.98,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.4,
+        "gamesPlayed":7
     },
     {
         "id":99253,
@@ -3077,7 +3691,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.74,
+        "gamesPlayed":11
     },
     {
         "id":104580,
@@ -3087,7 +3703,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.98,
-        "lastScore":1.9
+        "lastScore":1.9,
+        "average":1.06,
+        "gamesPlayed":11
     },
     {
         "id":91573,
@@ -3097,7 +3715,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":8.14,
-        "lastScore":-0.8
+        "lastScore":-0.8,
+        "average":2.71,
+        "gamesPlayed":11
     },
     {
         "id":95466,
@@ -3107,7 +3727,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.18,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":2.19,
+        "gamesPlayed":18
     },
     {
         "id":98952,
@@ -3117,7 +3739,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.75,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.66,
+        "gamesPlayed":18
     },
     {
         "id":101716,
@@ -3127,7 +3751,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.09,
+        "gamesPlayed":12
     },
     {
         "id":107954,
@@ -3137,7 +3763,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":90416,
@@ -3147,7 +3775,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107231,
@@ -3157,7 +3787,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.14,
+        "gamesPlayed":13
     },
     {
         "id":104217,
@@ -3167,7 +3799,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.93,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.37,
+        "gamesPlayed":3
     },
     {
         "id":72620,
@@ -3177,7 +3811,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.21,
-        "lastScore":1.8
+        "lastScore":1.8,
+        "average":2.7,
+        "gamesPlayed":13
     },
     {
         "id":109668,
@@ -3187,7 +3823,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.9,
+        "gamesPlayed":1
     },
     {
         "id":86410,
@@ -3197,7 +3835,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.26,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":3.56,
+        "gamesPlayed":21
     },
     {
         "id":99256,
@@ -3207,7 +3847,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":69138,
@@ -3217,7 +3859,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.65,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":1.35,
+        "gamesPlayed":20
     },
     {
         "id":105629,
@@ -3227,7 +3871,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":99789,
@@ -3237,7 +3883,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.68,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":5.19,
+        "gamesPlayed":21
     },
     {
         "id":73620,
@@ -3247,7 +3895,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.64,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.72,
+        "gamesPlayed":17
     },
     {
         "id":72391,
@@ -3257,7 +3907,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.42,
-        "lastScore":1.9
+        "lastScore":1.9,
+        "average":3.59,
+        "gamesPlayed":25
     },
     {
         "id":109689,
@@ -3267,7 +3919,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":86519,
@@ -3277,7 +3931,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.76,
+        "gamesPlayed":13
     },
     {
         "id":88669,
@@ -3287,7 +3943,9 @@
         "positionId":"st",
         "statusId":"injury",
         "price":5.26,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.85,
+        "gamesPlayed":17
     },
     {
         "id":38648,
@@ -3297,7 +3955,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.49,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.27,
+        "gamesPlayed":13
     },
     {
         "id":100333,
@@ -3307,7 +3967,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.34,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.85,
+        "gamesPlayed":11
     },
     {
         "id":107370,
@@ -3317,7 +3979,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.02,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.0,
+        "gamesPlayed":1
     },
     {
         "id":61141,
@@ -3327,7 +3991,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.56,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.1,
+        "gamesPlayed":21
     },
     {
         "id":90061,
@@ -3337,7 +4003,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.98,
-        "lastScore":-0.6
+        "lastScore":-0.6,
+        "average":3.43,
+        "gamesPlayed":24
     },
     {
         "id":104050,
@@ -3347,7 +4015,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.05,
+        "gamesPlayed":7
     },
     {
         "id":62024,
@@ -3357,7 +4027,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":3.94,
-        "lastScore":-0.3
+        "lastScore":-0.3,
+        "average":1.92,
+        "gamesPlayed":23
     },
     {
         "id":50301,
@@ -3367,7 +4039,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.59,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.06,
+        "gamesPlayed":11
     },
     {
         "id":91888,
@@ -3377,7 +4051,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":2.17,
-        "lastScore":-4.0
+        "lastScore":-4.0,
+        "average":1.15,
+        "gamesPlayed":22
     },
     {
         "id":109341,
@@ -3387,7 +4063,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109114,
@@ -3397,7 +4075,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":0.79,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.25,
+        "gamesPlayed":2
     },
     {
         "id":38133,
@@ -3407,7 +4087,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.47,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.75,
+        "gamesPlayed":6
     },
     {
         "id":90846,
@@ -3417,7 +4099,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.17,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.28,
+        "gamesPlayed":7
     },
     {
         "id":82792,
@@ -3427,7 +4111,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":7.87,
-        "lastScore":3.1
+        "lastScore":3.1,
+        "average":3.38,
+        "gamesPlayed":22
     },
     {
         "id":72007,
@@ -3437,7 +4123,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.21,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.67,
+        "gamesPlayed":7
     },
     {
         "id":52618,
@@ -3447,7 +4135,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.34,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.82,
+        "gamesPlayed":5
     },
     {
         "id":102330,
@@ -3457,7 +4147,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.17,
+        "gamesPlayed":6
     },
     {
         "id":102352,
@@ -3467,7 +4159,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.95,
+        "gamesPlayed":8
     },
     {
         "id":95356,
@@ -3477,7 +4171,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.96,
+        "gamesPlayed":8
     },
     {
         "id":85626,
@@ -3487,7 +4183,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.58,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.33,
+        "gamesPlayed":16
     },
     {
         "id":93303,
@@ -3497,7 +4195,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.98,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.5,
+        "gamesPlayed":7
     },
     {
         "id":84428,
@@ -3507,7 +4207,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":12.92,
-        "lastScore":3.7
+        "lastScore":3.7,
+        "average":4.58,
+        "gamesPlayed":27
     },
     {
         "id":86227,
@@ -3517,7 +4219,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.39,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.32,
+        "gamesPlayed":17
     },
     {
         "id":82764,
@@ -3527,7 +4231,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":2.91,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.99,
+        "gamesPlayed":17
     },
     {
         "id":85856,
@@ -3537,7 +4243,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":3.98,
-        "lastScore":-1.6
+        "lastScore":-1.6,
+        "average":2.17,
+        "gamesPlayed":23
     },
     {
         "id":109389,
@@ -3547,7 +4255,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103076,
@@ -3557,7 +4267,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.41,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.74,
+        "gamesPlayed":14
     },
     {
         "id":88423,
@@ -3567,7 +4279,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.72,
-        "lastScore":0.9
+        "lastScore":0.9,
+        "average":2.64,
+        "gamesPlayed":26
     },
     {
         "id":95799,
@@ -3577,7 +4291,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":12.07,
-        "lastScore":2.3
+        "lastScore":2.3,
+        "average":3.59,
+        "gamesPlayed":25
     },
     {
         "id":53148,
@@ -3587,7 +4303,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.49,
-        "lastScore":2.8
+        "lastScore":2.8,
+        "average":3.35,
+        "gamesPlayed":22
     },
     {
         "id":109830,
@@ -3597,7 +4315,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":1
     },
     {
         "id":100741,
@@ -3607,7 +4327,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104276,
@@ -3617,7 +4339,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.37,
-        "lastScore":7.4
+        "lastScore":7.4,
+        "average":5.42,
+        "gamesPlayed":13
     },
     {
         "id":95335,
@@ -3627,7 +4351,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.03,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.95,
+        "gamesPlayed":11
     },
     {
         "id":101201,
@@ -3637,7 +4363,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.67,
-        "lastScore":1.0
+        "lastScore":1.0,
+        "average":1.53,
+        "gamesPlayed":8
     },
     {
         "id":83772,
@@ -3647,7 +4375,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":8.12,
-        "lastScore":14.1
+        "lastScore":14.1,
+        "average":3.56,
+        "gamesPlayed":18
     },
     {
         "id":91689,
@@ -3657,7 +4387,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.9,
+        "gamesPlayed":2
     },
     {
         "id":104459,
@@ -3667,7 +4399,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.16,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.48,
+        "gamesPlayed":4
     },
     {
         "id":101715,
@@ -3677,7 +4411,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.34,
+        "gamesPlayed":16
     },
     {
         "id":90768,
@@ -3687,7 +4423,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":1.3,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":1.3,
+        "gamesPlayed":9
     },
     {
         "id":51413,
@@ -3697,7 +4435,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":6.52,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":7.17,
+        "gamesPlayed":3
     },
     {
         "id":95770,
@@ -3707,7 +4447,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.29,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":1
     },
     {
         "id":98529,
@@ -3717,7 +4459,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.59,
+        "gamesPlayed":9
     },
     {
         "id":99460,
@@ -3727,7 +4471,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":68770,
@@ -3737,7 +4483,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.29,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.74,
+        "gamesPlayed":12
     },
     {
         "id":79066,
@@ -3747,7 +4495,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107742,
@@ -3757,7 +4507,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104125,
@@ -3767,7 +4519,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.48,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":3.21,
+        "gamesPlayed":27
     },
     {
         "id":107756,
@@ -3777,7 +4531,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103295,
@@ -3787,7 +4543,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":4.1,
-        "lastScore":1.3
+        "lastScore":1.3,
+        "average":-0.07,
+        "gamesPlayed":7
     },
     {
         "id":82634,
@@ -3797,7 +4555,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":10.97,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.39,
+        "gamesPlayed":19
     },
     {
         "id":51772,
@@ -3807,7 +4567,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.92,
-        "lastScore":2.2
+        "lastScore":2.2,
+        "average":4.39,
+        "gamesPlayed":24
     },
     {
         "id":107509,
@@ -3817,7 +4579,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":0.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.38,
+        "gamesPlayed":6
     },
     {
         "id":97867,
@@ -3827,7 +4591,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.87,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.97,
+        "gamesPlayed":28
     },
     {
         "id":94297,
@@ -3837,7 +4603,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.56,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":0.07,
+        "gamesPlayed":8
     },
     {
         "id":101290,
@@ -3847,7 +4615,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.15,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.48,
+        "gamesPlayed":12
     },
     {
         "id":77861,
@@ -3857,7 +4627,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105585,
@@ -3867,7 +4639,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.77,
+        "gamesPlayed":3
     },
     {
         "id":38138,
@@ -3877,7 +4651,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.06,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.75,
+        "gamesPlayed":15
     },
     {
         "id":73800,
@@ -3887,7 +4663,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":9.08,
-        "lastScore":6.3
+        "lastScore":6.3,
+        "average":3.15,
+        "gamesPlayed":16
     },
     {
         "id":92193,
@@ -3897,7 +4675,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.21,
+        "gamesPlayed":11
     },
     {
         "id":96340,
@@ -3907,7 +4687,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.51,
-        "lastScore":12.7
+        "lastScore":12.7,
+        "average":2.94,
+        "gamesPlayed":23
     },
     {
         "id":78478,
@@ -3917,7 +4699,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.5,
-        "lastScore":3.4
+        "lastScore":3.4,
+        "average":1.26,
+        "gamesPlayed":24
     },
     {
         "id":107372,
@@ -3927,7 +4711,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.8,
+        "gamesPlayed":1
     },
     {
         "id":105841,
@@ -3937,7 +4723,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.09,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-5.6,
+        "gamesPlayed":1
     },
     {
         "id":96342,
@@ -3947,7 +4735,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.26,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.76,
+        "gamesPlayed":24
     },
     {
         "id":107109,
@@ -3957,7 +4747,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":1.48,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.28,
+        "gamesPlayed":4
     },
     {
         "id":109963,
@@ -3967,7 +4759,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.07,
+        "gamesPlayed":3
     },
     {
         "id":100977,
@@ -3977,7 +4771,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.39,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.64,
+        "gamesPlayed":10
     },
     {
         "id":106708,
@@ -3987,7 +4783,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104664,
@@ -3997,7 +4795,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38509,
@@ -4007,7 +4807,9 @@
         "positionId":"gk",
         "statusId":"doubt",
         "price":9.26,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.86,
+        "gamesPlayed":9
     },
     {
         "id":107110,
@@ -4017,7 +4819,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.23,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.17,
+        "gamesPlayed":11
     },
     {
         "id":105318,
@@ -4027,7 +4831,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":88307,
@@ -4037,7 +4843,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.3,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":1
     },
     {
         "id":107760,
@@ -4047,7 +4855,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.5,
+        "gamesPlayed":1
     },
     {
         "id":110188,
@@ -4057,7 +4867,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107108,
@@ -4067,7 +4879,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38750,
@@ -4077,7 +4891,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.31,
-        "lastScore":5.5
+        "lastScore":5.5,
+        "average":3.79,
+        "gamesPlayed":21
     },
     {
         "id":107107,
@@ -4087,7 +4903,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.35,
+        "gamesPlayed":2
     },
     {
         "id":91502,
@@ -4097,7 +4915,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.63,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.42,
+        "gamesPlayed":5
     },
     {
         "id":101580,
@@ -4107,7 +4927,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.14,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.67,
+        "gamesPlayed":13
     },
     {
         "id":107111,
@@ -4117,7 +4939,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":98274,
@@ -4127,7 +4951,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.75,
-        "lastScore":-1.2
+        "lastScore":-1.2,
+        "average":1.77,
+        "gamesPlayed":10
     },
     {
         "id":110189,
@@ -4137,7 +4963,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110190,
@@ -4147,7 +4975,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109860,
@@ -4157,7 +4987,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105807,
@@ -4167,7 +4999,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107882,
@@ -4177,7 +5011,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":80076,
@@ -4187,7 +5023,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.7,
-        "lastScore":0.6
+        "lastScore":0.6,
+        "average":2.14,
+        "gamesPlayed":16
     },
     {
         "id":110193,
@@ -4197,7 +5035,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":1
     },
     {
         "id":110210,
@@ -4207,7 +5047,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":1
     },
     {
         "id":90587,
@@ -4217,7 +5059,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.61,
-        "lastScore":0.2
+        "lastScore":0.2,
+        "average":0.2,
+        "gamesPlayed":1
     },
     {
         "id":62137,
@@ -4227,7 +5071,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":5.47,
-        "lastScore":1.27
+        "lastScore":1.27,
+        "average":2.49,
+        "gamesPlayed":10
     },
     {
         "id":107373,
@@ -4237,7 +5083,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110207,
@@ -4247,7 +5095,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107374,
@@ -4257,7 +5107,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.64,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.45,
+        "gamesPlayed":2
     },
     {
         "id":107519,
@@ -4267,7 +5119,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105887,
@@ -4277,7 +5131,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107515,
@@ -4287,7 +5143,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103183,
@@ -4297,7 +5155,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110235,
@@ -4307,7 +5167,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":61149,
@@ -4317,7 +5179,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.53,
-        "lastScore":1.1
+        "lastScore":1.1,
+        "average":2.3,
+        "gamesPlayed":8
     },
     {
         "id":107371,
@@ -4327,7 +5191,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107517,
@@ -4337,7 +5203,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":79023,
@@ -4347,7 +5215,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.05,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.62,
+        "gamesPlayed":7
     },
     {
         "id":102797,
@@ -4357,7 +5227,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":1.5,
-        "lastScore":3.1
+        "lastScore":3.1,
+        "average":0.96,
+        "gamesPlayed":10
     },
     {
         "id":107972,
@@ -4367,7 +5239,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":1
     },
     {
         "id":82564,
@@ -4377,7 +5251,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.24,
-        "lastScore":-0.8
+        "lastScore":-0.8,
+        "average":1.13,
+        "gamesPlayed":9
     },
     {
         "id":91415,
@@ -4387,7 +5263,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101173,
@@ -4397,7 +5275,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":82766,
@@ -4407,7 +5287,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.43,
-        "lastScore":5.5
+        "lastScore":5.5,
+        "average":2.73,
+        "gamesPlayed":10
     },
     {
         "id":102299,
@@ -4417,7 +5299,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.7,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":1.15,
+        "gamesPlayed":11
     },
     {
         "id":71549,
@@ -4427,7 +5311,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.03,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":1.44,
+        "gamesPlayed":5
     },
     {
         "id":110303,
@@ -4437,7 +5323,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.02,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.5,
+        "gamesPlayed":2
     },
     {
         "id":104025,
@@ -4447,7 +5335,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":78497,
@@ -4457,7 +5347,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.15,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":1.73,
+        "gamesPlayed":11
     },
     {
         "id":107238,
@@ -4467,7 +5359,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.36,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.7,
+        "gamesPlayed":1
     },
     {
         "id":80363,
@@ -4477,7 +5371,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.5,
-        "lastScore":-3.3
+        "lastScore":-3.3,
+        "average":0.63,
+        "gamesPlayed":12
     },
     {
         "id":110258,
@@ -4487,7 +5383,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.07,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.03,
+        "gamesPlayed":3
     },
     {
         "id":102506,
@@ -4497,7 +5395,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.2,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":2.38,
+        "gamesPlayed":11
     },
     {
         "id":110270,
@@ -4507,7 +5407,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":2.9,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.7,
+        "gamesPlayed":3
     },
     {
         "id":38311,
@@ -4517,7 +5419,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.47,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.67,
+        "gamesPlayed":6
     },
     {
         "id":38315,
@@ -4527,7 +5431,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":3.69,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":2
     },
     {
         "id":107741,
@@ -4537,7 +5443,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":100079,
@@ -4547,7 +5455,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":8.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.65,
+        "gamesPlayed":8
     },
     {
         "id":110415,
@@ -4557,7 +5467,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.81,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.2,
+        "gamesPlayed":3
     },
     {
         "id":89343,
@@ -4567,7 +5479,9 @@
         "positionId":"wb",
         "statusId":"doubt",
         "price":3.74,
-        "lastScore":-6.3
+        "lastScore":-6.3,
+        "average":2.6,
+        "gamesPlayed":13
     },
     {
         "id":110416,
@@ -4577,7 +5491,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":98289,
@@ -4587,7 +5503,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.08,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.33,
+        "gamesPlayed":10
     },
     {
         "id":110465,
@@ -4597,7 +5515,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109591,
@@ -4607,7 +5527,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":73624,
@@ -4617,7 +5539,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.68,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.33,
+        "gamesPlayed":6
     },
     {
         "id":94138,
@@ -4627,7 +5551,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.94,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.43,
+        "gamesPlayed":4
     },
     {
         "id":102667,
@@ -4637,7 +5563,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.12,
+        "gamesPlayed":8
     },
     {
         "id":110373,
@@ -4647,7 +5575,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.79,
-        "lastScore":0.5
+        "lastScore":0.5,
+        "average":-1.25,
+        "gamesPlayed":2
     },
     {
         "id":101073,
@@ -4657,7 +5587,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.2,
+        "gamesPlayed":1
     },
     {
         "id":37866,
@@ -4667,7 +5599,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.82,
-        "lastScore":-2.9
+        "lastScore":-2.9,
+        "average":1.88,
+        "gamesPlayed":10
     },
     {
         "id":101413,
@@ -4677,7 +5611,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.51,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.34,
+        "gamesPlayed":8
     },
     {
         "id":99440,
@@ -4687,7 +5623,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.6,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.9,
+        "gamesPlayed":1
     },
     {
         "id":104420,
@@ -4697,7 +5635,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.82,
-        "lastScore":-0.6
+        "lastScore":-0.6,
+        "average":0.65,
+        "gamesPlayed":8
     },
     {
         "id":70666,
@@ -4707,7 +5647,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.6,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.74,
+        "gamesPlayed":7
     },
     {
         "id":110506,
@@ -4717,7 +5659,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":12.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.04,
+        "gamesPlayed":9
     },
     {
         "id":98619,
@@ -4727,7 +5671,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.8,
+        "gamesPlayed":3
     },
     {
         "id":108424,
@@ -4737,7 +5683,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107182,
@@ -4747,7 +5695,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106000,
@@ -4757,7 +5707,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38877,
@@ -4767,7 +5719,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":7.98,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.64,
+        "gamesPlayed":7
     },
     {
         "id":105647,
@@ -4777,7 +5731,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.71,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":3.36,
+        "gamesPlayed":5
     },
     {
         "id":97711,
@@ -4787,7 +5743,9 @@
         "positionId":"cb",
         "statusId":"suspended",
         "price":4.69,
-        "lastScore":0.9
+        "lastScore":0.9,
+        "average":4.32,
+        "gamesPlayed":6
     },
     {
         "id":69102,
@@ -4797,7 +5755,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.52,
-        "lastScore":9.5
+        "lastScore":9.5,
+        "average":4.85,
+        "gamesPlayed":6
     },
     {
         "id":84263,
@@ -4807,7 +5767,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.54,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.7,
+        "gamesPlayed":1
     },
     {
         "id":50446,
@@ -4817,7 +5779,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.8,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.35,
+        "gamesPlayed":2
     },
     {
         "id":107746,
@@ -4827,7 +5791,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":1
     },
     {
         "id":106880,
@@ -4837,7 +5803,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107498,
@@ -4847,7 +5815,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.84,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.37,
+        "gamesPlayed":6
     },
     {
         "id":78580,
@@ -4857,7 +5827,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.67,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.85,
+        "gamesPlayed":2
     },
     {
         "id":105899,
@@ -4867,7 +5839,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.02,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.44,
+        "gamesPlayed":7
     },
     {
         "id":105839,
@@ -4877,7 +5851,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":102145,
@@ -4887,7 +5863,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":100830,
@@ -4897,7 +5875,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110557,
@@ -4907,7 +5887,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101912,
@@ -4917,7 +5899,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.49,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.9,
+        "gamesPlayed":1
     },
     {
         "id":104153,
@@ -4927,7 +5911,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":1.22,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.77,
+        "gamesPlayed":4
     },
     {
         "id":90590,
@@ -4937,7 +5923,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":7.9,
+        "gamesPlayed":2
     },
     {
         "id":107400,
@@ -4947,7 +5935,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.47,
+        "gamesPlayed":3
     },
     {
         "id":109560,
@@ -4957,7 +5947,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106082,
@@ -4967,7 +5959,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.5,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":1.77,
+        "gamesPlayed":3
     },
     {
         "id":110561,
@@ -4977,7 +5971,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.85,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":6.6,
+        "gamesPlayed":1
     },
     {
         "id":107541,
@@ -4987,7 +5983,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":102907,
@@ -4997,7 +5995,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":100652,
@@ -5007,7 +6007,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":5.0,
-        "lastScore":10.0
+        "lastScore":10.0,
+        "average":4.14,
+        "gamesPlayed":15
     },
     {
         "id":109566,
@@ -5017,7 +6019,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109463,
@@ -5027,7 +6031,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.99,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.0,
+        "gamesPlayed":6
     },
     {
         "id":109282,
@@ -5037,7 +6043,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":2.87,
-        "lastScore":2.7
+        "lastScore":2.7,
+        "average":1.94,
+        "gamesPlayed":18
     },
     {
         "id":109395,
@@ -5047,7 +6055,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105282,
@@ -5057,7 +6067,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109461,
@@ -5067,7 +6079,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.35,
+        "gamesPlayed":4
     },
     {
         "id":107112,
@@ -5077,7 +6091,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.48,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.77,
+        "gamesPlayed":9
     },
     {
         "id":107516,
@@ -5087,7 +6103,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.0,
+        "gamesPlayed":1
     },
     {
         "id":101573,
@@ -5097,7 +6115,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.73,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.2,
+        "gamesPlayed":4
     },
     {
         "id":101483,
@@ -5107,7 +6127,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.48,
+        "gamesPlayed":19
     },
     {
         "id":100842,
@@ -5117,7 +6139,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.43,
+        "gamesPlayed":3
     },
     {
         "id":96055,
@@ -5127,7 +6151,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.8,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.04,
+        "gamesPlayed":16
     },
     {
         "id":109573,
@@ -5137,7 +6163,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":0.99,
-        "lastScore":0.5
+        "lastScore":0.5,
+        "average":1.17,
+        "gamesPlayed":4
     },
     {
         "id":107798,
@@ -5147,7 +6175,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.79,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.15,
+        "gamesPlayed":2
     },
     {
         "id":100844,
@@ -5157,7 +6187,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101597,
@@ -5167,7 +6199,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.1,
+        "gamesPlayed":3
     },
     {
         "id":68832,
@@ -5177,7 +6211,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.3,
-        "lastScore":0.5
+        "lastScore":0.5,
+        "average":1.44,
+        "gamesPlayed":23
     },
     {
         "id":93790,
@@ -5187,7 +6223,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.0,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":1.68,
+        "gamesPlayed":21
     },
     {
         "id":102464,
@@ -5197,7 +6235,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.8,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.04,
+        "gamesPlayed":11
     },
     {
         "id":107179,
@@ -5207,7 +6247,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":88072,
@@ -5217,7 +6259,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.17,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":2.57,
+        "gamesPlayed":17
     },
     {
         "id":87273,
@@ -5227,7 +6271,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.79,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.57,
+        "gamesPlayed":18
     },
     {
         "id":105175,
@@ -5237,7 +6283,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.14,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.37,
+        "gamesPlayed":13
     },
     {
         "id":106820,
@@ -5247,7 +6295,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":3.64,
-        "lastScore":3.1
+        "lastScore":3.1,
+        "average":4.36,
+        "gamesPlayed":13
     },
     {
         "id":107981,
@@ -5257,7 +6307,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":42411,
@@ -5267,7 +6319,9 @@
         "positionId":"man",
         "statusId":"null",
         "price":11.45,
-        "lastScore":5.25
+        "lastScore":5.25,
+        "average":3.71,
+        "gamesPlayed":29
     },
     {
         "id":104526,
@@ -5277,7 +6331,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.46,
-        "lastScore":1.6
+        "lastScore":1.6,
+        "average":0.93,
+        "gamesPlayed":8
     },
     {
         "id":109588,
@@ -5287,7 +6343,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.79,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.05,
+        "gamesPlayed":2
     },
     {
         "id":87552,
@@ -5297,7 +6355,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.07,
-        "lastScore":1.0
+        "lastScore":1.0,
+        "average":2.11,
+        "gamesPlayed":22
     },
     {
         "id":101600,
@@ -5307,7 +6367,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.53,
-        "lastScore":1.5
+        "lastScore":1.5,
+        "average":2.36,
+        "gamesPlayed":10
     },
     {
         "id":105842,
@@ -5317,7 +6379,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38229,
@@ -5327,7 +6391,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.17,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.18,
+        "gamesPlayed":11
     },
     {
         "id":37662,
@@ -5337,7 +6403,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.5,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":3.15,
+        "gamesPlayed":11
     },
     {
         "id":38231,
@@ -5347,7 +6415,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":38394,
@@ -5357,7 +6427,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.12,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":3.15,
+        "gamesPlayed":21
     },
     {
         "id":93377,
@@ -5367,7 +6439,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":3.92,
-        "lastScore":0.2
+        "lastScore":0.2,
+        "average":1.73,
+        "gamesPlayed":19
     },
     {
         "id":107367,
@@ -5377,7 +6451,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.11,
-        "lastScore":0.7
+        "lastScore":0.7,
+        "average":3.07,
+        "gamesPlayed":10
     },
     {
         "id":107136,
@@ -5387,7 +6463,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":86713,
@@ -5397,7 +6475,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.42,
-        "lastScore":5.0
+        "lastScore":5.0,
+        "average":3.03,
+        "gamesPlayed":18
     },
     {
         "id":109318,
@@ -5407,7 +6487,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":86686,
@@ -5417,7 +6499,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":8.94,
-        "lastScore":9.9
+        "lastScore":9.9,
+        "average":2.47,
+        "gamesPlayed":21
     },
     {
         "id":100761,
@@ -5427,7 +6511,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":4.4,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.02,
+        "gamesPlayed":5
     },
     {
         "id":104590,
@@ -5437,7 +6523,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101841,
@@ -5447,7 +6535,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.26,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.04,
+        "gamesPlayed":7
     },
     {
         "id":102909,
@@ -5457,7 +6547,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.19,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":0.79,
+        "gamesPlayed":17
     },
     {
         "id":100084,
@@ -5467,7 +6559,9 @@
         "positionId":"mid",
         "statusId":"doubt",
         "price":4.37,
-        "lastScore":5.0
+        "lastScore":5.0,
+        "average":1.33,
+        "gamesPlayed":25
     },
     {
         "id":105566,
@@ -5477,7 +6571,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107137,
@@ -5487,7 +6583,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106160,
@@ -5497,7 +6595,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.76,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-2.2,
+        "gamesPlayed":2
     },
     {
         "id":71571,
@@ -5507,7 +6607,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.9,
-        "lastScore":-2.3
+        "lastScore":-2.3,
+        "average":2.86,
+        "gamesPlayed":25
     },
     {
         "id":102598,
@@ -5517,7 +6619,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":3.79,
-        "lastScore":3.6
+        "lastScore":3.6,
+        "average":2.38,
+        "gamesPlayed":7
     },
     {
         "id":104074,
@@ -5527,7 +6631,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":4.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":97899,
@@ -5537,7 +6643,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":2.39,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.13,
+        "gamesPlayed":7
     },
     {
         "id":97645,
@@ -5547,7 +6655,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105901,
@@ -5557,7 +6667,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.76,
+        "gamesPlayed":9
     },
     {
         "id":72386,
@@ -5567,7 +6679,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.54,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":1.2,
+        "gamesPlayed":19
     },
     {
         "id":102067,
@@ -5577,7 +6691,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.39,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.47,
+        "gamesPlayed":7
     },
     {
         "id":109404,
@@ -5587,7 +6703,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":1.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.75,
+        "gamesPlayed":2
     },
     {
         "id":88033,
@@ -5597,7 +6715,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.49,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.94,
+        "gamesPlayed":5
     },
     {
         "id":93787,
@@ -5607,7 +6727,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.19,
+        "gamesPlayed":19
     },
     {
         "id":84893,
@@ -5617,7 +6739,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":5.29,
-        "lastScore":-6.0
+        "lastScore":-6.0,
+        "average":2.24,
+        "gamesPlayed":20
     },
     {
         "id":97062,
@@ -5627,7 +6751,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":3.66,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.76,
+        "gamesPlayed":5
     },
     {
         "id":79631,
@@ -5637,7 +6763,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":13.44,
-        "lastScore":3.8
+        "lastScore":3.8,
+        "average":5.28,
+        "gamesPlayed":24
     },
     {
         "id":107224,
@@ -5647,7 +6775,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103515,
@@ -5657,7 +6787,9 @@
         "positionId":"mid",
         "statusId":"suspended",
         "price":0.77,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-0.17,
+        "gamesPlayed":7
     },
     {
         "id":97520,
@@ -5667,7 +6799,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.76,
-        "lastScore":1.7
+        "lastScore":1.7,
+        "average":3.11,
+        "gamesPlayed":14
     },
     {
         "id":93893,
@@ -5677,7 +6811,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.84,
+        "gamesPlayed":17
     },
     {
         "id":93550,
@@ -5687,7 +6823,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.89,
-        "lastScore":2.3
+        "lastScore":2.3,
+        "average":3.42,
+        "gamesPlayed":18
     },
     {
         "id":100107,
@@ -5697,7 +6835,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.51,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.38,
+        "gamesPlayed":5
     },
     {
         "id":109405,
@@ -5707,7 +6847,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":80196,
@@ -5717,7 +6859,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":7.99,
-        "lastScore":3.0
+        "lastScore":3.0,
+        "average":3.43,
+        "gamesPlayed":18
     },
     {
         "id":91260,
@@ -5727,7 +6871,9 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":1.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-2.0,
+        "gamesPlayed":0
     },
     {
         "id":91929,
@@ -5737,7 +6883,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104134,
@@ -5747,7 +6895,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.91,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.7,
+        "gamesPlayed":2
     },
     {
         "id":37333,
@@ -5757,7 +6907,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.75,
-        "lastScore":2.23
+        "lastScore":2.23,
+        "average":3.2,
+        "gamesPlayed":9
     },
     {
         "id":106826,
@@ -5767,7 +6919,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":1.03,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":1.18,
+        "gamesPlayed":6
     },
     {
         "id":104634,
@@ -5777,7 +6931,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":40006,
@@ -5787,7 +6943,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":11.23,
-        "lastScore":4.55
+        "lastScore":4.55,
+        "average":3.81,
+        "gamesPlayed":10
     },
     {
         "id":104588,
@@ -5797,7 +6955,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106076,
@@ -5807,7 +6967,9 @@
         "positionId":"wb",
         "statusId":"doubt",
         "price":2.65,
-        "lastScore":4.7
+        "lastScore":4.7,
+        "average":2.28,
+        "gamesPlayed":11
     },
     {
         "id":103662,
@@ -5817,7 +6979,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101696,
@@ -5827,7 +6991,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110598,
@@ -5837,7 +7003,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109406,
@@ -5847,7 +7015,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109464,
@@ -5857,7 +7027,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106219,
@@ -5867,7 +7039,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.72,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-2.6,
+        "gamesPlayed":1
     },
     {
         "id":102301,
@@ -5877,7 +7051,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.7,
+        "gamesPlayed":2
     },
     {
         "id":99881,
@@ -5887,7 +7063,9 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":6.91,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.57,
+        "gamesPlayed":14
     },
     {
         "id":109324,
@@ -5897,7 +7075,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106322,
@@ -5907,7 +7087,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.23,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.9,
+        "gamesPlayed":3
     },
     {
         "id":93988,
@@ -5917,7 +7099,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":3.8,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.23,
+        "gamesPlayed":7
     },
     {
         "id":38909,
@@ -5927,7 +7111,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":6.53,
-        "lastScore":8.1
+        "lastScore":8.1,
+        "average":2.34,
+        "gamesPlayed":18
     },
     {
         "id":107259,
@@ -5937,7 +7123,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.03,
+        "gamesPlayed":3
     },
     {
         "id":103261,
@@ -5947,7 +7135,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":78086,
@@ -5957,7 +7147,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.16,
+        "gamesPlayed":5
     },
     {
         "id":87929,
@@ -5967,7 +7159,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.05,
-        "lastScore":1.6
+        "lastScore":1.6,
+        "average":1.1,
+        "gamesPlayed":23
     },
     {
         "id":105786,
@@ -5977,7 +7171,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.34,
-        "lastScore":3.2
+        "lastScore":3.2,
+        "average":3.87,
+        "gamesPlayed":23
     },
     {
         "id":85931,
@@ -5987,7 +7183,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":13.46,
-        "lastScore":12.8
+        "lastScore":12.8,
+        "average":5.0,
+        "gamesPlayed":19
     },
     {
         "id":69345,
@@ -5997,7 +7195,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.67,
-        "lastScore":6.5
+        "lastScore":6.5,
+        "average":3.69,
+        "gamesPlayed":20
     },
     {
         "id":110602,
@@ -6007,7 +7207,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":101729,
@@ -6017,7 +7219,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.28,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.98,
+        "gamesPlayed":12
     },
     {
         "id":101398,
@@ -6027,7 +7231,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.43,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.08,
+        "gamesPlayed":4
     },
     {
         "id":83528,
@@ -6037,7 +7243,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.26,
+        "gamesPlayed":12
     },
     {
         "id":78445,
@@ -6047,7 +7255,9 @@
         "positionId":"wb",
         "statusId":"suspended",
         "price":7.35,
-        "lastScore":12.3
+        "lastScore":12.3,
+        "average":3.55,
+        "gamesPlayed":12
     },
     {
         "id":84674,
@@ -6057,7 +7267,9 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":5.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.6,
+        "gamesPlayed":16
     },
     {
         "id":109638,
@@ -6067,7 +7279,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":5.43,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":3.75,
+        "gamesPlayed":8
     },
     {
         "id":82773,
@@ -6077,7 +7291,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.59,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.0,
+        "gamesPlayed":15
     },
     {
         "id":87262,
@@ -6087,7 +7303,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.56,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.97,
+        "gamesPlayed":15
     },
     {
         "id":89256,
@@ -6097,7 +7315,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":9.02,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.2,
+        "gamesPlayed":23
     },
     {
         "id":99119,
@@ -6107,7 +7327,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":2.93,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":1.65,
+        "gamesPlayed":23
     },
     {
         "id":100847,
@@ -6117,7 +7339,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":92180,
@@ -6127,7 +7351,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":6.77,
-        "lastScore":0.12
+        "lastScore":0.12,
+        "average":2.79,
+        "gamesPlayed":24
     },
     {
         "id":110603,
@@ -6137,7 +7363,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105111,
@@ -6147,7 +7375,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.81,
-        "lastScore":9.6
+        "lastScore":9.6,
+        "average":4.7,
+        "gamesPlayed":7
     },
     {
         "id":62974,
@@ -6157,7 +7387,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.8,
-        "lastScore":1.6
+        "lastScore":1.6,
+        "average":3.56,
+        "gamesPlayed":5
     },
     {
         "id":105301,
@@ -6167,7 +7399,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.99,
-        "lastScore":0.2
+        "lastScore":0.2,
+        "average":0.57,
+        "gamesPlayed":15
     },
     {
         "id":110606,
@@ -6177,7 +7411,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109656,
@@ -6187,7 +7423,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104502,
@@ -6197,7 +7435,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.33,
-        "lastScore":3.5
+        "lastScore":3.5,
+        "average":0.27,
+        "gamesPlayed":22
     },
     {
         "id":101718,
@@ -6207,7 +7447,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.99,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.0,
+        "gamesPlayed":3
     },
     {
         "id":87679,
@@ -6217,7 +7459,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.55,
+        "gamesPlayed":6
     },
     {
         "id":105208,
@@ -6227,7 +7471,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.94,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.0,
+        "gamesPlayed":1
     },
     {
         "id":86859,
@@ -6237,7 +7483,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.75,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":2.29,
+        "gamesPlayed":11
     },
     {
         "id":68928,
@@ -6247,7 +7495,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":7.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.0,
+        "gamesPlayed":9
     },
     {
         "id":101728,
@@ -6257,7 +7507,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.94,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.35,
+        "gamesPlayed":15
     },
     {
         "id":99430,
@@ -6267,7 +7519,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":1.39,
-        "lastScore":3.4
+        "lastScore":3.4,
+        "average":3.4,
+        "gamesPlayed":1
     },
     {
         "id":87009,
@@ -6277,7 +7531,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.37,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.33,
+        "gamesPlayed":18
     },
     {
         "id":107236,
@@ -6287,7 +7543,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":74159,
@@ -6297,7 +7555,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.85,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":2.14,
+        "gamesPlayed":18
     },
     {
         "id":86770,
@@ -6307,7 +7567,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.63,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.12,
+        "gamesPlayed":5
     },
     {
         "id":109626,
@@ -6317,7 +7579,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.03,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":0.95,
+        "gamesPlayed":8
     },
     {
         "id":93956,
@@ -6327,7 +7591,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":87393,
@@ -6337,7 +7603,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.32,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.25,
+        "gamesPlayed":4
     },
     {
         "id":88312,
@@ -6347,7 +7615,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":11.84,
-        "lastScore":11.1
+        "lastScore":11.1,
+        "average":3.82,
+        "gamesPlayed":21
     },
     {
         "id":73476,
@@ -6357,7 +7627,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.67,
-        "lastScore":3.38
+        "lastScore":3.38,
+        "average":2.98,
+        "gamesPlayed":4
     },
     {
         "id":89493,
@@ -6367,7 +7639,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":11.61,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.07,
+        "gamesPlayed":18
     },
     {
         "id":96652,
@@ -6377,7 +7651,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.99,
-        "lastScore":0.5
+        "lastScore":0.5,
+        "average":1.44,
+        "gamesPlayed":22
     },
     {
         "id":68834,
@@ -6387,7 +7663,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.1,
+        "gamesPlayed":2
     },
     {
         "id":81898,
@@ -6397,7 +7675,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.47,
+        "gamesPlayed":3
     },
     {
         "id":110607,
@@ -6407,7 +7687,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110623,
@@ -6417,7 +7699,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107453,
@@ -6427,7 +7711,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":97425,
@@ -6437,7 +7723,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.89,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.39,
+        "gamesPlayed":7
     },
     {
         "id":97898,
@@ -6447,7 +7735,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.48,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.65,
+        "gamesPlayed":12
     },
     {
         "id":98672,
@@ -6457,7 +7747,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":7.37,
-        "lastScore":7.3
+        "lastScore":7.3,
+        "average":3.76,
+        "gamesPlayed":21
     },
     {
         "id":91191,
@@ -6467,7 +7759,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.1,
+        "gamesPlayed":3
     },
     {
         "id":68835,
@@ -6477,7 +7771,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.53,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.78,
+        "gamesPlayed":5
     },
     {
         "id":101319,
@@ -6487,7 +7783,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":12.66,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":4.42,
+        "gamesPlayed":23
     },
     {
         "id":106843,
@@ -6497,7 +7795,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-1.77,
+        "gamesPlayed":4
     },
     {
         "id":97995,
@@ -6507,7 +7807,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.58,
-        "lastScore":6.7
+        "lastScore":6.7,
+        "average":2.52,
+        "gamesPlayed":7
     },
     {
         "id":101717,
@@ -6517,7 +7819,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.61,
+        "gamesPlayed":21
     },
     {
         "id":104282,
@@ -6527,7 +7831,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":92496,
@@ -6537,7 +7843,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":9.62,
-        "lastScore":6.0
+        "lastScore":6.0,
+        "average":5.36,
+        "gamesPlayed":21
     },
     {
         "id":107750,
@@ -6547,7 +7855,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.55,
+        "gamesPlayed":2
     },
     {
         "id":107963,
@@ -6557,7 +7867,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106965,
@@ -6567,7 +7879,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107745,
@@ -6577,7 +7891,9 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":3.67,
-        "lastScore":3.2
+        "lastScore":3.2,
+        "average":3.09,
+        "gamesPlayed":7
     },
     {
         "id":38001,
@@ -6587,7 +7903,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.82,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106835,
@@ -6597,7 +7915,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":49651,
@@ -6607,7 +7927,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.33,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.88,
+        "gamesPlayed":19
     },
     {
         "id":107222,
@@ -6617,7 +7939,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104994,
@@ -6627,7 +7951,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.11,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.33,
+        "gamesPlayed":9
     },
     {
         "id":62033,
@@ -6637,7 +7963,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.62,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":2.63,
+        "gamesPlayed":13
     },
     {
         "id":106829,
@@ -6647,7 +7975,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":68808,
@@ -6657,7 +7987,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.75,
+        "gamesPlayed":21
     },
     {
         "id":81798,
@@ -6667,7 +7999,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.97,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.61,
+        "gamesPlayed":22
     },
     {
         "id":109326,
@@ -6677,7 +8011,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":94514,
@@ -6687,7 +8023,9 @@
         "positionId":"cb",
         "statusId":"suspended",
         "price":2.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.55,
+        "gamesPlayed":12
     },
     {
         "id":103766,
@@ -6697,7 +8035,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.79,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.1,
+        "gamesPlayed":8
     },
     {
         "id":78584,
@@ -6707,7 +8047,9 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":9.45,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.37,
+        "gamesPlayed":19
     },
     {
         "id":107195,
@@ -6717,7 +8059,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":95127,
@@ -6727,7 +8071,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.25,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.65,
+        "gamesPlayed":25
     },
     {
         "id":86143,
@@ -6737,7 +8083,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.66,
-        "lastScore":-2.9
+        "lastScore":-2.9,
+        "average":1.17,
+        "gamesPlayed":4
     },
     {
         "id":83817,
@@ -6747,7 +8095,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.53,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.09,
+        "gamesPlayed":17
     },
     {
         "id":104079,
@@ -6757,7 +8107,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":97133,
@@ -6767,7 +8119,9 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.42,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.11,
+        "gamesPlayed":25
     },
     {
         "id":87192,
@@ -6777,7 +8131,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.31,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.07,
+        "gamesPlayed":8
     },
     {
         "id":105947,
@@ -6787,7 +8143,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":92981,
@@ -6797,7 +8155,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.13,
+        "gamesPlayed":14
     },
     {
         "id":94968,
@@ -6807,7 +8167,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":7.09,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.37,
+        "gamesPlayed":16
     },
     {
         "id":93791,
@@ -6817,7 +8179,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.49,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.13,
+        "gamesPlayed":20
     },
     {
         "id":109426,
@@ -6827,7 +8191,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":0.78,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.14,
+        "gamesPlayed":14
     },
     {
         "id":105998,
@@ -6837,7 +8203,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.73,
+        "gamesPlayed":14
     },
     {
         "id":101796,
@@ -6847,7 +8215,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.91,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":2.17,
+        "gamesPlayed":6
     },
     {
         "id":110604,
@@ -6857,7 +8227,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":37245,
@@ -6867,7 +8239,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.45,
-        "lastScore":2.84
+        "lastScore":2.84,
+        "average":3.82,
+        "gamesPlayed":29
     },
     {
         "id":94975,
@@ -6877,7 +8251,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.01,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.7,
+        "gamesPlayed":14
     },
     {
         "id":95464,
@@ -6887,7 +8263,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.29,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.66,
+        "gamesPlayed":20
     },
     {
         "id":104660,
@@ -6897,7 +8275,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.72,
-        "lastScore":-0.3
+        "lastScore":-0.3,
+        "average":3.87,
+        "gamesPlayed":19
     },
     {
         "id":109497,
@@ -6907,7 +8287,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.95,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.62,
+        "gamesPlayed":12
     },
     {
         "id":106199,
@@ -6917,7 +8299,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.18,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":0.62,
+        "gamesPlayed":8
     },
     {
         "id":97321,
@@ -6927,7 +8311,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.1,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.64,
+        "gamesPlayed":10
     },
     {
         "id":104250,
@@ -6937,7 +8323,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":2.89,
-        "lastScore":-2.2
+        "lastScore":-2.2,
+        "average":2.45,
+        "gamesPlayed":19
     },
     {
         "id":105519,
@@ -6947,7 +8335,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":98765,
@@ -6957,7 +8347,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.86,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.4,
+        "gamesPlayed":11
     },
     {
         "id":109323,
@@ -6967,7 +8359,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":97994,
@@ -6977,7 +8371,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.57,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.88,
+        "gamesPlayed":12
     },
     {
         "id":36943,
@@ -6987,7 +8383,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.68,
-        "lastScore":2.46
+        "lastScore":2.46,
+        "average":3.38,
+        "gamesPlayed":24
     },
     {
         "id":37688,
@@ -6997,7 +8395,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.47,
-        "lastScore":0.3
+        "lastScore":0.3,
+        "average":1.38,
+        "gamesPlayed":8
     },
     {
         "id":104678,
@@ -7007,7 +8407,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.28,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":6
     },
     {
         "id":78248,
@@ -7017,7 +8419,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.22,
-        "lastScore":3.2
+        "lastScore":3.2,
+        "average":1.21,
+        "gamesPlayed":15
     },
     {
         "id":69524,
@@ -7027,7 +8431,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":6.74,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.65,
+        "gamesPlayed":19
     },
     {
         "id":38431,
@@ -7037,7 +8443,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.02,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.65,
+        "gamesPlayed":17
     },
     {
         "id":38910,
@@ -7047,7 +8455,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":5.76,
-        "lastScore":0.8
+        "lastScore":0.8,
+        "average":0.68,
+        "gamesPlayed":10
     },
     {
         "id":110605,
@@ -7057,7 +8467,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.54,
+        "gamesPlayed":5
     },
     {
         "id":81776,
@@ -7067,7 +8479,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.08,
-        "lastScore":2.0
+        "lastScore":2.0,
+        "average":2.84,
+        "gamesPlayed":20
     },
     {
         "id":52253,
@@ -7077,7 +8491,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.29,
-        "lastScore":-0.2
+        "lastScore":-0.2,
+        "average":3.04,
+        "gamesPlayed":19
     },
     {
         "id":89492,
@@ -7087,7 +8503,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.04,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-2.8,
+        "gamesPlayed":1
     },
     {
         "id":90715,
@@ -7097,7 +8515,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.35,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.9,
+        "gamesPlayed":17
     },
     {
         "id":78435,
@@ -7107,7 +8527,9 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":6.73,
-        "lastScore":2.6
+        "lastScore":2.6,
+        "average":2.56,
+        "gamesPlayed":22
     },
     {
         "id":91736,
@@ -7117,7 +8539,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.41,
+        "gamesPlayed":10
     },
     {
         "id":52950,
@@ -7127,7 +8551,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.4,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":-9.2,
+        "gamesPlayed":1
     },
     {
         "id":81091,
@@ -7137,7 +8563,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.95,
-        "lastScore":5.7
+        "lastScore":5.7,
+        "average":2.94,
+        "gamesPlayed":20
     },
     {
         "id":94269,
@@ -7147,7 +8575,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.83,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.38,
+        "gamesPlayed":14
     },
     {
         "id":70800,
@@ -7157,7 +8587,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":14.23,
-        "lastScore":4.63
+        "lastScore":4.63,
+        "average":4.49,
+        "gamesPlayed":26
     },
     {
         "id":50346,
@@ -7167,7 +8599,9 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":6.24,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.99,
+        "gamesPlayed":12
     },
     {
         "id":81682,
@@ -7177,7 +8611,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":10.66,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.9,
+        "gamesPlayed":9
     },
     {
         "id":110633,
@@ -7187,7 +8623,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":83004,
@@ -7197,7 +8635,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":10.96,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.79,
+        "gamesPlayed":13
     },
     {
         "id":95638,
@@ -7207,7 +8647,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.2,
-        "lastScore":0.4
+        "lastScore":0.4,
+        "average":1.92,
+        "gamesPlayed":23
     },
     {
         "id":98225,
@@ -7217,7 +8659,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":8.68,
-        "lastScore":11.8
+        "lastScore":11.8,
+        "average":4.13,
+        "gamesPlayed":21
     },
     {
         "id":98484,
@@ -7227,7 +8671,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.98,
-        "lastScore":-0.7
+        "lastScore":-0.7,
+        "average":2.22,
+        "gamesPlayed":26
     },
     {
         "id":110760,
@@ -7237,7 +8683,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110745,
@@ -7247,7 +8695,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110772,
@@ -7257,7 +8707,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.1,
+        "gamesPlayed":1
     },
     {
         "id":107194,
@@ -7267,7 +8719,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110759,
@@ -7277,7 +8731,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110770,
@@ -7287,7 +8743,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105636,
@@ -7297,7 +8755,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110775,
@@ -7307,7 +8767,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":73975,
@@ -7317,7 +8779,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":7.67,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":3.05,
+        "gamesPlayed":3
     },
     {
         "id":107252,
@@ -7327,7 +8791,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104080,
@@ -7337,7 +8803,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110832,
@@ -7347,7 +8815,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":105411,
@@ -7357,7 +8827,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":88881,
@@ -7367,7 +8839,9 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.77,
-        "lastScore":6.22
+        "lastScore":6.22,
+        "average":5.33,
+        "gamesPlayed":2
     },
     {
         "id":110884,
@@ -7377,7 +8851,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103777,
@@ -7387,7 +8863,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109265,
@@ -7397,7 +8875,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110708,
@@ -7407,7 +8887,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110833,
@@ -7417,7 +8899,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110640,
@@ -7427,7 +8911,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104129,
@@ -7437,7 +8923,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110672,
@@ -7447,7 +8935,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107225,
@@ -7457,7 +8947,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107976,
@@ -7467,7 +8959,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110687,
@@ -7477,7 +8971,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108713,
@@ -7487,7 +8983,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110885,
@@ -7497,7 +8995,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106824,
@@ -7507,7 +9007,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107752,
@@ -7517,7 +9019,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107183,
@@ -7527,7 +9031,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109347,
@@ -7537,7 +9043,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":100969,
@@ -7547,7 +9055,9 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.6,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":1.58,
+        "gamesPlayed":19
     },
     {
         "id":110690,
@@ -7557,7 +9067,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107755,
@@ -7567,7 +9079,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107740,
@@ -7577,7 +9091,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107230,
@@ -7587,7 +9103,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110626,
@@ -7597,7 +9115,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107678,
@@ -7607,7 +9127,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.26,
-        "lastScore":-0.5
+        "lastScore":-0.5,
+        "average":0.7,
+        "gamesPlayed":2
     },
     {
         "id":110624,
@@ -7617,7 +9139,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107266,
@@ -7627,7 +9151,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110909,
@@ -7637,7 +9163,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104413,
@@ -7647,7 +9175,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107184,
@@ -7657,7 +9187,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110688,
@@ -7667,7 +9199,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107852,
@@ -7677,7 +9211,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110698,
@@ -7687,7 +9223,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104414,
@@ -7697,7 +9235,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110913,
@@ -7707,7 +9247,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110632,
@@ -7717,7 +9259,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110631,
@@ -7727,7 +9271,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110630,
@@ -7737,7 +9283,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103088,
@@ -7747,7 +9295,9 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.75,
-        "lastScore":2.3
+        "lastScore":2.3,
+        "average":2.96,
+        "gamesPlayed":5
     },
     {
         "id":105294,
@@ -7757,7 +9307,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104415,
@@ -7767,7 +9319,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.18,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":5.1,
+        "gamesPlayed":1
     },
     {
         "id":110914,
@@ -7777,7 +9331,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106629,
@@ -7787,7 +9343,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108385,
@@ -7797,7 +9355,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":62104,
@@ -7807,7 +9367,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.93,
+        "gamesPlayed":11
     },
     {
         "id":110744,
@@ -7817,7 +9379,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104500,
@@ -7827,7 +9391,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.07,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.12,
+        "gamesPlayed":11
     },
     {
         "id":106411,
@@ -7837,7 +9403,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.49,
-        "lastScore":1.7
+        "lastScore":1.7,
+        "average":2.9,
+        "gamesPlayed":16
     },
     {
         "id":109639,
@@ -7847,7 +9415,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.41,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.9,
+        "gamesPlayed":6
     },
     {
         "id":110635,
@@ -7857,7 +9427,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.9,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.75,
+        "gamesPlayed":2
     },
     {
         "id":105201,
@@ -7867,7 +9439,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":104622,
@@ -7877,7 +9451,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":103765,
@@ -7887,7 +9463,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.54,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":1.6,
+        "gamesPlayed":1
     },
     {
         "id":110915,
@@ -7897,7 +9475,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110916,
@@ -7907,7 +9487,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":106077,
@@ -7917,7 +9499,9 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110709,
@@ -7927,7 +9511,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109618,
@@ -7937,7 +9523,9 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110917,
@@ -7947,7 +9535,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110689,
@@ -7957,7 +9547,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110727,
@@ -7967,7 +9559,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110726,
@@ -7977,7 +9571,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107250,
@@ -7987,7 +9583,9 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.66,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":4.0,
+        "gamesPlayed":1
     },
     {
         "id":110928,
@@ -7997,7 +9595,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107261,
@@ -8007,7 +9607,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":107255,
@@ -8017,7 +9619,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110923,
@@ -8027,7 +9631,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":97450,
@@ -8037,7 +9643,9 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.19,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":2.44,
+        "gamesPlayed":15
     },
     {
         "id":107263,
@@ -8047,7 +9655,9 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.79,
-        "lastScore":-0.1
+        "lastScore":-0.1,
+        "average":0.15,
+        "gamesPlayed":4
     },
     {
         "id":110962,
@@ -8057,7 +9667,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":109261,
@@ -8067,7 +9679,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110725,
@@ -8077,7 +9691,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":108352,
@@ -8087,7 +9703,9 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     },
     {
         "id":110956,
@@ -8097,6 +9715,8 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
-        "lastScore":0.0
+        "lastScore":0.0,
+        "average":0.0,
+        "gamesPlayed":0
     }
 ]
