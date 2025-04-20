@@ -13,3 +13,10 @@ MODEL_MAP = {
 }
 
 POSITION_MAP = {"gol": "gk", "lat": "wb", "zag": "cb", "mei": "mid", "ata": "st", "tec": "man"}
+STATUS_MAP = {
+    "Provável": "probable",
+    "Dúvida": "doubt",
+    "Contundido": "injury",
+    "Suspenso": "suspended",
+    "Nulo": "null",
+}
