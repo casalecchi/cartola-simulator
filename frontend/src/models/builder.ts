@@ -10,4 +10,8 @@ export type BuilderTeam = {
 
 export type Formation = '343' | '352' | '433' | '442' | '451' | '532' | '541'
 
+export interface Market {
+    [key: number]: Player[]
+}
+
 export type Position = 'man' | 'gk' | 'cb' | 'wb' | 'mid' | 'st'

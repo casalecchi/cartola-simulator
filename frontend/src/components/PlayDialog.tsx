@@ -11,17 +11,17 @@ import { CustomIconButton } from './ui/CustomIconButton'
 interface DialogProps {
     filterStateManager: FilterState
     open: boolean
-    runModel: () => void
+    clickPlay: () => void
     setOpen: (value: boolean) => void
 }
 
-export const PlayDialog: FC<DialogProps> = ({ filterStateManager, open, runModel, setOpen }) => {
+export const PlayDialog: FC<DialogProps> = ({ filterStateManager, open, clickPlay, setOpen }) => {
     const { t } = useTranslation()
     const to = useNavigate()
 
     const handlePlay = () => {
         setOpen(false)
-        runModel()
+        clickPlay()
     }
 
     return (

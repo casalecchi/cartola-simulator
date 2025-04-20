@@ -2,22 +2,20 @@ import { Stack, Typography } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useBuilderStateManager } from '../hooks/useBuilderStateManager'
-import { useGetPlayersFromYear } from '../hooks/useGetPlayersFromYear'
-import { Formation } from '../models'
+import { Formation, Player } from '../models'
 import { createArray, formationSlots, roundNumber } from '../utils'
 import { FormationSelector } from './FormationSelector'
 import { BuilderTable } from './builder/BuilderTable'
 import { PlayerSlot } from './builder/PlayerSlot'
 
 interface TeamBuilderProps {
-    year?: number
+    market: Player[]
 }
 
-export const TeamBuilder: FC<TeamBuilderProps> = ({ year }) => {
+export const TeamBuilder: FC<TeamBuilderProps> = ({ market }) => {
     const { t } = useTranslation()
     const [formation, setFormation] = useState<Formation>('433')
     const [rows, setRows] = useState<JSX.Element[]>([])
-    const { fetchPlayersInfo } = useGetPlayersFromYear()
     const builderStateManager = useBuilderStateManager()
 
     useEffect(() => {
@@ -43,12 +41,6 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ year }) => {
         ])
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [formation, builderStateManager.team, builderStateManager.captain])
-
-    useEffect(() => {
-        if (!year) return
-        fetchPlayersInfo(year)
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [year])
 
     return (
         <Stack alignItems={'center'} border={'1px solid red'} flex={1} spacing={2}>

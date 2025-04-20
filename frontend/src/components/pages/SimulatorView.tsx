@@ -1,6 +1,7 @@
 import { Button, Stack, Typography } from '@mui/material'
 import { FC, useState } from 'react'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
+import { useGetMarket } from '../../hooks/useGetMarket'
 import { useGetOptimal } from '../../hooks/useGetOptimal'
 import { PlayDialog } from '../PlayDialog'
 import { TeamBuilder } from '../TeamBuilder'
@@ -10,18 +11,21 @@ export const SimulatorView: FC = () => {
     const filterStateManager = useFilterStateManager()
     const { selectedYear, selectedModel } = filterStateManager
     const { getOptimals } = useGetOptimal()
+    const { fetchAllMarkets, getRoundMarket } = useGetMarket()
 
-    const runModel = () => {
+    const clickPlay = () => {
         if (!selectedModel) return
         getOptimals(Number(selectedYear), selectedModel.toUpperCase())
+        if (!selectedYear) return
+        fetchAllMarkets(Number(selectedYear))
     }
 
     return (
         <Stack>
             <PlayDialog
+                clickPlay={clickPlay}
                 filterStateManager={filterStateManager}
                 open={openDialog}
-                runModel={runModel}
                 setOpen={setOpenDialog}
             />
             <Stack
@@ -34,7 +38,7 @@ export const SimulatorView: FC = () => {
                 width={'100%'}
             >
                 <Typography fontSize={'3rem'}>RODADA X</Typography>
-                <TeamBuilder />
+                <TeamBuilder market={getRoundMarket(1)} />
                 <Stack
                     alignItems={'center'}
                     direction={'row'}
