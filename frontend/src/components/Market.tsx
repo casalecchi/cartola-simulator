@@ -13,7 +13,7 @@ interface MarketProps {
 }
 
 export const Market: FC<MarketProps> = ({ manager, market, marketOptions, onClose }) => {
-    const { team, addPlayer, removePlayer } = manager
+    const { balance, team, addPlayer, removePlayer } = manager
 
     return (
         <Dialog onClose={onClose} open={marketOptions.open}>
@@ -24,6 +24,7 @@ export const Market: FC<MarketProps> = ({ manager, market, marketOptions, onClos
                         const isOnTeam = !!team[marketOptions.posId].find((p) => p.id === player.id)
                         return (
                             <MarketRow
+                                balance={balance}
                                 buy={addPlayer}
                                 isOnTeam={isOnTeam}
                                 key={player.id}
@@ -39,6 +40,7 @@ export const Market: FC<MarketProps> = ({ manager, market, marketOptions, onClos
 }
 
 interface MarketRowProps {
+    balance: number
     isOnTeam: boolean
     player: Player
     teamName?: string
@@ -46,7 +48,7 @@ interface MarketRowProps {
     sell: (player: Player) => void
 }
 
-const MarketRow: FC<MarketRowProps> = ({ isOnTeam, player, teamName, buy, sell }) => {
+const MarketRow: FC<MarketRowProps> = ({ balance, isOnTeam, player, teamName, buy, sell }) => {
     return (
         <Stack alignItems={'center'} direction={'row'} spacing={1}>
             <Avatar
@@ -105,6 +107,7 @@ const MarketRow: FC<MarketRowProps> = ({ isOnTeam, player, teamName, buy, sell }
                         player.price
                     }`}</Typography>
                     <Button
+                        disabled={balance - player.price < 0 && !isOnTeam}
                         onClick={() => (isOnTeam ? sell(player) : buy(player))}
                         sx={{
                             color: 'white',

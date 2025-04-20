@@ -7,9 +7,12 @@
     },
     "common": {
         "cartoleta": "C$",
+        "next": "Next",
         "play": "Play",
         "prediction": "Prediction",
+        "previous": "Previous",
         "run": "Run",
+        "submit": "Submit",
         "total": "Total"
     },
     "filter": {
@@ -37,6 +40,7 @@
         "formation": "Formation",
         "lastScore": "Last score",
         "price": "Price",
+        "round": "Matchday",
         "sell": "Sell"
     }
 }
