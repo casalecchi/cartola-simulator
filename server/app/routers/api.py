@@ -32,6 +32,17 @@ def available_players(request: YearRequest):
     return FileResponse(json_path, media_type="application/json")
 
 
+@router.post("/market")
+def get_market(request: YearRequest):
+    jsons = {}
+    for r in range(1, 39):
+        json_path = os.path.join(ROOT_DIR, f"static/market/{request.year}/market-{r:02}.json")
+        with open(json_path, "r") as file:
+            market = json.load(file)
+        jsons[r] = market
+    return jsons
+
+
 @router.post("/player-arima")
 def get_player_arima(request: ArimaRequest):
     previous_year = request.year - 1
