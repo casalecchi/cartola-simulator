@@ -36,6 +36,7 @@
         "buy": "buy",
         "formation": "Formation",
         "lastScore": "Last score",
-        "price": "Price"
+        "price": "Price",
+        "sell": "Sell"
     }
 }

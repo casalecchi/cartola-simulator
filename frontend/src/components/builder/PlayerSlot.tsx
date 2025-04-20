@@ -14,6 +14,15 @@ interface PlayerSlotProps {
 
 export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
     const { t } = useTranslation()
+    const { removePlayer, setMarketOptions } = manager
+
+    const handleClick = () => {
+        if (player) {
+            removePlayer(player)
+            return
+        }
+        setMarketOptions({ open: true, posId })
+    }
 
     return (
         <TableRow sx={{ height: '5rem' }}>
@@ -25,6 +34,7 @@ export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
             <TableCell>{player && roundNumber(player?.lastScore, 2)}</TableCell>
             <TableCell>
                 <Button
+                    onClick={handleClick}
                     sx={{ backgroundColor: player ? 'red' : 'green', color: 'white' }}
                     variant={player ? 'contained' : 'outlined'}
                 >

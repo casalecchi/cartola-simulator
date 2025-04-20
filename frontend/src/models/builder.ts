@@ -15,3 +15,5 @@ export interface Market {
 }
 
 export type Position = 'man' | 'gk' | 'cb' | 'wb' | 'mid' | 'st'
+
+export type Status = 'doubt' | 'suspended' | 'injury' | 'null' | 'probable'
