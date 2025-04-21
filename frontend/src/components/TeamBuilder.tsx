@@ -1,8 +1,8 @@
-import { Stack, Typography } from '@mui/material'
+import { Button, Stack, Typography } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../hooks/useBuilderStateManager'
-import { Player } from '../models'
+import { Player, TeamInfo } from '../models'
 import { createArray, formationSlots, roundNumber } from '../utils'
 import { BuilderTable } from './builder/BuilderTable'
 import { PlayerSlot } from './builder/PlayerSlot'
@@ -12,9 +12,10 @@ import { Market } from './Market'
 interface TeamBuilderProps {
     manager: BuilderState
     market: Player[]
+    teamsInfo: TeamInfo[]
 }
 
-export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market }) => {
+export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }) => {
     const { t } = useTranslation()
     const [rows, setRows] = useState<JSX.Element[]>([])
     const { formation, marketOptions, team, changeFormation, setMarketOptions } = manager
@@ -54,6 +55,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market }) => {
                 market={market}
                 marketOptions={marketOptions}
                 onClose={closeMarket}
+                teamsInfo={teamsInfo}
             />
             <Stack alignItems={'center'} direction={'row'} spacing={5}>
                 <FormationSelector setValue={changeFormation} value={formation} />
@@ -62,6 +64,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market }) => {
                 >{`${t('common.cartoleta')}${roundNumber(manager.balance, 2).toFixed(
                     2
                 )}`}</Typography>
+                <Button onClick={manager.resetTeam}>RESET</Button>
             </Stack>
             <Stack direction={'row'} spacing={2}>
                 <BuilderTable>{rows.slice(0, 6)}</BuilderTable>

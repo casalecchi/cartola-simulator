@@ -7,6 +7,7 @@
     },
     "common": {
         "cartoleta": "C$",
+        "market": "Market",
         "next": "Next",
         "play": "Play",
         "prediction": "Prediction",
@@ -16,6 +17,7 @@
         "total": "Total"
     },
     "filter": {
+        "byName": "Filter by Name",
         "playerField": "Choose a player",
         "teamTitle": "Filter by Team"
     },

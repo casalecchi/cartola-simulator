@@ -1,21 +1,23 @@
 import { Button, Stack, Typography } from '@mui/material'
 import { t } from 'i18next'
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
 import { useGetMarket } from '../../hooks/useGetMarket'
 import { useGetOptimal } from '../../hooks/useGetOptimal'
+import { useGetTeams } from '../../hooks/useGetTeams'
 import { PlayDialog } from '../PlayDialog'
 import { TeamBuilder } from '../TeamBuilder'
 
 export const SimulatorView: FC = () => {
-    const [round, setRound] = useState<number>(1)
     const [openDialog, setOpenDialog] = useState(true)
-    const builderStateManager = useBuilderStateManager()
+    const { fetchAllMarkets, getRoundMarket } = useGetMarket()
+    const builderStateManager = useBuilderStateManager({ getRoundMarket })
+    const { round, submit } = builderStateManager
     const filterStateManager = useFilterStateManager()
     const { selectedYear, selectedModel } = filterStateManager
     const { getOptimals } = useGetOptimal()
-    const { fetchAllMarkets, getRoundMarket } = useGetMarket()
+    const { teamsInfo, getTeamsInfo } = useGetTeams()
 
     const clickPlay = () => {
         if (!selectedModel) return
@@ -24,9 +26,11 @@ export const SimulatorView: FC = () => {
         fetchAllMarkets(Number(selectedYear))
     }
 
-    const clickSubmit = () => {
-        setRound((prev) => prev + 1)
-    }
+    useEffect(() => {
+        if (!selectedYear) return
+        getTeamsInfo(Number(selectedYear))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedYear])
 
     return (
         <Stack>
@@ -46,14 +50,27 @@ export const SimulatorView: FC = () => {
                 width={'100%'}
             >
                 <Typography fontSize={'3rem'}>{`${t('simulator.round')} ${round}`}</Typography>
-                <TeamBuilder manager={builderStateManager} market={getRoundMarket(round)} />
+                <TeamBuilder
+                    manager={builderStateManager}
+                    market={getRoundMarket(round)}
+                    teamsInfo={teamsInfo}
+                />
                 <Stack
                     alignItems={'center'}
                     direction={'row'}
                     justifyContent={'center'}
                     width={'100%'}
                 >
-                    <Button onClick={clickSubmit} variant={'outlined'}>
+                    <Button
+                        onClick={submit}
+                        variant={'contained'}
+                        disabled={
+                            Object.values(builderStateManager.team).reduce(
+                                (acc, curr) => acc + curr.length,
+                                0
+                            ) != 12
+                        }
+                    >
                         {t('common.submit').toUpperCase()}
                     </Button>
                 </Stack>

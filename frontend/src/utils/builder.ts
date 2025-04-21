@@ -1,13 +1,13 @@
 import { BuilderFormation, BuilderTeam, Formation } from '../models'
 
-export const EMPTY_TEAM: BuilderTeam = {
+export const getEmptyTeam = (): BuilderTeam => ({
     man: [],
     gk: [],
     cb: [],
     wb: [],
     mid: [],
     st: [],
-}
+})
 
 export const formationSlots: Record<Formation, BuilderFormation> = {
     343: { man: 1, gk: 1, cb: 3, wb: 0, mid: 4, st: 3 },

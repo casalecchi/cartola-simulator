@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
-import { BuilderTeam, Formation, Player, Position } from '../models'
-import { EMPTY_TEAM, formationSlots } from '../utils'
+import { BuilderTeam, Formation, HistoryTeam, Player, Position } from '../models'
+import { formationSlots, getEmptyTeam } from '../utils'
 
 export interface MarketOptions {
     open: boolean
@@ -12,6 +12,7 @@ export interface BuilderState {
     captain?: Player
     formation: Formation
     marketOptions: MarketOptions
+    round: number
     team: BuilderTeam
     addPlayer: (player: Player) => void
     changeFormation: (value: Formation) => void
@@ -19,14 +20,21 @@ export interface BuilderState {
     resetTeam: () => void
     setCaptain: (value: Player) => void
     setMarketOptions: Dispatch<SetStateAction<MarketOptions>>
+    submit: () => void
 }
 
-export const useBuilderStateManager = (): BuilderState => {
+interface BuilderProps {
+    getRoundMarket: (round: number) => Player[]
+}
+
+export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): BuilderState => {
     const [balance, setBalance] = useState(100.0)
     const [captain, setCaptain] = useState<Player>()
     const [formation, setFormation] = useState<Formation>('433')
+    const [history, setHistory] = useState<HistoryTeam[]>([])
     const [marketOptions, setMarketOptions] = useState<MarketOptions>({ open: false, posId: 'man' })
-    const [team, setTeam] = useState<BuilderTeam>(EMPTY_TEAM)
+    const [round, setRound] = useState(1)
+    const [team, setTeam] = useState<BuilderTeam>(getEmptyTeam())
 
     const addPlayer = (player: Player) => {
         const posId = player.positionId
@@ -35,6 +43,11 @@ export const useBuilderStateManager = (): BuilderState => {
     }
 
     const changeFormation = (value: Formation) => {
+        const f = formationSlots[value]
+        Object.entries(f).forEach(([key, value]) => {
+            const posId = key as Position
+            team[posId].forEach((p, index) => index + 1 > value && removePlayer(p))
+        })
         setFormation(value)
     }
 
@@ -45,7 +58,30 @@ export const useBuilderStateManager = (): BuilderState => {
     }
 
     const resetTeam = () => {
-        setTeam(EMPTY_TEAM)
+        Object.entries(team).forEach(([, value]) => {
+            value.forEach((p) => removePlayer(p))
+        })
+    }
+
+    const submit = () => {
+        const hisTeam: HistoryTeam = { points: 0, team }
+        const updatedTeam = getEmptyTeam()
+        const market = getRoundMarket(round + 1)
+        Object.entries(team).forEach(([key, value]) => {
+            const posId = key as Position
+            value.forEach((player) => {
+                const updatedPlayer = market.find((p) => p.id === player.id)
+                if (!updatedPlayer) {
+                    setBalance((prev) => prev + player.price)
+                    return
+                }
+                updatedTeam[posId].push(updatedPlayer)
+                hisTeam.points += updatedPlayer.lastScore
+            })
+        })
+        setRound((prev) => prev + 1)
+        setTeam(updatedTeam)
+        setHistory((prev) => [...prev, hisTeam])
     }
 
     useEffect(() => {
@@ -60,6 +96,7 @@ export const useBuilderStateManager = (): BuilderState => {
         captain,
         formation,
         marketOptions,
+        round,
         team,
         addPlayer,
         changeFormation,
@@ -67,5 +104,6 @@ export const useBuilderStateManager = (): BuilderState => {
         resetTeam,
         setCaptain,
         setMarketOptions,
+        submit,
     }
 }

@@ -14,7 +14,16 @@ export const useGetMarket = () => {
         }
     }
 
-    const getRoundMarket = (round: number) => allMarkets?.[round] ?? []
+    const getRoundMarket = (round: number) => {
+        const market = allMarkets?.[round] ?? []
+        const probables = market
+            .filter((p) => p.statusId === 'probable')
+            .toSorted((a, b) => b.price - a.price)
+        const others = market
+            .filter((p) => p.statusId !== 'probable')
+            .toSorted((a, b) => b.price - a.price)
+        return [...probables, ...others]
+    }
 
     return { fetchAllMarkets, getRoundMarket }
 }
