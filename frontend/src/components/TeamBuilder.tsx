@@ -49,7 +49,13 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }
     }, [formation, manager.team, manager.captain])
 
     return (
-        <Stack alignItems={'center'} border={'1px solid red'} flex={1} spacing={2}>
+        <Stack
+            alignItems={'center'}
+            border={'1px solid red'}
+            direction={'row'}
+            flex={1}
+            spacing={2}
+        >
             <Market
                 manager={manager}
                 market={market}
@@ -57,7 +63,8 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }
                 onClose={closeMarket}
                 teamsInfo={teamsInfo}
             />
-            <Stack alignItems={'center'} direction={'row'} spacing={5}>
+            <BuilderTable>{rows}</BuilderTable>
+            <Stack alignItems={'center'} spacing={5}>
                 <FormationSelector setValue={changeFormation} value={formation} />
                 <Typography
                     sx={{ border: '1px solid lightgray', borderRadius: '0.5rem', p: 2 }}
@@ -65,10 +72,6 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }
                     2
                 )}`}</Typography>
                 <Button onClick={manager.resetTeam}>RESET</Button>
-            </Stack>
-            <Stack direction={'row'} spacing={2}>
-                <BuilderTable>{rows.slice(0, 6)}</BuilderTable>
-                <BuilderTable>{rows.slice(6)}</BuilderTable>
             </Stack>
         </Stack>
     )

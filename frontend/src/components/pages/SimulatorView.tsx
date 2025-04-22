@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from '@mui/material'
+import { Button, Stack } from '@mui/material'
 import { t } from 'i18next'
 import { FC, useEffect, useState } from 'react'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
@@ -41,7 +41,6 @@ export const SimulatorView: FC = () => {
                 setOpen={setOpenDialog}
             />
             <Stack
-                alignItems={'center'}
                 border={'1px solid blue'}
                 height={'100dvh'}
                 justifyContent={'space-between'}
@@ -49,7 +48,7 @@ export const SimulatorView: FC = () => {
                 spacing={2}
                 width={'100%'}
             >
-                <Typography fontSize={'3rem'}>{`${t('simulator.round')} ${round}`}</Typography>
+                {/* <Typography fontSize={'3rem'}>{`${t('simulator.round')} ${round}`}</Typography> */}
                 <TeamBuilder
                     manager={builderStateManager}
                     market={getRoundMarket(round)}

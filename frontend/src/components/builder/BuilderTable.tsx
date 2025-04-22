@@ -13,26 +13,31 @@ import { FC, PropsWithChildren } from 'react'
 const numberCellStyles: SxProps = {
     alignContent: 'end',
     lineHeight: '1.2rem',
-    px: 1,
-    textAlign: 'center',
+    pl: 2,
     width: '1rem',
 }
 
 export const BuilderTable: FC<PropsWithChildren> = ({ children }) => {
     return (
-        <TableContainer sx={{ display: 'inline-block' }}>
+        <TableContainer
+            sx={{
+                border: '1px solid lightgray',
+                borderRadius: '1rem',
+                p: 1,
+                width: { sm: '100%', md: '30%' },
+            }}
+        >
             <Table padding={'none'}>
                 <TableHead>
                     <TableRow>
                         <TableCell></TableCell>
-                        <TableCell></TableCell>
+                        <TableCell>{t('simulator.mySquad').toUpperCase()}</TableCell>
                         <TableCell align={'right'} sx={{ ...numberCellStyles }}>
                             {t('simulator.price')}
                         </TableCell>
                         <TableCell align={'right'} sx={{ ...numberCellStyles, textWrap: 'wrap' }}>
                             {t('simulator.lastScore')}
                         </TableCell>
-                        <TableCell></TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>{children}</TableBody>

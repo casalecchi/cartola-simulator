@@ -1,7 +1,16 @@
-import { Avatar, Button, Stack, TableCell, TableRow, Typography } from '@mui/material'
-import { FC } from 'react'
+import { Close } from '@mui/icons-material'
+import {
+    Avatar,
+    Box,
+    Button,
+    IconButton,
+    Stack,
+    TableCell,
+    TableRow,
+    Typography,
+} from '@mui/material'
+import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { TranslationKey } from '../../@types/i18n'
 import { BuilderState } from '../../hooks/useBuilderStateManager'
 import { Player, Position } from '../../models'
 import { roundNumber } from '../../utils'
@@ -25,21 +34,16 @@ export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
     }
 
     return (
-        <TableRow sx={{ height: '5rem' }}>
-            <TableCell>{posId.toUpperCase()}</TableCell>
-            <TableCell>
-                <PlayerDetail player={player} />
+        <TableRow>
+            <TableCell align={'center'}>{posId.toUpperCase()}</TableCell>
+            <TableCell align={'left'}>
+                <PlayerDetail onClick={handleClick} player={player} />
             </TableCell>
-            <TableCell>{player && roundNumber(player?.price, 2)}</TableCell>
-            <TableCell>{player && roundNumber(player?.lastScore, 2)}</TableCell>
-            <TableCell>
-                <Button
-                    onClick={handleClick}
-                    sx={{ backgroundColor: player ? 'red' : 'green', color: 'white' }}
-                    variant={player ? 'contained' : 'outlined'}
-                >
-                    {t(`simulator.${player ? 'sell' : 'buy'}` as TranslationKey)}
-                </Button>
+            <TableCell align={'right'}>
+                {player && `${t('common.cartoleta')}${roundNumber(player?.price, 2).toFixed(2)}`}
+            </TableCell>
+            <TableCell align={'right'}>
+                {player && roundNumber(player?.lastScore, 2).toFixed(2)}
             </TableCell>
         </TableRow>
     )
@@ -47,19 +51,59 @@ export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
 
 interface PlayerDetailProps {
     player?: Player
+    onClick: () => void
 }
 
-const PlayerDetail: FC<PlayerDetailProps> = ({ player }) => {
+const PlayerDetail: FC<PlayerDetailProps> = ({ player, onClick }) => {
     const { t } = useTranslation()
+    const [isHovered, setIsHovered] = useState(false)
+
     return (
         <Stack alignItems={'center'} direction={'row'} p={1} spacing={2}>
-            <Avatar
-                alt={player?.name}
-                src={player?.photoUrl}
-                sx={{ height: '2rem', width: '2rem' }}
-                variant={'circular'}
-            />
-            <Typography>{player?.name ?? t('simulator.addPlayer')}</Typography>
+            {player ? (
+                <>
+                    <IconButton
+                        disableRipple
+                        onClick={onClick}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        sx={{ height: '2rem', width: '2rem' }}
+                    >
+                        <Avatar
+                            alt={player.name}
+                            sx={{ height: '2rem', width: '2rem', backgroundColor: 'transparent' }}
+                            variant={'circular'}
+                        >
+                            <img height={'100%'} src={player.photoUrl} style={{ zIndex: 0 }} />
+                            {isHovered && (
+                                <>
+                                    <Box
+                                        sx={{
+                                            position: 'absolute',
+                                            height: '100%',
+                                            width: '100%',
+                                            backgroundColor: 'red',
+                                            opacity: 0.3,
+                                            zIndex: 1,
+                                        }}
+                                    ></Box>
+                                    <Close
+                                        sx={{
+                                            position: 'absolute',
+                                            color: 'white',
+                                            fontSize: '2rem',
+                                            zIndex: 2,
+                                        }}
+                                    />
+                                </>
+                            )}
+                        </Avatar>
+                    </IconButton>
+                    <Typography>{player?.name ?? t('simulator.addPlayer')}</Typography>{' '}
+                </>
+            ) : (
+                <Button onClick={onClick}>ADD PLAYER</Button>
+            )}
         </Stack>
     )
 }
