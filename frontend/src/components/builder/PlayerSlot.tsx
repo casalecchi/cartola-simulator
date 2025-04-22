@@ -14,6 +14,7 @@ import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../../hooks/useBuilderStateManager'
 import { Player, Position } from '../../models'
 import { roundNumber } from '../../utils'
+import { cellStyles } from './BuilderTable'
 
 interface PlayerSlotProps {
     manager: BuilderState
@@ -35,14 +36,16 @@ export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
 
     return (
         <TableRow>
-            <TableCell align={'center'}>{posId.toUpperCase()}</TableCell>
-            <TableCell align={'left'}>
+            <TableCell align={'center'} sx={cellStyles}>
+                {posId.toUpperCase()}
+            </TableCell>
+            <TableCell align={'left'} sx={cellStyles}>
                 <PlayerDetail onClick={handleClick} player={player} />
             </TableCell>
-            <TableCell align={'right'}>
+            <TableCell align={'right'} sx={cellStyles}>
                 {player && `${t('common.cartoleta')}${roundNumber(player?.price, 2).toFixed(2)}`}
             </TableCell>
-            <TableCell align={'right'}>
+            <TableCell align={'right'} sx={cellStyles}>
                 {player && roundNumber(player?.lastScore, 2).toFixed(2)}
             </TableCell>
         </TableRow>

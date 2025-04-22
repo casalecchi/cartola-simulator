@@ -1,6 +1,7 @@
 import { Button, Stack } from '@mui/material'
 import { t } from 'i18next'
 import { FC, useEffect, useState } from 'react'
+import background from '../../assets/campo3.png'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
 import { useGetMarket } from '../../hooks/useGetMarket'
@@ -33,7 +34,13 @@ export const SimulatorView: FC = () => {
     }, [selectedYear])
 
     return (
-        <Stack>
+        <Stack
+            sx={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
             <PlayDialog
                 clickPlay={clickPlay}
                 filterStateManager={filterStateManager}
@@ -41,7 +48,6 @@ export const SimulatorView: FC = () => {
                 setOpen={setOpenDialog}
             />
             <Stack
-                border={'1px solid blue'}
                 height={'100dvh'}
                 justifyContent={'space-between'}
                 p={3}
@@ -54,12 +60,7 @@ export const SimulatorView: FC = () => {
                     market={getRoundMarket(round)}
                     teamsInfo={teamsInfo}
                 />
-                <Stack
-                    alignItems={'center'}
-                    direction={'row'}
-                    justifyContent={'center'}
-                    width={'100%'}
-                >
+                <Stack alignItems={'center'} justifyContent={'center'} width={'100%'}>
                     <Button
                         onClick={submit}
                         variant={'contained'}

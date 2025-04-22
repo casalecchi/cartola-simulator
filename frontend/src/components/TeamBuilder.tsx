@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../hooks/useBuilderStateManager'
 import { Player, TeamInfo } from '../models'
+import colors from '../styles/colors.module.scss'
 import { createArray, formationSlots, roundNumber } from '../utils'
 import { BuilderTable } from './builder/BuilderTable'
 import { PlayerSlot } from './builder/PlayerSlot'
@@ -18,7 +19,7 @@ interface TeamBuilderProps {
 export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }) => {
     const { t } = useTranslation()
     const [rows, setRows] = useState<JSX.Element[]>([])
-    const { formation, marketOptions, team, changeFormation, setMarketOptions } = manager
+    const { formation, marketOptions, round, team, changeFormation, setMarketOptions } = manager
 
     const closeMarket = () => {
         setMarketOptions((prev) => ({ ...prev, open: false }))
@@ -49,13 +50,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }
     }, [formation, manager.team, manager.captain])
 
     return (
-        <Stack
-            alignItems={'center'}
-            border={'1px solid red'}
-            direction={'row'}
-            flex={1}
-            spacing={2}
-        >
+        <Stack border={'1px solid red'} direction={'row'} flex={1} spacing={2}>
             <Market
                 manager={manager}
                 market={market}
@@ -64,14 +59,27 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, teamsInfo }
                 teamsInfo={teamsInfo}
             />
             <BuilderTable>{rows}</BuilderTable>
-            <Stack alignItems={'center'} spacing={5}>
-                <FormationSelector setValue={changeFormation} value={formation} />
+            <Stack>
                 <Typography
-                    sx={{ border: '1px solid lightgray', borderRadius: '0.5rem', p: 2 }}
-                >{`${t('common.cartoleta')}${roundNumber(manager.balance, 2).toFixed(
-                    2
-                )}`}</Typography>
-                <Button onClick={manager.resetTeam}>RESET</Button>
+                    color={'textSecondary'}
+                    fontFamily={`"Jersey 15"`}
+                    fontSize={'4rem'}
+                    sx={{ color: colors.almond, textShadow: `10px 10px 20px ${colors.black}` }}
+                >{`${t('simulator.round')} ${round}`}</Typography>
+                <Stack
+                    alignItems={'center'}
+                    border={'1px solid lightgray'}
+                    borderRadius={'1rem'}
+                    spacing={5}
+                >
+                    <FormationSelector setValue={changeFormation} value={formation} />
+                    <Typography
+                        sx={{ border: '1px solid lightgray', borderRadius: '0.5rem', p: 2 }}
+                    >{`${t('common.cartoleta')}${roundNumber(manager.balance, 2).toFixed(
+                        2
+                    )}`}</Typography>
+                    <Button onClick={manager.resetTeam}>RESET</Button>
+                </Stack>
             </Stack>
         </Stack>
     )

@@ -1,4 +1,5 @@
 import {
+    Paper,
     SxProps,
     Table,
     TableBody,
@@ -9,6 +10,7 @@ import {
 } from '@mui/material'
 import { t } from 'i18next'
 import { FC, PropsWithChildren } from 'react'
+import colors from '../../styles/colors.module.scss'
 
 const numberCellStyles: SxProps = {
     alignContent: 'end',
@@ -17,25 +19,33 @@ const numberCellStyles: SxProps = {
     width: '1rem',
 }
 
+export const cellStyles: SxProps = { borderColor: colors.coolGray }
+
 export const BuilderTable: FC<PropsWithChildren> = ({ children }) => {
     return (
         <TableContainer
+            component={Paper}
             sx={{
-                border: '1px solid lightgray',
-                borderRadius: '1rem',
+                border: `1px solid ${colors.coolGray}`,
                 p: 1,
-                width: { sm: '100%', md: '30%' },
+                opacity: 0.95,
+                width: { sm: '100%', md: '33%' },
             }}
         >
             <Table padding={'none'}>
                 <TableHead>
                     <TableRow>
-                        <TableCell></TableCell>
-                        <TableCell>{t('simulator.mySquad').toUpperCase()}</TableCell>
-                        <TableCell align={'right'} sx={{ ...numberCellStyles }}>
+                        <TableCell sx={cellStyles}></TableCell>
+                        <TableCell sx={cellStyles}>
+                            {t('simulator.mySquad').toUpperCase()}
+                        </TableCell>
+                        <TableCell align={'right'} sx={{ ...numberCellStyles, ...cellStyles }}>
                             {t('simulator.price')}
                         </TableCell>
-                        <TableCell align={'right'} sx={{ ...numberCellStyles, textWrap: 'wrap' }}>
+                        <TableCell
+                            align={'right'}
+                            sx={{ ...numberCellStyles, textWrap: 'wrap', ...cellStyles }}
+                        >
                             {t('simulator.lastScore')}
                         </TableCell>
                     </TableRow>

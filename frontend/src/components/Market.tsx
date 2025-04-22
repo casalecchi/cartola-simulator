@@ -14,6 +14,7 @@ import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState, MarketOptions } from '../hooks/useBuilderStateManager'
 import { Player, TeamInfo } from '../models'
+import colors from '../styles/colors.module.scss'
 import { CustomAutocomplete } from './ui/CustomAutocomplete'
 import { StatusIcon } from './ui/StatusIcon'
 
@@ -108,9 +109,7 @@ const Row: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) =
                         sx={{ height: 45, width: 45 }}
                         variant={'square'}
                     />
-                    <Typography mt={0.1} sx={{ opacity: 0.8 }}>
-                        {teamInfo?.code}
-                    </Typography>
+                    <Typography mt={0.1}>{teamInfo?.code}</Typography>
                 </Stack>
             </Grid2>
             <Grid2>
@@ -131,29 +130,23 @@ const Row: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) =
             </Grid2>
             <Grid2 size={3}>
                 <Stack
-                    border={'1px solid lightgray'}
-                    borderRadius={'1rem'}
+                    borderRadius={'0.5rem'}
                     direction={'row'}
                     justifyContent={'space-between'}
                     px={2}
+                    sx={{ backgroundColor: colors.olive }}
                 >
                     <Stack alignItems={'center'}>
-                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-                            LAST
-                        </Typography>
-                        <Typography>{player.lastScore}</Typography>
+                        <Typography fontSize={'0.8rem'}>LAST</Typography>
+                        <Typography fontWeight={600}>{player.lastScore}</Typography>
                     </Stack>
                     <Stack alignItems={'center'}>
-                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-                            AVG
-                        </Typography>
-                        <Typography>{player.average}</Typography>
+                        <Typography fontSize={'0.8rem'}>AVG</Typography>
+                        <Typography fontWeight={600}>{player.average}</Typography>
                     </Stack>
                     <Stack alignItems={'center'}>
-                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-                            GAMES
-                        </Typography>
-                        <Typography>{player.gamesPlayed}</Typography>
+                        <Typography fontSize={'0.8rem'}>GAMES</Typography>
+                        <Typography fontWeight={600}>{player.gamesPlayed}</Typography>
                     </Stack>
                 </Stack>
             </Grid2>
