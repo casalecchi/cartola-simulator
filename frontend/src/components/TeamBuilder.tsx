@@ -79,7 +79,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                     <BuilderTable manager={manager}>{rows}</BuilderTable>
                 </Stack>
             </Grid2>
-            <Grid2 border={'1px solid purple'} size={4}>
+            <Grid2 size={4}>
                 <Stack alignItems={'center'} height={'100%'}>
                     <Typography
                         color={'textSecondary'}
@@ -136,12 +136,12 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                     </Stack>
                 </Stack>
             </Grid2>
-            <Grid2 border={'1px solid red'} size={4}>
+            <Grid2 size={4}>
                 <Stack height={'100%'} justifyContent={'center'}>
                     <ModelTable
                         manager={manager}
                         market={market}
-                        team={optimals.find((o) => o.round - 1 === round)}
+                        team={optimals.find((o) => o.round === round)}
                     />
                 </Stack>
             </Grid2>
