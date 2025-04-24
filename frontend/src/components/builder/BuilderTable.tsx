@@ -1,5 +1,7 @@
 import {
+    Button,
     Paper,
+    Stack,
     SxProps,
     Table,
     TableBody,
@@ -7,10 +9,13 @@ import {
     TableContainer,
     TableHead,
     TableRow,
+    Typography,
 } from '@mui/material'
 import { t } from 'i18next'
 import { FC, PropsWithChildren } from 'react'
+import { BuilderState } from '../../hooks/useBuilderStateManager'
 import colors from '../../styles/colors.module.scss'
+import { FormationSelector } from '../FormationSelector'
 
 const numberCellStyles: SxProps = {
     alignContent: 'end',
@@ -21,15 +26,18 @@ const numberCellStyles: SxProps = {
 
 export const cellStyles: SxProps = { borderColor: colors.coolGray }
 
-export const BuilderTable: FC<PropsWithChildren> = ({ children }) => {
+interface BuilderTableProps extends PropsWithChildren {
+    manager: BuilderState
+}
+
+export const BuilderTable: FC<BuilderTableProps> = ({ children, manager }) => {
+    const { formation, changeFormation } = manager
     return (
         <TableContainer
             component={Paper}
             sx={{
-                border: `1px solid ${colors.coolGray}`,
-                p: 1,
+                px: 1,
                 opacity: 0.95,
-                width: { sm: '100%', md: '33%' },
             }}
         >
             <Table padding={'none'}>
@@ -37,7 +45,13 @@ export const BuilderTable: FC<PropsWithChildren> = ({ children }) => {
                     <TableRow>
                         <TableCell sx={cellStyles}></TableCell>
                         <TableCell sx={cellStyles}>
-                            {t('simulator.mySquad').toUpperCase()}
+                            <Stack alignItems={'center'} direction={'row'} py={0.5} spacing={3}>
+                                <Typography>{t('simulator.mySquad').toUpperCase()}</Typography>
+                                <FormationSelector setValue={changeFormation} value={formation} />
+                                <Button onClick={manager.resetTeam}>
+                                    {t('simulator.sellAll')}
+                                </Button>
+                            </Stack>
                         </TableCell>
                         <TableCell align={'right'} sx={{ ...numberCellStyles, ...cellStyles }}>
                             {t('simulator.price')}

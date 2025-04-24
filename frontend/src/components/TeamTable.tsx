@@ -1,5 +1,7 @@
 import {
     Avatar,
+    Button,
+    Paper,
     Stack,
     SxProps,
     Table,
@@ -10,9 +12,10 @@ import {
     TableRow,
     Typography,
 } from '@mui/material'
-import { FC, useEffect } from 'react'
-import { useGetPlayersFromYear } from '../hooks/useGetPlayersFromYear'
-import { OptimalTeam } from '../models'
+import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import { BuilderState } from '../hooks/useBuilderStateManager'
+import { OptimalTeam, Player } from '../models'
 import { getPoints, roundNumber } from '../utils'
 
 const numberCellStyles: SxProps = {
@@ -20,41 +23,46 @@ const numberCellStyles: SxProps = {
 }
 
 interface TeamTableProps {
+    manager: BuilderState
+    market: Player[]
     team?: OptimalTeam
-    year?: number
 }
 
-export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
-    const { fetchPlayersInfo, findPlayer } = useGetPlayersFromYear()
-
-    useEffect(() => {
-        if (!year) return
-        fetchPlayersInfo(year)
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [year])
+export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
+    const { t } = useTranslation()
+    const findPlayer = (id: number) => market.find((p) => p.id === id)
+    const teamPlayers = Object.values(manager.team).flatMap((players) => players)
 
     return (
         team && (
-            <TableContainer sx={{ display: 'inline-block' }}>
+            <TableContainer
+                component={Paper}
+                sx={{
+                    px: 1,
+                    opacity: 0.95,
+                }}
+            >
                 <Table padding={'none'}>
                     <TableHead>
                         <TableRow>
                             <TableCell></TableCell>
                             <TableCell></TableCell>
                             <TableCell align={'right'} sx={{ ...numberCellStyles }}>
-                                Prediction
+                                <Typography>{t('common.prediction')}</Typography>
                             </TableCell>
+                            <TableCell></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {team.team.map((player) => {
-                            const pInfo = findPlayer(player.id)
-                            const isCap = team.cap === pInfo?.id
+                        {team.team.map((p) => {
+                            const player = findPlayer(p.id)
+                            const isCap = team.cap === player?.id
+                            const isOnTeam = teamPlayers.some((p) => p.id === player?.id)
 
                             return (
-                                <TableRow key={`${team.round}-${player.id}`}>
+                                <TableRow key={`${team.round}-${p.id}`}>
                                     <TableCell>
-                                        <Typography>{pInfo?.positionId.toUpperCase()}</Typography>
+                                        <Typography>{player?.positionId.toUpperCase()}</Typography>
                                     </TableCell>
                                     <TableCell>
                                         <Stack
@@ -64,12 +72,12 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                             spacing={2}
                                         >
                                             <Avatar
-                                                alt={pInfo?.name}
-                                                src={pInfo?.photoUrl}
+                                                alt={player?.name}
+                                                src={player?.photoUrl}
                                                 sx={{ height: '2rem', width: '2rem' }}
                                                 variant={'circular'}
                                             />
-                                            <Typography>{pInfo?.name}</Typography>
+                                            <Typography>{player?.name}</Typography>
                                             {isCap && (
                                                 <Typography
                                                     sx={{
@@ -89,7 +97,19 @@ export const TeamTable: FC<TeamTableProps> = ({ team, year }) => {
                                         </Stack>
                                     </TableCell>
                                     <TableCell align={'right'} sx={{ ...numberCellStyles }}>
-                                        {roundNumber(player.pred, 2)}
+                                        {roundNumber(p.pred, 2)}
+                                    </TableCell>
+                                    <TableCell>
+                                        <Button
+                                            onClick={() => player && manager.addPlayer(player)}
+                                            disabled={
+                                                player &&
+                                                isOnTeam &&
+                                                manager.balance - player.price < 0
+                                            }
+                                        >
+                                            ADD
+                                        </Button>
                                     </TableCell>
                                 </TableRow>
                             )

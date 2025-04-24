@@ -11,6 +11,7 @@ export interface BuilderState {
     balance: number
     captain?: Player
     formation: Formation
+    history: HistoryTeam[]
     marketOptions: MarketOptions
     round: number
     team: BuilderTeam
@@ -66,7 +67,7 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
     const submit = () => {
         const hisTeam: HistoryTeam = { points: 0, team }
         const updatedTeam = getEmptyTeam()
-        const market = getRoundMarket(round + 1)
+        const market = getRoundMarket(round < 38 ? round + 1 : round)
         Object.entries(team).forEach(([key, value]) => {
             const posId = key as Position
             value.forEach((player) => {
@@ -76,7 +77,11 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
                     return
                 }
                 updatedTeam[posId].push(updatedPlayer)
-                hisTeam.points += updatedPlayer.lastScore
+                if (round < 38) {
+                    hisTeam.points += updatedPlayer.lastScore
+                } else {
+                    hisTeam.points += updatedPlayer.points
+                }
             })
         })
         setRound((prev) => prev + 1)
@@ -95,6 +100,7 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
         balance,
         captain,
         formation,
+        history,
         marketOptions,
         round,
         team,

@@ -1,5 +1,11 @@
 import { Player } from './player'
 
+export interface BarDataset {
+    model: number
+    round: number
+    user: number
+}
+
 export type BuilderFormation = {
     [key in Position]: number
 }

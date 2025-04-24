@@ -1,5 +1,4 @@
-import { Button, Stack } from '@mui/material'
-import { t } from 'i18next'
+import { Stack } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
 import background from '../../assets/campo3.png'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
@@ -14,10 +13,10 @@ export const SimulatorView: FC = () => {
     const [openDialog, setOpenDialog] = useState(true)
     const { fetchAllMarkets, getRoundMarket } = useGetMarket()
     const builderStateManager = useBuilderStateManager({ getRoundMarket })
-    const { round, submit } = builderStateManager
+    const { round } = builderStateManager
     const filterStateManager = useFilterStateManager()
     const { selectedYear, selectedModel } = filterStateManager
-    const { getOptimals } = useGetOptimal()
+    const { optimals, getOptimals } = useGetOptimal()
     const { teamsInfo, getTeamsInfo } = useGetTeams()
 
     const clickPlay = () => {
@@ -54,26 +53,12 @@ export const SimulatorView: FC = () => {
                 spacing={2}
                 width={'100%'}
             >
-                {/* <Typography fontSize={'3rem'}>{`${t('simulator.round')} ${round}`}</Typography> */}
                 <TeamBuilder
                     manager={builderStateManager}
                     market={getRoundMarket(round)}
+                    optimals={optimals}
                     teamsInfo={teamsInfo}
                 />
-                <Stack alignItems={'center'} justifyContent={'center'} width={'100%'}>
-                    <Button
-                        onClick={submit}
-                        variant={'contained'}
-                        disabled={
-                            Object.values(builderStateManager.team).reduce(
-                                (acc, curr) => acc + curr.length,
-                                0
-                            ) != 12
-                        }
-                    >
-                        {t('common.submit').toUpperCase()}
-                    </Button>
-                </Stack>
             </Stack>
         </Stack>
     )

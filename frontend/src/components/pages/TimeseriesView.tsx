@@ -2,7 +2,7 @@ import { Stack } from '@mui/material'
 import { LineChart } from '@mui/x-charts'
 import { FC, useEffect, useState } from 'react'
 import { useDataContext } from '../../contexts/DataContext'
-import { Model, PlayerDataset } from '../../models'
+import { Dataset, Model } from '../../models'
 import { generateTickPositions, mergeTimeseries } from '../../utils'
 import { Filter } from '../filter/Filter'
 import { HomeButton } from '../ui/HomeButton'
@@ -12,7 +12,7 @@ interface TimeseriesViewProps {
 }
 
 export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
-    const [dataset, setDataset] = useState<PlayerDataset[]>([])
+    const [dataset, setDataset] = useState<Dataset[]>([])
     const { timeseriesManager } = useDataContext()
     const { modelTimeseries, timeseries } = timeseriesManager
 

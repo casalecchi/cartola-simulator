@@ -38,12 +38,18 @@
     },
     "simulator": {
         "addPlayer": "Add new player",
+        "balance": "Balance",
         "buy": "buy",
+        "endSeason": "End Of Season",
         "formation": "Formation",
         "lastScore": "Last score",
+        "model": "Model",
         "mySquad": "My Squad",
         "price": "Price",
         "round": "Matchday",
-        "sell": "Sell"
+        "sell": "Sell",
+        "sellAll": "Sell All",
+        "total": "Total",
+        "you": "You"
     }
 }

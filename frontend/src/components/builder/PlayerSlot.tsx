@@ -35,8 +35,8 @@ export const PlayerSlot: FC<PlayerSlotProps> = ({ manager, player, posId }) => {
     }
 
     return (
-        <TableRow>
-            <TableCell align={'center'} sx={cellStyles}>
+        <TableRow sx={{ height: '3.35rem' }}>
+            <TableCell align={'center'} sx={{ ...cellStyles, width: '3rem' }}>
                 {posId.toUpperCase()}
             </TableCell>
             <TableCell align={'left'} sx={cellStyles}>

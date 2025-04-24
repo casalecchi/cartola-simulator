@@ -1,4 +1,4 @@
-import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
+import { FormControl, inputClasses, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Formation } from '../models'
@@ -16,8 +16,14 @@ export const FormationSelector: FC<FormationSelectorProps> = ({ value, setValue 
     }
 
     return (
-        <FormControl variant="standard">
-            <InputLabel>{t('simulator.formation')}</InputLabel>
+        <FormControl
+            variant="standard"
+            sx={{
+                [`.${inputClasses.underline}::before`]: {
+                    borderBottom: 'none',
+                },
+            }}
+        >
             <Select label={t('simulator.formation')} onChange={handleChange} value={value}>
                 <MenuItem value={'343'}>3-4-3</MenuItem>
                 <MenuItem value={'352'}>3-5-2</MenuItem>

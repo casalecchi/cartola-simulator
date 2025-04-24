@@ -3,7 +3,6 @@ import { FC } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HomeView } from './components/pages/HomeView'
 import { SimulatorView } from './components/pages/SimulatorView'
-import { TeamsView } from './components/pages/TeamsView'
 import { TimeseriesView } from './components/pages/TimeseriesView'
 import { darkTheme } from './configurations/theme'
 import { DataProvider } from './contexts/DataContext'
@@ -22,7 +21,6 @@ const router = createBrowserRouter([
         path: '/simulator',
         element: <SimulatorView />,
     },
-    { path: '/teams', element: <TeamsView /> },
 ])
 
 const App: FC = () => {

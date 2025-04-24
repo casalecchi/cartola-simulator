@@ -1,6 +1,6 @@
 import { Position, Status } from './builder'
 
-export interface PlayerDataset {
+export interface Dataset {
     x: number
     [key: string]: number | null
 }
@@ -14,6 +14,7 @@ export interface Player {
     photoUrl: string
     positionId: Position
     price: number
+    points: number
     statusId: Status
     teamId: number
 }
