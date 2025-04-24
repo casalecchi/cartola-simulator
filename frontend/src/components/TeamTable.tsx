@@ -16,19 +16,20 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../hooks/useBuilderStateManager'
 import { OptimalTeam, Player } from '../models'
-import { getPoints, roundNumber } from '../utils'
+import { roundNumber } from '../utils'
+import { cellStyles } from './builder/BuilderTable'
 
 const numberCellStyles: SxProps = {
     px: 1,
 }
 
-interface TeamTableProps {
+interface ModelTableProps {
     manager: BuilderState
     market: Player[]
     team?: OptimalTeam
 }
 
-export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
+export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
     const { t } = useTranslation()
     const findPlayer = (id: number) => market.find((p) => p.id === id)
     const teamPlayers = Object.values(manager.team).flatMap((players) => players)
@@ -45,12 +46,16 @@ export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
                 <Table padding={'none'}>
                     <TableHead>
                         <TableRow>
-                            <TableCell></TableCell>
-                            <TableCell></TableCell>
-                            <TableCell align={'right'} sx={{ ...numberCellStyles }}>
+                            <TableCell sx={cellStyles}></TableCell>
+                            <TableCell sx={cellStyles}>
+                                <Stack alignItems={'center'} direction={'row'} py={1}>
+                                    <Typography>{t('simulator.mySquad').toUpperCase()}</Typography>
+                                </Stack>
+                            </TableCell>
+                            <TableCell align={'right'} sx={{ ...numberCellStyles, ...cellStyles }}>
                                 <Typography>{t('common.prediction')}</Typography>
                             </TableCell>
-                            <TableCell></TableCell>
+                            <TableCell sx={cellStyles}></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -60,11 +65,14 @@ export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
                             const isOnTeam = teamPlayers.some((p) => p.id === player?.id)
 
                             return (
-                                <TableRow key={`${team.round}-${p.id}`}>
-                                    <TableCell>
+                                <TableRow key={`${team.round}-${p.id}`} sx={{ height: '3.35rem' }}>
+                                    <TableCell
+                                        align={'center'}
+                                        sx={{ ...cellStyles, width: '3rem' }}
+                                    >
                                         <Typography>{player?.positionId.toUpperCase()}</Typography>
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={cellStyles}>
                                         <Stack
                                             alignItems={'center'}
                                             direction={'row'}
@@ -96,10 +104,13 @@ export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
                                             )}
                                         </Stack>
                                     </TableCell>
-                                    <TableCell align={'right'} sx={{ ...numberCellStyles }}>
+                                    <TableCell
+                                        align={'right'}
+                                        sx={{ ...numberCellStyles, ...cellStyles }}
+                                    >
                                         {roundNumber(p.pred, 2)}
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={cellStyles}>
                                         <Button
                                             onClick={() => player && manager.addPlayer(player)}
                                             disabled={
@@ -114,13 +125,6 @@ export const TeamTable: FC<TeamTableProps> = ({ manager, market, team }) => {
                                 </TableRow>
                             )
                         })}
-                        <TableRow>
-                            <TableCell></TableCell>
-                            <TableCell></TableCell>
-                            <TableCell align={'right'} sx={{ py: 1, ...numberCellStyles }}>
-                                {roundNumber(getPoints(team, 'pred'), 2)}
-                            </TableCell>
-                        </TableRow>
                     </TableBody>
                 </Table>
             </TableContainer>

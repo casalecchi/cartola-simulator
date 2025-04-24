@@ -19,7 +19,7 @@ export interface BuilderState {
     changeFormation: (value: Formation) => void
     removePlayer: (player: Player) => void
     resetTeam: () => void
-    setCaptain: (value: Player) => void
+    setCaptain: Dispatch<SetStateAction<Player | undefined>>
     setMarketOptions: Dispatch<SetStateAction<MarketOptions>>
     submit: () => void
 }

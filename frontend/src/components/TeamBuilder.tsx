@@ -10,7 +10,7 @@ import { Score, UserStats } from './builder/BuilderStats'
 import { BuilderTable } from './builder/BuilderTable'
 import { PlayerSlot } from './builder/PlayerSlot'
 import { Market } from './Market'
-import { TeamTable } from './TeamTable'
+import { ModelTable } from './TeamTable'
 
 interface TeamBuilderProps {
     manager: BuilderState
@@ -126,11 +126,13 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                 </Stack>
             </Grid2>
             <Grid2 border={'1px solid red'} size={4}>
-                <TeamTable
-                    manager={manager}
-                    market={market}
-                    team={optimals.find((o) => o.round - 1 === round)}
-                />
+                <Stack height={'100%'} justifyContent={'center'}>
+                    <ModelTable
+                        manager={manager}
+                        market={market}
+                        team={optimals.find((o) => o.round - 1 === round)}
+                    />
+                </Stack>
             </Grid2>
         </Grid2>
     )
