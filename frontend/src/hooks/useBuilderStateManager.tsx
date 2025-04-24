@@ -54,6 +54,8 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
 
     const removePlayer = (player: Player) => {
         const posId = player.positionId
+        const isCap = captain?.id == player.id
+        if (isCap) setCaptain(undefined)
         setBalance((prev) => prev + player.price)
         setTeam((prev) => ({ ...prev, [posId]: prev[posId].filter((p) => p.id != player.id) }))
     }
@@ -62,6 +64,7 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
         Object.entries(team).forEach(([, value]) => {
             value.forEach((p) => removePlayer(p))
         })
+        setCaptain(undefined)
     }
 
     const submit = () => {
@@ -71,16 +74,19 @@ export const useBuilderStateManager = ({ getRoundMarket }: BuilderProps): Builde
         Object.entries(team).forEach(([key, value]) => {
             const posId = key as Position
             value.forEach((player) => {
+                const isCap = captain?.id === player.id
                 const updatedPlayer = market.find((p) => p.id === player.id)
                 if (!updatedPlayer) {
                     setBalance((prev) => prev + player.price)
+                    if (isCap) setCaptain(undefined)
                     return
                 }
                 updatedTeam[posId].push(updatedPlayer)
+                const multiplier = isCap ? 2 : 1
                 if (round < 38) {
-                    hisTeam.points += updatedPlayer.lastScore
+                    hisTeam.points += updatedPlayer.lastScore * multiplier
                 } else {
-                    hisTeam.points += updatedPlayer.points
+                    hisTeam.points += updatedPlayer.points * multiplier
                 }
             })
         })

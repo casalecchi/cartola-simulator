@@ -22,8 +22,17 @@ interface TeamBuilderProps {
 export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, teamsInfo }) => {
     const { t } = useTranslation()
     const [rows, setRows] = useState<JSX.Element[]>([])
-    const { balance, formation, history, marketOptions, round, team, setMarketOptions, submit } =
-        manager
+    const {
+        balance,
+        captain,
+        formation,
+        history,
+        marketOptions,
+        round,
+        team,
+        setMarketOptions,
+        submit,
+    } = manager
 
     const title = round < 39 ? `${t('simulator.round')} ${round}` : t('simulator.endSeason')
 
@@ -32,6 +41,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
     }
 
     useEffect(() => {
+        console.log(captain, 'CAPITAO')
         setRows([
             ...createArray(formationSlots[formation].man).map((_, i) => (
                 <PlayerSlot key={`man${i}`} manager={manager} player={team.man[i]} posId={'man'} />
@@ -113,6 +123,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                                 sx={{ width: '5rem' }}
                                 variant={'contained'}
                                 disabled={
+                                    !captain ||
                                     Object.values(team).reduce(
                                         (acc, curr) => acc + curr.length,
                                         0
