@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next'
 import { BuilderState, MarketOptions } from '../hooks/useBuilderStateManager'
 import { Player, TeamInfo } from '../models'
 import colors from '../styles/colors.module.scss'
+import { roundNumber } from '../utils'
 import { CustomAutocomplete } from './ui/CustomAutocomplete'
 import { StatusIcon } from './ui/StatusIcon'
 
@@ -158,7 +159,7 @@ const Row: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) =
             <Grid2 flex={1}>
                 <Button
                     fullWidth
-                    disabled={balance - player.price < 0 && !isOnTeam}
+                    disabled={roundNumber(balance - player.price, 2) < 0 && !isOnTeam}
                     onClick={() => (isOnTeam ? sell(player) : buy(player))}
                     sx={{
                         backgroundColor: isOnTeam ? 'red' : 'green',
