@@ -7,6 +7,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.55,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.55,
         "gamesPlayed":15
@@ -19,6 +20,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.7,
+        "points":1.1,
         "lastScore":12.4,
         "average":3.23,
         "gamesPlayed":14
@@ -29,8 +31,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/16fac49e8d3bba144b424d3a32ca55ad_220x220.png",
         "teamId":266,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":5.46,
+        "points":4.4,
         "lastScore":0.0,
         "average":5.15,
         "gamesPlayed":2
@@ -43,6 +46,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":7.76,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.73,
         "gamesPlayed":8
@@ -53,8 +57,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/17\/49c8817c8d46dc60dc7ed4af79fa9953_220x220.png",
         "teamId":267,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":12.47,
+        "points":0.7,
         "lastScore":0.0,
         "average":3.02,
         "gamesPlayed":12
@@ -67,6 +72,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.01,
+        "points":0.0,
         "lastScore":-0.4,
         "average":0.79,
         "gamesPlayed":11
@@ -79,6 +85,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":7.92,
+        "points":0.0,
         "lastScore":-2.9,
         "average":1.37,
         "gamesPlayed":6
@@ -89,8 +96,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/13\/4a17daa520fd623ffa34480bdabdead6_220x220.png",
         "teamId":292,
         "positionId":"mid",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":4.46,
+        "points":-1.3,
         "lastScore":3.7,
         "average":1.06,
         "gamesPlayed":5
@@ -103,6 +111,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.42,
+        "points":0.0,
         "lastScore":1.0,
         "average":2.32,
         "gamesPlayed":13
@@ -115,6 +124,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.05,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.1,
         "gamesPlayed":16
@@ -127,6 +137,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":7.52,
+        "points":0.0,
         "lastScore":4.68,
         "average":3.32,
         "gamesPlayed":20
@@ -139,6 +150,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":10.08,
+        "points":2.85,
         "lastScore":1.85,
         "average":1.72,
         "gamesPlayed":2
@@ -151,6 +163,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":12.72,
+        "points":1.2,
         "lastScore":1.3,
         "average":5.22,
         "gamesPlayed":17
@@ -163,6 +176,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":10.67,
+        "points":-3.7,
         "lastScore":0.1,
         "average":1.99,
         "gamesPlayed":12
@@ -175,6 +189,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.26,
+        "points":-0.6,
         "lastScore":-1.2,
         "average":2.09,
         "gamesPlayed":9
@@ -187,6 +202,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":12.74,
+        "points":0.0,
         "lastScore":4.87,
         "average":3.89,
         "gamesPlayed":21
@@ -199,6 +215,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -211,6 +228,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.82,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.94,
         "gamesPlayed":19
@@ -223,6 +241,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -235,6 +254,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":10.72,
+        "points":4.37,
         "lastScore":1.78,
         "average":3.58,
         "gamesPlayed":22
@@ -245,8 +265,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/21\/d69bc6de4b00dce33cf2a3f7303c2c45_220x220.png",
         "teamId":264,
         "positionId":"gk",
-        "statusId":"injury",
+        "statusId":"null",
         "price":8.25,
+        "points":0.0,
         "lastScore":7.6,
         "average":0.69,
         "gamesPlayed":17
@@ -259,6 +280,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":7.98,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.64,
         "gamesPlayed":7
@@ -271,6 +293,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":2.88,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.18,
         "gamesPlayed":6
@@ -283,6 +306,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.37,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.24,
         "gamesPlayed":5
@@ -293,8 +317,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/24\/466b1e0c94a4b7fe9eab500c429d91be_220x220.png",
         "teamId":265,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":6.87,
+        "points":0.7,
         "lastScore":0.0,
         "average":-0.38,
         "gamesPlayed":6
@@ -307,6 +332,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.66,
+        "points":0.0,
         "lastScore":4.4,
         "average":3.08,
         "gamesPlayed":15
@@ -319,6 +345,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.13,
+        "points":3.5,
         "lastScore":0.9,
         "average":2.8,
         "gamesPlayed":20
@@ -331,6 +358,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.7,
+        "points":0.0,
         "lastScore":-0.6,
         "average":2.2,
         "gamesPlayed":6
@@ -343,6 +371,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":3.83,
+        "points":0.1,
         "lastScore":0.0,
         "average":2.25,
         "gamesPlayed":14
@@ -355,6 +384,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":9.3,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.22,
         "gamesPlayed":11
@@ -367,6 +397,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":8.42,
+        "points":0.0,
         "lastScore":4.3,
         "average":3.07,
         "gamesPlayed":16
@@ -379,6 +410,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":2.55,
+        "points":7.5,
         "lastScore":-4.7,
         "average":0.98,
         "gamesPlayed":9
@@ -391,6 +423,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":14.14,
+        "points":0.0,
         "lastScore":3.36,
         "average":4.46,
         "gamesPlayed":21
@@ -403,6 +436,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.44,
+        "points":0.0,
         "lastScore":0.4,
         "average":1.44,
         "gamesPlayed":19
@@ -415,6 +449,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.67,
+        "points":0.0,
         "lastScore":5.0,
         "average":2.66,
         "gamesPlayed":19
@@ -425,8 +460,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/19\/53fbb01cb440a683d3d6cf3e622ea4dc_220x220.png",
         "teamId":265,
         "positionId":"mid",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":13.35,
+        "points":-0.8,
         "lastScore":0.0,
         "average":4.65,
         "gamesPlayed":12
@@ -439,6 +475,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -451,6 +488,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":12.88,
+        "points":4.0,
         "lastScore":7.2,
         "average":3.46,
         "gamesPlayed":17
@@ -463,6 +501,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.64,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.92,
         "gamesPlayed":6
@@ -475,6 +514,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.63,
+        "points":-0.1,
         "lastScore":0.0,
         "average":2.23,
         "gamesPlayed":12
@@ -487,6 +527,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.99,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.44,
         "gamesPlayed":8
@@ -499,6 +540,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.85,
+        "points":0.0,
         "lastScore":7.9,
         "average":2.99,
         "gamesPlayed":17
@@ -511,6 +553,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.49,
+        "points":0.0,
         "lastScore":0.4,
         "average":1.6,
         "gamesPlayed":12
@@ -523,6 +566,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":7.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -535,6 +579,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":12.51,
+        "points":0.0,
         "lastScore":13.0,
         "average":3.48,
         "gamesPlayed":15
@@ -547,6 +592,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":7.01,
+        "points":0.0,
         "lastScore":-0.9,
         "average":2.0,
         "gamesPlayed":9
@@ -559,6 +605,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":9.12,
+        "points":0.0,
         "lastScore":8.7,
         "average":2.23,
         "gamesPlayed":22
@@ -571,6 +618,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.0,
+        "points":0.0,
         "lastScore":7.4,
         "average":6.27,
         "gamesPlayed":16
@@ -583,6 +631,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.19,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.96,
         "gamesPlayed":10
@@ -595,6 +644,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.82,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.35,
         "gamesPlayed":2
@@ -607,6 +657,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":9.76,
+        "points":13.8,
         "lastScore":0.9,
         "average":6.31,
         "gamesPlayed":15
@@ -619,6 +670,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.13,
+        "points":0.0,
         "lastScore":5.7,
         "average":4.55,
         "gamesPlayed":17
@@ -631,6 +683,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":6.76,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.24,
         "gamesPlayed":5
@@ -643,6 +696,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":6.56,
+        "points":0.0,
         "lastScore":8.2,
         "average":1.4,
         "gamesPlayed":16
@@ -655,6 +709,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.34,
+        "points":0.0,
         "lastScore":2.3,
         "average":2.54,
         "gamesPlayed":19
@@ -667,6 +722,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.19,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.57,
         "gamesPlayed":6
@@ -677,8 +733,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/05\/30\/cd8a7f9b0744e105efa0a0c572d37d6f_220x220.png",
         "teamId":277,
         "positionId":"st",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":23.12,
+        "points":18.2,
         "lastScore":-1.3,
         "average":10.01,
         "gamesPlayed":18
@@ -691,6 +748,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -703,6 +761,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":8.58,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.78,
         "gamesPlayed":16
@@ -715,6 +774,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":13.06,
+        "points":1.8,
         "lastScore":1.8,
         "average":4.16,
         "gamesPlayed":18
@@ -727,6 +787,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.32,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.29,
         "gamesPlayed":14
@@ -737,8 +798,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/2f197bbdfc2d69b1a353a2c023b5fc6b_220x220.png",
         "teamId":266,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":5.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -751,6 +813,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":2.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.1,
         "gamesPlayed":5
@@ -763,6 +826,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":8.56,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.59,
         "gamesPlayed":18
@@ -775,6 +839,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -785,8 +850,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/37c640ec0cd77c476e2aeef745c5420f_220x220.png",
         "teamId":266,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":4.62,
+        "points":0.0,
         "lastScore":-2.6,
         "average":2.36,
         "gamesPlayed":19
@@ -799,6 +865,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.91,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.38,
         "gamesPlayed":9
@@ -811,6 +878,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.21,
+        "points":-0.9,
         "lastScore":0.0,
         "average":0.12,
         "gamesPlayed":6
@@ -823,6 +891,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":3.33,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.07,
         "gamesPlayed":3
@@ -835,6 +904,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":6.45,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.83,
         "gamesPlayed":10
@@ -847,6 +917,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.21,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.67,
         "gamesPlayed":7
@@ -857,8 +928,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/28\/4d9d7f15b47033ac09c8e32e9b963227_220x220.png",
         "teamId":277,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"injury",
         "price":6.43,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.93,
         "gamesPlayed":3
@@ -871,6 +943,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":2.8,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.35,
         "gamesPlayed":2
@@ -883,6 +956,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":9.71,
+        "points":0.0,
         "lastScore":4.0,
         "average":2.89,
         "gamesPlayed":16
@@ -895,6 +969,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.74,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.3,
         "gamesPlayed":1
@@ -907,6 +982,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":7.05,
+        "points":0.3,
         "lastScore":0.0,
         "average":3.42,
         "gamesPlayed":14
@@ -919,6 +995,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.27,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.0,
         "gamesPlayed":0
@@ -931,6 +1008,7 @@
         "positionId":"cb",
         "statusId":"suspended",
         "price":4.68,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.9,
         "gamesPlayed":3
@@ -943,6 +1021,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":8.25,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.31,
         "gamesPlayed":12
@@ -955,6 +1034,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":8.21,
+        "points":0.0,
         "lastScore":0.0,
         "average":17.9,
         "gamesPlayed":1
@@ -967,6 +1047,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.4,
+        "points":0.0,
         "lastScore":0.0,
         "average":-9.2,
         "gamesPlayed":1
@@ -979,6 +1060,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":6.24,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.99,
         "gamesPlayed":12
@@ -991,6 +1073,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":6.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1003,6 +1086,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.32,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.4,
         "gamesPlayed":4
@@ -1015,6 +1099,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.41,
+        "points":8.0,
         "lastScore":0.2,
         "average":1.24,
         "gamesPlayed":16
@@ -1027,6 +1112,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.98,
+        "points":0.0,
         "lastScore":8.4,
         "average":2.92,
         "gamesPlayed":14
@@ -1037,8 +1123,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/03f318322bad08093324500b97948211_220x220.png",
         "teamId":354,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":4.29,
+        "points":-0.6,
         "lastScore":0.0,
         "average":1.91,
         "gamesPlayed":15
@@ -1049,8 +1136,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/81d3b25879cf4905a5152581b71402f8_220x220.png",
         "teamId":266,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":5.05,
+        "points":0.0,
         "lastScore":-1.0,
         "average":3.58,
         "gamesPlayed":10
@@ -1061,8 +1149,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/bc31f941c1bb5d6c26ada24af71bcf45_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":4.49,
+        "points":-2.6,
         "lastScore":0.0,
         "average":1.01,
         "gamesPlayed":17
@@ -1075,6 +1164,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":8.92,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.78,
         "gamesPlayed":9
@@ -1087,6 +1177,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":11.27,
+        "points":6.3,
         "lastScore":1.7,
         "average":3.09,
         "gamesPlayed":13
@@ -1099,6 +1190,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":8.96,
+        "points":0.0,
         "lastScore":5.3,
         "average":3.03,
         "gamesPlayed":13
@@ -1111,6 +1203,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":18.22,
+        "points":-2.4,
         "lastScore":-0.6,
         "average":8.57,
         "gamesPlayed":20
@@ -1123,6 +1216,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.33,
+        "points":0.0,
         "lastScore":3.3,
         "average":1.73,
         "gamesPlayed":13
@@ -1135,6 +1229,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.07,
+        "points":0.0,
         "lastScore":-0.1,
         "average":1.75,
         "gamesPlayed":14
@@ -1147,6 +1242,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":8.98,
+        "points":0.0,
         "lastScore":1.6,
         "average":1.17,
         "gamesPlayed":12
@@ -1159,6 +1255,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.83,
+        "points":1.5,
         "lastScore":6.4,
         "average":3.3,
         "gamesPlayed":15
@@ -1171,6 +1268,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.49,
+        "points":-2.0,
         "lastScore":0.0,
         "average":3.42,
         "gamesPlayed":14
@@ -1183,6 +1281,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.25,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.13,
         "gamesPlayed":7
@@ -1195,6 +1294,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.81,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.2,
         "gamesPlayed":3
@@ -1207,6 +1307,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.22,
+        "points":0.0,
         "lastScore":9.6,
         "average":3.7,
         "gamesPlayed":17
@@ -1219,6 +1320,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.82,
+        "points":0.0,
         "lastScore":1.8,
         "average":3.04,
         "gamesPlayed":14
@@ -1229,8 +1331,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/73ed5ab3cb9b56aecea70945f57d3adf_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"doubt",
+        "statusId":"null",
         "price":8.09,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.24,
         "gamesPlayed":10
@@ -1243,6 +1346,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.47,
+        "points":7.7,
         "lastScore":3.8,
         "average":2.76,
         "gamesPlayed":16
@@ -1255,6 +1359,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.6,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.7,
         "gamesPlayed":3
@@ -1265,8 +1370,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/001cd019cd767eafa0c877ae4f8a27ab_220x220.png",
         "teamId":285,
         "positionId":"wb",
-        "statusId":"doubt",
+        "statusId":"null",
         "price":5.19,
+        "points":0.0,
         "lastScore":5.7,
         "average":2.1,
         "gamesPlayed":10
@@ -1279,6 +1385,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.55,
+        "points":4.62,
         "lastScore":3.09,
         "average":3.85,
         "gamesPlayed":18
@@ -1291,6 +1398,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.57,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.37,
         "gamesPlayed":11
@@ -1303,6 +1411,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.16,
+        "points":0.0,
         "lastScore":2.0,
         "average":3.8,
         "gamesPlayed":16
@@ -1315,6 +1424,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":20.81,
+        "points":0.0,
         "lastScore":0.0,
         "average":11.2,
         "gamesPlayed":3
@@ -1325,8 +1435,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/04\/01\/c8c4cd4fac733c4fba030044eefbd05a_220x220.png",
         "teamId":276,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":8.37,
+        "points":0.0,
         "lastScore":4.5,
         "average":2.78,
         "gamesPlayed":12
@@ -1339,6 +1450,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.66,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.3,
         "gamesPlayed":3
@@ -1351,6 +1463,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.41,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.27,
         "gamesPlayed":3
@@ -1363,6 +1476,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.72,
+        "points":0.0,
         "lastScore":0.5,
         "average":1.32,
         "gamesPlayed":16
@@ -1375,6 +1489,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":11.07,
+        "points":0.5,
         "lastScore":0.0,
         "average":3.83,
         "gamesPlayed":16
@@ -1387,6 +1502,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":7.35,
+        "points":0.0,
         "lastScore":4.8,
         "average":1.92,
         "gamesPlayed":6
@@ -1399,6 +1515,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.08,
+        "points":2.4,
         "lastScore":0.7,
         "average":2.95,
         "gamesPlayed":8
@@ -1411,6 +1528,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.38,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.2,
         "gamesPlayed":4
@@ -1423,6 +1541,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":14.9,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.6,
         "gamesPlayed":8
@@ -1435,6 +1554,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.57,
+        "points":0.0,
         "lastScore":1.0,
         "average":0.95,
         "gamesPlayed":4
@@ -1447,6 +1567,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":11.27,
+        "points":0.0,
         "lastScore":2.2,
         "average":4.42,
         "gamesPlayed":16
@@ -1459,6 +1580,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.56,
+        "points":0.0,
         "lastScore":0.0,
         "average":-7.8,
         "gamesPlayed":1
@@ -1471,6 +1593,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":8.21,
+        "points":0.0,
         "lastScore":12.3,
         "average":2.83,
         "gamesPlayed":16
@@ -1483,6 +1606,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1495,6 +1619,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.46,
+        "points":0.0,
         "lastScore":8.3,
         "average":3.05,
         "gamesPlayed":9
@@ -1507,6 +1632,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.32,
+        "points":0.0,
         "lastScore":0.7,
         "average":1.19,
         "gamesPlayed":19
@@ -1519,6 +1645,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.05,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.86,
         "gamesPlayed":9
@@ -1529,8 +1656,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/10\/01\/9e64684a0ef33c9f748f305214999641_220x220.png",
         "teamId":373,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.59,
+        "points":6.2,
         "lastScore":4.9,
         "average":1.08,
         "gamesPlayed":5
@@ -1543,6 +1671,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":7.74,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.98,
         "gamesPlayed":14
@@ -1553,8 +1682,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/c51996a402c33b6efe07a6e733476941_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.71,
+        "points":0.0,
         "lastScore":-0.5,
         "average":1.55,
         "gamesPlayed":16
@@ -1565,8 +1695,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/27\/ed4e21aa1eae057a8185a802e380bbcf_220x220.png",
         "teamId":263,
         "positionId":"man",
-        "statusId":"null",
+        "statusId":"probable",
         "price":4.46,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1579,6 +1710,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.84,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.63,
         "gamesPlayed":7
@@ -1591,6 +1723,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":8.98,
+        "points":5.3,
         "lastScore":0.0,
         "average":3.36,
         "gamesPlayed":12
@@ -1603,6 +1736,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.5,
+        "points":0.0,
         "lastScore":7.7,
         "average":2.1,
         "gamesPlayed":15
@@ -1615,6 +1749,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.39,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.24,
         "gamesPlayed":12
@@ -1627,6 +1762,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1639,6 +1775,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.38,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.5,
         "gamesPlayed":10
@@ -1649,8 +1786,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/b4171a404ece6ec54f9a350c1f02f874_220x220.png",
         "teamId":354,
         "positionId":"gk",
-        "statusId":"probable",
+        "statusId":"null",
         "price":4.0,
+        "points":-3.1,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1663,6 +1801,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":13.7,
+        "points":6.8,
         "lastScore":2.5,
         "average":5.02,
         "gamesPlayed":16
@@ -1673,8 +1812,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/edc31727f12d73f44cc5aa5c7e609151_220x220.png",
         "teamId":354,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":3.07,
+        "points":0.0,
         "lastScore":0.2,
         "average":2.85,
         "gamesPlayed":6
@@ -1687,6 +1827,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.64,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.55,
         "gamesPlayed":4
@@ -1699,6 +1840,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":10.36,
+        "points":8.5,
         "lastScore":3.2,
         "average":2.19,
         "gamesPlayed":20
@@ -1711,6 +1853,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":13.85,
+        "points":0.0,
         "lastScore":7.1,
         "average":5.5,
         "gamesPlayed":18
@@ -1723,6 +1866,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":4.22,
+        "points":0.9,
         "lastScore":4.4,
         "average":1.94,
         "gamesPlayed":5
@@ -1735,6 +1879,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.65,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.36,
         "gamesPlayed":14
@@ -1747,6 +1892,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.67,
+        "points":0.0,
         "lastScore":1.8,
         "average":1.85,
         "gamesPlayed":2
@@ -1759,6 +1905,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.04,
+        "points":-2.0,
         "lastScore":7.1,
         "average":3.28,
         "gamesPlayed":10
@@ -1769,8 +1916,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/12e542636d28c0dc887fe6ae967dbe52_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":4.71,
+        "points":0.0,
         "lastScore":2.0,
         "average":0.36,
         "gamesPlayed":5
@@ -1783,6 +1931,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":7.71,
+        "points":1.24,
         "lastScore":1.57,
         "average":3.3,
         "gamesPlayed":4
@@ -1795,6 +1944,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.92,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.36,
         "gamesPlayed":18
@@ -1807,6 +1957,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.3,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.0,
         "gamesPlayed":4
@@ -1819,6 +1970,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.77,
+        "points":0.0,
         "lastScore":8.8,
         "average":2.63,
         "gamesPlayed":4
@@ -1829,8 +1981,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/79ca1f19561511f316107b776b58d2e4_220x220.png",
         "teamId":292,
         "positionId":"mid",
-        "statusId":"doubt",
+        "statusId":"null",
         "price":4.93,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.12,
         "gamesPlayed":11
@@ -1843,6 +1996,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":5.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -1853,8 +2007,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/02\/65eb6383d1eef941a4b0e88084a8b4f4_220x220.png",
         "teamId":354,
         "positionId":"cb",
-        "statusId":"suspended",
+        "statusId":"probable",
         "price":5.54,
+        "points":0.0,
         "lastScore":-1.9,
         "average":2.8,
         "gamesPlayed":14
@@ -1867,6 +2022,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.45,
+        "points":17.9,
         "lastScore":11.7,
         "average":5.71,
         "gamesPlayed":16
@@ -1879,6 +2035,7 @@
         "positionId":"wb",
         "statusId":"suspended",
         "price":6.73,
+        "points":0.0,
         "lastScore":-3.0,
         "average":2.38,
         "gamesPlayed":13
@@ -1891,6 +2048,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":5.29,
+        "points":5.4,
         "lastScore":0.8,
         "average":2.33,
         "gamesPlayed":15
@@ -1903,6 +2061,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.29,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.93,
         "gamesPlayed":18
@@ -1915,6 +2074,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":12.71,
+        "points":3.6,
         "lastScore":0.0,
         "average":5.14,
         "gamesPlayed":18
@@ -1927,6 +2087,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.46,
+        "points":3.6,
         "lastScore":0.6,
         "average":3.0,
         "gamesPlayed":17
@@ -1939,6 +2100,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.19,
+        "points":7.9,
         "lastScore":0.3,
         "average":0.7,
         "gamesPlayed":16
@@ -1949,8 +2111,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/26\/b400496767c5b2364514614c6837b344_220x220.png",
         "teamId":264,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"injury",
         "price":9.34,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.17,
         "gamesPlayed":6
@@ -1963,6 +2126,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":10.43,
+        "points":0.0,
         "lastScore":5.2,
         "average":4.22,
         "gamesPlayed":9
@@ -1975,6 +2139,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.43,
+        "points":0.0,
         "lastScore":-1.7,
         "average":1.27,
         "gamesPlayed":6
@@ -1987,6 +2152,7 @@
         "positionId":"cb",
         "statusId":"suspended",
         "price":4.57,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.82,
         "gamesPlayed":8
@@ -1999,6 +2165,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.97,
+        "points":0.0,
         "lastScore":1.8,
         "average":2.66,
         "gamesPlayed":15
@@ -2011,6 +2178,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.89,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.12,
         "gamesPlayed":20
@@ -2021,8 +2189,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/e0f18a0e8a5144558982a72313a13ef5_220x220.png",
         "teamId":354,
         "positionId":"mid",
-        "statusId":"suspended",
+        "statusId":"probable",
         "price":12.77,
+        "points":0.0,
         "lastScore":3.5,
         "average":4.67,
         "gamesPlayed":20
@@ -2035,6 +2204,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.95,
+        "points":1.5,
         "lastScore":2.3,
         "average":1.84,
         "gamesPlayed":16
@@ -2047,6 +2217,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.76,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.7,
         "gamesPlayed":4
@@ -2059,6 +2230,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":11.88,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.75,
         "gamesPlayed":11
@@ -2071,6 +2243,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.41,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.16,
         "gamesPlayed":9
@@ -2083,6 +2256,7 @@
         "positionId":"wb",
         "statusId":"suspended",
         "price":4.57,
+        "points":0.0,
         "lastScore":-3.4,
         "average":1.73,
         "gamesPlayed":10
@@ -2095,6 +2269,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":11.51,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.76,
         "gamesPlayed":13
@@ -2107,6 +2282,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.91,
+        "points":-1.0,
         "lastScore":0.4,
         "average":0.46,
         "gamesPlayed":19
@@ -2119,6 +2295,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":8.8,
+        "points":0.0,
         "lastScore":3.7,
         "average":2.98,
         "gamesPlayed":20
@@ -2131,6 +2308,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":5.65,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.66,
         "gamesPlayed":12
@@ -2143,6 +2321,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.1,
+        "points":0.0,
         "lastScore":1.9,
         "average":2.26,
         "gamesPlayed":12
@@ -2155,6 +2334,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.17,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.48,
         "gamesPlayed":5
@@ -2167,6 +2347,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.89,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.3,
         "gamesPlayed":12
@@ -2177,8 +2358,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/2b7fa1291409b9d4149ac8bd9c461eb7_220x220.png",
         "teamId":266,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":4.01,
+        "points":9.3,
         "lastScore":0.0,
         "average":2.35,
         "gamesPlayed":15
@@ -2191,6 +2373,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":4.96,
+        "points":5.6,
         "lastScore":0.0,
         "average":3.86,
         "gamesPlayed":12
@@ -2203,6 +2386,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":4.15,
+        "points":3.5,
         "lastScore":-1.3,
         "average":2.72,
         "gamesPlayed":19
@@ -2215,6 +2399,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":8.82,
+        "points":0.0,
         "lastScore":-2.3,
         "average":4.74,
         "gamesPlayed":21
@@ -2227,6 +2412,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.77,
+        "points":0.0,
         "lastScore":1.4,
         "average":1.7,
         "gamesPlayed":13
@@ -2239,6 +2425,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.05,
+        "points":3.8,
         "lastScore":0.0,
         "average":1.68,
         "gamesPlayed":15
@@ -2251,6 +2438,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.42,
+        "points":0.0,
         "lastScore":2.7,
         "average":1.73,
         "gamesPlayed":15
@@ -2261,8 +2449,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/1e384aacfbb6566d7f8e26a14bdb07ed_220x220.png",
         "teamId":266,
         "positionId":"gk",
-        "statusId":"probable",
+        "statusId":"null",
         "price":0.77,
+        "points":12.2,
         "lastScore":0.0,
         "average":-1.3,
         "gamesPlayed":3
@@ -2275,6 +2464,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.03,
+        "points":0.0,
         "lastScore":1.9,
         "average":1.9,
         "gamesPlayed":1
@@ -2287,6 +2477,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":9.58,
+        "points":0.0,
         "lastScore":9.3,
         "average":3.51,
         "gamesPlayed":16
@@ -2299,6 +2490,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.98,
+        "points":1.1,
         "lastScore":0.0,
         "average":2.96,
         "gamesPlayed":16
@@ -2311,6 +2503,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.13,
+        "points":0.0,
         "lastScore":-1.2,
         "average":3.92,
         "gamesPlayed":12
@@ -2321,8 +2514,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/10\/13\/cc2746f464476a7f9908dbc251d225ff_220x220.png",
         "teamId":277,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":2.42,
+        "points":0.0,
         "lastScore":0.7,
         "average":0.8,
         "gamesPlayed":5
@@ -2335,6 +2529,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":10.83,
+        "points":0.0,
         "lastScore":2.0,
         "average":4.6,
         "gamesPlayed":16
@@ -2347,6 +2542,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.94,
+        "points":8.5,
         "lastScore":0.0,
         "average":2.17,
         "gamesPlayed":12
@@ -2359,6 +2555,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.02,
+        "points":4.2,
         "lastScore":8.0,
         "average":2.07,
         "gamesPlayed":13
@@ -2371,6 +2568,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -2383,6 +2581,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.52,
+        "points":0.0,
         "lastScore":1.8,
         "average":2.62,
         "gamesPlayed":13
@@ -2395,6 +2594,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.76,
+        "points":0.0,
         "lastScore":0.0,
         "average":11.4,
         "gamesPlayed":1
@@ -2407,6 +2607,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.56,
+        "points":0.0,
         "lastScore":0.0,
         "average":6.85,
         "gamesPlayed":2
@@ -2419,6 +2620,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":7.45,
+        "points":4.72,
         "lastScore":0.0,
         "average":3.24,
         "gamesPlayed":14
@@ -2431,6 +2633,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.75,
+        "points":0.0,
         "lastScore":-3.4,
         "average":2.65,
         "gamesPlayed":10
@@ -2441,8 +2644,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/03\/1b0bc8c97f0339c38008ff5227279607_220x220.png",
         "teamId":266,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":2.28,
+        "points":0.0,
         "lastScore":-3.1,
         "average":0.23,
         "gamesPlayed":14
@@ -2455,6 +2659,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.78,
+        "points":0.0,
         "lastScore":-1.2,
         "average":1.09,
         "gamesPlayed":12
@@ -2467,6 +2672,7 @@
         "positionId":"wb",
         "statusId":"suspended",
         "price":7.63,
+        "points":0.0,
         "lastScore":-1.5,
         "average":2.11,
         "gamesPlayed":13
@@ -2479,6 +2685,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.84,
+        "points":-0.3,
         "lastScore":0.0,
         "average":1.33,
         "gamesPlayed":3
@@ -2491,6 +2698,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":-3.45,
         "gamesPlayed":2
@@ -2503,6 +2711,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -2515,6 +2724,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.89,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.0,
         "gamesPlayed":10
@@ -2527,6 +2737,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.83,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.04,
         "gamesPlayed":14
@@ -2539,6 +2750,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":9.65,
+        "points":0.0,
         "lastScore":-0.1,
         "average":4.64,
         "gamesPlayed":15
@@ -2551,6 +2763,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":14.93,
+        "points":0.0,
         "lastScore":9.7,
         "average":7.37,
         "gamesPlayed":20
@@ -2561,8 +2774,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/03\/28\/55b6bd3285315d25077f61ea5d4a7fc9_220x220.png",
         "teamId":277,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":7.19,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.71,
         "gamesPlayed":18
@@ -2573,8 +2787,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/04\/01\/bbb9588c3dbac516f581a278fc277197_220x220.png",
         "teamId":276,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":4.2,
+        "points":-0.4,
         "lastScore":1.8,
         "average":1.64,
         "gamesPlayed":13
@@ -2587,6 +2802,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.92,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.0,
         "gamesPlayed":1
@@ -2599,6 +2815,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.25,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.2,
         "gamesPlayed":2
@@ -2611,6 +2828,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.82,
+        "points":0.0,
         "lastScore":2.3,
         "average":3.24,
         "gamesPlayed":12
@@ -2623,6 +2841,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.54,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.99,
         "gamesPlayed":8
@@ -2635,6 +2854,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.75,
+        "points":1.1,
         "lastScore":1.7,
         "average":2.35,
         "gamesPlayed":16
@@ -2647,6 +2867,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.38,
+        "points":0.0,
         "lastScore":3.8,
         "average":2.33,
         "gamesPlayed":12
@@ -2659,6 +2880,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.73,
+        "points":-0.6,
         "lastScore":0.0,
         "average":0.45,
         "gamesPlayed":9
@@ -2671,6 +2893,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.86,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.96,
         "gamesPlayed":18
@@ -2681,8 +2904,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/16\/8e57cefa124fc249fc9e07be0e3dc8bc_220x220.png",
         "teamId":373,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.02,
+        "points":-2.2,
         "lastScore":0.0,
         "average":1.01,
         "gamesPlayed":12
@@ -2695,6 +2919,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":16.51,
+        "points":0.0,
         "lastScore":1.5,
         "average":5.06,
         "gamesPlayed":21
@@ -2707,6 +2932,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.17,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.11,
         "gamesPlayed":11
@@ -2719,6 +2945,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":9.01,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.35,
         "gamesPlayed":4
@@ -2731,6 +2958,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.36,
+        "points":0.0,
         "lastScore":1.2,
         "average":1.2,
         "gamesPlayed":1
@@ -2743,6 +2971,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":10.02,
+        "points":0.0,
         "lastScore":1.6,
         "average":4.23,
         "gamesPlayed":13
@@ -2755,6 +2984,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":10.93,
+        "points":0.0,
         "lastScore":0.7,
         "average":3.48,
         "gamesPlayed":14
@@ -2767,6 +2997,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.49,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.28,
         "gamesPlayed":13
@@ -2777,8 +3008,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/21\/282e88366ff0e11540856b5dd644148a_220x220.png",
         "teamId":293,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.82,
         "gamesPlayed":14
@@ -2791,6 +3023,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.17,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.03,
         "gamesPlayed":8
@@ -2803,6 +3036,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.34,
+        "points":0.7,
         "lastScore":8.5,
         "average":3.67,
         "gamesPlayed":13
@@ -2815,6 +3049,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -2827,6 +3062,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.79,
+        "points":3.5,
         "lastScore":0.0,
         "average":1.25,
         "gamesPlayed":12
@@ -2839,6 +3075,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":5.16,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.95,
         "gamesPlayed":4
@@ -2851,6 +3088,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.55,
+        "points":-0.2,
         "lastScore":4.8,
         "average":1.51,
         "gamesPlayed":10
@@ -2863,6 +3101,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.68,
+        "points":0.3,
         "lastScore":2.8,
         "average":2.87,
         "gamesPlayed":15
@@ -2875,6 +3114,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.43,
+        "points":8.3,
         "lastScore":0.0,
         "average":3.06,
         "gamesPlayed":14
@@ -2887,6 +3127,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.03,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.67,
         "gamesPlayed":6
@@ -2899,6 +3140,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":10.7,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.34,
         "gamesPlayed":7
@@ -2911,6 +3153,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":8.45,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.81,
         "gamesPlayed":13
@@ -2923,6 +3166,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":7.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -2935,6 +3179,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.15,
+        "points":1.0,
         "lastScore":2.4,
         "average":1.12,
         "gamesPlayed":16
@@ -2947,6 +3192,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":19.17,
+        "points":0.0,
         "lastScore":15.8,
         "average":6.78,
         "gamesPlayed":11
@@ -2959,6 +3205,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.19,
+        "points":5.4,
         "lastScore":0.6,
         "average":1.3,
         "gamesPlayed":3
@@ -2971,6 +3218,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":9.77,
+        "points":0.0,
         "lastScore":-1.0,
         "average":3.08,
         "gamesPlayed":17
@@ -2983,6 +3231,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":9.09,
+        "points":7.0,
         "lastScore":0.0,
         "average":2.4,
         "gamesPlayed":19
@@ -2995,6 +3244,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":6.72,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.74,
         "gamesPlayed":17
@@ -3007,6 +3257,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.81,
+        "points":0.0,
         "lastScore":2.7,
         "average":2.6,
         "gamesPlayed":4
@@ -3019,6 +3270,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.59,
+        "points":5.7,
         "lastScore":0.0,
         "average":1.51,
         "gamesPlayed":11
@@ -3029,8 +3281,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/18\/1b11ac648b9f3aacd312e40873a191f0_220x220.png",
         "teamId":290,
         "positionId":"st",
-        "statusId":"injury",
+        "statusId":"null",
         "price":4.42,
+        "points":0.0,
         "lastScore":2.4,
         "average":2.34,
         "gamesPlayed":12
@@ -3043,6 +3296,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.82,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.25,
         "gamesPlayed":4
@@ -3055,6 +3309,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.19,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.9,
         "gamesPlayed":2
@@ -3067,6 +3322,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":3.81,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.04,
         "gamesPlayed":16
@@ -3079,6 +3335,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.0,
+        "points":4.9,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3091,6 +3348,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":6.15,
+        "points":0.8,
         "lastScore":1.0,
         "average":2.35,
         "gamesPlayed":19
@@ -3103,6 +3361,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":5.45,
+        "points":-8.9,
         "lastScore":5.5,
         "average":1.93,
         "gamesPlayed":14
@@ -3115,6 +3374,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.3,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.1,
         "gamesPlayed":1
@@ -3127,6 +3387,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.59,
+        "points":0.0,
         "lastScore":3.7,
         "average":2.98,
         "gamesPlayed":17
@@ -3137,8 +3398,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/86bda8f1f2f8a1d79cbbc8a21a0d4436_220x220.png",
         "teamId":373,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":7.77,
+        "points":0.0,
         "lastScore":-0.6,
         "average":2.07,
         "gamesPlayed":19
@@ -3151,6 +3413,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.57,
+        "points":3.5,
         "lastScore":-1.6,
         "average":3.55,
         "gamesPlayed":16
@@ -3163,6 +3426,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":6.99,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.72,
         "gamesPlayed":12
@@ -3175,6 +3439,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":11.12,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.12,
         "gamesPlayed":19
@@ -3187,6 +3452,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":12.18,
+        "points":0.0,
         "lastScore":7.6,
         "average":3.18,
         "gamesPlayed":16
@@ -3199,6 +3465,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":14.49,
+        "points":0.0,
         "lastScore":17.1,
         "average":4.88,
         "gamesPlayed":15
@@ -3211,6 +3478,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.57,
+        "points":0.0,
         "lastScore":-0.2,
         "average":0.66,
         "gamesPlayed":15
@@ -3223,6 +3491,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.56,
+        "points":0.9,
         "lastScore":1.0,
         "average":2.23,
         "gamesPlayed":14
@@ -3235,6 +3504,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.99,
+        "points":0.0,
         "lastScore":-0.7,
         "average":1.85,
         "gamesPlayed":17
@@ -3247,6 +3517,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.52,
+        "points":0.0,
         "lastScore":2.4,
         "average":3.68,
         "gamesPlayed":17
@@ -3257,8 +3528,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/11\/9cd8c17f449c11311b6d55fdc1c818b4_220x220.png",
         "teamId":267,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":4.92,
+        "points":0.0,
         "lastScore":1.3,
         "average":3.65,
         "gamesPlayed":2
@@ -3271,6 +3543,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":10.51,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.39,
         "gamesPlayed":14
@@ -3283,6 +3556,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.5,
+        "points":0.0,
         "lastScore":6.2,
         "average":2.71,
         "gamesPlayed":19
@@ -3295,6 +3569,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.26,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.8,
         "gamesPlayed":1
@@ -3305,8 +3580,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/b2893fbcf5a6387a335f1fc33beb7f4d_220x220.png",
         "teamId":266,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":2.19,
+        "points":0.0,
         "lastScore":4.1,
         "average":1.14,
         "gamesPlayed":10
@@ -3319,6 +3595,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.04,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.8,
         "gamesPlayed":1
@@ -3331,6 +3608,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.45,
+        "points":0.0,
         "lastScore":2.8,
         "average":1.97,
         "gamesPlayed":15
@@ -3343,6 +3621,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.85,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.49,
         "gamesPlayed":11
@@ -3353,8 +3632,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/02\/48f74d37e908c5f5cf68c0ccaf907aca_220x220.png",
         "teamId":354,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.41,
+        "points":-0.2,
         "lastScore":-0.1,
         "average":1.93,
         "gamesPlayed":3
@@ -3367,6 +3647,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":4.31,
+        "points":1.3,
         "lastScore":-0.1,
         "average":3.25,
         "gamesPlayed":6
@@ -3379,6 +3660,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":9.13,
+        "points":15.5,
         "lastScore":3.9,
         "average":3.78,
         "gamesPlayed":20
@@ -3389,8 +3671,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/15b28caaa2392bbd4e619dee98680e8e_220x220.png",
         "teamId":373,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.26,
+        "points":7.6,
         "lastScore":0.0,
         "average":0.92,
         "gamesPlayed":17
@@ -3403,6 +3686,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3415,6 +3699,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":14.38,
+        "points":0.0,
         "lastScore":2.2,
         "average":7.2,
         "gamesPlayed":17
@@ -3425,8 +3710,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/28\/005f1178dd64dc721696b75d13b446ab_220x220.png",
         "teamId":293,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"null",
         "price":6.83,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.28,
         "gamesPlayed":15
@@ -3439,6 +3725,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3451,6 +3738,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.03,
+        "points":0.0,
         "lastScore":7.5,
         "average":1.61,
         "gamesPlayed":9
@@ -3463,6 +3751,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":7.9,
         "gamesPlayed":2
@@ -3475,6 +3764,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.86,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.34,
         "gamesPlayed":5
@@ -3487,6 +3777,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":9.53,
+        "points":17.2,
         "lastScore":0.0,
         "average":2.16,
         "gamesPlayed":14
@@ -3499,6 +3790,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.52,
+        "points":-1.1,
         "lastScore":1.2,
         "average":1.2,
         "gamesPlayed":20
@@ -3511,6 +3803,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.88,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.1,
         "gamesPlayed":7
@@ -3521,8 +3814,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/04\/01\/8b22d106ccba1278e3e4a6b89e76eab0_220x220.png",
         "teamId":276,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":8.23,
+        "points":14.3,
         "lastScore":0.0,
         "average":1.86,
         "gamesPlayed":5
@@ -3535,6 +3829,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.2,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.08,
         "gamesPlayed":5
@@ -3547,6 +3842,7 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":1.1,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.0,
         "gamesPlayed":0
@@ -3559,6 +3855,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":2.25,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.9,
         "gamesPlayed":6
@@ -3571,6 +3868,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.52,
+        "points":0.0,
         "lastScore":-0.7,
         "average":-0.35,
         "gamesPlayed":2
@@ -3583,6 +3881,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.15,
+        "points":10.6,
         "lastScore":2.0,
         "average":2.43,
         "gamesPlayed":15
@@ -3595,6 +3894,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.83,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.33,
         "gamesPlayed":19
@@ -3607,6 +3907,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":6.01,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.4,
         "gamesPlayed":2
@@ -3619,6 +3920,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3631,6 +3933,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":6.83,
+        "points":1.74,
         "lastScore":1.46,
         "average":3.04,
         "gamesPlayed":16
@@ -3643,6 +3946,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.44,
+        "points":0.0,
         "lastScore":-2.3,
         "average":1.19,
         "gamesPlayed":16
@@ -3655,6 +3959,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.71,
+        "points":1.1,
         "lastScore":0.0,
         "average":2.28,
         "gamesPlayed":15
@@ -3667,6 +3972,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.2,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.72,
         "gamesPlayed":4
@@ -3679,6 +3985,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.32,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.9,
         "gamesPlayed":2
@@ -3691,6 +3998,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.61,
+        "points":0.0,
         "lastScore":4.3,
         "average":2.42,
         "gamesPlayed":18
@@ -3703,6 +4011,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.96,
+        "points":0.0,
         "lastScore":7.2,
         "average":3.06,
         "gamesPlayed":12
@@ -3715,6 +4024,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.66,
+        "points":5.75,
         "lastScore":3.32,
         "average":3.5,
         "gamesPlayed":22
@@ -3727,6 +4037,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3737,8 +4048,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/20\/dc33647201f8156e6ccfacd8ecd1cf1d_220x220.png",
         "teamId":265,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.11,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.38,
         "gamesPlayed":11
@@ -3751,6 +4063,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":8.76,
+        "points":3.3,
         "lastScore":0.0,
         "average":5.34,
         "gamesPlayed":13
@@ -3763,6 +4076,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":14.83,
+        "points":4.6,
         "lastScore":0.0,
         "average":5.51,
         "gamesPlayed":18
@@ -3775,6 +4089,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3785,8 +4100,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/25\/673950963c89498fd335e11c04702a42_220x220.png",
         "teamId":293,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":6.78,
+        "points":1.1,
         "lastScore":-0.7,
         "average":5.11,
         "gamesPlayed":16
@@ -3797,8 +4113,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/a672c0a0e10ef44cc74724473209cdb0_220x220.png",
         "teamId":277,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":7.52,
+        "points":4.3,
         "lastScore":0.0,
         "average":2.08,
         "gamesPlayed":13
@@ -3811,6 +4128,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3823,6 +4141,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.41,
+        "points":2.2,
         "lastScore":5.5,
         "average":2.34,
         "gamesPlayed":9
@@ -3835,6 +4154,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -3845,8 +4165,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/09\/21\/78ffca0f8c20a94cf8b5e9109bea47c6_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":3.89,
+        "points":-2.9,
         "lastScore":-1.1,
         "average":1.68,
         "gamesPlayed":16
@@ -3859,6 +4180,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.84,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.31,
         "gamesPlayed":7
@@ -3871,6 +4193,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":8.87,
+        "points":0.1,
         "lastScore":0.0,
         "average":3.82,
         "gamesPlayed":14
@@ -3883,6 +4206,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.3,
+        "points":5.4,
         "lastScore":-2.5,
         "average":2.95,
         "gamesPlayed":14
@@ -3893,8 +4217,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/28\/a0c1c9f69e5607f8a09bca2e4d7b6bc8_220x220.png",
         "teamId":265,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":4.24,
+        "points":0.1,
         "lastScore":0.0,
         "average":2.65,
         "gamesPlayed":15
@@ -3907,6 +4232,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.42,
+        "points":-0.2,
         "lastScore":0.0,
         "average":1.92,
         "gamesPlayed":4
@@ -3919,6 +4245,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.43,
+        "points":0.0,
         "lastScore":0.7,
         "average":2.3,
         "gamesPlayed":11
@@ -3931,6 +4258,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.32,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.19,
         "gamesPlayed":9
@@ -3943,6 +4271,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":0.8,
+        "points":4.4,
         "lastScore":0.0,
         "average":-0.43,
         "gamesPlayed":15
@@ -3955,6 +4284,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.69,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.7,
         "gamesPlayed":1
@@ -3967,6 +4297,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.59,
+        "points":0.0,
         "lastScore":-0.6,
         "average":-0.6,
         "gamesPlayed":1
@@ -3979,6 +4310,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.7,
+        "points":0.4,
         "lastScore":0.0,
         "average":2.85,
         "gamesPlayed":16
@@ -3991,6 +4323,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4001,8 +4334,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/7526bffb5ffcf8710f171fa2fbd3284a_220x220.png",
         "teamId":277,
         "positionId":"gk",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":1.63,
+        "points":-4.4,
         "lastScore":1.5,
         "average":8.9,
         "gamesPlayed":2
@@ -4015,6 +4349,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.53,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.81,
         "gamesPlayed":17
@@ -4025,8 +4360,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/54fa3d697fc129a0e755c94b10fedd38_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":7.82,
+        "points":-0.2,
         "lastScore":0.0,
         "average":2.37,
         "gamesPlayed":20
@@ -4039,6 +4375,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":8.23,
+        "points":0.0,
         "lastScore":0.7,
         "average":4.23,
         "gamesPlayed":19
@@ -4051,6 +4388,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.43,
+        "points":-0.1,
         "lastScore":0.0,
         "average":-1.0,
         "gamesPlayed":1
@@ -4063,6 +4401,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4075,6 +4414,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.21,
+        "points":0.3,
         "lastScore":0.8,
         "average":0.48,
         "gamesPlayed":10
@@ -4087,6 +4427,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":11.36,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.07,
         "gamesPlayed":13
@@ -4099,6 +4440,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.7,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.42,
         "gamesPlayed":13
@@ -4111,6 +4453,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.07,
+        "points":8.5,
         "lastScore":0.0,
         "average":1.44,
         "gamesPlayed":11
@@ -4121,8 +4464,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/12b3b5d05927082246dce985879c54cb_220x220.png",
         "teamId":373,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.82,
         "gamesPlayed":9
@@ -4135,6 +4479,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":8.34,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.4,
         "gamesPlayed":13
@@ -4147,6 +4492,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.9,
+        "points":4.9,
         "lastScore":5.5,
         "average":3.08,
         "gamesPlayed":19
@@ -4159,6 +4505,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.89,
+        "points":-0.9,
         "lastScore":0.0,
         "average":1.51,
         "gamesPlayed":12
@@ -4171,6 +4518,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":7.58,
+        "points":0.0,
         "lastScore":9.6,
         "average":3.4,
         "gamesPlayed":3
@@ -4183,6 +4531,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.42,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.59,
         "gamesPlayed":18
@@ -4195,6 +4544,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":7.04,
+        "points":0.0,
         "lastScore":3.0,
         "average":2.88,
         "gamesPlayed":20
@@ -4207,6 +4557,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.1,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.07,
         "gamesPlayed":4
@@ -4217,8 +4568,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/21\/be530b20dd27bd402abc125ba7691a18_220x220.png",
         "teamId":262,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"injury",
         "price":5.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.48,
         "gamesPlayed":16
@@ -4231,6 +4583,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":2.05,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.43,
         "gamesPlayed":6
@@ -4243,6 +4596,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":11.7,
+        "points":6.6,
         "lastScore":0.0,
         "average":2.9,
         "gamesPlayed":19
@@ -4253,8 +4607,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/bfe14638328381a0498413759e610ed4_220x220.png",
         "teamId":292,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":9.22,
+        "points":0.5,
         "lastScore":-0.6,
         "average":1.47,
         "gamesPlayed":18
@@ -4267,6 +4622,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":10.18,
+        "points":0.0,
         "lastScore":6.4,
         "average":5.16,
         "gamesPlayed":16
@@ -4279,6 +4635,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":1.67,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.38,
         "gamesPlayed":9
@@ -4291,6 +4648,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.95,
+        "points":0.0,
         "lastScore":7.1,
         "average":2.36,
         "gamesPlayed":10
@@ -4303,6 +4661,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4315,6 +4674,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.34,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.84,
         "gamesPlayed":12
@@ -4327,6 +4687,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.75,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.07,
         "gamesPlayed":3
@@ -4339,6 +4700,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.78,
+        "points":0.0,
         "lastScore":-1.5,
         "average":0.39,
         "gamesPlayed":9
@@ -4351,6 +4713,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.19,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.99,
         "gamesPlayed":10
@@ -4363,6 +4726,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":6.12,
+        "points":4.9,
         "lastScore":9.2,
         "average":1.83,
         "gamesPlayed":15
@@ -4375,6 +4739,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4387,6 +4752,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4397,8 +4763,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/28\/1180152071b3a94086ee66e070352aab_220x220.png",
         "teamId":277,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":3.83,
+        "points":0.0,
         "lastScore":2.4,
         "average":1.17,
         "gamesPlayed":14
@@ -4411,6 +4778,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":8.18,
+        "points":0.0,
         "lastScore":6.33,
         "average":3.28,
         "gamesPlayed":20
@@ -4421,8 +4789,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/94657541c8cae30d9fa105e9c6215055_220x220.png",
         "teamId":373,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":6.22,
+        "points":0.0,
         "lastScore":8.7,
         "average":3.03,
         "gamesPlayed":20
@@ -4435,6 +4804,7 @@
         "positionId":"gk",
         "statusId":"injury",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4447,6 +4817,7 @@
         "positionId":"wb",
         "statusId":"injury",
         "price":18.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":7.96,
         "gamesPlayed":8
@@ -4459,6 +4830,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.52,
+        "points":1.1,
         "lastScore":7.5,
         "average":3.33,
         "gamesPlayed":17
@@ -4471,6 +4843,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.17,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.55,
         "gamesPlayed":2
@@ -4483,6 +4856,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.89,
+        "points":0.0,
         "lastScore":0.5,
         "average":-0.25,
         "gamesPlayed":13
@@ -4495,6 +4869,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4507,6 +4882,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.41,
+        "points":4.4,
         "lastScore":0.0,
         "average":1.07,
         "gamesPlayed":14
@@ -4519,6 +4895,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.5,
+        "points":-0.3,
         "lastScore":0.0,
         "average":0.85,
         "gamesPlayed":6
@@ -4531,6 +4908,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.06,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.19,
         "gamesPlayed":13
@@ -4543,6 +4921,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.67,
+        "points":0.0,
         "lastScore":8.0,
         "average":2.41,
         "gamesPlayed":18
@@ -4555,6 +4934,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.09,
+        "points":0.0,
         "lastScore":1.0,
         "average":2.52,
         "gamesPlayed":7
@@ -4567,6 +4947,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.89,
+        "points":0.0,
         "lastScore":0.8,
         "average":2.39,
         "gamesPlayed":7
@@ -4579,6 +4960,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.87,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.6,
         "gamesPlayed":12
@@ -4591,6 +4973,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":5.25,
+        "points":14.5,
         "lastScore":4.5,
         "average":5.06,
         "gamesPlayed":8
@@ -4603,6 +4986,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4615,6 +4999,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":2.34,
+        "points":0.0,
         "lastScore":1.5,
         "average":1.1,
         "gamesPlayed":4
@@ -4627,6 +5012,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.62,
+        "points":4.3,
         "lastScore":0.0,
         "average":2.97,
         "gamesPlayed":21
@@ -4639,6 +5025,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.31,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.96,
         "gamesPlayed":8
@@ -4651,6 +5038,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4663,6 +5051,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.43,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.7,
         "gamesPlayed":1
@@ -4675,6 +5064,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.39,
+        "points":4.8,
         "lastScore":6.5,
         "average":6.5,
         "gamesPlayed":1
@@ -4687,6 +5077,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.9,
+        "points":0.0,
         "lastScore":5.0,
         "average":1.85,
         "gamesPlayed":7
@@ -4699,6 +5090,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4711,6 +5103,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":-2.3,
         "average":-0.29,
         "gamesPlayed":14
@@ -4723,6 +5116,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.74,
+        "points":0.0,
         "lastScore":1.3,
         "average":0.87,
         "gamesPlayed":7
@@ -4735,6 +5129,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":2.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.18,
         "gamesPlayed":8
@@ -4747,6 +5142,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":8.14,
+        "points":0.0,
         "lastScore":2.4,
         "average":2.56,
         "gamesPlayed":3
@@ -4759,6 +5155,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":0.81,
+        "points":-1.3,
         "lastScore":-0.1,
         "average":0.39,
         "gamesPlayed":15
@@ -4771,6 +5168,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.21,
+        "points":1.1,
         "lastScore":5.5,
         "average":2.31,
         "gamesPlayed":14
@@ -4783,6 +5181,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4795,6 +5194,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":6.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4807,6 +5207,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.3,
+        "points":4.9,
         "lastScore":0.0,
         "average":0.5,
         "gamesPlayed":2
@@ -4819,6 +5220,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.6,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.6,
         "gamesPlayed":11
@@ -4831,6 +5233,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4843,6 +5246,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.18,
+        "points":0.0,
         "lastScore":5.1,
         "average":5.1,
         "gamesPlayed":1
@@ -4855,6 +5259,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":9.53,
+        "points":0.0,
         "lastScore":4.9,
         "average":2.86,
         "gamesPlayed":18
@@ -4867,6 +5272,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.16,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.48,
         "gamesPlayed":4
@@ -4879,6 +5285,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.98,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.4,
         "gamesPlayed":7
@@ -4891,6 +5298,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":11.49,
+        "points":0.0,
         "lastScore":2.3,
         "average":4.65,
         "gamesPlayed":8
@@ -4903,6 +5311,7 @@
         "positionId":"cb",
         "statusId":"suspended",
         "price":3.59,
+        "points":0.0,
         "lastScore":3.9,
         "average":2.41,
         "gamesPlayed":15
@@ -4915,6 +5324,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.12,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.17,
         "gamesPlayed":8
@@ -4927,6 +5337,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.13,
+        "points":0.0,
         "lastScore":-0.5,
         "average":4.35,
         "gamesPlayed":4
@@ -4939,6 +5350,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.56,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.9,
         "gamesPlayed":3
@@ -4951,6 +5363,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -4963,6 +5376,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.98,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.54,
         "gamesPlayed":9
@@ -4975,6 +5389,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.07,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.12,
         "gamesPlayed":11
@@ -4987,6 +5402,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.52,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.84,
         "gamesPlayed":7
@@ -4999,6 +5415,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.79,
+        "points":-2.5,
         "lastScore":0.0,
         "average":1.85,
         "gamesPlayed":6
@@ -5011,6 +5428,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.18,
+        "points":0.0,
         "lastScore":-1.7,
         "average":2.13,
         "gamesPlayed":12
@@ -5023,6 +5441,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.75,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.73,
         "gamesPlayed":3
@@ -5035,6 +5454,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":5.11,
+        "points":0.0,
         "lastScore":-1.6,
         "average":2.79,
         "gamesPlayed":20
@@ -5047,6 +5467,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.0,
+        "points":0.0,
         "lastScore":2.0,
         "average":2.31,
         "gamesPlayed":14
@@ -5057,8 +5478,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/28\/444cc845fe792b0fdd234c579e4c31de_220x220.png",
         "teamId":275,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":8.78,
+        "points":14.9,
         "lastScore":0.0,
         "average":4.97,
         "gamesPlayed":12
@@ -5071,6 +5493,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.86,
+        "points":0.0,
         "lastScore":0.6,
         "average":1.4,
         "gamesPlayed":11
@@ -5083,6 +5506,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.82,
+        "points":8.5,
         "lastScore":0.0,
         "average":1.4,
         "gamesPlayed":2
@@ -5095,6 +5519,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.43,
+        "points":3.8,
         "lastScore":3.0,
         "average":5.41,
         "gamesPlayed":14
@@ -5105,8 +5530,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/091e13c92c44ecc1214f5f2ecd1f2b5d_220x220.png",
         "teamId":292,
         "positionId":"cb",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.36,
+        "points":0.1,
         "lastScore":0.0,
         "average":3.14,
         "gamesPlayed":9
@@ -5119,6 +5545,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.16,
+        "points":3.5,
         "lastScore":-1.1,
         "average":-0.74,
         "gamesPlayed":5
@@ -5131,6 +5558,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5143,6 +5571,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":7.06,
+        "points":0.8,
         "lastScore":1.5,
         "average":2.86,
         "gamesPlayed":12
@@ -5155,6 +5584,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
+        "points":8.7,
         "lastScore":0.0,
         "average":-0.87,
         "gamesPlayed":4
@@ -5167,6 +5597,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.93,
+        "points":0.0,
         "lastScore":-0.6,
         "average":1.82,
         "gamesPlayed":15
@@ -5179,6 +5610,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.21,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.08,
         "gamesPlayed":13
@@ -5191,6 +5623,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5203,6 +5636,7 @@
         "positionId":"st",
         "statusId":"doubt",
         "price":2.96,
+        "points":10.9,
         "lastScore":3.3,
         "average":1.15,
         "gamesPlayed":16
@@ -5215,6 +5649,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":0.99,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.16,
         "gamesPlayed":5
@@ -5227,6 +5662,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5239,6 +5675,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.74,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.5,
         "gamesPlayed":1
@@ -5251,6 +5688,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.51,
+        "points":0.0,
         "lastScore":7.5,
         "average":1.5,
         "gamesPlayed":5
@@ -5263,6 +5701,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5275,6 +5714,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":9.49,
+        "points":0.0,
         "lastScore":0.8,
         "average":2.48,
         "gamesPlayed":5
@@ -5287,6 +5727,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.13,
+        "points":-1.3,
         "lastScore":6.4,
         "average":3.09,
         "gamesPlayed":17
@@ -5299,6 +5740,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.17,
+        "points":3.3,
         "lastScore":-2.2,
         "average":1.23,
         "gamesPlayed":18
@@ -5311,6 +5753,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.2,
+        "points":0.0,
         "lastScore":0.7,
         "average":-0.28,
         "gamesPlayed":4
@@ -5321,8 +5764,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/07\/08\/cd984c932e6f6d7e51df1e0963c5513e_220x220.jpeg",
         "teamId":275,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.4,
+        "points":0.0,
         "lastScore":-0.4,
         "average":-0.57,
         "gamesPlayed":3
@@ -5335,6 +5779,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5347,6 +5792,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.88,
         "gamesPlayed":12
@@ -5359,6 +5805,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":1.33,
+        "points":3.1,
         "lastScore":0.0,
         "average":-0.33,
         "gamesPlayed":3
@@ -5371,6 +5818,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.2,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.15,
         "gamesPlayed":2
@@ -5383,6 +5831,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5395,6 +5844,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.56,
+        "points":0.0,
         "lastScore":0.2,
         "average":0.2,
         "gamesPlayed":1
@@ -5407,6 +5857,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5419,6 +5870,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.6,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.9,
         "gamesPlayed":1
@@ -5431,6 +5883,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.1,
         "gamesPlayed":9
@@ -5443,6 +5896,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5455,6 +5909,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":2
@@ -5467,6 +5922,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.5,
         "gamesPlayed":7
@@ -5477,8 +5933,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/11\/60b97b20e537fed275de66e23aafd5d9_220x220.png",
         "teamId":285,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":2.22,
+        "points":2.8,
         "lastScore":-0.2,
         "average":1.91,
         "gamesPlayed":8
@@ -5491,6 +5948,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5503,6 +5961,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.06,
+        "points":0.0,
         "lastScore":1.6,
         "average":1.2,
         "gamesPlayed":16
@@ -5515,6 +5974,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.41,
+        "points":0.5,
         "lastScore":0.6,
         "average":0.81,
         "gamesPlayed":13
@@ -5527,6 +5987,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.89,
+        "points":0.0,
         "lastScore":-0.2,
         "average":0.89,
         "gamesPlayed":7
@@ -5539,6 +6000,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.38,
+        "points":0.4,
         "lastScore":-0.1,
         "average":1.78,
         "gamesPlayed":9
@@ -5551,6 +6013,7 @@
         "positionId":"mid",
         "statusId":"suspended",
         "price":4.19,
+        "points":0.0,
         "lastScore":-2.1,
         "average":3.78,
         "gamesPlayed":6
@@ -5563,6 +6026,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5575,6 +6039,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":13.11,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.89,
         "gamesPlayed":18
@@ -5587,6 +6052,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5599,6 +6065,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.69,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.7,
         "gamesPlayed":6
@@ -5611,6 +6078,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.03,
+        "points":0.0,
         "lastScore":2.5,
         "average":1.91,
         "gamesPlayed":14
@@ -5623,6 +6091,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5633,8 +6102,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/46ea70366228afe849358bbedd6c18e1_220x220.png",
         "teamId":285,
         "positionId":"wb",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":4.25,
+        "points":7.9,
         "lastScore":0.0,
         "average":4.53,
         "gamesPlayed":7
@@ -5647,6 +6117,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.99,
+        "points":0.0,
         "lastScore":-2.8,
         "average":-1.0,
         "gamesPlayed":3
@@ -5659,6 +6130,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.04,
+        "points":0.8,
         "lastScore":7.4,
         "average":3.27,
         "gamesPlayed":3
@@ -5671,6 +6143,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":5.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.53,
         "gamesPlayed":14
@@ -5683,6 +6156,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":4.4,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.02,
         "gamesPlayed":5
@@ -5693,8 +6167,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/03\/9afb408f4d0f07b2b83a6b6e179b3766_220x220.png",
         "teamId":293,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"null",
         "price":2.2,
+        "points":-1.3,
         "lastScore":0.0,
         "average":0.87,
         "gamesPlayed":6
@@ -5707,6 +6182,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.34,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.23,
         "gamesPlayed":6
@@ -5719,6 +6195,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.25,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.1,
         "gamesPlayed":3
@@ -5731,6 +6208,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5743,6 +6221,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.58,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.3,
         "gamesPlayed":3
@@ -5753,8 +6232,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/0b840af999aed1a7ec1a7a35dee46abc_220x220.png",
         "teamId":277,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":12.52,
+        "points":-0.9,
         "lastScore":0.0,
         "average":4.73,
         "gamesPlayed":20
@@ -5767,6 +6247,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.37,
+        "points":0.0,
         "lastScore":1.6,
         "average":2.48,
         "gamesPlayed":19
@@ -5779,6 +6260,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.26,
+        "points":0.0,
         "lastScore":1.1,
         "average":2.18,
         "gamesPlayed":6
@@ -5789,8 +6271,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/fb5f96034ec98cf83f561f397865ca64_220x220.png",
         "teamId":277,
         "positionId":"cb",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":3.23,
+        "points":0.9,
         "lastScore":7.1,
         "average":2.88,
         "gamesPlayed":7
@@ -5803,6 +6286,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5815,6 +6299,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5827,6 +6312,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.81,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.58,
         "gamesPlayed":5
@@ -5839,6 +6325,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.8,
+        "points":0.0,
         "lastScore":1.4,
         "average":2.95,
         "gamesPlayed":19
@@ -5851,6 +6338,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":1.0,
+        "points":1.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5863,6 +6351,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":11.12,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.76,
         "gamesPlayed":12
@@ -5875,6 +6364,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5887,6 +6377,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":3.69,
+        "points":-1.2,
         "lastScore":1.0,
         "average":1.88,
         "gamesPlayed":15
@@ -5899,6 +6390,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.37,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.2,
         "gamesPlayed":8
@@ -5911,6 +6403,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.83,
+        "points":-0.6,
         "lastScore":0.0,
         "average":-1.05,
         "gamesPlayed":2
@@ -5923,6 +6416,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.42,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.71,
         "gamesPlayed":9
@@ -5935,6 +6429,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.64,
+        "points":0.0,
         "lastScore":5.2,
         "average":-0.28,
         "gamesPlayed":5
@@ -5947,6 +6442,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":8.9,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5959,6 +6455,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.53,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.2,
         "gamesPlayed":1
@@ -5971,6 +6468,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.48,
+        "points":0.0,
         "lastScore":-0.8,
         "average":1.31,
         "gamesPlayed":10
@@ -5983,6 +6481,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -5993,8 +6492,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/f816dcd588832ba23a528a2a17f81b46_220x220.png",
         "teamId":276,
         "positionId":"cb",
-        "statusId":"suspended",
+        "statusId":"probable",
         "price":3.8,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.58,
         "gamesPlayed":14
@@ -6007,6 +6507,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.98,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.77,
         "gamesPlayed":8
@@ -6019,6 +6520,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6031,6 +6533,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":15.46,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.9,
         "gamesPlayed":5
@@ -6043,6 +6546,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.1,
+        "points":-1.5,
         "lastScore":0.0,
         "average":0.66,
         "gamesPlayed":11
@@ -6055,6 +6559,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.1,
+        "points":0.0,
         "lastScore":-0.1,
         "average":1.72,
         "gamesPlayed":5
@@ -6067,6 +6572,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6079,6 +6585,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6091,6 +6598,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.44,
+        "points":-1.2,
         "lastScore":0.0,
         "average":0.81,
         "gamesPlayed":9
@@ -6101,8 +6609,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/18\/1e267a7ff59ae5084d7ab501dbd5b9b7_220x220.png",
         "teamId":293,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":2.69,
+        "points":-0.1,
         "lastScore":2.1,
         "average":2.17,
         "gamesPlayed":11
@@ -6115,6 +6624,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.33,
         "gamesPlayed":10
@@ -6127,6 +6637,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.85,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.4,
         "gamesPlayed":1
@@ -6139,6 +6650,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.01,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.93,
         "gamesPlayed":3
@@ -6151,6 +6663,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6163,6 +6676,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.75,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.98,
         "gamesPlayed":14
@@ -6175,6 +6689,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.96,
+        "points":0.0,
         "lastScore":-0.7,
         "average":3.7,
         "gamesPlayed":4
@@ -6187,6 +6702,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.32,
+        "points":0.0,
         "lastScore":1.0,
         "average":1.3,
         "gamesPlayed":17
@@ -6199,6 +6715,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6211,6 +6728,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.57,
+        "points":1.5,
         "lastScore":0.0,
         "average":0.67,
         "gamesPlayed":6
@@ -6223,6 +6741,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.66,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.5,
         "gamesPlayed":1
@@ -6235,6 +6754,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":2.33,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.05,
         "gamesPlayed":2
@@ -6247,6 +6767,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":5.27,
+        "points":-0.9,
         "lastScore":1.8,
         "average":3.4,
         "gamesPlayed":4
@@ -6259,6 +6780,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6269,8 +6791,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/636794bd55317612f53a95fc4663618f_220x220.png",
         "teamId":292,
         "positionId":"st",
-        "statusId":"probable",
+        "statusId":"null",
         "price":6.53,
+        "points":6.3,
         "lastScore":1.4,
         "average":3.08,
         "gamesPlayed":19
@@ -6283,6 +6806,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6293,8 +6817,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/13\/a73bd740adb93a9d3545c96e7c4d4c97_220x220.png",
         "teamId":292,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":3.28,
+        "points":0.0,
         "lastScore":1.6,
         "average":2.52,
         "gamesPlayed":5
@@ -6307,6 +6832,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":2.64,
+        "points":1.2,
         "lastScore":0.0,
         "average":1.13,
         "gamesPlayed":4
@@ -6319,6 +6845,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.17,
+        "points":0.7,
         "lastScore":0.0,
         "average":2.1,
         "gamesPlayed":6
@@ -6331,6 +6858,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.6,
         "gamesPlayed":1
@@ -6343,6 +6871,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6355,6 +6884,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.85,
+        "points":2.4,
         "lastScore":6.7,
         "average":2.44,
         "gamesPlayed":13
@@ -6367,6 +6897,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6379,6 +6910,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.35,
+        "points":0.0,
         "lastScore":5.7,
         "average":1.26,
         "gamesPlayed":7
@@ -6391,6 +6923,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6401,8 +6934,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/05\/d9e74309d644cc5e8eb0fafd0277e152_220x220.png",
         "teamId":264,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6413,8 +6947,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/2863be83eb651b5fcae91f0fa484d0b1_220x220.png",
         "teamId":277,
         "positionId":"st",
-        "statusId":"probable",
+        "statusId":"null",
         "price":4.48,
+        "points":-0.3,
         "lastScore":0.0,
         "average":1.48,
         "gamesPlayed":18
@@ -6427,6 +6962,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.89,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.65,
         "gamesPlayed":2
@@ -6439,6 +6975,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.97,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.2,
         "gamesPlayed":15
@@ -6451,6 +6988,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":6.53,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.84,
         "gamesPlayed":13
@@ -6463,6 +7001,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6475,6 +7014,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.26,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.04,
         "gamesPlayed":7
@@ -6487,6 +7027,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":6.46,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.65,
         "gamesPlayed":12
@@ -6499,6 +7040,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.61,
+        "points":-1.3,
         "lastScore":8.7,
         "average":1.66,
         "gamesPlayed":18
@@ -6511,6 +7053,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":5.18,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.26,
         "gamesPlayed":13
@@ -6523,6 +7066,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.21,
+        "points":0.0,
         "lastScore":-3.0,
         "average":3.72,
         "gamesPlayed":21
@@ -6535,6 +7079,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6547,6 +7092,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6559,6 +7105,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.33,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.54,
         "gamesPlayed":5
@@ -6571,6 +7118,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6583,6 +7131,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":10.81,
+        "points":12.2,
         "lastScore":1.4,
         "average":3.5,
         "gamesPlayed":19
@@ -6595,6 +7144,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
+        "points":1.1,
         "lastScore":0.0,
         "average":-0.7,
         "gamesPlayed":3
@@ -6607,6 +7157,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6619,6 +7170,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.41,
+        "points":0.0,
         "lastScore":-1.0,
         "average":2.06,
         "gamesPlayed":18
@@ -6631,6 +7183,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6643,6 +7196,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":6.93,
+        "points":0.5,
         "lastScore":10.3,
         "average":5.3,
         "gamesPlayed":2
@@ -6655,6 +7209,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.96,
+        "points":0.0,
         "lastScore":4.8,
         "average":2.89,
         "gamesPlayed":12
@@ -6667,6 +7222,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6679,6 +7235,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6691,6 +7248,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6703,6 +7261,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6715,6 +7274,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":1
@@ -6727,6 +7287,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.92,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.35,
         "gamesPlayed":2
@@ -6739,6 +7300,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.77,
         "gamesPlayed":3
@@ -6751,6 +7313,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":1.22,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.77,
         "gamesPlayed":4
@@ -6763,6 +7326,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.93,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.37,
         "gamesPlayed":3
@@ -6775,6 +7339,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":9.96,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.82,
         "gamesPlayed":17
@@ -6787,6 +7352,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6799,6 +7365,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":6.73,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.59,
         "gamesPlayed":13
@@ -6811,6 +7378,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6823,6 +7391,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6835,6 +7404,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.74,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.4,
         "gamesPlayed":7
@@ -6847,6 +7417,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6859,6 +7430,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.01,
+        "points":0.5,
         "lastScore":2.3,
         "average":1.58,
         "gamesPlayed":18
@@ -6871,6 +7443,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":3.08,
+        "points":0.0,
         "lastScore":2.5,
         "average":0.67,
         "gamesPlayed":11
@@ -6883,6 +7456,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.09,
+        "points":0.0,
         "lastScore":0.0,
         "average":-5.6,
         "gamesPlayed":1
@@ -6895,6 +7469,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6907,6 +7482,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.0,
         "gamesPlayed":1
@@ -6919,6 +7495,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6931,6 +7508,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -6941,8 +7519,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/fd6f78bc8647dd5e9fc9090d28654546_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":2.92,
+        "points":-0.6,
         "lastScore":4.0,
         "average":2.68,
         "gamesPlayed":6
@@ -6953,8 +7532,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/31\/96a83c971710c2fbb389676007ab7e0d_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.02,
+        "points":0.0,
         "lastScore":-0.6,
         "average":1.44,
         "gamesPlayed":7
@@ -6967,6 +7547,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.79,
+        "points":0.0,
         "lastScore":-0.2,
         "average":1.63,
         "gamesPlayed":14
@@ -6979,6 +7560,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.14,
+        "points":0.8,
         "lastScore":0.0,
         "average":1.4,
         "gamesPlayed":6
@@ -6991,6 +7573,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":1.53,
+        "points":-4.2,
         "lastScore":-0.2,
         "average":-0.2,
         "gamesPlayed":1
@@ -7003,6 +7586,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7015,6 +7599,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7027,6 +7612,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.64,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.16,
         "gamesPlayed":5
@@ -7039,6 +7625,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.01,
+        "points":0.0,
         "lastScore":-0.2,
         "average":2.87,
         "gamesPlayed":19
@@ -7051,6 +7638,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.96,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.6,
         "gamesPlayed":1
@@ -7063,6 +7651,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.01,
+        "points":2.9,
         "lastScore":-0.1,
         "average":3.16,
         "gamesPlayed":10
@@ -7075,6 +7664,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7087,6 +7677,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.42,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.76,
         "gamesPlayed":5
@@ -7099,6 +7690,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.66,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.57,
         "gamesPlayed":10
@@ -7111,6 +7703,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7121,8 +7714,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/02\/485559baefe71f75a76a1d43fe678c8e_220x220.png",
         "teamId":354,
         "positionId":"st",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.57,
+        "points":6.1,
         "lastScore":7.6,
         "average":4.2,
         "gamesPlayed":6
@@ -7135,6 +7729,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.72,
+        "points":0.0,
         "lastScore":0.0,
         "average":-2.6,
         "gamesPlayed":1
@@ -7147,6 +7742,7 @@
         "positionId":"cb",
         "statusId":"injury",
         "price":3.36,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.22,
         "gamesPlayed":5
@@ -7159,6 +7755,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.9,
+        "points":0.0,
         "lastScore":3.8,
         "average":1.9,
         "gamesPlayed":2
@@ -7171,6 +7768,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7183,6 +7781,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.45,
+        "points":1.8,
         "lastScore":0.0,
         "average":-0.25,
         "gamesPlayed":2
@@ -7195,6 +7794,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.74,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.82,
         "gamesPlayed":5
@@ -7207,6 +7807,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7219,6 +7820,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.49,
+        "points":0.3,
         "lastScore":3.8,
         "average":3.8,
         "gamesPlayed":1
@@ -7231,6 +7833,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":-3.2,
         "average":-1.77,
         "gamesPlayed":4
@@ -7243,6 +7846,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7255,6 +7859,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.75,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.55,
         "gamesPlayed":7
@@ -7267,6 +7872,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7279,6 +7885,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":2.24,
+        "points":1.0,
         "lastScore":0.0,
         "average":0.93,
         "gamesPlayed":3
@@ -7291,6 +7898,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7303,6 +7911,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.14,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.21,
         "gamesPlayed":14
@@ -7313,8 +7922,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/16\/61b9f7b4e75ec5b35b48d42b3b848e54_220x220.png",
         "teamId":265,
         "positionId":"st",
-        "statusId":"doubt",
+        "statusId":"probable",
         "price":1.97,
+        "points":3.4,
         "lastScore":0.0,
         "average":1.05,
         "gamesPlayed":12
@@ -7325,8 +7935,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/12\/07\/c9de64dc6e4e157739fb08d0cba45a7b_220x220.png",
         "teamId":276,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7339,6 +7950,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7349,8 +7961,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/a9c14c249329965a83e2f3b2bda2642b_220x220.png",
         "teamId":275,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":6.0,
+        "points":10.8,
         "lastScore":3.9,
         "average":3.57,
         "gamesPlayed":16
@@ -7363,6 +7976,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.94,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.2,
         "gamesPlayed":1
@@ -7375,6 +7989,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.35,
         "gamesPlayed":2
@@ -7387,6 +8002,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7399,6 +8015,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.84,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.23,
         "gamesPlayed":6
@@ -7411,6 +8028,7 @@
         "positionId":"cb",
         "statusId":"probable",
         "price":4.47,
+        "points":9.3,
         "lastScore":0.0,
         "average":2.43,
         "gamesPlayed":15
@@ -7423,6 +8041,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7435,6 +8054,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.84,
         "gamesPlayed":16
@@ -7447,6 +8067,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7459,6 +8080,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7471,6 +8093,7 @@
         "positionId":"st",
         "statusId":"probable",
         "price":6.06,
+        "points":2.2,
         "lastScore":10.7,
         "average":3.15,
         "gamesPlayed":4
@@ -7481,8 +8104,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/27\/fabedb9256b7e86724a18fbe62ad83b6_220x220.png",
         "teamId":293,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7495,6 +8119,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7505,8 +8130,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/01\/21\/92721dbb7773acddb51581d786249881_220x220.png",
         "teamId":293,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7519,6 +8145,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.36,
+        "points":0.0,
         "lastScore":2.7,
         "average":2.7,
         "gamesPlayed":1
@@ -7531,6 +8158,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7541,8 +8169,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/27\/fdc416852d3c5f69fd90f23f78d1806d_220x220.png",
         "teamId":293,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7555,6 +8184,7 @@
         "positionId":"st",
         "statusId":"suspended",
         "price":8.66,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.9,
         "gamesPlayed":16
@@ -7565,8 +8195,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/848601c752c8fa58a805d78e5bad50db_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":2.53,
+        "points":-0.3,
         "lastScore":-0.4,
         "average":0.09,
         "gamesPlayed":17
@@ -7579,6 +8210,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7591,6 +8223,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7601,8 +8234,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/30\/313bcf6aa188239c2d9efa9204866adb_220x220.png",
         "teamId":290,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7615,6 +8249,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7627,6 +8262,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7637,8 +8273,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/02\/e3f096d1affb1bfcebfbbfc6aa01f901_220x220.png",
         "teamId":275,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.63,
+        "points":1.5,
         "lastScore":0.0,
         "average":1.0,
         "gamesPlayed":9
@@ -7651,6 +8288,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7663,6 +8301,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.66,
+        "points":0.0,
         "lastScore":4.0,
         "average":4.0,
         "gamesPlayed":1
@@ -7675,6 +8314,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7687,6 +8327,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.72,
+        "points":5.8,
         "lastScore":0.0,
         "average":1.54,
         "gamesPlayed":17
@@ -7699,6 +8340,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.47,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.75,
         "gamesPlayed":6
@@ -7711,6 +8353,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7723,6 +8366,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.52,
+        "points":0.0,
         "lastScore":1.6,
         "average":1.54,
         "gamesPlayed":7
@@ -7733,8 +8377,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/26\/351af835f4c261329fd66f31d57e891b_220x220.png",
         "teamId":290,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7747,6 +8392,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":11.03,
+        "points":8.62,
         "lastScore":1.36,
         "average":3.77,
         "gamesPlayed":3
@@ -7759,6 +8405,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.02,
+        "points":2.1,
         "lastScore":-0.6,
         "average":2.09,
         "gamesPlayed":17
@@ -7771,6 +8418,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.17,
         "gamesPlayed":13
@@ -7783,6 +8431,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.67,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.09,
         "gamesPlayed":10
@@ -7795,6 +8444,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.85,
+        "points":0.0,
         "lastScore":6.6,
         "average":6.6,
         "gamesPlayed":1
@@ -7805,8 +8455,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/26\/e0cc30ed92eef839494f97ab8f82d118_220x220.png",
         "teamId":290,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7819,6 +8470,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.85,
+        "points":0.0,
         "lastScore":0.3,
         "average":0.55,
         "gamesPlayed":2
@@ -7831,6 +8483,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":4.84,
+        "points":-0.7,
         "lastScore":0.0,
         "average":3.6,
         "gamesPlayed":7
@@ -7841,8 +8494,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/19\/e5c460787ad23defe1b6fa4efa97c721_220x220.png",
         "teamId":292,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":4.55,
+        "points":0.0,
         "lastScore":0.9,
         "average":2.35,
         "gamesPlayed":15
@@ -7855,6 +8509,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.12,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.42,
         "gamesPlayed":9
@@ -7867,6 +8522,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7879,6 +8535,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":8.97,
+        "points":0.0,
         "lastScore":8.5,
         "average":2.47,
         "gamesPlayed":16
@@ -7891,6 +8548,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.93,
+        "points":1.1,
         "lastScore":0.0,
         "average":0.25,
         "gamesPlayed":8
@@ -7903,6 +8561,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.99,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.0,
         "gamesPlayed":6
@@ -7915,6 +8574,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.02,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.0,
         "gamesPlayed":1
@@ -7927,6 +8587,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7939,6 +8600,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":1.1,
+        "points":3.1,
         "lastScore":2.9,
         "average":-0.47,
         "gamesPlayed":3
@@ -7951,6 +8613,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":2.8,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7961,8 +8624,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2019\/03\/30\/79dd4d1b071e14e833f4b54ceaba247a_220x220.png",
         "teamId":293,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":0.78,
+        "points":-0.4,
         "lastScore":-1.6,
         "average":-0.96,
         "gamesPlayed":16
@@ -7975,6 +8639,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -7987,6 +8652,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":5.57,
+        "points":0.0,
         "lastScore":1.5,
         "average":2.64,
         "gamesPlayed":21
@@ -7999,6 +8665,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8011,6 +8678,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.64,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.45,
         "gamesPlayed":2
@@ -8023,6 +8691,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8035,6 +8704,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.83,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.47,
         "gamesPlayed":3
@@ -8047,6 +8717,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":4.16,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.6,
         "gamesPlayed":1
@@ -8059,6 +8730,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8071,6 +8743,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8083,6 +8756,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.0,
         "gamesPlayed":1
@@ -8095,6 +8769,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.47,
+        "points":-0.5,
         "lastScore":0.0,
         "average":2.15,
         "gamesPlayed":14
@@ -8107,6 +8782,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.1,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.38,
         "gamesPlayed":5
@@ -8119,6 +8795,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8131,6 +8808,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8141,8 +8819,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/07\/29\/d6405e2f853358d16a3e6f9bcd899577_220x220.png",
         "teamId":277,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.15,
+        "points":0.0,
         "lastScore":1.0,
         "average":0.86,
         "gamesPlayed":10
@@ -8155,6 +8834,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8167,6 +8847,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8179,6 +8860,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.29,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.55,
         "gamesPlayed":2
@@ -8191,6 +8873,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8203,6 +8886,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.68,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.26,
         "gamesPlayed":11
@@ -8215,6 +8899,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.61,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.14,
         "gamesPlayed":11
@@ -8227,6 +8912,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":2.9,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.7,
         "gamesPlayed":3
@@ -8237,8 +8923,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/761d9353281e11362a025a163d079687_220x220.png",
         "teamId":285,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8251,6 +8938,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":3.77,
+        "points":-0.1,
         "lastScore":0.0,
         "average":1.42,
         "gamesPlayed":5
@@ -8263,6 +8951,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":6.07,
+        "points":-0.3,
         "lastScore":0.0,
         "average":2.37,
         "gamesPlayed":3
@@ -8275,6 +8964,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8287,6 +8977,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.61,
+        "points":0.4,
         "lastScore":0.0,
         "average":1.93,
         "gamesPlayed":4
@@ -8299,6 +8990,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8311,6 +9003,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":8.83,
+        "points":0.92,
         "lastScore":5.45,
         "average":3.28,
         "gamesPlayed":16
@@ -8323,6 +9016,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.05,
+        "points":5.3,
         "lastScore":3.65,
         "average":3.55,
         "gamesPlayed":21
@@ -8335,6 +9029,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":6.35,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.95,
         "gamesPlayed":8
@@ -8347,6 +9042,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.19,
+        "points":0.0,
         "lastScore":3.0,
         "average":3.0,
         "gamesPlayed":1
@@ -8359,6 +9055,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":7.25,
+        "points":3.56,
         "lastScore":0.0,
         "average":3.03,
         "gamesPlayed":9
@@ -8371,6 +9068,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.29,
         "gamesPlayed":8
@@ -8383,6 +9081,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":7.59,
+        "points":0.0,
         "lastScore":3.18,
         "average":3.07,
         "gamesPlayed":2
@@ -8395,6 +9094,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8407,6 +9107,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8419,6 +9120,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":5.09,
+        "points":0.0,
         "lastScore":-2.6,
         "average":1.56,
         "gamesPlayed":13
@@ -8431,6 +9133,7 @@
         "positionId":"man",
         "statusId":"probable",
         "price":9.06,
+        "points":4.06,
         "lastScore":5.99,
         "average":4.92,
         "gamesPlayed":2
@@ -8441,8 +9144,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/7e2bdadbf80e322a2565aa10af6d9082_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8455,6 +9159,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":9.64,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.07,
         "gamesPlayed":8
@@ -8467,6 +9172,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8479,6 +9185,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8491,6 +9198,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.72,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.67,
         "gamesPlayed":3
@@ -8501,8 +9209,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/2921071a7cd4ff8857a5a839aad0fa4f_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8515,6 +9224,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.15,
         "gamesPlayed":2
@@ -8527,6 +9237,7 @@
         "positionId":"mid",
         "statusId":"probable",
         "price":3.51,
+        "points":3.3,
         "lastScore":0.5,
         "average":1.23,
         "gamesPlayed":11
@@ -8539,6 +9250,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.45,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.5,
         "gamesPlayed":1
@@ -8551,6 +9263,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8561,8 +9274,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/27\/aac8321f06c7b18cef1c545fa597439b_220x220.png",
         "teamId":293,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8575,6 +9289,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.92,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.4,
         "gamesPlayed":3
@@ -8587,6 +9302,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":3.4,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.1,
         "gamesPlayed":12
@@ -8597,8 +9313,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/30\/4e23db7254caf320d53e78d8566d93c5_220x220.png",
         "teamId":266,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8611,6 +9328,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":10.67,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.51,
         "gamesPlayed":13
@@ -8621,8 +9339,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/01\/71d59c690cc2fcd14acc5c49fbe44148_220x220.png",
         "teamId":354,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":5.57,
+        "points":0.0,
         "lastScore":-1.3,
         "average":2.7,
         "gamesPlayed":21
@@ -8635,6 +9354,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8647,6 +9367,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.54,
+        "points":0.0,
         "lastScore":1.6,
         "average":1.6,
         "gamesPlayed":1
@@ -8659,6 +9380,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.87,
+        "points":0.0,
         "lastScore":6.3,
         "average":4.68,
         "gamesPlayed":8
@@ -8671,6 +9393,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.79,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.17,
         "gamesPlayed":7
@@ -8683,6 +9406,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":0.76,
+        "points":0.0,
         "lastScore":0.0,
         "average":-1.23,
         "gamesPlayed":4
@@ -8695,6 +9419,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8707,6 +9432,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8719,6 +9445,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":9.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8731,6 +9458,7 @@
         "positionId":"mid",
         "statusId":"injury",
         "price":3.1,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.5,
         "gamesPlayed":9
@@ -8743,6 +9471,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8755,6 +9484,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.77,
+        "points":1.9,
         "lastScore":0.0,
         "average":-0.65,
         "gamesPlayed":4
@@ -8767,6 +9497,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":3.46,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.7,
         "gamesPlayed":7
@@ -8779,6 +9510,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8791,6 +9523,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.37,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.01,
         "gamesPlayed":8
@@ -8803,6 +9536,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8815,6 +9549,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8827,6 +9562,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8839,6 +9575,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8851,6 +9588,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8863,6 +9601,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.44,
+        "points":2.2,
         "lastScore":-0.1,
         "average":2.02,
         "gamesPlayed":15
@@ -8875,6 +9614,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8887,6 +9627,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8897,8 +9638,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/baf8be08bf77da46ebb9a0b8eeda4277_220x220.png",
         "teamId":276,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8911,6 +9653,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8923,6 +9666,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.26,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.7,
         "gamesPlayed":1
@@ -8935,6 +9679,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":-0.5,
         "gamesPlayed":1
@@ -8947,6 +9692,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8959,6 +9705,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":2.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8971,6 +9718,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8983,6 +9731,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -8995,6 +9744,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9005,8 +9755,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/01\/20\/119d338ee09aacf08faae33fa7047de7_220x220.png",
         "teamId":275,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":5.14,
+        "points":5.0,
         "lastScore":-1.8,
         "average":2.83,
         "gamesPlayed":16
@@ -9019,6 +9770,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9031,6 +9783,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":2.35,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":1
@@ -9043,6 +9796,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9055,6 +9809,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9067,6 +9822,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9077,8 +9833,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/14\/c67891a65c3ee2201518cd07b8463081_220x220.png",
         "teamId":277,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"doubt",
         "price":4.43,
+        "points":0.0,
         "lastScore":1.3,
         "average":4.8,
         "gamesPlayed":2
@@ -9091,6 +9848,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9103,6 +9861,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9115,6 +9874,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9125,8 +9885,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/3bff6c9ad26c04233fd3a10fff1e149e_220x220.png",
         "teamId":285,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9139,6 +9900,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9151,6 +9913,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9161,8 +9924,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/dd71a83fb1643a92885b65d1a63f4131_220x220.png",
         "teamId":285,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9173,8 +9937,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/ecf4bcd928424500d31efe161887e297_220x220.png",
         "teamId":285,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9187,6 +9952,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9199,6 +9965,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.29,
+        "points":0.0,
         "lastScore":0.8,
         "average":0.8,
         "gamesPlayed":1
@@ -9211,6 +9978,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9223,6 +9991,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9235,6 +10004,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9247,6 +10017,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9259,6 +10030,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9271,6 +10043,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":1
@@ -9283,6 +10056,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":4.7,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":1
@@ -9295,6 +10069,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9307,6 +10082,7 @@
         "positionId":"st",
         "statusId":"injury",
         "price":5.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9319,6 +10095,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":7.84,
+        "points":5.8,
         "lastScore":0.0,
         "average":2.56,
         "gamesPlayed":14
@@ -9331,6 +10108,7 @@
         "positionId":"man",
         "statusId":"null",
         "price":6.05,
+        "points":0.0,
         "lastScore":0.0,
         "average":5.64,
         "gamesPlayed":1
@@ -9343,6 +10121,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.16,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.1,
         "gamesPlayed":7
@@ -9353,8 +10132,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/24\/ed75ccc81ae843b476ae9b659862e9a7_220x220.png",
         "teamId":285,
         "positionId":"st",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9365,8 +10145,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2018\/05\/21\/62fa3dde13de597371870ee9b721b5d7_220x220.png",
         "teamId":284,
         "positionId":"cb",
-        "statusId":"injury",
+        "statusId":"null",
         "price":2.56,
+        "points":0.0,
         "lastScore":0.0,
         "average":1.11,
         "gamesPlayed":8
@@ -9379,6 +10160,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9389,8 +10171,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/11\/27\/7f6f086c28337ecefbe6fe7db99ab649_220x220.png",
         "teamId":293,
         "positionId":"gk",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9401,8 +10184,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/08\/25\/003e596752a82b34bc103220faa3125d_220x220.png",
         "teamId":292,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":3.51,
+        "points":3.3,
         "lastScore":0.0,
         "average":1.76,
         "gamesPlayed":18
@@ -9415,6 +10199,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9427,6 +10212,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9437,8 +10223,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/15\/5345f1ee7a9264d591c66046094e68b7_220x220.png",
         "teamId":275,
         "positionId":"wb",
-        "statusId":"null",
+        "statusId":"probable",
         "price":1.01,
+        "points":0.0,
         "lastScore":-0.5,
         "average":2.07,
         "gamesPlayed":3
@@ -9451,6 +10238,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9463,6 +10251,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9473,8 +10262,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/09\/18\/d91238c5e040d15b0c5835c7ca195014_220x220.png",
         "teamId":266,
         "positionId":"mid",
-        "statusId":"probable",
+        "statusId":"null",
         "price":1.0,
+        "points":2.4,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9485,8 +10275,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/03\/09\/ebc79a97a8840c38c63b16446a1c84b5_220x220.png",
         "teamId":275,
         "positionId":"wb",
-        "statusId":"probable",
+        "statusId":"doubt",
         "price":7.72,
+        "points":0.0,
         "lastScore":1.8,
         "average":2.82,
         "gamesPlayed":13
@@ -9499,6 +10290,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9511,6 +10303,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9523,6 +10316,7 @@
         "positionId":"wb",
         "statusId":"probable",
         "price":1.31,
+        "points":0.3,
         "lastScore":0.0,
         "average":1.4,
         "gamesPlayed":2
@@ -9535,6 +10329,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9547,6 +10342,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.34,
+        "points":0.0,
         "lastScore":0.0,
         "average":2.04,
         "gamesPlayed":17
@@ -9559,6 +10355,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":6.14,
+        "points":0.0,
         "lastScore":-0.5,
         "average":2.92,
         "gamesPlayed":14
@@ -9571,6 +10368,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.77,
+        "points":0.0,
         "lastScore":0.0,
         "average":-3.0,
         "gamesPlayed":1
@@ -9581,8 +10379,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/02\/27\/dab4d223e4d736b3877f27a6b24a7a0e_220x220.png",
         "teamId":285,
         "positionId":"mid",
-        "statusId":"null",
+        "statusId":"probable",
         "price":8.3,
+        "points":0.0,
         "lastScore":2.3,
         "average":2.36,
         "gamesPlayed":20
@@ -9595,6 +10394,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":0.83,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.2,
         "gamesPlayed":1
@@ -9607,6 +10407,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.98,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.35,
         "gamesPlayed":2
@@ -9619,6 +10420,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9631,6 +10433,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9643,6 +10446,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":7.88,
+        "points":0.0,
         "lastScore":1.5,
         "average":3.32,
         "gamesPlayed":18
@@ -9655,6 +10459,7 @@
         "positionId":"gk",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9667,6 +10472,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":7.07,
+        "points":3.4,
         "lastScore":0.0,
         "average":3.54,
         "gamesPlayed":13
@@ -9679,6 +10485,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":3.69,
+        "points":0.0,
         "lastScore":8.6,
         "average":2.78,
         "gamesPlayed":9
@@ -9691,6 +10498,7 @@
         "positionId":"mid",
         "statusId":"null",
         "price":2.62,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.44,
         "gamesPlayed":11
@@ -9703,6 +10511,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":4.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9715,6 +10524,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":2.01,
+        "points":0.0,
         "lastScore":0.0,
         "average":4.9,
         "gamesPlayed":1
@@ -9727,6 +10537,7 @@
         "positionId":"gk",
         "statusId":"probable",
         "price":7.86,
+        "points":4.6,
         "lastScore":-4.8,
         "average":0.8,
         "gamesPlayed":22
@@ -9739,6 +10550,7 @@
         "positionId":"wb",
         "statusId":"null",
         "price":1.0,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":0
@@ -9751,6 +10563,7 @@
         "positionId":"st",
         "statusId":"null",
         "price":0.78,
+        "points":0.0,
         "lastScore":0.0,
         "average":0.0,
         "gamesPlayed":1
@@ -9761,8 +10574,9 @@
         "photoUrl":"https:\/\/s.glbimg.com\/es\/sde\/f\/2020\/01\/20\/4d926ee7edebf4a6823049ca2eb242a7_220x220.png",
         "teamId":275,
         "positionId":"st",
-        "statusId":"probable",
+        "statusId":"null",
         "price":5.73,
+        "points":-1.1,
         "lastScore":0.0,
         "average":3.61,
         "gamesPlayed":11
@@ -9775,6 +10589,7 @@
         "positionId":"cb",
         "statusId":"null",
         "price":3.72,
+        "points":0.0,
         "lastScore":0.0,
         "average":3.3,
         "gamesPlayed":5
