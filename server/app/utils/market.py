@@ -22,8 +22,9 @@ def generate_market_for_season(year: int):
             photo_url = photo.replace("FORMATO", "220x220") if isinstance(photo, str) else ""
             teamId = row["atletas.clube_id"]
             positionId = constants.POSITION_MAP[row["atletas.posicao_id"]]
-            statusId = constants.STATUS_MAP[row["atletas.status_id"]]
+            statusId = "probable"
             price = row["atletas.preco_num"] - row["atletas.variacao_num"]
+            points = row["atletas.pontos_num"]
             lastScore = 0.0
             average = 0.0
             gamesPlayed = 0
@@ -31,6 +32,7 @@ def generate_market_for_season(year: int):
                 prev = csvs[prev_key]
                 df = prev[prev["atletas.atleta_id"] == id]
                 for _, row in df.iterrows():
+                    statusId = constants.STATUS_MAP[row["atletas.status_id"]]
                     lastScore = row["atletas.pontos_num"]
                     average = row["atletas.media_num"]
                     gamesPlayed = row["atletas.jogos_num"]
@@ -41,6 +43,7 @@ def generate_market_for_season(year: int):
                 positionId,
                 statusId,
                 price,
+                points,
                 lastScore,
                 average,
                 gamesPlayed,
@@ -54,6 +57,7 @@ def generate_market_for_season(year: int):
                 "positionId",
                 "statusId",
                 "price",
+                "points",
                 "lastScore",
                 "average",
                 "gamesPlayed",

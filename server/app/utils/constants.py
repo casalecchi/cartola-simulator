@@ -3,6 +3,7 @@ AVAILABLE_MODELS = [
     "ARIMA (P=1, D=1, Q=1)",
     "ARIMA (P=2, D=0, Q=3)",
     "LSTM (N STEPS=5)",
+    "BEST POSSIBLE",
 ]
 
 MODEL_MAP = {
@@ -10,6 +11,7 @@ MODEL_MAP = {
     "ARIMA (P=1, D=1, Q=1)": "1:1:1",
     "ARIMA (P=2, D=0, Q=3)": "2:0:3",
     "LSTM (N STEPS=5)": "l5",
+    "BEST POSSIBLE": "best",
 }
 
 POSITION_MAP = {"gol": "gk", "lat": "wb", "zag": "cb", "mei": "mid", "ata": "st", "tec": "man"}
