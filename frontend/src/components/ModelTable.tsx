@@ -17,7 +17,7 @@ import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../hooks/useBuilderStateManager'
 import { OptimalTeam, Player } from '../models'
-import { roundNumber } from '../utils'
+import { formationSlots, roundNumber } from '../utils'
 import { cellStyles } from './builder/BuilderTable'
 
 const numberCellStyles: SxProps = {
@@ -133,6 +133,9 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, name, team })
                                                 hide ||
                                                 !player ||
                                                 isOnTeam ||
+                                                formationSlots[manager.formation][
+                                                    player.positionId
+                                                ] == manager.team[player.positionId].length ||
                                                 manager.balance - player.price < 0
                                             }
                                         >
