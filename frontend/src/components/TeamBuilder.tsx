@@ -2,6 +2,7 @@ import { Button, Grid2, Paper, Stack, Typography } from '@mui/material'
 import { BarChart } from '@mui/x-charts'
 import { FC, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import { BuilderState } from '../hooks/useBuilderStateManager'
 import { OptimalTeam, Player, TeamInfo } from '../models'
 import colors from '../styles/colors.module.scss'
@@ -10,17 +11,25 @@ import { Score, UserStats } from './builder/BuilderStats'
 import { BuilderTable } from './builder/BuilderTable'
 import { PlayerSlot } from './builder/PlayerSlot'
 import { Market } from './Market'
-import { ModelTable } from './TeamTable'
+import { ModelTable } from './ModelTable'
 
 interface TeamBuilderProps {
     manager: BuilderState
     market: Player[]
+    modelName?: string
     optimals: OptimalTeam[]
     teamsInfo: TeamInfo[]
 }
 
-export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, teamsInfo }) => {
+export const TeamBuilder: FC<TeamBuilderProps> = ({
+    manager,
+    market,
+    modelName,
+    optimals,
+    teamsInfo,
+}) => {
     const { t } = useTranslation()
+    const to = useNavigate()
     const [rows, setRows] = useState<JSX.Element[]>([])
     const {
         balance,
@@ -79,7 +88,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                     <BuilderTable manager={manager}>{rows}</BuilderTable>
                 </Stack>
             </Grid2>
-            <Grid2 size={4}>
+            <Grid2 size={round < 39 ? 4 : 8}>
                 <Stack alignItems={'center'} height={'100%'}>
                     <Typography
                         color={'textSecondary'}
@@ -118,29 +127,36 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({ manager, market, optimals, t
                         </Paper>
                         <Score history={history} optimals={optimals} round={round} />
                         <Stack alignItems={'center'} width={'100%'}>
-                            <Button
-                                onClick={submit}
-                                sx={{ width: '5rem' }}
-                                variant={'contained'}
-                                disabled={
-                                    !captain ||
-                                    Object.values(team).reduce(
-                                        (acc, curr) => acc + curr.length,
-                                        0
-                                    ) != 12
-                                }
-                            >
-                                {t('common.submit').toUpperCase()}
-                            </Button>
+                            {round < 39 ? (
+                                <Button
+                                    onClick={submit}
+                                    sx={{ width: '5rem' }}
+                                    variant={'contained'}
+                                    disabled={
+                                        !captain ||
+                                        Object.values(team).reduce(
+                                            (acc, curr) => acc + curr.length,
+                                            0
+                                        ) != 12
+                                    }
+                                >
+                                    {t('common.submit').toUpperCase()}
+                                </Button>
+                            ) : (
+                                <Button onClick={() => to(0)} variant={'contained'}>
+                                    {t('simulator.playAgain')}
+                                </Button>
+                            )}
                         </Stack>
                     </Stack>
                 </Stack>
             </Grid2>
-            <Grid2 size={4}>
+            <Grid2 size={round < 39 ? 4 : 0}>
                 <Stack height={'100%'} justifyContent={'center'}>
                     <ModelTable
                         manager={manager}
                         market={market}
+                        name={modelName}
                         team={optimals.find((o) => o.round === round)}
                     />
                 </Stack>

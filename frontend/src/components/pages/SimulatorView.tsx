@@ -56,6 +56,7 @@ export const SimulatorView: FC = () => {
                 <TeamBuilder
                     manager={builderStateManager}
                     market={getRoundMarket(round)}
+                    modelName={selectedModel}
                     optimals={optimals}
                     teamsInfo={teamsInfo}
                 />

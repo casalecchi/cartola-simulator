@@ -1,3 +1,4 @@
+import { Visibility, VisibilityOff } from '@mui/icons-material'
 import {
     Avatar,
     Button,
@@ -12,7 +13,7 @@ import {
     TableRow,
     Typography,
 } from '@mui/material'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../hooks/useBuilderStateManager'
 import { OptimalTeam, Player } from '../models'
@@ -26,11 +27,13 @@ const numberCellStyles: SxProps = {
 interface ModelTableProps {
     manager: BuilderState
     market: Player[]
+    name?: string
     team?: OptimalTeam
 }
 
-export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
+export const ModelTable: FC<ModelTableProps> = ({ manager, market, name, team }) => {
     const { t } = useTranslation()
+    const [hide, setHide] = useState(true)
     const findPlayer = (id: number) => market.find((p) => p.id === id)
     const teamPlayers = Object.values(manager.team).flatMap((players) => players)
 
@@ -49,13 +52,20 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
                             <TableCell sx={cellStyles}></TableCell>
                             <TableCell sx={cellStyles}>
                                 <Stack alignItems={'center'} direction={'row'} py={1}>
-                                    <Typography>{t('simulator.mySquad').toUpperCase()}</Typography>
+                                    <Typography>{name?.toUpperCase()}</Typography>
                                 </Stack>
                             </TableCell>
                             <TableCell align={'right'} sx={{ ...numberCellStyles, ...cellStyles }}>
                                 <Typography>{t('common.prediction')}</Typography>
                             </TableCell>
-                            <TableCell sx={cellStyles}></TableCell>
+                            <TableCell align={'center'} sx={cellStyles}>
+                                <Stack
+                                    alignItems={'center'}
+                                    onClick={() => setHide((prev) => !prev)}
+                                >
+                                    {hide ? <Visibility /> : <VisibilityOff />}
+                                </Stack>
+                            </TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -65,7 +75,13 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
                             const isOnTeam = teamPlayers.some((p) => p.id === player?.id)
 
                             return (
-                                <TableRow key={`${team.round}-${p.id}`} sx={{ height: '3.35rem' }}>
+                                <TableRow
+                                    key={`${team.round}-${p.id}`}
+                                    sx={{
+                                        height: '3.35rem',
+                                        filter: hide ? 'blur(4px)' : undefined,
+                                    }}
+                                >
                                     <TableCell
                                         align={'center'}
                                         sx={{ ...cellStyles, width: '3rem' }}
@@ -82,7 +98,7 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
                                             <Avatar
                                                 alt={player?.name}
                                                 src={player?.photoUrl}
-                                                sx={{ height: '2rem', width: '2rem' }}
+                                                sx={{ height: '2.5rem', width: '2.5rem' }}
                                                 variant={'circular'}
                                             />
                                             <Typography>{player?.name}</Typography>
@@ -114,8 +130,9 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, team }) => {
                                         <Button
                                             onClick={() => player && manager.addPlayer(player)}
                                             disabled={
-                                                player &&
-                                                isOnTeam &&
+                                                hide ||
+                                                !player ||
+                                                isOnTeam ||
                                                 manager.balance - player.price < 0
                                             }
                                         >

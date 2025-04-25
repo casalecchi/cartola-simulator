@@ -15,8 +15,8 @@ export const HomeView: FC = () => {
                 <Button onClick={() => to('/lstm')} variant={'contained'}>
                     LSTM
                 </Button>
-                <Button onClick={() => to('/teams')} variant={'contained'}>
-                    OPTIMAL TEAMS
+                <Button onClick={() => to('/simulator')} variant={'contained'}>
+                    Simulator
                 </Button>
             </Stack>
         </Stack>

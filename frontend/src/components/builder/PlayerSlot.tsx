@@ -13,7 +13,7 @@ import { Dispatch, FC, SetStateAction, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState } from '../../hooks/useBuilderStateManager'
 import { Player, Position } from '../../models'
-import { roundNumber } from '../../utils'
+import { roundNumber, statusColors } from '../../utils'
 import { cellStyles } from './BuilderTable'
 
 interface PlayerSlotProps {
@@ -84,14 +84,15 @@ const PlayerDetail: FC<PlayerDetailProps> = ({ captain, player, onClick, setCapt
                             onClick={onClick}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                            sx={{ height: '2rem', width: '2rem' }}
+                            sx={{ height: '2.5rem', width: '2.5rem' }}
                         >
                             <Avatar
                                 alt={player.name}
                                 variant={'circular'}
                                 sx={{
-                                    height: '2rem',
-                                    width: '2rem',
+                                    border: `2px solid ${statusColors[player.statusId]}`,
+                                    height: '2.5rem',
+                                    width: '2.5rem',
                                     backgroundColor: 'transparent',
                                 }}
                             >
