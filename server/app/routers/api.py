@@ -10,7 +10,7 @@ from utils import constants
 from utils.dir import load_all_csvs
 from utils.timeseries import create_timeseries_from_year
 from TeamAssignment.arima import player_arima
-from TeamAssignment.lstm import player_lstm
+from TeamAssignment.lstm import custom_lstm
 
 router = APIRouter()
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -64,7 +64,7 @@ def get_player_lstm(request: LSTMRequest):
     NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
     prev_csv = load_all_csvs(PREV_DIR)
     next_csv = load_all_csvs(NEXT_DIR)
-    predictions = player_lstm(request.id, prev_csv, next_csv, request.n_steps)
+    predictions = custom_lstm(request.id, prev_csv, next_csv, request.n_steps)
     formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
     return formattedPred
 

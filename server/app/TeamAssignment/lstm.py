@@ -5,14 +5,13 @@ import os
 import warnings
 from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from functools import partial
-from keras import optimizers
-from keras.callbacks import EarlyStopping
-from keras.models import Sequential
-from keras.layers import LSTM, Dense
+from keras import callbacks, layers, models, optimizers
+from tensorflow.keras.models import load_model
 from pathlib import Path
+from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
+from tuner import custom_loss
 from typing import Dict, List, Tuple
 from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
@@ -37,8 +36,7 @@ def custom_lstm(
     previous_csvs: Dict[str, pd.DataFrame],
     next_csvs: Dict[str, pd.DataFrame],
     n_steps=5,
-    units_1=64,
-    units_2=32,
+    epochs=100,
 ):
     predictions = []
 
@@ -46,31 +44,53 @@ def custom_lstm(
     next_timeseries = get_timeseries(player_id, next_csvs)
     next_timeseries = np.nan_to_num(next_timeseries)
 
-    if np.count_nonzero(~np.isnan(prev_timeseries)) < n_steps:
+    if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 10:
         print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
-        return [float("inf") for _ in range(38)]
+        return [-999 for _ in range(38)]
 
     context = np.nan_to_num(prev_timeseries)
     scaler = StandardScaler()
     scaled_prev = scaler.fit_transform(context.reshape(-1, 1))
 
-    X_train, y_train = create_sequences(scaled_prev, n_steps)
+    X, y = create_sequences(scaled_prev, n_steps)
     try:
-        X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
+        X = X.reshape((X.shape[0], X.shape[1], 1))
     except IndexError as e:
         print(f"Erro ao reshaping os dados do jogador {player_id}: {e}")
         return
 
-    model = Sequential()
-    model.add(LSTM(units_1, input_shape=(n_steps, 1)))
-    # model.add(LSTM(units_2))
-    model.add(Dense(1))
+    tscv = TimeSeriesSplit(n_splits=3)
+    train_index, val_index = list(tscv.split(X))[-1]
+    X_train, X_val = X[train_index], X[val_index]
+    y_train, y_val = y[train_index], y[val_index]
 
-    optimizer = optimizers.Adam(learning_rate=0.005)
-    model.compile(optimizer=optimizer, loss="mae")
-    early_stop = EarlyStopping(patience=10, restore_best_weights=True)
-    model.fit(X_train, y_train, epochs=100, batch_size=1, callbacks=[early_stop])
+    model = models.Sequential()
+    model.add(layers.LSTM(1, input_shape=(n_steps, 1)))
+    model.add(layers.Dense(1))
 
+    check_point = callbacks.ModelCheckpoint(
+        f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
+    )
+    optimizer = optimizers.Adam(learning_rate=0.01)
+
+    model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
+
+    # Divida os dados em treinamento e validação
+    # X_train = X
+    # y_train = y
+
+    model.fit(
+        X_train,
+        y_train,
+        validation_data=(X_val, y_val),
+        epochs=epochs,
+        batch_size=1,
+        # validation_split=0.2,
+        callbacks=[check_point],
+        verbose=1,
+    )
+
+    model = load_model(f"lstm/{player_id}.keras")
     # Começa com as últimas n_steps da temporada passada
     current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
 
@@ -85,6 +105,11 @@ def custom_lstm(
         current_sequence = np.append(
             current_sequence[:, 1:, :], scaled_real.reshape(1, 1, 1), axis=1
         )
+
+    mae = mean_absolute_error(next_timeseries, predictions)
+    rmse = root_mean_squared_error(next_timeseries, predictions)
+    print(f"\nErro absoluto médio (MAE): {mae:.2f}")
+    print(f"\nErro absoluto médio (RMSE):: {rmse:.2f}")
 
     return [float(pred) for pred in predictions]
 
@@ -101,9 +126,9 @@ def player_lstm(
     next_timeseries = get_timeseries(player_id, next_csvs)
     next_timeseries = np.nan_to_num(next_timeseries)
 
-    empty_pred = [float("-inf") for _ in range(38)]
+    empty_pred = [-999 for _ in range(38)]
 
-    if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 15:
+    if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 10:
         print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
         return empty_pred
 
@@ -120,29 +145,40 @@ def player_lstm(
         print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
         return empty_pred
 
-    n_steps = hyperparameters.get("n_steps", 0)
-    units_1 = hyperparameters.get("units_1", 0)
-    units_2 = hyperparameters.get("units_2", 0)
+    n_steps = 2  # hyperparameters.get("n_steps", 0)
+    # units_1 = hyperparameters.get("units_1", 0)
+    # units_2 = hyperparameters.get("units_2", 0)
 
-    X_train, y_train = build_data(n_steps)
+    X, y = build_data(n_steps)
+
+    tscv = TimeSeriesSplit(n_splits=3)
+    train_index, val_index = list(tscv.split(X))[-1]
+    X_train, X_val = X[train_index], X[val_index]
+    y_train, y_val = y[train_index], y[val_index]
 
     # Pega o melhores hiperparâmetros e re-treina o modelo
-    model = Sequential()
-    model.add(LSTM(units_1, return_sequences=True, input_shape=(n_steps, 1)))
-    model.add(LSTM(units_2))
-    model.add(Dense(1))
+    model = models.Sequential()
+    model.add(layers.LSTM(1, input_shape=(n_steps, 1)))
+    model.add(layers.Dense(1))
 
-    optimizer = optimizers.Adam(learning_rate=0.005)
-    model.compile(optimizer=optimizer, loss="mae")
+    check_point = callbacks.ModelCheckpoint(
+        f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
+    )
+    optimizer = optimizers.Adam(learning_rate=0.01)
+
+    model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
     model.fit(
         X_train,
         y_train,
-        epochs=850,
-        batch_size=4,
-        callbacks=[EarlyStopping(patience=20, restore_best_weights=True)],
+        epochs=1500,
+        batch_size=1,
+        validation_data=(X_val, y_val),
+        # validation_split=0.2,
+        callbacks=[check_point],
         verbose=0,
     )
 
+    model = load_model(f"lstm/{player_id}.keras")
     # Começa com as últimas n_steps da temporada passada
     current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
 
@@ -177,9 +213,10 @@ def all_players_lstm(
 
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
-            func_with_data = partial(player_lstm, previous_csvs=previous_csvs, next_csvs=next_csvs)
             futures = {
-                executor.submit(func_with_data, id, all_hp.get(f"{id}", {})): id
+                executor.submit(
+                    player_lstm, id, previous_csvs, next_csvs, all_hp.get(f"{id}", {})
+                ): id
                 for id in players.keys()
             }
 
@@ -192,7 +229,7 @@ def all_players_lstm(
                     all_predictions[key] = pred
 
                     # Calcular MAE se for válido
-                    if pred != [float("-inf") for _ in range(38)] and len(pred) == 38:
+                    if pred != [-999 for _ in range(38)] and len(pred) == 38:
                         real = get_timeseries(key, next_csvs)
                         real = np.nan_to_num(real)
 
@@ -222,7 +259,7 @@ def all_players_lstm(
     print(f"\nErro absoluto médio (RMSE) entre todos os jogadores com ARIMA: {avg_rmse:.2f}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    path = os.path.join(ROOT_DIR, f"static/lstm/{year}-tuner.json")
+    path = os.path.join(ROOT_DIR, f"static/lstm/{year}-hp.json")
     with open(path, "w") as f:
         json.dump(all_predictions, f, indent=4, ensure_ascii=False)
     return all_predictions
@@ -244,19 +281,27 @@ if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
     path_2019 = os.path.join(data_dir, "2019")
     path_2020 = os.path.join(data_dir, "2020")
-    # run_lstm(2020, path_2019, path_2020, num_workers=10)
+    run_lstm(2020, path_2019, path_2020, num_workers=10)
 
-    # Código para teste rápido do modelo 87863 83257 38162 38750
-    prev_csv = load_all_csvs(path_2019)
-    next_csv = load_all_csvs(path_2020)
-    preds = custom_lstm(86759, prev_csv, next_csv, 15, 32)
-    reais = get_timeseries(86759, next_csv)
+    # Código para teste rápido do modelo 87863 83257 38162 38750 69040
+    # prev_csv = load_all_csvs(path_2019)
+    # next_csv = load_all_csvs(path_2020)
+    # preds = custom_lstm(83257, prev_csv, next_csv, 2, 10)
+    # preds2 = custom_lstm(83257, prev_csv, next_csv, 2, 100)
+    # preds3 = custom_lstm(83257, prev_csv, next_csv, 2, 1500)
+    # preds4 = custom_lstm(83257, prev_csv, next_csv, 2, 3000)
+    # reais = get_timeseries(83257, next_csv)
+    # anterior = get_timeseries(83257, prev_csv)
 
-    import matplotlib.pyplot as plt
+    # import matplotlib.pyplot as plt
 
-    plt.plot(reais, label="Real")
-    plt.plot(preds, label="Previsto")
-    plt.title("Previsão rodada a rodada")
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+    # plt.plot(reais, label="Real")
+    # plt.plot(anterior, label="Anterior")
+    # plt.plot(preds, label="10")
+    # plt.plot(preds2, label="100")
+    # plt.plot(preds3, label="1500")
+    # plt.plot(preds4, label="3000")
+    # plt.title("Previsão rodada a rodada")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.show()

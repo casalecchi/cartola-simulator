@@ -10,6 +10,7 @@ from functools import partial
 from keras import layers, models, optimizers, saving
 from keras_tuner import HyperModel
 from keras_tuner.tuners import BayesianOptimization
+from lstm import create_sequences
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import TimeSeriesSplit
@@ -32,6 +33,13 @@ else:
     # Se for CPU only, limitar threads para evitar sobrecarga
     tf.config.threading.set_intra_op_parallelism_threads(2)
     tf.config.threading.set_inter_op_parallelism_threads(2)
+
+
+@saving.register_keras_serializable()
+def custom_loss(y_true, y_pred):
+    mse = tf.reduce_mean(tf.square(y_true - y_pred))
+    variance_penalty = tf.square(tf.math.reduce_std(y_pred) - tf.math.reduce_std(y_true))
+    return mse + 0.1 * variance_penalty
 
 
 class LSTMHyperModel(HyperModel):
@@ -57,12 +65,6 @@ class LSTMHyperModel(HyperModel):
         learning_rate = hp.Float("learning_rate", min_value=0.0001, max_value=0.01, sampling="log")
         optimizer = optimizers.Adam(learning_rate=learning_rate)
 
-        @saving.register_keras_serializable()
-        def custom_loss(y_true, y_pred):
-            mse = tf.reduce_mean(tf.square(y_true - y_pred))
-            variance_penalty = tf.square(tf.math.reduce_std(y_pred) - tf.math.reduce_std(y_true))
-            return mse + 0.1 * variance_penalty
-
         model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
         return model
 
@@ -86,15 +88,6 @@ class LSTMHyperModel(HyperModel):
             batch_size=batch,
             verbose=0,
         )
-
-
-# Função para criar sequências de entrada e saída
-def create_sequences(data, n_steps):
-    X, y = [], []
-    for i in range(n_steps, len(data)):
-        X.append(data[(i - n_steps) : i, 0])
-        y.append(data[i, 0])
-    return np.array(X), np.array(y)
 
 
 def filter_players(
