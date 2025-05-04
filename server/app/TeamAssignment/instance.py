@@ -23,7 +23,6 @@ class Data:
                 "atletas.apelido",
                 "atletas.foto",
                 "atletas.rodada_id",
-                "atletas.variacao_num",
                 "atletas.jogos_num",
                 "atletas.clube.id.full.name",
                 "FF",
@@ -55,14 +54,14 @@ class Data:
 
         self.df = self.df.sort_values("atletas.posicao_id")
 
-        self.df = self.df[self.df["atletas.status_id"].str.contains("Provável|Dúvida|Nulo") == True]
+        # self.df = self.df[self.df["atletas.status_id"].str.contains("Provável|Dúvida|Nulo") == True]
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Provável")==True]
         # self.df = self.df[self.df["atletas.status_id"].str.contains("Lesionado")==False]
 
         self.id = self.df["atletas.atleta_id"].tolist()
         self.name = self.df["atletas.nome"].tolist()
         self.position = self.df["atletas.posicao_id"].tolist()
-        self.cost = self.df["atletas.preco_num"].tolist()
+        self.cost = (self.df["atletas.preco_num"] - self.df["atletas.variacao_num"]).tolist()
         self.score = self.df["atletas.pontos_num"].tolist()
         self.media = self.df["atletas.media_num"].tolist()
         self.posUnique = self.df["atletas.posicao_id"].unique().tolist()
