@@ -2,16 +2,16 @@ import json
 import numpy as np
 import pandas as pd
 import os
+import tensorflow as tf
 import warnings
 from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from keras import callbacks, layers, models, optimizers
+from keras import callbacks, layers, models, optimizers, saving
 from tensorflow.keras.models import load_model
 from pathlib import Path
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
-from tuner import custom_loss
 from typing import Dict, List, Tuple
 from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
@@ -20,6 +20,13 @@ from utils.timeseries import get_timeseries
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
+
+
+@saving.register_keras_serializable()
+def custom_loss(y_true, y_pred):
+    mse = tf.reduce_mean(tf.square(y_true - y_pred))
+    variance_penalty = tf.square(tf.math.reduce_std(y_pred) - tf.math.reduce_std(y_true))
+    return mse + 0.1 * variance_penalty
 
 
 # Função para criar sequências de entrada e saída
