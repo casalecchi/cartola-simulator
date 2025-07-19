@@ -51,8 +51,9 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, name, team })
                         <TableRow>
                             <TableCell sx={cellStyles}></TableCell>
                             <TableCell sx={cellStyles}>
-                                <Stack alignItems={'center'} direction={'row'} py={1}>
+                                <Stack alignItems={'center'} direction={'row'} py={1} spacing={2}>
                                     <Typography>{name?.toUpperCase()}</Typography>
+                                    <Typography>{team.formation}</Typography>
                                 </Stack>
                             </TableCell>
                             <TableCell align={'right'} sx={{ ...numberCellStyles, ...cellStyles }}>
@@ -63,7 +64,7 @@ export const ModelTable: FC<ModelTableProps> = ({ manager, market, name, team })
                                     alignItems={'center'}
                                     onClick={() => setHide((prev) => !prev)}
                                 >
-                                    {hide ? <Visibility /> : <VisibilityOff />}
+                                    {hide ? <VisibilityOff /> : <Visibility />}
                                 </Stack>
                             </TableCell>
                         </TableRow>

@@ -10,7 +10,7 @@ import { DataProvider } from './contexts/DataContext'
 const router = createBrowserRouter([
     { path: '/', element: <HomeView />, errorElement: <>Error 404</> },
     {
-        path: '/arima',
+        path: '/arma',
         element: <TimeseriesView model={'arima'} />,
     },
     {

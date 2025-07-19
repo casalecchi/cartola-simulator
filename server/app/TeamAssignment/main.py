@@ -27,7 +27,7 @@ def main(year: int, predictions_path: str, teams_path: str):
 
     data_list = []
     for i in range(len(file_list)):
-        dados = instance.Data(data_dir + file_list[i])
+        dados = instance.Data(data_dir + file_list[i], data_dir + file_list[i - 1], i + 1)
         data_list.append(dados)
 
     print("Número de rodadas: " + str(len(data_list)))
@@ -54,7 +54,7 @@ def main(year: int, predictions_path: str, teams_path: str):
 if __name__ == "__main__":
     YEAR = 2020
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    MODEL_PATH = os.path.join(ROOT_DIR, "static/lstm/2020-5.json")
-    TEAMS_PATH = os.path.join(ROOT_DIR, "static/otm/tetse.json")
+    MODEL_PATH = os.path.join(ROOT_DIR, "static/arima/2020-2:0:3.json")
+    TEAMS_PATH = os.path.join(ROOT_DIR, "static/otm/teste.json")
 
     main(YEAR, MODEL_PATH, TEAMS_PATH)

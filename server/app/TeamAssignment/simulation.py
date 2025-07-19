@@ -37,7 +37,7 @@ class Simulation:
                 index = fol.id.index(cur.id[j])
                 sell += fol.cost[index]
             except:
-                sell += cur.cost[j]
+                sell += cur.new_cost[j]
 
         balance = money - used + sell
 
@@ -56,7 +56,7 @@ class Simulation:
             points = 0
             print("Rodada: " + str(r + 1))
             self.proficiency = genprof.GenProf(self.instance, r, predictions).getProf()
-            squad, cap = self.chosen_solver.solve(
+            squad, cap, formation = self.chosen_solver.solve(
                 self.instance[r], self.strat_list, self.money, self.proficiency
             )
             if len(squad) < 12:
@@ -91,7 +91,11 @@ class Simulation:
                     {"id": id, "points": self.instance[r].score[p], "pred": predictions[str(id)][r]}
                 )
 
-            optimal_teams[r + 1] = {"team": team, "cap": self.instance[r].id[cap]}
+            optimal_teams[r + 1] = {
+                "team": team,
+                "cap": self.instance[r].id[cap],
+                "formation": formation,
+            }
 
         with open(teams_path, "w") as f:
             json.dump(optimal_teams, f, indent=4, ensure_ascii=False)

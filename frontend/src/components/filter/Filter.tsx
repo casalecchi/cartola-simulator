@@ -39,14 +39,19 @@ export const Filter: FC<FilterProps> = ({ model }) => {
                     manager.arimaOptions.autoarima
                 )
             } else {
-                fetchLSTM(selectedPlayer.id, Number(selectedYear), manager.lstmOptions.nSteps)
+                const { nSteps, epochs, u1, u2 } = manager.lstmOptions
+                fetchLSTM(selectedPlayer.id, Number(selectedYear), nSteps, epochs, u1, u2)
             }
             fetchTimeseries(selectedPlayer.id, Number(selectedYear))
         }
     }
 
     return (
-        <Stack spacing={2}>
+        <Stack
+            p={2}
+            spacing={2}
+            sx={{ backgroundColor: 'rgba(236,220,201,0.95)', borderRadius: '1rem' }}
+        >
             <Stack alignItems={'center'} direction={'row'} spacing={2}>
                 <YearField filterStateManager={manager} />
                 <PlayerField filterStateManager={manager} model={model} />

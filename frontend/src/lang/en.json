@@ -22,7 +22,10 @@
         "teamTitle": "Filter by Team"
     },
     "lstm": {
-        "nSteps": "N Steps"
+        "nSteps": "N",
+        "epochs": "Epochs",
+        "u1": "Units on L1",
+        "u2": "Units on L2"
     },
     "model": {
         "average": "Average Points",
@@ -32,8 +35,8 @@
         "year": "Year"
     },
     "play": {
-        "title": "Cartola Simulator",
-        "description": "This application aims to simulate a season of the fantasy game Cartola. In it, you can assemble your team with predictions generated through time series forecasting models.",
+        "title": "Let's Play!",
+        "description": "This application aims to simulate a season of Cartola. In it, you can assemble your team with predictions generated through time series forecasting models.",
         "instructions": "To begin you must select a season and a model to get predictions from."
     },
     "simulator": {

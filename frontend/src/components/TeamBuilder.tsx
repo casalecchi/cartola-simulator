@@ -94,7 +94,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({
                         color={'textSecondary'}
                         fontFamily={`"Jersey 15"`}
                         fontSize={'4.5rem'}
-                        sx={{ color: colors.almond }}
+                        sx={{ color: colors.almond, textShadow: '0.2rem 0.2rem 0.2rem black' }}
                     >
                         {title}
                     </Typography>
@@ -105,7 +105,7 @@ export const TeamBuilder: FC<TeamBuilderProps> = ({
                         width={'100%'}
                     >
                         <UserStats balance={balance} history={history} round={round} />
-                        <Paper elevation={5} sx={{ width: '100%', opacity: 0.95 }}>
+                        <Paper elevation={5} sx={{ width: '100%' }}>
                             <BarChart
                                 dataset={getBarDataset({ history, round, optimals })}
                                 grid={{ vertical: true, horizontal: true }}

@@ -14,10 +14,10 @@ export const darkTheme = createTheme({
             primary: colors.blueBlack,
         },
         background: {
-            paper: colors.almond,
+            paper: 'rgba(236,220,201,0.95)',
         },
     },
     typography: {
-        fontFamily: 'Doto',
+        fontFamily: `"Jersey 15"`,
     },
 })

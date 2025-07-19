@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
-import background from '../../assets/campo3.png'
+import background from '../../assets/capa.gif'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
 import { useFilterStateManager } from '../../hooks/useFilterStateManager'
 import { useGetMarket } from '../../hooks/useGetMarket'

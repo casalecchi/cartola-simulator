@@ -1,6 +1,7 @@
 import { Stack } from '@mui/material'
 import { LineChart } from '@mui/x-charts'
 import { FC, useEffect, useState } from 'react'
+import background from '../../assets/capa.gif'
 import { useDataContext } from '../../contexts/DataContext'
 import { Dataset, Model } from '../../models'
 import { generateTickPositions, mergeTimeseries } from '../../utils'
@@ -27,12 +28,22 @@ export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
     return (
         <Stack position={'relative'}>
             <HomeButton topLeft />
-            <Stack alignItems={'center'} height={'100dvh'} p={3} spacing={2} width={'100%'}>
+            <Stack
+                alignItems={'center'}
+                height={'100dvh'}
+                p={3}
+                spacing={2}
+                width={'100%'}
+                sx={{
+                    backgroundImage: `url(${background})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
                 <Filter model={model} />
                 <LineChart
                     dataset={dataset}
                     grid={{ vertical: true, horizontal: true }}
-                    sx={{ border: '1px solid lightgray', borderRadius: '1rem' }}
                     xAxis={[{ data: generateTickPositions(1, 38) }]}
                     series={[
                         {
@@ -44,6 +55,11 @@ export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
                             label: 'Prediction',
                         },
                     ]}
+                    sx={{
+                        border: '1px solid lightgray',
+                        borderRadius: '1rem',
+                        backgroundColor: 'rgba(236,220,201,0.95)',
+                    }}
                 />
             </Stack>
         </Stack>

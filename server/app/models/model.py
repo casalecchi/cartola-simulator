@@ -13,7 +13,8 @@ class ArimaRequest(PlayerRequest):
 class LSTMRequest(PlayerRequest):
     n_steps: Optional[int]
     epochs: Optional[int]
-    units: Optional[int]
+    u1: Optional[int]
+    u2: Optional[int]
 
 
 class OtmRequest(BaseModel):

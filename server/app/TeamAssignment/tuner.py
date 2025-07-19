@@ -20,6 +20,8 @@ from utils.dir import load_all_csvs
 from utils.players import get_players_from_season
 from utils.timeseries import get_timeseries
 
+TUNE_NAME = "2layers"
+DIR_NAME = "gru"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -48,18 +50,18 @@ class LSTMHyperModel(HyperModel):
         self.build_data = build_data_fn
 
     def build(self, hp):
-        n_steps = hp.Choice("n_steps", [2, 3, 5, 10])
-        input_shape = (n_steps, 1)
+        n_steps = 2
 
-        units_1 = hp.Choice("units_1", [1, 4])
+        units_1 = hp.Choice("units_1", [64, 128])
+        units_2 = hp.Choice("units_2", [8, 16])
 
         model = models.Sequential()
         model.add(
-            layers.LSTM(
-                units=units_1,
-                input_shape=input_shape,
+            layers.GRU(
+                units=units_1, input_shape=(n_steps, 1), return_sequences=True, activation="relu"
             )
         )
+        model.add(layers.GRU(units=units_2, activation="relu"))
         model.add(layers.Dense(1, "linear"))
 
         learning_rate = hp.Float("learning_rate", min_value=0.0001, max_value=0.01, sampling="log")
@@ -69,9 +71,9 @@ class LSTMHyperModel(HyperModel):
         return model
 
     def fit(self, hp, model, *args, **kwargs):
-        n_steps = hp.get("n_steps")
-        batch = 1
-        epochs = 10  # hp.Choice("epochs", [1500, 3000])
+        n_steps = 2
+        batch = hp.Choice("batch_size", [4, 16])
+        epochs = 30
 
         X, y = self.build_data(n_steps)
 
@@ -128,7 +130,7 @@ def lstm_tuner(
 
     tuner = BayesianOptimization(
         hypermodel,
-        objective="val_mae",
+        objective="val_loss",
         max_trials=20,
         executions_per_trial=1,
         directory="lstm_tuning",
@@ -152,10 +154,12 @@ def all_lstm_tuner(
     next_csvs: Dict[str, pd.DataFrame],
     players: Dict[int, Tuple[str, str, int, str]],
     num_workers=0,
+    chunk=0,
 ):
     hyperparameters: Dict[int, List[float]] = {}
     jogadores_validos = 0
-    filtered_keys = filter_players(players, previous_csvs)
+    index = chunk * 20 + 50
+    filtered_keys = filter_players(players, previous_csvs)[index : index + 20]
 
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
@@ -190,7 +194,7 @@ def all_lstm_tuner(
     print(f"Validos {jogadores_validos}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    path = os.path.join(ROOT_DIR, f"static/lstm/hp/{year}-new.json")
+    path = os.path.join(ROOT_DIR, f"static/{DIR_NAME}/hp/{year}-{TUNE_NAME}-{chunk}.json")
     with open(path, "w") as f:
         json.dump(hyperparameters, f, indent=4, ensure_ascii=False)
     return hyperparameters
@@ -200,11 +204,36 @@ def tune(year: int, previous_path: str, next_path: str, num_workers=0):
     players = get_players_from_season(next_path)
     previous_csvs = load_all_csvs(previous_path)
     next_csvs = load_all_csvs(next_path)
-    all_lstm_tuner(year, previous_csvs, next_csvs, players, num_workers)
+    ROOT_DIR = Path(__file__).resolve().parent.parent
+    hps = {}
+    for i in range(13):
+        print(f"Chunk {i}")
+        all_lstm_tuner(year, previous_csvs, next_csvs, players, num_workers, chunk=i)
+        path = os.path.join(ROOT_DIR, f"static/{DIR_NAME}/hp/{year}-{TUNE_NAME}-{i}.json")
+        with open(path, "r") as f:
+            hp = json.load(f)
+            hps.update(hp)
+    path = os.path.join(ROOT_DIR, f"static/{DIR_NAME}/hp/{year}-{TUNE_NAME}.json")
+    with open(path, "w") as f:
+        json.dump(hps, f, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
     path_2019 = os.path.join(data_dir, "2019")
     path_2020 = os.path.join(data_dir, "2020")
-    tune(2020, path_2019, path_2020, num_workers=10)
+    # tune(2020, path_2019, path_2020, num_workers=10)
+    ROOT_DIR = Path(__file__).resolve().parent.parent
+    hps = {}
+    path = os.path.join(ROOT_DIR, "static/gru/hp/2020-2layers-00.json")
+    with open(path, "r") as f:
+        hp = json.load(f)
+        hps.update(hp)
+    for i in range(13):
+        path = os.path.join(ROOT_DIR, f"static/gru/hp/2020-2layers-{i}.json")
+        with open(path, "r") as f:
+            hp = json.load(f)
+            hps.update(hp)
+    path = os.path.join(ROOT_DIR, "static/gru/hp/2020-2layers.json")
+    with open(path, "w") as f:
+        json.dump(hps, f, indent=4, ensure_ascii=False)

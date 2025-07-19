@@ -136,7 +136,7 @@ def all_players_arima(
     print(f"\nErro absoluto médio (RMSE) entre todos os jogadores com ARIMA: {avg_rmse:.2f}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    path = os.path.join(ROOT_DIR, f"static/arima/{year}-1:1:1.json")
+    path = os.path.join(ROOT_DIR, f"static/arima/{year}-autoarima.json")
     with open(path, "w") as f:
         json.dump(all_predictions, f, indent=4, ensure_ascii=False)
     return all_predictions
@@ -155,4 +155,4 @@ if __name__ == "__main__":
     data_dir = os.path.join(os.path.dirname(__file__), "data/")
     path_2019 = os.path.join(data_dir, "2019")
     path_2020 = os.path.join(data_dir, "2020")
-    run_arima(2020, path_2019, path_2020, num_workers=10, p=1, d=1, q=1)
+    run_arima(2020, path_2019, path_2020, num_workers=10, autoarima=True)

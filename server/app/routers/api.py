@@ -64,7 +64,9 @@ def get_player_lstm(request: LSTMRequest):
     NEXT_DIR = os.path.join(ROOT_DIR, f"TeamAssignment/data/{request.year}")
     prev_csv = load_all_csvs(PREV_DIR)
     next_csv = load_all_csvs(NEXT_DIR)
-    predictions = custom_lstm(request.id, prev_csv, next_csv, request.n_steps)
+    predictions = custom_lstm(
+        request.id, prev_csv, next_csv, request.n_steps, request.epochs, request.u1, request.u2
+    )
     formattedPred = [{"round": i + 1, "points": pred} for i, pred in enumerate(predictions)]
     return formattedPred
 

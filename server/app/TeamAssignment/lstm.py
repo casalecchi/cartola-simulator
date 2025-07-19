@@ -44,6 +44,8 @@ def custom_lstm(
     next_csvs: Dict[str, pd.DataFrame],
     n_steps=5,
     epochs=100,
+    units_1=64,
+    units_2=0,
 ):
     predictions = []
 
@@ -72,15 +74,24 @@ def custom_lstm(
     y_train, y_val = y[train_index], y[val_index]
 
     model = models.Sequential()
-    model.add(layers.LSTM(1, input_shape=(n_steps, 1)))
-    model.add(layers.Dense(1))
+    model.add(
+        layers.LSTM(
+            units_1,
+            return_sequences=True if units_2 > 0 else False,
+            input_shape=(n_steps, 1),
+            activation="relu",
+        )
+    )
+    if units_2 > 0:
+        model.add(layers.LSTM(units_2, activation="relu"))
+    model.add(layers.Dense(1, "linear"))
 
     check_point = callbacks.ModelCheckpoint(
         f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
     )
     optimizer = optimizers.Adam(learning_rate=0.01)
 
-    model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
+    model.compile(optimizer=optimizer, loss=["mae"], metrics=["mae", "mse"])
 
     # Divida os dados em treinamento e validação
     # X_train = X
@@ -91,8 +102,7 @@ def custom_lstm(
         y_train,
         validation_data=(X_val, y_val),
         epochs=epochs,
-        batch_size=1,
-        # validation_split=0.2,
+        batch_size=4,
         callbacks=[check_point],
         verbose=1,
     )
@@ -148,10 +158,6 @@ def player_lstm(
         X = X.reshape((X.shape[0], X.shape[1], 1))
         return X, y
 
-    if hyperparameters == {}:
-        print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
-        return empty_pred
-
     n_steps = 2  # hyperparameters.get("n_steps", 0)
     # units_1 = hyperparameters.get("units_1", 0)
     # units_2 = hyperparameters.get("units_2", 0)
@@ -165,20 +171,185 @@ def player_lstm(
 
     # Pega o melhores hiperparâmetros e re-treina o modelo
     model = models.Sequential()
-    model.add(layers.LSTM(1, input_shape=(n_steps, 1)))
+    model.add(layers.LSTM(216, return_sequences=True, input_shape=(n_steps, 1), dropout=0.2))
+    model.add(layers.LSTM(216, return_sequences=True, input_shape=(n_steps, 1), dropout=0.2))
+    model.add(layers.LSTM(216, return_sequences=True, input_shape=(n_steps, 1), dropout=0.2))
+    model.add(layers.LSTM(216, input_shape=(n_steps, 1), dropout=0.2))
     model.add(layers.Dense(1))
 
     check_point = callbacks.ModelCheckpoint(
         f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
     )
-    optimizer = optimizers.Adam(learning_rate=0.01)
+    optimizer = optimizers.Adam(learning_rate=0.0005)
+
+    model.compile(optimizer=optimizer, loss="mae", metrics=["mae", "mse"])
+    model.fit(
+        X_train,
+        y_train,
+        epochs=100,
+        batch_size=32,
+        validation_data=(X_val, y_val),
+        # validation_split=0.2,
+        callbacks=[check_point],
+        verbose=0,
+    )
+
+    model = load_model(f"lstm/{player_id}.keras")
+    # Começa com as últimas n_steps da temporada passada
+    current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
+
+    for r in range(38):
+        pred = model.predict(current_sequence, verbose=0)
+        prediction = scaler.inverse_transform(pred)[0, 0]
+        predictions.append(prediction)
+
+        # Adicionar valor real da rodada R
+        real_value = next_timeseries[r]
+        scaled_real = scaler.transform(np.array([[real_value]]))
+        current_sequence = np.append(
+            current_sequence[:, 1:, :], scaled_real.reshape(1, 1, 1), axis=1
+        )
+
+    return [float(pred) for pred in predictions]
+
+
+def player_mlp(
+    player_id: int,
+    previous_csvs: Dict[str, pd.DataFrame],
+    next_csvs: Dict[str, pd.DataFrame],
+    hyperparameters: Dict[str, int],
+):
+    predictions = []
+
+    prev_timeseries = get_timeseries(player_id, previous_csvs)
+    next_timeseries = get_timeseries(player_id, next_csvs)
+    next_timeseries = np.nan_to_num(next_timeseries)
+
+    empty_pred = [-999 for _ in range(38)]
+
+    if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 10:
+        print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
+        return empty_pred
+
+    context = np.nan_to_num(prev_timeseries)
+    scaler = StandardScaler()
+    scaled_prev = scaler.fit_transform(context.reshape(-1, 1))
+
+    def build_data(n_steps):
+        X, y = create_sequences(scaled_prev, n_steps)
+        X = X.reshape((X.shape[0], X.shape[1], 1))
+        return X, y
+
+    n_steps = hyperparameters.get("n_steps", 2)
+    units_1 = hyperparameters.get("units_1", 64)
+    learning_rate = hyperparameters.get("learning_rate", 0.0005)
+    batch = hyperparameters.get("batch_size", 32)
+
+    X, y = build_data(n_steps)
+
+    tscv = TimeSeriesSplit(n_splits=3)
+    train_index, val_index = list(tscv.split(X))[-1]
+    X_train, X_val = X[train_index], X[val_index]
+    y_train, y_val = y[train_index], y[val_index]
+
+    # Pega o melhores hiperparâmetros e re-treina o modelo
+    model = models.Sequential()
+    model.add(layers.InputLayer(input_shape=(n_steps,)))
+    model.add(layers.Dense(units_1, activation="relu"))
+    model.add(layers.Dense(1))
+
+    check_point = callbacks.ModelCheckpoint(
+        f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
+    )
+    optimizer = optimizers.Adam(learning_rate)
 
     model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
     model.fit(
         X_train,
         y_train,
-        epochs=1500,
-        batch_size=1,
+        epochs=100,
+        batch_size=batch,
+        validation_data=(X_val, y_val),
+        # validation_split=0.2,
+        callbacks=[check_point],
+        verbose=0,
+    )
+
+    model = load_model(f"lstm/{player_id}.keras")
+    # Começa com as últimas n_steps da temporada passada
+    current_sequence = scaled_prev[-n_steps:].reshape(1, n_steps, 1)
+
+    for r in range(38):
+        pred = model.predict(current_sequence, verbose=0)
+        prediction = scaler.inverse_transform(pred)[0, 0]
+        predictions.append(prediction)
+
+        # Adicionar valor real da rodada R
+        real_value = next_timeseries[r]
+        scaled_real = scaler.transform(np.array([[real_value]]))
+        current_sequence = np.append(
+            current_sequence[:, 1:, :], scaled_real.reshape(1, 1, 1), axis=1
+        )
+
+    return [float(pred) for pred in predictions]
+
+
+def player_gru(
+    player_id: int,
+    previous_csvs: Dict[str, pd.DataFrame],
+    next_csvs: Dict[str, pd.DataFrame],
+    hyperparameters: Dict[str, int],
+):
+    predictions = []
+
+    prev_timeseries = get_timeseries(player_id, previous_csvs)
+    next_timeseries = get_timeseries(player_id, next_csvs)
+    next_timeseries = np.nan_to_num(next_timeseries)
+
+    empty_pred = [-999 for _ in range(38)]
+
+    if np.count_nonzero(np.nan_to_num(prev_timeseries)) < 10:
+        print(f"Jogador {player_id} não tem dados suficientes para criar sequências.")
+        return empty_pred
+
+    context = np.nan_to_num(prev_timeseries)
+    scaler = StandardScaler()
+    scaled_prev = scaler.fit_transform(context.reshape(-1, 1))
+
+    def build_data(n_steps):
+        X, y = create_sequences(scaled_prev, n_steps)
+        X = X.reshape((X.shape[0], X.shape[1], 1))
+        return X, y
+
+    n_steps = hyperparameters.get("n_steps", 2)
+    units_1 = hyperparameters.get("units_1", 64)
+    units_2 = hyperparameters.get("units_2", 8)
+    learning_rate = hyperparameters.get("learning_rate", 0.001)
+    batch = hyperparameters.get("batch_size", 32)
+
+    X, y = build_data(n_steps)
+
+    tscv = TimeSeriesSplit(n_splits=3)
+    train_index, val_index = list(tscv.split(X))[-1]
+    X_train, X_val = X[train_index], X[val_index]
+    y_train, y_val = y[train_index], y[val_index]
+
+    # Pega o melhores hiperparâmetros e re-treina o modelo
+    model = models.Sequential()
+    model.add(layers.GRU(units_1, input_shape=(n_steps, 1), activation="relu"))
+    model.add(layers.Dense(1))
+
+    check_point = callbacks.ModelCheckpoint(
+        f"lstm/{player_id}.keras", save_best_only=True, monitor="loss"
+    )
+    optimizer = optimizers.Adam(learning_rate)
+
+    model.compile(optimizer=optimizer, loss=custom_loss, metrics=["mae", "mse"])
+    model.fit(
+        X_train,
+        y_train,
+        epochs=1000,
+        batch_size=batch,
         validation_data=(X_val, y_val),
         # validation_split=0.2,
         callbacks=[check_point],
@@ -221,9 +392,7 @@ def all_players_lstm(
     if num_workers > 0:
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
             futures = {
-                executor.submit(
-                    player_lstm, id, previous_csvs, next_csvs, all_hp.get(f"{id}", {})
-                ): id
+                executor.submit(player_lstm, id, previous_csvs, next_csvs, {}): id
                 for id in players.keys()
             }
 
@@ -266,7 +435,7 @@ def all_players_lstm(
     print(f"\nErro absoluto médio (RMSE) entre todos os jogadores com ARIMA: {avg_rmse:.2f}")
 
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    path = os.path.join(ROOT_DIR, f"static/lstm/{year}-hp.json")
+    path = os.path.join(ROOT_DIR, f"static/lstm/{year}-4x216.json")
     with open(path, "w") as f:
         json.dump(all_predictions, f, indent=4, ensure_ascii=False)
     return all_predictions
@@ -277,7 +446,7 @@ def run_lstm(year: int, previous_path: str, next_path: str, num_workers=0):
     previous_csvs = load_all_csvs(previous_path)
     next_csvs = load_all_csvs(next_path)
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    hp_path = os.path.join(ROOT_DIR, f"static/lstm/hp/{year}.json")
+    hp_path = os.path.join(ROOT_DIR, f"static/gru/hp/{year}-2layers.json")
     with open(hp_path, "r") as f:
         all_hp = json.load(f)
 
@@ -291,12 +460,10 @@ if __name__ == "__main__":
     run_lstm(2020, path_2019, path_2020, num_workers=10)
 
     # Código para teste rápido do modelo 87863 83257 38162 38750 69040
+    # Honda - 69940 (s/ dados de 2019)
     # prev_csv = load_all_csvs(path_2019)
     # next_csv = load_all_csvs(path_2020)
-    # preds = custom_lstm(83257, prev_csv, next_csv, 2, 10)
-    # preds2 = custom_lstm(83257, prev_csv, next_csv, 2, 100)
-    # preds3 = custom_lstm(83257, prev_csv, next_csv, 2, 1500)
-    # preds4 = custom_lstm(83257, prev_csv, next_csv, 2, 3000)
+    # preds = player_lstm(83257, prev_csv, next_csv, {})
     # reais = get_timeseries(83257, next_csv)
     # anterior = get_timeseries(83257, prev_csv)
 
@@ -304,11 +471,263 @@ if __name__ == "__main__":
 
     # plt.plot(reais, label="Real")
     # plt.plot(anterior, label="Anterior")
-    # plt.plot(preds, label="10")
-    # plt.plot(preds2, label="100")
-    # plt.plot(preds3, label="1500")
-    # plt.plot(preds4, label="3000")
+    # plt.plot(preds, label="Pred")
     # plt.title("Previsão rodada a rodada")
     # plt.legend()
     # plt.grid(True)
     # plt.show()
+
+    # ----------- LAGPLOT
+    # from pandas.plotting import lag_plot
+
+    # s = pd.Series(anterior)
+
+    # # Supondo que 'pontuacoes_2019_series' é uma pandas Series
+    # plt.figure(figsize=(15, 10))
+    # for i in range(1, 10):  # Plot para lags de 1 a 6
+    #     plt.subplot(3, 3, i)
+    #     lag_plot(s, lag=i)
+    #     plt.title(f"Lag {i}")
+    # plt.tight_layout()
+    # plt.show()
+
+    # --------- ACF
+    # from statsmodels.graphics.tsaplots import plot_acf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_acf(
+    #     anterior, ax=ax, lags=12
+    # )  # Ajuste o número de lags conforme necessário (ex: até 1/3 do tamanho da série)
+    # plt.title("Função de Autocorrelação (ACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação")
+    # plt.show()
+
+    # PACF
+    # from statsmodels.graphics.tsaplots import plot_pacf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_pacf(anterior, ax=ax, lags=12, method="ywm")  # method='ywm' é comum
+    # plt.title("Função de Autocorrelação Parcial (PACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação Parcial")
+    # plt.show()
+
+    # ---- Estacionaridade
+    # from statsmodels.tsa.stattools import adfuller
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # result = adfuller(pd.Series(anterior).dropna())  # Remova NaNs se houver
+    # print("ADF Statistic:", result[0])
+    # print("p-value:", result[1])
+    # print("Critical Values:")
+    # for key, value in result[4].items():
+    #     print(f"\t{key}: {value}")
+
+    # if result[1] <= 0.05:
+    #     print("Conclusão: Rejeitar a hipótese nula (H0). A série é estacionária.")
+    # prev_csv = load_all_csvs(path_2019)
+    # next_csv = load_all_csvs(path_2020)
+    # preds = player_gru(83257, prev_csv, next_csv, {})
+    # reais = get_timeseries(83257, next_csv)
+    # anterior = get_timeseries(83257, prev_csv)
+
+    # import matplotlib.pyplot as plt
+
+    # plt.plot(reais, label="Real")
+    # plt.plot(anterior, label="Anterior")
+    # plt.plot(preds, label="GRU")
+    # plt.title("Previsão rodada a rodada")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.show()
+
+    # ----------- LAGPLOT
+    # from pandas.plotting import lag_plot
+
+    # s = pd.Series(anterior)
+
+    # # Supondo que 'pontuacoes_2019_series' é uma pandas Series
+    # plt.figure(figsize=(15, 10))
+    # for i in range(1, 10):  # Plot para lags de 1 a 6
+    #     plt.subplot(3, 3, i)
+    #     lag_plot(s, lag=i)
+    #     plt.title(f"Lag {i}")
+    # plt.tight_layout()
+    # plt.show()
+
+    # --------- ACF
+    # from statsmodels.graphics.tsaplots import plot_acf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_acf(
+    #     anterior, ax=ax, lags=12
+    # )  # Ajuste o número de lags conforme necessário (ex: até 1/3 do tamanho da série)
+    # plt.title("Função de Autocorrelação (ACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação")
+    # plt.show()
+
+    # PACF
+    # from statsmodels.graphics.tsaplots import plot_pacf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_pacf(anterior, ax=ax, lags=12, method="ywm")  # method='ywm' é comum
+    # plt.title("Função de Autocorrelação Parcial (PACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação Parcial")
+    # plt.show()
+
+    # ---- Estacionaridade
+    # from statsmodels.tsa.stattools import adfuller
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # result = adfuller(pd.Series(anterior).dropna())  # Remova NaNs se houver
+    # print("ADF Statistic:", result[0])
+    # print("p-value:", result[1])
+    # print("Critical Values:")
+    # for key, value in result[4].items():
+    #     print(f"\t{key}: {value}")
+
+    # if result[1] <= 0.05:
+    #     print("Conclusão: Rejeitar a hipótese nula (H0). A série é estacionária.")
+    # prev_csv = load_all_csvs(path_2019)
+    # next_csv = load_all_csvs(path_2020)
+    # preds = player_gru(83257, prev_csv, next_csv, {})
+    # reais = get_timeseries(83257, next_csv)
+    # anterior = get_timeseries(83257, prev_csv)
+
+    # import matplotlib.pyplot as plt
+
+    # plt.plot(reais, label="Real")
+    # plt.plot(anterior, label="Anterior")
+    # plt.plot(preds, label="GRU")
+    # plt.title("Previsão rodada a rodada")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.show()
+
+    # ----------- LAGPLOT
+    # from pandas.plotting import lag_plot
+
+    # s = pd.Series(anterior)
+
+    # # Supondo que 'pontuacoes_2019_series' é uma pandas Series
+    # plt.figure(figsize=(15, 10))
+    # for i in range(1, 10):  # Plot para lags de 1 a 6
+    #     plt.subplot(3, 3, i)
+    #     lag_plot(s, lag=i)
+    #     plt.title(f"Lag {i}")
+    # plt.tight_layout()
+    # plt.show()
+
+    # --------- ACF
+    # from statsmodels.graphics.tsaplots import plot_acf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_acf(
+    #     anterior, ax=ax, lags=12
+    # )  # Ajuste o número de lags conforme necessário (ex: até 1/3 do tamanho da série)
+    # plt.title("Função de Autocorrelação (ACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação")
+    # plt.show()
+
+    # PACF
+    # from statsmodels.graphics.tsaplots import plot_pacf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_pacf(anterior, ax=ax, lags=12, method="ywm")  # method='ywm' é comum
+    # plt.title("Função de Autocorrelação Parcial (PACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação Parcial")
+    # plt.show()
+
+    # ---- Estacionaridade
+    # from statsmodels.tsa.stattools import adfuller
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # result = adfuller(pd.Series(anterior).dropna())  # Remova NaNs se houver
+    # print("ADF Statistic:", result[0])
+    # print("p-value:", result[1])
+    # print("Critical Values:")
+    # for key, value in result[4].items():
+    #     print(f"\t{key}: {value}")
+
+    # if result[1] <= 0.05:
+    #     print("Conclusão: Rejeitar a hipótese nula (H0). A série é estacionária.")
+    # prev_csv = load_all_csvs(path_2019)
+    # next_csv = load_all_csvs(path_2020)
+    # preds = player_gru(83257, prev_csv, next_csv, {})
+    # reais = get_timeseries(83257, next_csv)
+    # anterior = get_timeseries(83257, prev_csv)
+
+    # import matplotlib.pyplot as plt
+
+    # plt.plot(reais, label="Real")
+    # plt.plot(anterior, label="Anterior")
+    # plt.plot(preds, label="GRU")
+    # plt.title("Previsão rodada a rodada")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.show()
+
+    # ----------- LAGPLOT
+    # from pandas.plotting import lag_plot
+
+    # s = pd.Series(anterior)
+
+    # # Supondo que 'pontuacoes_2019_series' é uma pandas Series
+    # plt.figure(figsize=(15, 10))
+    # for i in range(1, 10):  # Plot para lags de 1 a 6
+    #     plt.subplot(3, 3, i)
+    #     lag_plot(s, lag=i)
+    #     plt.title(f"Lag {i}")
+    # plt.tight_layout()
+    # plt.show()
+
+    # --------- ACF
+    # from statsmodels.graphics.tsaplots import plot_acf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_acf(
+    #     anterior, ax=ax, lags=12
+    # )  # Ajuste o número de lags conforme necessário (ex: até 1/3 do tamanho da série)
+    # plt.title("Função de Autocorrelação (ACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação")
+    # plt.show()
+
+    # PACF
+    # from statsmodels.graphics.tsaplots import plot_pacf
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # fig, ax = plt.subplots(figsize=(12, 6))
+    # plot_pacf(anterior, ax=ax, lags=12, method="ywm")  # method='ywm' é comum
+    # plt.title("Função de Autocorrelação Parcial (PACF)")
+    # plt.xlabel("Lag")
+    # plt.ylabel("Autocorrelação Parcial")
+    # plt.show()
+
+    # ---- Estacionaridade
+    # from statsmodels.tsa.stattools import adfuller
+
+    # # Supondo que 'pontuacoes_2019' é uma Series ou array
+    # result = adfuller(pd.Series(anterior).dropna())  # Remova NaNs se houver
+    # print("ADF Statistic:", result[0])
+    # print("p-value:", result[1])
+    # print("Critical Values:")
+    # for key, value in result[4].items():
+    #     print(f"\t{key}: {value}")
+
+    # if result[1] <= 0.05:
+    #     print("Conclusão: Rejeitar a hipótese nula (H0). A série é estacionária.")
+    # else:
+    #     print("Conclusão: Falha ao rejeitar a hipótese nula (H0). A série não é estacionária.")

@@ -24,7 +24,12 @@ export const useFilterStateManager = (): FilterState => {
         q: 1,
         autoarima: false,
     })
-    const [lstmOptions, setLstmOptions] = useState<LSTMOptions>({ nSteps: 5 })
+    const [lstmOptions, setLstmOptions] = useState<LSTMOptions>({
+        nSteps: 5,
+        epochs: 100,
+        u1: 64,
+        u2: 8,
+    })
     const [selectedModel, setSelectedModel] = useState<string>()
     const [selectedPlayer, setSelectedPlayer] = useState<PlayerInfo>()
     const [selectedTeam, setSelectedTeam] = useState<TeamInfo>()

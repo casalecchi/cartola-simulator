@@ -1,6 +1,7 @@
 from tokenize import Double
 from typing import List
 from statistics import mean
+from utils.constants import FORMATION_MAP
 import hexaly.optimizer
 import instance
 import base_solver
@@ -86,6 +87,12 @@ class LSM(base_solver.Solver):
             print("Squad Size: "+str(len(squad)))
             """
 
+            formation = ""
+            for i in range(len(strat_list)):
+                if x[i].value == 1:
+                    formation = FORMATION_MAP[tuple(strat_list[i])]
+                    break
+
             for i in range(len(data_inst.posUnique)):
                 for j in range(len(data_inst.id)):
                     if y[i][j].value == 1:
@@ -129,4 +136,4 @@ class LSM(base_solver.Solver):
                 point += data_inst.score[j]
             print("Pontuação na rodada: "+str(point))
             """
-            return squad, cap
+            return squad, cap, formation

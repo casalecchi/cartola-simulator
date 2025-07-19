@@ -9,4 +9,7 @@ export interface ArimaOptions {
 
 export interface LSTMOptions {
     nSteps: number
+    epochs: number
+    u1: number
+    u2: number
 }

@@ -12,4 +12,5 @@ export interface OptimalTeam {
     round: number
     team: PlayerOptimal[]
     cap: number
+    formation: string
 }

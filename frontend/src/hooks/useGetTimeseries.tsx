@@ -14,7 +14,14 @@ export interface TimeseriesStateManager {
         q?: number,
         autoarima?: boolean
     ) => Promise<void>
-    fetchLSTMTimeseriesFromPlayer: (id: number, year: number, nSteps: number) => Promise<void>
+    fetchLSTMTimeseriesFromPlayer: (
+        id: number,
+        year: number,
+        nSteps: number,
+        epochs: number,
+        u1: number,
+        u2: number
+    ) => Promise<void>
     fetchTimeseriesFromPlayer: (id: number, year: number) => Promise<void>
     resetAllTimeseries: () => void
 }
@@ -65,13 +72,23 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
         }
     }
 
-    const fetchLSTMTimeseriesFromPlayer = async (id: number, year: number, nSteps: number) => {
+    const fetchLSTMTimeseriesFromPlayer = async (
+        id: number,
+        year: number,
+        nSteps: number,
+        epochs: number,
+        u1: number,
+        u2: number
+    ) => {
         try {
             setArimaLoading(true)
             const response = await axios.post('http://localhost:8000/api/player-lstm', {
                 id,
                 year,
                 n_steps: nSteps,
+                epochs,
+                u1,
+                u2,
             })
             setModelTimeseries({ data: response.data as PlayerTimeseriesPoint[] })
         } catch (error) {

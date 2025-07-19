@@ -18,12 +18,10 @@ export const PlayerField: FC<PlayerFieldProps> = ({ filterStateManager, model })
 
     const players = useMemo(() => {
         if (model == 'lstm') {
-            return playersInfo.filter(
-                (p) => p.validLSTMValues > filterStateManager.lstmOptions.nSteps
-            )
+            return playersInfo.filter((p) => p.validLSTMValues > 10)
         }
         return playersInfo
-    }, [model, playersInfo, filterStateManager.lstmOptions.nSteps])
+    }, [model, playersInfo])
 
     useEffect(() => {
         if (selectedYear != '') fetchPlayersInfo(Number(selectedYear))

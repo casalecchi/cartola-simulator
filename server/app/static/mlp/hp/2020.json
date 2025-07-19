@@ -1,0 +1,1766 @@
+{
+    "69012": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0002962393389378975,
+        "batch_size": 16
+    },
+    "79578": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0001689678745343422,
+        "batch_size": 32
+    },
+    "73800": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00023553594488703454,
+        "batch_size": 16
+    },
+    "39850": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.001151541851870589,
+        "batch_size": 32
+    },
+    "51772": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0027550606600036205,
+        "batch_size": 32
+    },
+    "86759": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.008357947570368458,
+        "batch_size": 32
+    },
+    "78478": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0012106145307524464,
+        "batch_size": 16
+    },
+    "38509": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00012093749375642885,
+        "batch_size": 16
+    },
+    "38750": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.006058384079896747,
+        "batch_size": 16
+    },
+    "70986": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0005180562411218613,
+        "batch_size": 32
+    },
+    "89493": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00015332259578564714,
+        "batch_size": 32
+    },
+    "38909": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0015714774530466808,
+        "batch_size": 32
+    },
+    "81682": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0001619474167249688,
+        "batch_size": 16
+    },
+    "38394": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0004373927953369722,
+        "batch_size": 16
+    },
+    "92696": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.009315607152746493,
+        "batch_size": 16
+    },
+    "73896": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "38144": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0006482808138001001,
+        "batch_size": 16
+    },
+    "68954": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.009418913160600919,
+        "batch_size": 32
+    },
+    "42491": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00037059298439961645,
+        "batch_size": 32
+    },
+    "71479": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "95494": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00530278435624136,
+        "batch_size": 32
+    },
+    "62129": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.004058184109277711,
+        "batch_size": 32
+    },
+    "98022": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002401865091859303,
+        "batch_size": 16
+    },
+    "101960": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0009070390761055796,
+        "batch_size": 32
+    },
+    "68923": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0002593859756236902,
+        "batch_size": 32
+    },
+    "38231": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00769389652971951,
+        "batch_size": 32
+    },
+    "38229": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.002378558206931083,
+        "batch_size": 16
+    },
+    "92182": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0001526625695346575,
+        "batch_size": 32
+    },
+    "80189": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0007846312137158453,
+        "batch_size": 32
+    },
+    "61188": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00960670010722489,
+        "batch_size": 32
+    },
+    "74061": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0026021566587086636,
+        "batch_size": 32
+    },
+    "84382": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.008491998015155355,
+        "batch_size": 16
+    },
+    "83004": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.007495088200351752,
+        "batch_size": 16
+    },
+    "42234": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.008593307202512102,
+        "batch_size": 32
+    },
+    "86859": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0007036121313527428,
+        "batch_size": 32
+    },
+    "87393": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.007523391087993723,
+        "batch_size": 16
+    },
+    "78248": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0037644241185357005,
+        "batch_size": 32
+    },
+    "87009": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.006814952528710454,
+        "batch_size": 16
+    },
+    "68770": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0002487282764227902,
+        "batch_size": 16
+    },
+    "72142": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0010502708484834312,
+        "batch_size": 16
+    },
+    "90572": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00011430620822819171,
+        "batch_size": 32
+    },
+    "78605": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00263103928490968,
+        "batch_size": 32
+    },
+    "69161": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0002507669264766261,
+        "batch_size": 32
+    },
+    "102318": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0023311662519474776,
+        "batch_size": 16
+    },
+    "86711": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.007492827027725915,
+        "batch_size": 16
+    },
+    "96652": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.005692108784937963,
+        "batch_size": 32
+    },
+    "78715": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0002461752260228351,
+        "batch_size": 32
+    },
+    "87225": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0005728354999075137,
+        "batch_size": 32
+    },
+    "101319": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0002373832490075881,
+        "batch_size": 32
+    },
+    "93108": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00017621108607966004,
+        "batch_size": 16
+    },
+    "101717": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0034570532867690363,
+        "batch_size": 32
+    },
+    "97245": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.004762991634608131,
+        "batch_size": 16
+    },
+    "98057": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00033976086027238196,
+        "batch_size": 16
+    },
+    "62033": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0008360797155232669,
+        "batch_size": 16
+    },
+    "101803": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "74140": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00892879339836686,
+        "batch_size": 32
+    },
+    "68808": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.002213772930278442,
+        "batch_size": 16
+    },
+    "78584": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00041697231056181166,
+        "batch_size": 32
+    },
+    "79437": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0011974376437047926,
+        "batch_size": 16
+    },
+    "103099": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00017206156039326556,
+        "batch_size": 32
+    },
+    "81798": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0012919999384821924,
+        "batch_size": 32
+    },
+    "80129": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0012425387245409531,
+        "batch_size": 16
+    },
+    "87192": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0025119714799088843,
+        "batch_size": 16
+    },
+    "83817": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0024963192423814932,
+        "batch_size": 32
+    },
+    "91102": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.005590909808857388,
+        "batch_size": 16
+    },
+    "89273": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0003376356549481639,
+        "batch_size": 16
+    },
+    "94968": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.002059623852473095,
+        "batch_size": 16
+    },
+    "93791": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0008065102024506221,
+        "batch_size": 32
+    },
+    "92981": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0017701069670326775,
+        "batch_size": 32
+    },
+    "95464": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0018487020194913513,
+        "batch_size": 16
+    },
+    "42145": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00038787732830856833,
+        "batch_size": 16
+    },
+    "62977": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.005525876268322522,
+        "batch_size": 16
+    },
+    "50324": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002215600557568202,
+        "batch_size": 16
+    },
+    "68886": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00010622591214381281,
+        "batch_size": 32
+    },
+    "68938": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "68696": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0002506802716435472,
+        "batch_size": 16
+    },
+    "68895": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.007662930791389143,
+        "batch_size": 32
+    },
+    "98765": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.006774973687719226,
+        "batch_size": 16
+    },
+    "77774": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.007747568155050877,
+        "batch_size": 16
+    },
+    "69041": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0024765700770475255,
+        "batch_size": 32
+    },
+    "81776": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.003180509971534248,
+        "batch_size": 32
+    },
+    "90715": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0001810438867712506,
+        "batch_size": 32
+    },
+    "81951": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00019790313757520978,
+        "batch_size": 16
+    },
+    "93797": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00036678993892040417,
+        "batch_size": 32
+    },
+    "87747": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.003180509971534248,
+        "batch_size": 32
+    },
+    "104646": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00024493629046340687,
+        "batch_size": 16
+    },
+    "90569": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0011689119551507527,
+        "batch_size": 16
+    },
+    "95638": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0015664483309874415,
+        "batch_size": 16
+    },
+    "91708": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00014394082407546475,
+        "batch_size": 32
+    },
+    "92273": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.003363892308221705,
+        "batch_size": 16
+    },
+    "97528": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002762566859733682,
+        "batch_size": 32
+    },
+    "37798": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "50645": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.008250109366905308,
+        "batch_size": 16
+    },
+    "102958": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00011526830852622141,
+        "batch_size": 32
+    },
+    "99550": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0002287793273416485,
+        "batch_size": 16
+    },
+    "104650": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00022746166615888439,
+        "batch_size": 16
+    },
+    "38162": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0033585758677651704,
+        "batch_size": 32
+    },
+    "70925": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0021428678775155265,
+        "batch_size": 32
+    },
+    "71113": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00030815756150995,
+        "batch_size": 16
+    },
+    "71162": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0013840215431976106,
+        "batch_size": 32
+    },
+    "42222": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00011749325568638425,
+        "batch_size": 16
+    },
+    "103645": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00016298024493664572,
+        "batch_size": 16
+    },
+    "78577": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.000181315687188748,
+        "batch_size": 16
+    },
+    "73384": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00024781506474294215,
+        "batch_size": 32
+    },
+    "88368": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00015887767046816992,
+        "batch_size": 16
+    },
+    "72359": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0025030224678065627,
+        "batch_size": 32
+    },
+    "100963": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.003008681307474169,
+        "batch_size": 16
+    },
+    "71882": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.003412646114724423,
+        "batch_size": 32
+    },
+    "88427": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.002685687828637262,
+        "batch_size": 16
+    },
+    "90309": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "91733": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00011919656576227362,
+        "batch_size": 16
+    },
+    "51415": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002984320103448686,
+        "batch_size": 16
+    },
+    "95222": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0013369104602961573,
+        "batch_size": 32
+    },
+    "63172": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00013144116083232312,
+        "batch_size": 32
+    },
+    "96382": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0008221619210072158,
+        "batch_size": 32
+    },
+    "71920": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0007847228772553556,
+        "batch_size": 32
+    },
+    "70934": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0008231445060622683,
+        "batch_size": 32
+    },
+    "71937": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0005922615300593479,
+        "batch_size": 32
+    },
+    "68773": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00013499789767624896,
+        "batch_size": 16
+    },
+    "71604": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.009152430307506653,
+        "batch_size": 32
+    },
+    "73789": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.006735199554790287,
+        "batch_size": 16
+    },
+    "82628": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.003975130325030173,
+        "batch_size": 32
+    },
+    "84339": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0017259745092203106,
+        "batch_size": 16
+    },
+    "84523": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0027567445342449115,
+        "batch_size": 32
+    },
+    "73540": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002675887735540095,
+        "batch_size": 32
+    },
+    "102563": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0010048359048804426,
+        "batch_size": 32
+    },
+    "90118": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00016896226944659257,
+        "batch_size": 16
+    },
+    "95220": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0002115705594649727,
+        "batch_size": 16
+    },
+    "83772": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002413629169431171,
+        "batch_size": 16
+    },
+    "60852": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00012627333981779466,
+        "batch_size": 16
+    },
+    "63194": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00014452530326223846,
+        "batch_size": 16
+    },
+    "41327": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00016348395611442704,
+        "batch_size": 16
+    },
+    "38196": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0004496471735212704,
+        "batch_size": 32
+    },
+    "63354": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0006582630591770039,
+        "batch_size": 32
+    },
+    "83438": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.006423922543610202,
+        "batch_size": 16
+    },
+    "62023": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00020291889451666428,
+        "batch_size": 16
+    },
+    "63289": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0004903249315702685,
+        "batch_size": 32
+    },
+    "50317": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0012634173195789128,
+        "batch_size": 16
+    },
+    "72362": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0006085910381702509,
+        "batch_size": 32
+    },
+    "68817": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00803040378593521,
+        "batch_size": 16
+    },
+    "71844": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0010828465568378522,
+        "batch_size": 16
+    },
+    "72079": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "68873": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0007876101916357379,
+        "batch_size": 16
+    },
+    "42411": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0005993626356465982,
+        "batch_size": 16
+    },
+    "73992": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.005782229809227378,
+        "batch_size": 16
+    },
+    "87552": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00048372585966754625,
+        "batch_size": 16
+    },
+    "80287": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "105786": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0037854895667813306,
+        "batch_size": 32
+    },
+    "83528": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00015480544731661438,
+        "batch_size": 16
+    },
+    "81845": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0004386425246471432,
+        "batch_size": 16
+    },
+    "78445": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.008707422879002941,
+        "batch_size": 16
+    },
+    "89256": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.002945190098634518,
+        "batch_size": 32
+    },
+    "94068": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.000454561555927083,
+        "batch_size": 16
+    },
+    "104678": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00010581725584419347,
+        "batch_size": 16
+    },
+    "71233": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.002645005969790066,
+        "batch_size": 32
+    },
+    "78435": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.005133404275617465,
+        "batch_size": 32
+    },
+    "90302": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0007015644123562024,
+        "batch_size": 16
+    },
+    "100987": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00131857531453763,
+        "batch_size": 16
+    },
+    "94583": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0055727240563538845,
+        "batch_size": 16
+    },
+    "87470": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0028334346754697263,
+        "batch_size": 32
+    },
+    "70116": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0006347594122109973,
+        "batch_size": 32
+    },
+    "95802": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0023024020797929585,
+        "batch_size": 16
+    },
+    "52558": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.004656984868884796,
+        "batch_size": 16
+    },
+    "100125": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0007533839107904677,
+        "batch_size": 16
+    },
+    "101315": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0024430127996773114,
+        "batch_size": 32
+    },
+    "99392": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0002695447293270436,
+        "batch_size": 32
+    },
+    "91201": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.002566210828786428,
+        "batch_size": 32
+    },
+    "86776": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0004048193028901496,
+        "batch_size": 16
+    },
+    "104649": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00040466898500976094,
+        "batch_size": 32
+    },
+    "99918": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0083988259320095,
+        "batch_size": 16
+    },
+    "100742": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0004949641865673911,
+        "batch_size": 16
+    },
+    "80313": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00011883757552645027,
+        "batch_size": 16
+    },
+    "104593": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00011803784780413567,
+        "batch_size": 32
+    },
+    "63013": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00011103593434762787,
+        "batch_size": 16
+    },
+    "38913": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0008000249754162946,
+        "batch_size": 32
+    },
+    "92496": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0004877062457988501,
+        "batch_size": 16
+    },
+    "70916": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.006915284597970677,
+        "batch_size": 16
+    },
+    "38277": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.005980421424234417,
+        "batch_size": 16
+    },
+    "37688": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.002070056569207615,
+        "batch_size": 16
+    },
+    "52950": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0040134742902291735,
+        "batch_size": 16
+    },
+    "52253": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00026772846710230644,
+        "batch_size": 16
+    },
+    "72605": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00029257830134115265,
+        "batch_size": 16
+    },
+    "80583": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0005319110524675087,
+        "batch_size": 16
+    },
+    "70800": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0013514233928732255,
+        "batch_size": 32
+    },
+    "81091": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.004561896914979461,
+        "batch_size": 32
+    },
+    "38279": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0013470350372319357,
+        "batch_size": 32
+    },
+    "80692": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.006337471468379436,
+        "batch_size": 16
+    },
+    "97341": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0005393256587913338,
+        "batch_size": 16
+    },
+    "80393": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.002391706687008048,
+        "batch_size": 32
+    },
+    "81677": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.005399119162455844,
+        "batch_size": 32
+    },
+    "37246": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00822581626160057,
+        "batch_size": 16
+    },
+    "73421": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.004824642245001809,
+        "batch_size": 32
+    },
+    "37655": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0015701420124772218,
+        "batch_size": 32
+    },
+    "95799": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.009929423316917789,
+        "batch_size": 16
+    },
+    "78850": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00018312641261031653,
+        "batch_size": 16
+    },
+    "38939": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.008209267974862601,
+        "batch_size": 32
+    },
+    "41929": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00039352681125392927,
+        "batch_size": 16
+    },
+    "82455": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0026242518269229704,
+        "batch_size": 32
+    },
+    "70046": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0004251982974278177,
+        "batch_size": 16
+    },
+    "68911": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0019016181641119687,
+        "batch_size": 16
+    },
+    "80853": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0009852137582917091,
+        "batch_size": 16
+    },
+    "75295": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.007545000591873605,
+        "batch_size": 32
+    },
+    "83433": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0069393841527081454,
+        "batch_size": 32
+    },
+    "87999": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00018187623160543395,
+        "batch_size": 16
+    },
+    "86972": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.009505809557039937,
+        "batch_size": 16
+    },
+    "72772": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00019310580172945832,
+        "batch_size": 16
+    },
+    "90444": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0015705040983219544,
+        "batch_size": 32
+    },
+    "70944": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.009456529564751385,
+        "batch_size": 16
+    },
+    "101885": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "42116": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00987041307224074,
+        "batch_size": 32
+    },
+    "91607": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0001232970057057402,
+        "batch_size": 32
+    },
+    "94509": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00021200880010475789,
+        "batch_size": 16
+    },
+    "38545": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.003629154752456168,
+        "batch_size": 16
+    },
+    "93368": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0001,
+        "batch_size": 32
+    },
+    "68952": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.008333374684988883,
+        "batch_size": 16
+    },
+    "101708": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0006894348101638671,
+        "batch_size": 16
+    },
+    "62086": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0002109508446984112,
+        "batch_size": 32
+    },
+    "69040": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.005859091016046747,
+        "batch_size": 16
+    },
+    "82453": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.005256370108408869,
+        "batch_size": 16
+    },
+    "72294": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00010864567973193042,
+        "batch_size": 32
+    },
+    "73974": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0010787871371794912,
+        "batch_size": 16
+    },
+    "38505": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.004054798565061746,
+        "batch_size": 16
+    },
+    "71684": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.006290714465916554,
+        "batch_size": 16
+    },
+    "71631": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0011178417270725715,
+        "batch_size": 16
+    },
+    "70360": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.005584338633096195,
+        "batch_size": 32
+    },
+    "78077": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00024139104222215547,
+        "batch_size": 16
+    },
+    "78415": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00010297618518399508,
+        "batch_size": 16
+    },
+    "68872": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.007262794524677764,
+        "batch_size": 32
+    },
+    "78548": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0031279599662623146,
+        "batch_size": 16
+    },
+    "79113": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.005711919140250011,
+        "batch_size": 16
+    },
+    "72372": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0001702117816467284,
+        "batch_size": 16
+    },
+    "86797": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0007745556188920088,
+        "batch_size": 32
+    },
+    "83257": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0017756127466446612,
+        "batch_size": 16
+    },
+    "88225": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00373177247900463,
+        "batch_size": 32
+    },
+    "87863": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0015463362595452633,
+        "batch_size": 16
+    },
+    "90285": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00015495498685673436,
+        "batch_size": 32
+    },
+    "90768": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.005503388281180711,
+        "batch_size": 32
+    },
+    "96966": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.000438569127508325,
+        "batch_size": 32
+    },
+    "94156": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0003682367819247859,
+        "batch_size": 32
+    },
+    "69705": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0008815484142995489,
+        "batch_size": 32
+    },
+    "104578": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0009871532470066323,
+        "batch_size": 16
+    },
+    "60969": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0001510397551665071,
+        "batch_size": 32
+    },
+    "72391": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0008026886181862313,
+        "batch_size": 32
+    },
+    "49675": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.000605898157502881,
+        "batch_size": 16
+    },
+    "91242": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.00020438335761326597,
+        "batch_size": 32
+    },
+    "72018": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0028852240976289093,
+        "batch_size": 16
+    },
+    "73620": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0035786280309456076,
+        "batch_size": 16
+    },
+    "95466": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00030651570481645627,
+        "batch_size": 16
+    },
+    "91573": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.000682955108726642,
+        "batch_size": 16
+    },
+    "72620": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0052652170994473635,
+        "batch_size": 32
+    },
+    "38648": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.005064592362979902,
+        "batch_size": 32
+    },
+    "52618": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0001308596427612785,
+        "batch_size": 32
+    },
+    "69138": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.005155463859939141,
+        "batch_size": 16
+    },
+    "50301": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.006451866967323982,
+        "batch_size": 32
+    },
+    "84428": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "86686": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.00020226554208323732,
+        "batch_size": 16
+    },
+    "94297": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0003598884624699217,
+        "batch_size": 32
+    },
+    "88669": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00012735745615277742,
+        "batch_size": 32
+    },
+    "90061": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.004373522375316204,
+        "batch_size": 16
+    },
+    "96340": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.004495190954546194,
+        "batch_size": 32
+    },
+    "93882": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0013660049365971218,
+        "batch_size": 16
+    },
+    "103076": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0005413701437659723,
+        "batch_size": 16
+    },
+    "100761": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00027684469877965653,
+        "batch_size": 32
+    },
+    "100084": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0013924845641382366,
+        "batch_size": 32
+    },
+    "94857": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0006078879611407463,
+        "batch_size": 16
+    },
+    "82407": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0034818688017796847,
+        "batch_size": 32
+    },
+    "101484": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.004061956964369661,
+        "batch_size": 16
+    },
+    "102909": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.006293725016233829,
+        "batch_size": 32
+    },
+    "71571": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.007867307868124366,
+        "batch_size": 16
+    },
+    "80196": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.009456614954514173,
+        "batch_size": 16
+    },
+    "87342": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00033624907193274134,
+        "batch_size": 32
+    },
+    "84893": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.008633892527819412,
+        "batch_size": 32
+    },
+    "98832": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.005567001512006763,
+        "batch_size": 16
+    },
+    "95352": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.004410936102807103,
+        "batch_size": 32
+    },
+    "93893": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0002467760083980017,
+        "batch_size": 16
+    },
+    "42500": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.007051632525099916,
+        "batch_size": 32
+    },
+    "93787": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.009719857082698607,
+        "batch_size": 16
+    },
+    "99881": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00012331524985571168,
+        "batch_size": 16
+    },
+    "87258": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.00492210572872919,
+        "batch_size": 32
+    },
+    "62104": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.00036016488507721416,
+        "batch_size": 16
+    },
+    "38523": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.0066132414908173336,
+        "batch_size": 16
+    },
+    "37281": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "103295": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 16
+    },
+    "62137": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0020615477303886475,
+        "batch_size": 32
+    },
+    "61149": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0015226984419050577,
+        "batch_size": 32
+    },
+    "38910": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0007150798267677958,
+        "batch_size": 32
+    },
+    "54395": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.0026989672047918276,
+        "batch_size": 32
+    },
+    "38311": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.0002938576469420668,
+        "batch_size": 16
+    },
+    "38315": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.005131777059801533,
+        "batch_size": 16
+    },
+    "80363": {
+        "n_steps": 1,
+        "units_1": 64,
+        "learning_rate": 0.0006412147567706919,
+        "batch_size": 16
+    },
+    "97922": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.006150150914454886,
+        "batch_size": 16
+    },
+    "86770": {
+        "n_steps": 2,
+        "units_1": 64,
+        "learning_rate": 0.01,
+        "batch_size": 32
+    },
+    "73476": {
+        "n_steps": 2,
+        "units_1": 50,
+        "learning_rate": 0.006238680826124192,
+        "batch_size": 32
+    },
+    "40006": {
+        "n_steps": 1,
+        "units_1": 50,
+        "learning_rate": 0.006080562793054311,
+        "batch_size": 16
+    }
+}
