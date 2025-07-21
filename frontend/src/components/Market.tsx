@@ -9,7 +9,6 @@ import {
     TextField,
     Typography,
 } from '@mui/material'
-import { t } from 'i18next'
 import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BuilderState, MarketOptions } from '../hooks/useBuilderStateManager'
@@ -100,6 +99,8 @@ interface RowProps {
 }
 
 const Row: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) => {
+    const { t } = useTranslation()
+
     return (
         <Grid2 container alignItems={'center'} px={3} py={3} spacing={2}>
             <Grid2>

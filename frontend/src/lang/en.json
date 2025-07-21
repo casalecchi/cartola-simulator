@@ -21,6 +21,18 @@
         "playerField": "Choose a player",
         "teamTitle": "Filter by Team"
     },
+    "home": {
+        "title": "Cartola Simulator",
+        "subtitle": "Welcome to the Cartola Simulator!",
+        "description": "This application is designed to help you simulate and predict player performances in the famous Brazilian fantasy football game, Cartola FC. Using advanced time series forecasting models, we provide accurate predictions for player scores based on historical data and trends. Explore the features to build your ultimate fantasy football team, analyze projected scores, and make informed decisions for each round. Stay ahead of the competition with real-time insights and optimize your team’s performance with our powerful prediction tools. Start simulating today and take your Cartola FC strategy to the next level!",
+        "try": "Have a try!",
+        "ace": "Developed by ACE Laboratory",
+        "pages": {
+            "arma": "ARMA",
+            "lstm": "LSTM",
+            "simulator": "SIMULATOR"
+        }
+    },
     "lstm": {
         "nSteps": "N",
         "epochs": "Epochs",

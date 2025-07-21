@@ -6,6 +6,7 @@ import { SimulatorView } from './components/pages/SimulatorView'
 import { TimeseriesView } from './components/pages/TimeseriesView'
 import { darkTheme } from './configurations/theme'
 import { DataProvider } from './contexts/DataContext'
+import { DeviceProvider } from './contexts/DeviceContext'
 
 const router = createBrowserRouter([
     { path: '/', element: <HomeView />, errorElement: <>Error 404</> },
@@ -27,9 +28,11 @@ const App: FC = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline>
-                <DataProvider>
-                    <RouterProvider router={router} />
-                </DataProvider>
+                <DeviceProvider>
+                    <DataProvider>
+                        <RouterProvider router={router} />
+                    </DataProvider>
+                </DeviceProvider>
             </CssBaseline>
         </ThemeProvider>
     )
