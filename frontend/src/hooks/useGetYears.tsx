@@ -1,12 +1,12 @@
-import axios from 'axios'
 import { useState } from 'react'
+import api from '../configurations/api'
 
 export const useGetDataYears = () => {
     const [years, setYears] = useState<number[]>([])
 
     const getDataYears = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/years')
+            const response = await api.get('/years')
             setYears(response.data)
         } catch (error) {
             console.error(`Error fetching available years on backend. ${error}`)

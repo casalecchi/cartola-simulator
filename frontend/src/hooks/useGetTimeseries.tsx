@@ -1,6 +1,6 @@
-import axios from 'axios'
 import { useState } from 'react'
 import { PlayerTimeseries, PlayerTimeseriesPoint } from '../models'
+import api from '../configurations/api'
 
 export interface TimeseriesStateManager {
     loading: boolean
@@ -33,7 +33,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
 
     const fetchTimeseriesFromPlayer = async (id: number, year: number) => {
         try {
-            const response = await axios.post('http://localhost:8000/api/player-timeseries', {
+            const response = await api.post('/player-timeseries', {
                 id,
                 year,
             })
@@ -55,7 +55,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
     ) => {
         try {
             setArimaLoading(true)
-            const response = await axios.post('http://localhost:8000/api/player-arima', {
+            const response = await api.post('/player-arima', {
                 id,
                 year,
                 p,
@@ -82,7 +82,7 @@ export const useGetTimeseries = (): TimeseriesStateManager => {
     ) => {
         try {
             setArimaLoading(true)
-            const response = await axios.post('http://localhost:8000/api/player-lstm', {
+            const response = await api.post('/player-lstm', {
                 id,
                 year,
                 n_steps: nSteps,

@@ -1,6 +1,6 @@
-import axios from 'axios'
 import { useState } from 'react'
 import { OptimalTeam } from '../models'
+import api from '../configurations/api'
 
 export const useGetOptimal = () => {
     const [otmOptions, setOtmOptions] = useState<string[]>([])
@@ -8,7 +8,7 @@ export const useGetOptimal = () => {
 
     const getOptimals = async (year: number, optimalCode: string) => {
         try {
-            const response = await axios.post('http://localhost:8000/api/otm', {
+            const response = await api.post('/otm', {
                 year,
                 code: optimalCode,
             })
@@ -20,7 +20,7 @@ export const useGetOptimal = () => {
 
     const getOtmOptions = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/otm-options')
+            const response = await api.get('/otm-options')
             setOtmOptions(response.data)
         } catch (error) {
             console.error(`Error fetching available Otm Options. ${error}`)
