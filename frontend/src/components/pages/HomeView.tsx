@@ -1,75 +1,106 @@
 import { Avatar, Button, Paper, Stack, Typography } from '@mui/material'
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import ace from '../../assets/ace.jpg'
 import background from '../../assets/capa.gif'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import colors from '../../styles/colors.module.scss'
 
 export const HomeView: FC = () => {
     const to = useNavigate()
+    const { t } = useTranslation()
+    const { mobile } = useDeviceContext()
 
     return (
         <Stack
             alignItems={'center'}
-            height={'100dvh'}
             justifyContent={'center'}
+            minHeight={'100dvh'}
             spacing={2}
             sx={{
                 backgroundImage: `url(${background})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                paddingTop: 'env(safe-area-inset-top)',
+                paddingBottom: 'env(safe-area-inset-bottom)',
             }}
         >
-            <Stack alignItems={'center'} height={'100dvh'} maxWidth={'93.75rem'} pb={5}>
+            <Stack alignItems={'center'} maxWidth={mobile ? '100%' : '93.75rem'} pb={5}>
                 <Typography
                     color={'textSecondary'}
-                    fontFamily={`"Jersey 15"`}
-                    fontSize={window.innerHeight > 900 ? '10rem' : '8rem'}
-                    sx={{ color: colors.almond, textShadow: '1rem 1rem 1rem black' }}
+                    fontSize={mobile ? '5rem' : '10rem'}
+                    sx={{
+                        color: colors.almond,
+                        textShadow: '1rem 1rem 1rem black',
+                        ...(mobile && { lineHeight: '4.5rem', textAlign: 'center' }),
+                    }}
                 >
-                    Cartola Simulator
+                    {t('home.title')}
                 </Typography>
                 <Paper
                     sx={{
                         backgroundColor: 'rgba(236,220,201,0.9)',
-                        height: '75%',
                         p: 2,
-                        width: '70%',
+                        width: mobile ? '95%' : '70%',
                     }}
                 >
-                    <Stack height={'100%'} justifyContent={'space-between'}>
-                        <Stack>
-                            <Typography fontSize={window.innerHeight > 900 ? '4rem' : '2.5rem'}>
-                                Welcome to the Cartola Simulator!
+                    <Stack spacing={3}>
+                        <Stack p={mobile ? undefined : 2} spacing={2}>
+                            <Typography
+                                fontSize={mobile ? '2rem' : '4rem'}
+                                lineHeight={mobile ? '2rem' : '4rem'}
+                            >
+                                {t('home.subtitle')}
                             </Typography>
-                            <Typography fontSize={'1.25rem'}>
-                                This application is designed to help you simulate and predict player
-                                performances in the famous Brazilian fantasy football game, Cartola
-                                FC. Using advanced time series forecasting models, we provide
-                                accurate predictions for player scores based on historical data and
-                                trends. Explore the features to build your ultimate fantasy football
-                                team, analyze projected scores, and make informed decisions for each
-                                round. Stay ahead of the competition with real-time insights and
-                                optimize your team’s performance with our powerful prediction tools.
-                                Start simulating today and take your Cartola FC strategy to the next
-                                level!
+                            <Typography fontSize={'1.25rem'} lineHeight={mobile ? '1rem' : '2rem'}>
+                                {t('home.description')}
                             </Typography>
-                            <Stack>
-                                <Typography fontSize={'3rem'}>Have a try!</Typography>
-                                <Stack direction={'row'} justifyContent={'center'} spacing={5}>
-                                    <Button onClick={() => to('/arma')} variant={'contained'}>
-                                        <Typography fontSize={'2.5rem'}>Arma</Typography>
-                                    </Button>
-                                    <Button onClick={() => to('/lstm')} variant={'contained'}>
-                                        <Typography fontSize={'2.5rem'}>LSTM</Typography>
-                                    </Button>
-                                    <Button onClick={() => to('/simulator')} variant={'contained'}>
-                                        <Typography fontSize={'2.5rem'}>Simulator</Typography>
-                                    </Button>
-                                </Stack>
+                        </Stack>
+                        <Stack p={mobile ? undefined : 2} spacing={2}>
+                            <Typography
+                                fontSize={mobile ? '2rem' : '4rem'}
+                                lineHeight={mobile ? '2rem' : '4rem'}
+                            >
+                                {t('home.try')}
+                            </Typography>
+                            <Stack
+                                alignItems={'center'}
+                                direction={mobile ? 'column' : 'row'}
+                                justifyContent={'center'}
+                                spacing={5}
+                            >
+                                <Button
+                                    onClick={() => to('/arma')}
+                                    sx={{ width: '65%' }}
+                                    variant={'contained'}
+                                >
+                                    <Typography fontSize={mobile ? '2rem' : '2.5rem'}>
+                                        {t('home.pages.arma')}
+                                    </Typography>
+                                </Button>
+                                <Button
+                                    onClick={() => to('/lstm')}
+                                    sx={{ width: '65%' }}
+                                    variant={'contained'}
+                                >
+                                    <Typography fontSize={mobile ? '2rem' : '2.5rem'}>
+                                        {t('home.pages.lstm')}
+                                    </Typography>
+                                </Button>
+                                <Button
+                                    onClick={() => to('/simulator')}
+                                    sx={{ width: '65%' }}
+                                    variant={'contained'}
+                                >
+                                    <Typography fontSize={mobile ? '2rem' : '2.5rem'}>
+                                        {t('home.pages.simulator')}
+                                    </Typography>
+                                </Button>
                             </Stack>
                         </Stack>
-                        <Stack alignItems={'center'} spacing={1}>
+                        <Stack alignItems={'center'} pt={5} spacing={1}>
                             <a
                                 href="https://ac3lab.github.io/"
                                 rel="noopener noreferrer"
@@ -79,13 +110,13 @@ export const HomeView: FC = () => {
                                     alt="ACE Laboratory"
                                     src={ace}
                                     sx={{
-                                        height: window.innerHeight > 900 ? '7rem' : '5rem',
-                                        width: window.innerHeight > 900 ? '7rem' : '5rem',
+                                        height: mobile ? '5rem' : '7rem',
+                                        width: mobile ? '5rem' : '7rem',
                                     }}
                                 />
                             </a>
                             <Typography fontFamily={`"Jersey 15"`} fontSize={'1.5rem'}>
-                                Developed by ACE Laboratory
+                                {t('home.ace')}
                             </Typography>
                         </Stack>
                     </Stack>
