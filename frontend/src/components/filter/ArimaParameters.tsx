@@ -1,7 +1,7 @@
 import { Button, Stack } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { FilterState } from '../../hooks/useFilterStateManager'
+import { FilterState } from '../../hooks/useFilterManager'
 import { NumberInput } from '../ui/NumberInput'
 
 interface ArimaParametersProps {

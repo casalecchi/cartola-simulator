@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react'
-import { FilterState } from '../../hooks/useFilterStateManager'
+import { FilterState } from '../../hooks/useFilterManager'
 import { useGetTeams } from '../../hooks/useGetTeams'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'
 
