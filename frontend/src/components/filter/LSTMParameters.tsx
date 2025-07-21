@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material'
 import { FC } from 'react'
-import { FilterState } from '../../hooks/useFilterStateManager'
+import { FilterState } from '../../hooks/useFilterManager'
 import { NumberInput } from '../ui/NumberInput'
 
 interface LSTMParametersProps {

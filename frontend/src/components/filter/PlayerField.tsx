@@ -1,6 +1,6 @@
 import { FC, useEffect, useMemo } from 'react'
 import { useDataContext } from '../../contexts/DataContext'
-import { FilterState } from '../../hooks/useFilterStateManager'
+import { FilterState } from '../../hooks/useFilterManager'
 import { useGetPlayersFromYear } from '../../hooks/useGetPlayersFromYear'
 import { Model } from '../../models'
 import { CustomAutocomplete } from '../ui/CustomAutocomplete'

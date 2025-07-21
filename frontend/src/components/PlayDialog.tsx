@@ -3,7 +3,7 @@ import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Stack } 
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { FilterState } from '../hooks/useFilterStateManager'
+import { FilterState } from '../hooks/useFilterManager'
 import { ModelField } from './filter/ModelField'
 import { YearField } from './filter/YearField'
 import { CustomIconButton } from './ui/CustomIconButton'
