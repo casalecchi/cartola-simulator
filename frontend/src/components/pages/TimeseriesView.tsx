@@ -3,6 +3,7 @@ import { LineChart } from '@mui/x-charts'
 import { FC, useEffect, useState } from 'react'
 import background from '../../assets/capa.gif'
 import { useDataContext } from '../../contexts/DataContext'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import { Dataset, Model } from '../../models'
 import { generateTickPositions, mergeTimeseries } from '../../utils'
 import { Filter } from '../filter/Filter'
@@ -15,6 +16,7 @@ interface TimeseriesViewProps {
 export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
     const [dataset, setDataset] = useState<Dataset[]>([])
     const { timeseriesManager } = useDataContext()
+    const { mobile } = useDeviceContext()
     const { modelTimeseries, timeseries } = timeseriesManager
 
     useEffect(() => {
@@ -26,19 +28,21 @@ export const TimeseriesView: FC<TimeseriesViewProps> = ({ model }) => {
     }, [timeseries, modelTimeseries])
 
     return (
-        <Stack position={'relative'}>
-            <HomeButton topLeft />
+        <Stack
+            position={'relative'}
+            sx={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
+            <HomeButton topLeft={!mobile} />
             <Stack
                 alignItems={'center'}
-                height={'100dvh'}
-                p={3}
+                height={mobile ? '150dvh' : '100dvh'}
+                p={mobile ? 1 : 3}
                 spacing={2}
                 width={'100%'}
-                sx={{
-                    backgroundImage: `url(${background})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}
             >
                 <Filter model={model} />
                 <LineChart

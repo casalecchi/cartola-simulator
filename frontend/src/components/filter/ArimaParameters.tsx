@@ -1,6 +1,7 @@
 import { Button, Stack } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import { FilterState } from '../../hooks/useFilterManager'
 import { NumberInput } from '../ui/NumberInput'
 
@@ -10,14 +11,15 @@ interface ArimaParametersProps {
 
 export const ArimaParameters: FC<ArimaParametersProps> = ({ filterStateManager }) => {
     const { t } = useTranslation()
+    const { mobile } = useDeviceContext()
     const { arimaOptions, setArimaOptions } = filterStateManager
     const { autoarima, d, p, q } = arimaOptions
 
     return (
-        <Stack direction={'row'} spacing={2}>
+        <Stack direction={mobile ? 'column' : 'row'} spacing={2}>
             <Button
                 onClick={() => setArimaOptions((prev) => ({ ...prev, autoarima: !prev.autoarima }))}
-                sx={{ width: '9rem' }}
+                sx={{ fontSize: mobile ? '1.25rem' : undefined, width: mobile ? '6rem' : '9rem' }}
                 variant={autoarima ? 'contained' : 'outlined'}
             >
                 {t('arima.autoarima').toUpperCase()}

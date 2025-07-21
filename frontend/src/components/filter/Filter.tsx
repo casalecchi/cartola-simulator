@@ -2,6 +2,7 @@ import { Button, CircularProgress, Stack, Typography } from '@mui/material'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDataContext } from '../../contexts/DataContext'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import { useFilterStateManager } from '../../hooks/useFilterManager'
 import { Model } from '../../models'
 import { ArimaParameters } from './ArimaParameters'
@@ -17,6 +18,7 @@ interface FilterProps {
 export const Filter: FC<FilterProps> = ({ model }) => {
     const { t } = useTranslation()
     const { timeseriesManager } = useDataContext()
+    const { mobile } = useDeviceContext()
     const {
         loading,
         fetchArimaTimeseriesFromPlayer: fetchArima,
@@ -50,14 +52,27 @@ export const Filter: FC<FilterProps> = ({ model }) => {
         <Stack
             p={2}
             spacing={2}
-            sx={{ backgroundColor: 'rgba(236,220,201,0.95)', borderRadius: '1rem' }}
+            sx={{
+                backgroundColor: 'rgba(236,220,201,0.95)',
+                borderRadius: '1rem',
+                width: mobile ? '100%' : undefined,
+            }}
         >
-            <Stack alignItems={'center'} direction={'row'} spacing={2}>
+            <Stack
+                alignItems={mobile ? 'start' : 'center'}
+                direction={mobile ? 'column' : 'row'}
+                spacing={2}
+            >
                 <YearField filterStateManager={manager} />
                 <PlayerField filterStateManager={manager} model={model} />
                 <TeamField filterStateManager={manager} />
             </Stack>
-            <Stack direction={'row'} spacing={2}>
+            <Stack
+                alignItems={mobile ? 'center' : undefined}
+                direction={'row'}
+                justifyContent={mobile ? 'space-between' : undefined}
+                spacing={2}
+            >
                 {isArima ? (
                     <ArimaParameters filterStateManager={manager} />
                 ) : (
@@ -72,7 +87,9 @@ export const Filter: FC<FilterProps> = ({ model }) => {
                     {loading ? (
                         <CircularProgress size={'2rem'} />
                     ) : (
-                        <Typography>{t('common.run')}</Typography>
+                        <Typography fontSize={mobile ? '2rem' : undefined}>
+                            {t('common.run')}
+                        </Typography>
                     )}
                 </Button>
             </Stack>
