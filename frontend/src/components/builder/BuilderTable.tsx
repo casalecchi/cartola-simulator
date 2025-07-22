@@ -13,6 +13,7 @@ import {
 } from '@mui/material'
 import { t } from 'i18next'
 import { FC, PropsWithChildren } from 'react'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import { BuilderState } from '../../hooks/useBuilderStateManager'
 import colors from '../../styles/colors.module.scss'
 import { FormationSelector } from '../FormationSelector'
@@ -32,6 +33,8 @@ interface BuilderTableProps extends PropsWithChildren {
 
 export const BuilderTable: FC<BuilderTableProps> = ({ children, manager }) => {
     const { formation, changeFormation } = manager
+    const { mobile } = useDeviceContext()
+
     return (
         <TableContainer
             component={Paper}
@@ -43,10 +46,24 @@ export const BuilderTable: FC<BuilderTableProps> = ({ children, manager }) => {
             <Table padding={'none'}>
                 <TableHead>
                     <TableRow>
-                        <TableCell sx={cellStyles}></TableCell>
                         <TableCell sx={cellStyles}>
-                            <Stack alignItems={'center'} direction={'row'} py={0.5} spacing={3}>
-                                <Typography>{t('simulator.mySquad').toUpperCase()}</Typography>
+                            {mobile && (
+                                <Typography textAlign={'center'}>
+                                    {t('simulator.mySquad').toUpperCase()}
+                                </Typography>
+                            )}
+                        </TableCell>
+                        <TableCell sx={cellStyles}>
+                            <Stack
+                                alignItems={'center'}
+                                direction={'row'}
+                                justifyContent={mobile ? 'center' : undefined}
+                                py={0.5}
+                                spacing={mobile ? 1 : 3}
+                            >
+                                {!mobile && (
+                                    <Typography>{t('simulator.mySquad').toUpperCase()}</Typography>
+                                )}
                                 <FormationSelector setValue={changeFormation} value={formation} />
                                 <Button onClick={manager.resetTeam}>
                                     {t('simulator.sellAll')}

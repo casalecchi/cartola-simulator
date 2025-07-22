@@ -1,3 +1,4 @@
+import { Close } from '@mui/icons-material'
 import {
     Avatar,
     Button,
@@ -11,11 +12,13 @@ import {
 } from '@mui/material'
 import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useDeviceContext } from '../contexts/DeviceContext'
 import { BuilderState, MarketOptions } from '../hooks/useBuilderStateManager'
 import { Player, TeamInfo } from '../models'
 import colors from '../styles/colors.module.scss'
 import { roundNumber } from '../utils'
 import { CustomAutocomplete } from './ui/CustomAutocomplete'
+import { CustomIconButton } from './ui/CustomIconButton'
 import { StatusIcon } from './ui/StatusIcon'
 
 interface MarketProps {
@@ -28,21 +31,48 @@ interface MarketProps {
 
 export const Market: FC<MarketProps> = ({ manager, market, marketOptions, teamsInfo, onClose }) => {
     const { t } = useTranslation()
+    const { mobile } = useDeviceContext()
     const { balance, team, addPlayer, removePlayer } = manager
     const [filterTeam, setFilterTeam] = useState<TeamInfo>()
     const [search, setSearch] = useState('')
 
     return (
-        <Dialog fullWidth maxWidth={'md'} onClose={onClose} open={marketOptions.open}>
+        <Dialog
+            fullWidth
+            fullScreen={mobile}
+            maxWidth={mobile ? false : 'md'}
+            onClose={onClose}
+            open={marketOptions.open}
+        >
+            {mobile && (
+                <CustomIconButton
+                    Icon={Close}
+                    onClick={onClose}
+                    sx={{ position: 'absolute', top: 5, left: 5 }}
+                />
+            )}
             <DialogTitle>
                 <Stack alignItems={'center'} direction={'row'} justifyContent={'space-between'}>
-                    <Typography fontSize={'2rem'} fontWeight={700}>
-                        {t('common.market').toUpperCase()}
-                    </Typography>
-                    <Typography fontSize={'1.25rem'} fontWeight={700}>
-                        {`${t('common.cartoleta')}${balance.toFixed(2)}`}
-                    </Typography>
-                    <Stack direction={'row'} spacing={1}>
+                    {mobile ? (
+                        <Stack alignItems={'center'}>
+                            <Typography fontSize={'2rem'} fontWeight={700}>
+                                {t('common.market').toUpperCase()}
+                            </Typography>
+                            <Typography fontSize={'1.25rem'} fontWeight={700}>
+                                {`${t('common.cartoleta')}${balance.toFixed(2)}`}
+                            </Typography>
+                        </Stack>
+                    ) : (
+                        <>
+                            <Typography fontSize={'2rem'} fontWeight={700}>
+                                {t('common.market').toUpperCase()}
+                            </Typography>
+                            <Typography fontSize={'1.25rem'} fontWeight={700}>
+                                {`${t('common.cartoleta')}${balance.toFixed(2)}`}
+                            </Typography>
+                        </>
+                    )}
+                    <Stack direction={mobile ? 'column' : 'row'} spacing={1}>
                         <TextField
                             label={t('filter.byName')}
                             onChange={(event) => setSearch(event.target.value)}
@@ -72,7 +102,17 @@ export const Market: FC<MarketProps> = ({ manager, market, marketOptions, teamsI
                     )
                     .map((player) => {
                         const isOnTeam = !!team[marketOptions.posId].find((p) => p.id === player.id)
-                        return (
+                        return mobile ? (
+                            <MobileRow
+                                balance={balance}
+                                buy={addPlayer}
+                                isOnTeam={isOnTeam}
+                                key={player.id}
+                                player={player}
+                                sell={removePlayer}
+                                teamInfo={teamsInfo?.find((ti) => ti.id === player.teamId)}
+                            />
+                        ) : (
                             <Row
                                 balance={balance}
                                 buy={addPlayer}
@@ -178,79 +218,81 @@ const Row: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) =
     )
 }
 
-// const MobileRow: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) => {
-//     return (
-//         <Stack alignItems={'center'} direction={'row'} spacing={1}>
-//             <Avatar
-//                 alt={player.name}
-//                 src={player.photoUrl}
-//                 sx={{ height: 100, width: 100 }}
-//                 variant={'square'}
-//             />
-//             <Stack spacing={1} width={'100%'}>
-//                 <Stack alignItems={'center'} direction={'row'} spacing={2}>
-//                     <StatusIcon status={player.statusId} />
-//                     <Stack
-//                         alignItems={'center'}
-//                         direction={'row'}
-//                         justifyContent={'space-between'}
-//                         width={'100%'}
-//                     >
-//                         <Typography fontSize={'1.2rem'}>{player.name}</Typography>
-//                         <Typography fontSize={'0.75rem'} sx={{ opacity: 0.4 }}>
-//                             {teamInfo?.name}
-//                         </Typography>
-//                     </Stack>
-//                 </Stack>
-//                 <Stack
-//                     alignItems={'center'}
-//                     direction={'row'}
-//                     justifyContent={'space-between'}
-//                     pl={1}
-//                 >
-//                     <Stack alignItems={'center'}>
-//                         <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-//                             LAST
-//                         </Typography>
-//                         <Typography>{player.lastScore}</Typography>
-//                     </Stack>
-//                     <Stack alignItems={'center'}>
-//                         <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-//                             AVG
-//                         </Typography>
-//                         <Typography>{player.average}</Typography>
-//                     </Stack>
-//                     <Stack alignItems={'center'}>
-//                         <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
-//                             GAMES
-//                         </Typography>
-//                         <Typography>{player.gamesPlayed}</Typography>
-//                     </Stack>
-//                 </Stack>
-//                 <Stack
-//                     alignItems={'center'}
-//                     direction={'row'}
-//                     justifyContent={'space-between'}
-//                     pl={1}
-//                 >
-//                     <Typography fontSize={'1.3rem'}>{`${t('common.cartoleta')}${
-//                         player.price
-//                     }`}</Typography>
-//                     <Button
-//                         disabled={balance - player.price < 0 && !isOnTeam}
-//                         onClick={() => (isOnTeam ? sell(player) : buy(player))}
-//                         sx={{
-//                             color: 'white',
-//                             backgroundColor: isOnTeam ? 'red' : 'green',
-//                             borderRadius: 8,
-//                             justifyContent: 'center',
-//                             width: '45%',
-//                         }}
-//                     >
-//                         {t(isOnTeam ? 'simulator.sell' : 'simulator.buy').toUpperCase()}
-//                     </Button>
-//                 </Stack>
-//             </Stack>
-//         </Stack>
-//     )
-// }
+const MobileRow: FC<RowProps> = ({ balance, isOnTeam, player, teamInfo, buy, sell }) => {
+    const { t } = useTranslation()
+
+    return (
+        <Stack alignItems={'center'} direction={'row'} px={2} py={1} spacing={1}>
+            <Avatar
+                alt={player.name}
+                src={player.photoUrl}
+                sx={{ height: 80, width: 80 }}
+                variant={'square'}
+            />
+            <Stack spacing={1} width={'100%'}>
+                <Stack alignItems={'center'} direction={'row'} spacing={2}>
+                    <StatusIcon status={player.statusId} />
+                    <Stack
+                        alignItems={'center'}
+                        direction={'row'}
+                        justifyContent={'space-between'}
+                        width={'100%'}
+                    >
+                        <Typography fontSize={'1.2rem'}>{player.name}</Typography>
+                        <Typography fontSize={'0.75rem'} sx={{ opacity: 0.4 }}>
+                            {teamInfo?.name}
+                        </Typography>
+                    </Stack>
+                </Stack>
+                <Stack
+                    alignItems={'center'}
+                    direction={'row'}
+                    justifyContent={'space-between'}
+                    pl={1}
+                >
+                    <Stack alignItems={'center'}>
+                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
+                            LAST
+                        </Typography>
+                        <Typography>{player.lastScore}</Typography>
+                    </Stack>
+                    <Stack alignItems={'center'}>
+                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
+                            AVG
+                        </Typography>
+                        <Typography>{player.average}</Typography>
+                    </Stack>
+                    <Stack alignItems={'center'}>
+                        <Typography fontSize={'0.8rem'} sx={{ opacity: 0.4 }}>
+                            GAMES
+                        </Typography>
+                        <Typography>{player.gamesPlayed}</Typography>
+                    </Stack>
+                </Stack>
+                <Stack
+                    alignItems={'center'}
+                    direction={'row'}
+                    justifyContent={'space-between'}
+                    pl={1}
+                >
+                    <Typography fontSize={'1.3rem'}>{`${t('common.cartoleta')}${
+                        player.price
+                    }`}</Typography>
+                    <Button
+                        disabled={balance - player.price < 0 && !isOnTeam}
+                        onClick={() => (isOnTeam ? sell(player) : buy(player))}
+                        sx={{
+                            color: 'white',
+                            backgroundColor: isOnTeam ? 'red' : 'green',
+                            borderRadius: 8,
+                            justifyContent: 'center',
+                            width: '45%',
+                        }}
+                    >
+                        {t(isOnTeam ? 'simulator.sell' : 'simulator.buy').toUpperCase()}
+                    </Button>
+                </Stack>
+            </Stack>
+        </Stack>
+    )
+}

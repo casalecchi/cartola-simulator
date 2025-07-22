@@ -3,6 +3,7 @@ import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Stack } 
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
+import { useDeviceContext } from '../contexts/DeviceContext'
 import { FilterState } from '../hooks/useFilterManager'
 import { ModelField } from './filter/ModelField'
 import { YearField } from './filter/YearField'
@@ -18,6 +19,7 @@ interface DialogProps {
 export const PlayDialog: FC<DialogProps> = ({ filterStateManager, open, clickPlay, setOpen }) => {
     const { t } = useTranslation()
     const to = useNavigate()
+    const { mobile } = useDeviceContext()
 
     const handlePlay = () => {
         setOpen(false)
@@ -42,8 +44,8 @@ export const PlayDialog: FC<DialogProps> = ({ filterStateManager, open, clickPla
                 <DialogContentText>{t('play.instructions')}</DialogContentText>
                 <Stack alignItems={'center'}>
                     <Stack
-                        alignItems={'center'}
-                        direction={'row'}
+                        alignItems={mobile ? 'start' : 'center'}
+                        direction={mobile ? 'column' : 'row'}
                         justifyContent={'center'}
                         py={2}
                         spacing={2}

@@ -1,6 +1,7 @@
 import { Stack } from '@mui/material'
 import { FC, useEffect, useState } from 'react'
 import background from '../../assets/capa.gif'
+import { useDeviceContext } from '../../contexts/DeviceContext'
 import { useBuilderStateManager } from '../../hooks/useBuilderStateManager'
 import { useFilterStateManager } from '../../hooks/useFilterManager'
 import { useGetMarket } from '../../hooks/useGetMarket'
@@ -10,6 +11,7 @@ import { PlayDialog } from '../PlayDialog'
 import { TeamBuilder } from '../TeamBuilder'
 
 export const SimulatorView: FC = () => {
+    const { mobile } = useDeviceContext()
     const [openDialog, setOpenDialog] = useState(true)
     const { fetchAllMarkets, getRoundMarket } = useGetMarket()
     const builderStateManager = useBuilderStateManager({ getRoundMarket })
@@ -47,7 +49,7 @@ export const SimulatorView: FC = () => {
                 setOpen={setOpenDialog}
             />
             <Stack
-                height={'100dvh'}
+                height={mobile ? undefined : '100dvh'}
                 justifyContent={'space-between'}
                 p={3}
                 spacing={2}
